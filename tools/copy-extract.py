@@ -35,9 +35,12 @@ SKIP_INSIDE = {"script", "style", "svg", "code", "pre"}
 
 INLINE_OUT = [
     (re.compile(r"<strong>(.*?)</strong>", re.S), r"**\1**"),
-    (re.compile(r"<b>(.*?)</b>", re.S), r"**\1**"),
+    # ⚠️ <b> and <i> are deliberately NOT converted. The markers are one-way: ** only ever
+    # comes back as <strong> and * as <em>, so turning a <b> into ** silently rewrote it as
+    # <strong> the moment anyone edited the block it sat in. The site uses <b> about fifty
+    # times, so that was a landmine on nearly every page. Left as raw tags they survive the
+    # round trip untouched, which is the whole promise of this file.
     (re.compile(r"<em>(.*?)</em>", re.S), r"*\1*"),
-    (re.compile(r"<i>(.*?)</i>", re.S), r"*\1*"),
     (re.compile(r"<code>(.*?)</code>", re.S), r"`\1`"),
     # ⚠️ Only a bare <a href>. A link carrying a class or a target must keep its raw tag —
     # the marker form has nowhere to put the other attributes, and dropping them silently
@@ -248,6 +251,31 @@ def apply_edits(edited):
     print("  %d file(s) changed" % changed_files, file=sys.stderr)
 
 
+def check_markers():
+    """Prove the marker conversion itself is lossless, block by block.
+
+    ⚠️ This exists because the round-trip check below CANNOT catch a bad conversion.
+    apply_edits() skips any block whose text is unchanged, so extracting and re-applying
+    without editing never runs from_markers() at all — and a <b> that comes back as
+    <strong> therefore passed a clean `verify` for as long as nobody edited that block.
+
+    So: take every block's real markup, push it out to markers and straight back, and
+    require the result to match. Whitespace is normalised on both sides because the
+    markers do not carry line breaks — a rewritten block legitimately reflows onto one
+    line, and that is not what we are hunting here. Tags, entities and attributes are.
+    """
+    problems = []
+    for path in sorted(glob.glob("*.html")):
+        src = open(path, encoding="utf-8").read()
+        _, spans = containers(path)
+        for n, (start, end, tag) in enumerate(spans, 1):
+            orig = src[start:end]
+            rebuilt = from_markers(to_markers(orig))
+            if " ".join(orig.split()) != " ".join(rebuilt.split()):
+                problems.append((path, "%03d" % n, tag, orig.strip()[:70], rebuilt.strip()[:70]))
+    return problems
+
+
 def verify():
     """Extract, apply the extraction unchanged, and prove nothing moved."""
     import io, subprocess, shutil, tempfile
@@ -265,7 +293,19 @@ def verify():
             open(p, "w", encoding="utf-8").write(before[p])
             print("  restored %s" % p, file=sys.stderr)
         return 1
+    problems = check_markers()
+    if problems:
+        print("MARKER CONVERSION IS LOSSY in %d block(s):" % len(problems), file=sys.stderr)
+        for path, n, tag, was, now in problems[:12]:
+            print("  %s %s <%s>" % (path, n, tag), file=sys.stderr)
+            print("      was: %s" % was, file=sys.stderr)
+            print("      now: %s" % now, file=sys.stderr)
+        if len(problems) > 12:
+            print("  ... and %d more" % (len(problems) - 12), file=sys.stderr)
+        return 1
+
     print("round trip is lossless across %d pages" % len(before), file=sys.stderr)
+    print("marker conversion is lossless across every block", file=sys.stderr)
     return 0
 
 

@@ -69,7 +69,12 @@ a.card:hover{border-color:var(--cyan-dim)}
 .stage img.on{opacity:1}
 .shotbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;border-top:1px solid var(--line);flex-wrap:wrap}
 .caption{font-size:.78rem;color:var(--muted);letter-spacing:.04em}
-.caption b{color:var(--cyan);font-weight:500}
+.caption b,.caption strong{color:var(--cyan);font-weight:500}
+/* All ten captions live in the markup so copy-extract.py can reach them; only the
+   current one shows. They used to sit in a JavaScript array, where the extractor
+   could not see them — and they drifted out of step with the rest of the site. */
+.caption .shotcap{display:none}
+.caption .shotcap.on{display:inline}
 .dots{display:flex;gap:8px;flex-wrap:wrap}
 .dot{width:22px;height:3px;background:var(--line);border:0;padding:0;cursor:pointer}
 .dot[aria-current="true"]{background:var(--cyan)}
@@ -234,7 +239,18 @@ a.card:hover{border-color:var(--cyan-dim)}
         <img src="assets/shots/shot-10.webp" alt="CREMA's gallery, browsing covers in a three-dimensional card flow." width="1600" height="900">
       </div>
       <div class="shotbar">
-        <div class="caption" id="caption"><strong>01</strong> — the launcher, one keyboard shortcut from anywhere</div>
+        <div class="caption" id="caption">
+          <span class="shotcap on"><strong>01</strong> — the launcher, one keyboard shortcut from anywhere</span>
+          <span class="shotcap"><strong>02</strong> — the library on the desktop</span>
+          <span class="shotcap"><strong>03</strong> — a game page, with everything about it in one place</span>
+          <span class="shotcap"><strong>04</strong> — source ports and fan games, installed from your own file</span>
+          <span class="shotcap"><strong>05</strong> — the theme picker, wearing your desktop’s colours</span>
+          <span class="shotcap"><strong>06</strong> — achievements from two stores in one list</span>
+          <span class="shotcap"><strong>07</strong> — the manuals that came with your GOG game</span>
+          <span class="shotcap"><strong>08</strong> — CREMA’s home screen, on the big screen</span>
+          <span class="shotcap"><strong>09</strong> — a game page built for a television</span>
+          <span class="shotcap"><strong>10</strong> — browsing covers in CREMA</span>
+        </div>
         <div class="dots" id="dots"></div>
       </div>
     </div>
@@ -304,20 +320,8 @@ a.card:hover{border-color:var(--cyan-dim)}
   var stage = document.getElementById('stage');
   var slides = stage ? Array.prototype.slice.call(stage.querySelectorAll('img')) : [];
   if (slides.length < 2) return;
-  var captions = [
-    'the launcher, one keyboard shortcut from anywhere',
-    'the library on the desktop',
-    'a game page, with everything about it in one place',
-    'source ports and fan games, installed from your own file',
-    'the theme picker, wearing your desktop’s colours',
-    'achievements from two stores in one list',
-    'the manuals that came with your GOG game',
-    'CREMA’s home screen, on the big screen',
-    'a game page built for a television',
-    'browsing covers in CREMA'
-  ];
   var dotsWrap = document.getElementById('dots');
-  var caption = document.getElementById('caption');
+  var caps = Array.prototype.slice.call(document.querySelectorAll('#caption .shotcap'));
   var index = 0, timer = 0;
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -327,7 +331,7 @@ a.card:hover{border-color:var(--cyan-dim)}
     Array.prototype.forEach.call(dotsWrap.children, function (d, i) {
       d.setAttribute('aria-current', i === index ? 'true' : 'false');
     });
-    caption.innerHTML = '<b>' + String(index + 1).padStart(2, '0') + '</b> — ' + captions[index];
+    caps.forEach(function (c, i) { c.classList.toggle('on', i === index); });
   }
   function start() { if (!reduced) { stop(); timer = setInterval(function () { show(index + 1); }, 5200); } }
   function stop() { if (timer) { clearInterval(timer); timer = 0; } }

@@ -93,6 +93,19 @@ footer .fin{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:var(--muted);border:0}
 footer a:hover{color:var(--cyan)}
 
+/* ── Small screens ───────────────────────────────────────────────────────────
+   header.top is sticky, so whatever it costs it costs for the whole scroll. Measured
+   at 320px the seven links wrapped to three rows and the bar stood 171px tall — a fifth
+   of the screen, permanently. Tightening the gap and the type pulls it back to two rows. */
+@media (max-width:560px){
+  .topin{padding:10px 0;gap:10px}
+  nav.links{gap:8px 12px;font-size:.72rem}
+  /* The section labels are single unbreakable snake_case tokens, and .2em of letter-spacing
+     on a 35-character one (04_what_it_deliberately_will_not_do) is wider than a 320px screen.
+     Tighten the tracking and let it break rather than push the page out. */
+  .label{letter-spacing:.12em;overflow-wrap:anywhere}
+}
+
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important}
   html{scroll-behavior:auto}
