@@ -231,7 +231,7 @@ Cafe Neurotico
 “more caffeine is more good”
 
 ### clock.html | 063 | p
-The game library suite the clock pulls most of its art from — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with three faces: the Manager, GRINDER and CREMA. Keep it beside the clock and the art appears on its own; click a game name and it opens here.
+The game library suite the clock pulls most of its art from — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with two faces — the Manager and CREMA — and GRINDER working headless underneath them. Keep it beside the clock and the art appears on its own; click a game name and it opens here.
 
 ### clock.html | 064 | p
 [Get Cafe Neurotico ▸](index.html)
@@ -677,7 +677,7 @@ Cafe Neurotico
 “more caffeine is more good”
 
 ### emulatte.html | 075 | p
-The rest of the library — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with three faces: the Manager, GRINDER and CREMA. Your ROM collection stays here in EmuLatte; you pick which games cross over by **exporting them to Cafe Neurotico from inside EmuLatte**, and those arrive as ordinary entries under an **Emulation** category.
+The rest of the library — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with two faces — the Manager and CREMA — and GRINDER working headless underneath them. Your ROM collection stays here in EmuLatte; you pick which games cross over by **exporting them to Cafe Neurotico from inside EmuLatte**, and those arrive as ordinary entries under an **Emulation** category.
 
 ### emulatte.html | 076 | p
 [Get Cafe Neurotico ▸](index.html)
@@ -1942,7 +1942,7 @@ what works today
 The full library
 
 ### macos.html | 019 | p
-Steam and GOG sign-in, sync and browsing, across all three faces &mdash; the Manager, CREMA, and GRINDER.
+Steam and GOG sign-in, sync and browsing, across both faces &mdash; the Manager and CREMA &mdash; with GRINDER installing underneath them.
 
 ### macos.html | 020 | span
 &#10003;
