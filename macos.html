@@ -88,6 +88,12 @@
     .codeblock{display:block;background:rgba(0,0,0,.4);border:1px solid rgba(244,239,230,.18);
       border-radius:8px;padding:12px 14px;margin-top:8px;font-family:var(--mono-stack);
       font-size:15px;color:var(--amber);overflow-x:auto;white-space:pre}
+    /* ⚠️ .step is a flex container, and a flex item's default min-width:auto is min-content —
+       so the <p> holding the block above refused to shrink below the 615px of unwrappable
+       xattr command inside it, dragging the whole page to 682px on a 390px screen. The
+       overflow-x:auto above could never fire while its own parent was being widened to fit.
+       min-width:0 lets the paragraph shrink, and the code block scrolls on its own as meant. */
+    .step p{min-width:0}
 
     table.paths{width:100%;border-collapse:collapse;margin:0 auto;max-width:640px;font-size:13px}
     table.paths th{font-family:var(--mono-stack);font-weight:900;letter-spacing:.06em;text-transform:uppercase;
@@ -95,6 +101,15 @@
     table.paths td{padding:12px 0;border-bottom:1px dashed rgba(244,239,230,.14);color:var(--chalk-dim);vertical-align:top}
     table.paths td:first-child{color:var(--chalk);padding-right:14px;white-space:nowrap}
     table.paths td code{font-family:var(--mono-stack);font-size:14px;color:var(--amber)}
+
+    /* Below ~560px this table is what sets the page's minimum width: the first column is
+       nowrap and the second holds unbreakable path tokens — together about 700px, on a 390px
+       screen. site.css puts overflow-x:hidden on the body, so there is no scrolling to what
+       that pushes off the edge; it has to wrap instead. */
+    @media (max-width:560px){
+      table.paths td:first-child{white-space:normal}
+      table.paths td code{overflow-wrap:anywhere}
+    }
 
     .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
     .btn{font-family:var(--mono-stack);font-weight:700;font-size:14px;letter-spacing:.04em;

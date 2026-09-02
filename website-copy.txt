@@ -60,7 +60,7 @@ the time, over your library
 ⬇ Download for Linux
 
 ### clock.html | 006 | div
-version **1.0** · single AppImage · GPL-3.0
+version <b>1.0</b> · single AppImage · GPL-3.0
 
 ### clock.html | 007 | span
 Minimalist
@@ -96,13 +96,13 @@ Minimalist, a small dashed widget tinted by your palette. CREMA Splash, a froste
 A slideshow built from art you already have
 
 ### clock.html | 018 | p
-It scans the folders your **CNGM** and **EmuLatte** libraries already fill — heroes, covers, screenshots, or your own wallpapers. Nothing to import, nothing to configure. No library? It just shows the time.
+It scans the folders your <b>CNGM</b> and <b>EmuLatte</b> libraries already fill — heroes, covers, screenshots, or your own wallpapers. Nothing to import, nothing to configure. No library? It just shows the time.
 
 ### clock.html | 019 | h5
 Click a game to open it
 
 ### clock.html | 020 | p
-The name under the art is a link. Click it and **Cafe Neurotico** or **EmuLatte** opens straight to that game's page — whichever one the artwork came from. If the app is already running, the click goes to the open window.
+The name under the art is a link. Click it and <b>Cafe Neurotico</b> or <b>EmuLatte</b> opens straight to that game's page — whichever one the artwork came from. If the app is already running, the click goes to the open window.
 
 ### clock.html | 021 | h5
 93 palettes, one picker
@@ -207,7 +207,7 @@ tip the barista
 If the clock earned a spot on your desk, consider chipping in — it keeps the pot warm.
 
 ### clock.html | 055 | p
-**If you do, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)**
+<b>If you do, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)</b>
 
 ### clock.html | 056 | a
 ☕ Ko-fi (Intl)
@@ -401,7 +401,7 @@ a ROM library, properly filed
 ⬇ Download for Linux
 
 ### emulatte.html | 006 | div
-version **1.0** · single AppImage · GPL-3.0
+version <b>1.0</b> · single AppImage · GPL-3.0
 
 ### emulatte.html | 007 | span
 Library
@@ -449,7 +449,7 @@ ScreenScraper, SteamGridDB, TheGamesDB, IGDB and MobyGames. Take metadata from o
 Its own RetroArch, untouched by yours
 
 ### emulatte.html | 022 | p
-EmuLatte drives a config of its own — your **retroarch.cfg** is never read and never written. Per-system and per-game overrides for the one game that needs a different core.
+EmuLatte drives a config of its own — your <b>retroarch.cfg</b> is never read and never written. Per-system and per-game overrides for the one game that needs a different core.
 
 ### emulatte.html | 023 | h5
 Achievements, trailers, and the actual manual
@@ -557,7 +557,7 @@ Cafe Neurotico
 “more caffeine is more good”
 
 ### emulatte.html | 058 | p
-The rest of the library — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with three faces: the Manager, GRINDER and CREMA. Your ROM collection stays here in EmuLatte; you pick which games cross over by **exporting them to Cafe Neurotico from inside EmuLatte**, and those arrive as ordinary entries under an **Emulation** category.
+The rest of the library — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with three faces: the Manager, GRINDER and CREMA. Your ROM collection stays here in EmuLatte; you pick which games cross over by <b>exporting them to Cafe Neurotico from inside EmuLatte</b>, and those arrive as ordinary entries under an <b>Emulation</b> category.
 
 ### emulatte.html | 059 | a
 Get Cafe Neurotico ▸
@@ -584,7 +584,7 @@ tip the barista
 If EmuLatte sorted out your ROM collection, consider chipping in — it keeps the pot warm.
 
 ### emulatte.html | 067 | p
-**If you do, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)**
+<b>If you do, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)</b>
 
 ### emulatte.html | 068 | a
 ☕ Ko-fi (Intl)
@@ -648,7 +648,7 @@ Fixed Individually
 named games · named faults
 
 ### fixes.html | 005 | p
-Not &ldquo;improved compatibility&rdquo;. Each of these is a real game that did not work on Linux, the exact thing that turned out to be wrong with it, and what is now done about it automatically. **Nothing here needs to be configured** &mdash; the fix is applied when the game is launched.
+Not &ldquo;improved compatibility&rdquo;. Each of these is a real game that did not work on Linux, the exact thing that turned out to be wrong with it, and what is now done about it automatically. <b>Nothing here needs to be configured</b> &mdash; the fix is applied when the game is launched.
 
 ### fixes.html | 006 | div
 OutRun 2006: Coast 2 Coast
@@ -657,10 +657,10 @@ OutRun 2006: Coast 2 Coast
 A white screen. It seems to hang on the SEGA logo, so it gets killed.
 
 ### fixes.html | 008 | p
-The intro is a run of video logos, and under a compatibility layer the first one can sit there for a minute or more before the menu ever arrives. It is not frozen &mdash; but nobody waits that long, and nobody should have to. **The intro sequence is now skipped**, which removes both the wait and the thing that stalls in it.
+The intro is a run of video logos, and under a compatibility layer the first one can sit there for a minute or more before the menu ever arrives. It is not frozen &mdash; but nobody waits that long, and nobody should have to. <b>The intro sequence is now skipped</b>, which removes both the wait and the thing that stalls in it.
 
 ### fixes.html | 009 | p
-The community patch this relies on installs itself under a filename Wine replaces with its own version, so it was never being loaded to begin with. **The game&rsquo;s own copy now wins**, which is what happens on Windows.
+The community patch this relies on installs itself under a filename Wine replaces with its own version, so it was never being loaded to begin with. <b>The game&rsquo;s own copy now wins</b>, which is what happens on Windows.
 
 ### fixes.html | 010 | div
 Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)
@@ -669,7 +669,7 @@ Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)
 Comes up untranslated and stops dead at a Japanese error box.
 
 ### fixes.html | 012 | p
-The Classic REbirth patch is a graphics library that sits beside the game, and Wine was loading its own version instead &mdash; so the patch never ran at all. **The game&rsquo;s own copy is now loaded first**, with Wine&rsquo;s kept behind it as a fallback.
+The Classic REbirth patch is a graphics library that sits beside the game, and Wine was loading its own version instead &mdash; so the patch never ran at all. <b>The game&rsquo;s own copy is now loaded first</b>, with Wine&rsquo;s kept behind it as a fallback.
 
 ### fixes.html | 013 | p
 That fallback is the whole trick: the patch passes anything it does not implement itself through to the real library, and with nothing behind it the game crashes instantly instead.
@@ -681,7 +681,7 @@ Quake (GOG) &mdash; the Windows builds
 GLQuake and both mission packs close instantly. No window, no error.
 
 ### fixes.html | 016 | p
-GOG ships this with a 3dfx graphics driver from the nineties, and the same shadowing problem applied: Wine substituted its own, and the game died before a window appeared. **The driver GOG shipped is now used**, which is the stack the release was built around.
+GOG ships this with a 3dfx graphics driver from the nineties, and the same shadowing problem applied: Wine substituted its own, and the game died before a window appeared. <b>The driver GOG shipped is now used</b>, which is the stack the release was built around.
 
 ### fixes.html | 017 | div
 Fallout: New California
@@ -690,7 +690,7 @@ Fallout: New California
 &ldquo;Fallout: New Vegas does not appear to be installed.&rdquo; Please insert the DVD.
 
 ### fixes.html | 019 | p
-Every file downloaded perfectly &mdash; but GOG&rsquo;s installer normally performs three finishing steps afterwards, and nothing on Linux was doing them. **Now applied at launch**, repairing an install you already have, no reinstall.
+Every file downloaded perfectly &mdash; but GOG&rsquo;s installer normally performs three finishing steps afterwards, and nothing on Linux was doing them. <b>Now applied at launch</b>, repairing an install you already have, no reinstall.
 
 ### fixes.html | 020 | div
 Realms of Arkania 1 &amp; 2 &middot; Albion
@@ -699,7 +699,7 @@ Realms of Arkania 1 &amp; 2 &middot; Albion
 DOSBox opens for half a second, then vanishes.
 
 ### fixes.html | 022 | p
-Two faults at once: the configuration files GOG&rsquo;s installer copies were never copied, and the game was being started from the wrong folder &mdash; so DOSBox looked for the game one level too high and quit. **Both fixed.**
+Two faults at once: the configuration files GOG&rsquo;s installer copies were never copied, and the game was being started from the wrong folder &mdash; so DOSBox looked for the game one level too high and quit. <b>Both fixed.</b>
 
 ### fixes.html | 023 | div
 Colony Ship
@@ -708,7 +708,7 @@ Colony Ship
 Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.
 
 ### fixes.html | 025 | p
-One file was damaged on one of GOG&rsquo;s servers &mdash; half of it, then the connection closed, every single time &mdash; and the download kept asking that same server for it. **Now each piece is checked and a different server is used** when one of them keeps failing.
+One file was damaged on one of GOG&rsquo;s servers &mdash; half of it, then the connection closed, every single time &mdash; and the download kept asking that same server for it. <b>Now each piece is checked and a different server is used</b> when one of them keeps failing.
 
 ### fixes.html | 026 | h4
 why keep a list like this at all
@@ -1444,82 +1444,109 @@ What it looks like right now
 ### index.html | 054 | p
 Shot on Omarchy, on the machine it is developed on. Nothing here is a mockup.
 
-### index.html | 055 | div
+### index.html | 055 | span
 **01** — the launcher, one keyboard shortcut from anywhere
 
-### index.html | 056 | p
-[All 105 screenshots, in one place →](gallery.html)
+### index.html | 056 | span
+**02** — the library on the desktop
 
-### index.html | 057 | div
-04_at_home_on_omarchy.md
+### index.html | 057 | span
+**03** — a game page, with everything about it in one place
 
-### index.html | 058 | h2
-It found a home
+### index.html | 058 | span
+**04** — source ports and fan games, installed from your own file
 
-### index.html | 059 | p
-Cafe Neurotico should run on any Linux desktop, but it's being built and tested on **Omarchy**, with its no-nonsense no BS mentality — which is why it now behaves like part of it rather than a visitor.
+### index.html | 059 | span
+**05** — the theme picker, wearing your desktop’s colours
 
-### index.html | 060 | h3
-In the bar
+### index.html | 060 | span
+**06** — achievements from two stores in one list
 
-### index.html | 061 | p
-A widget showing what is installed and what is playing, with a menu one click from the library, the big screen face and your storage.
+### index.html | 061 | span
+**07** — the manuals that came with your GOG game
 
-### index.html | 062 | h3
-One keyboard shortcut away
+### index.html | 062 | span
+**08** — CREMA’s home screen, on the big screen
 
-### index.html | 063 | p
-A launcher overlay: type a few letters, press Enter, play. Cover art, genre and a short description of the game.
+### index.html | 063 | span
+**09** — a game page built for a television
 
-### index.html | 064 | h3
-Omarchy Themes
+### index.html | 064 | span
+**10** — browsing covers in CREMA
 
 ### index.html | 065 | p
-It uses the theme Omarchy is using. Install a new one, apply it with `omarchy theme set`, and Cafe Neurotico is wearing it too.
+[All 105 screenshots, in one place →](gallery.html)
 
-### index.html | 066 | h3
-Games open properly
+### index.html | 066 | div
+04_at_home_on_omarchy.md
 
-### index.html | 067 | p
-Fullscreen, on the screen you chose, at the resolution you expect.
+### index.html | 067 | h2
+It found a home
 
 ### index.html | 068 | p
+Cafe Neurotico should run on any Linux desktop, but it's being built and tested on **Omarchy**, with its no-nonsense no BS mentality — which is why it now behaves like part of it rather than a visitor.
+
+### index.html | 069 | h3
+In the bar
+
+### index.html | 070 | p
+A widget showing what is installed and what is playing, with a menu one click from the library, the big screen face and your storage.
+
+### index.html | 071 | h3
+One keyboard shortcut away
+
+### index.html | 072 | p
+A launcher overlay: type a few letters, press Enter, play. Cover art, genre and a short description of the game.
+
+### index.html | 073 | h3
+Omarchy Themes
+
+### index.html | 074 | p
+It uses the theme Omarchy is using. Install a new one, apply it with `omarchy theme set`, and Cafe Neurotico is wearing it too.
+
+### index.html | 075 | h3
+Games open properly
+
+### index.html | 076 | p
+Fullscreen, on the screen you chose, at the resolution you expect.
+
+### index.html | 077 | p
 [Everything it does on Omarchy →](omarchy.html)
 
-### index.html | 069 | div
+### index.html | 078 | div
 05_where_it_stands.txt
 
-### index.html | 070 | div
+### index.html | 079 | div
 ⚠ Experimental, and honest about it
 
-### index.html | 071 | p
+### index.html | 080 | p
 What you can download today is the **1.12.x experimental line** — the work in progress, in fine tuning, not a settled release yet. It is used daily on the machine it is built on, and it will have rough edges. **2.0 is the destination**, it's coming soon. If you want the calm version, wait for that one.
 
-### index.html | 072 | span
+### index.html | 081 | span
 Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### index.html | 073 | a
+### index.html | 082 | a
 Omarchy
 
-### index.html | 074 | a
+### index.html | 083 | a
 CREMA
 
-### index.html | 075 | a
+### index.html | 084 | a
 The library
 
-### index.html | 076 | a
+### index.html | 085 | a
 macOS
 
-### index.html | 077 | a
+### index.html | 086 | a
 Clock
 
-### index.html | 078 | a
+### index.html | 087 | a
 EmuLatte
 
-### index.html | 079 | a
+### index.html | 088 | a
 Support
 
-### index.html | 080 | a
+### index.html | 089 | a
 GitHub
 
 ==============================================================================
@@ -1699,10 +1726,10 @@ experimental
 same codebase · Apple Silicon
 
 ### macos.html | 005 | p
-Linux stays the primary platform &mdash; it is what gets tested first and ships fastest. The macOS build lives behind its own file in the same codebase rather than a fork, and it is real, not a proof of concept: **Steam and GOG sign-in, the full library, and installing and launching native GOG games all work today**, through the app&rsquo;s own download engine, not a browser hand-off. **Since 1.9, Windows games run too**, through CrossOver. It is labelled Experimental because it is younger and unsigned, not because it is a demo.
+Linux stays the primary platform &mdash; it is what gets tested first and ships fastest. The macOS build lives behind its own file in the same codebase rather than a fork, and it is real, not a proof of concept: <b>Steam and GOG sign-in, the full library, and installing and launching native GOG games all work today</b>, through the app&rsquo;s own download engine, not a browser hand-off. <b>Since 1.9, Windows games run too</b>, through CrossOver. It is labelled Experimental because it is younger and unsigned, not because it is a demo.
 
 ### macos.html | 006 | p
-current macOS build: **1.9.0** &middot; Linux is on 1.9.1, a Linux-only fix &mdash; the two hosts are not always on the same number.
+current macOS build: <b>1.9.0</b> &middot; Linux is on 1.9.1, a Linux-only fix &mdash; the two hosts are not always on the same number.
 
 ### macos.html | 007 | a
 ⤓ Download for macOS &mdash; 1.9.0
@@ -1738,7 +1765,7 @@ Real downloads through <code style="font-family:var(--mono-stack);color:var(--am
 Windows games, through CrossOver <span style="font-family:var(--mono-stack);font-size:14px;color:var(--mac);letter-spacing:1px;">NEW IN 1.9</span>
 
 ### macos.html | 018 | p
-Titles that only ship a Windows build are no longer off-limits. Cafe Neurotico drives **CrossOver** directly, giving each game its own bottle under the same per-game scheme the Linux build already uses &mdash; created once on first launch, reused after that. Nothing to configure.
+Titles that only ship a Windows build are no longer off-limits. Cafe Neurotico drives <b>CrossOver</b> directly, giving each game its own bottle under the same per-game scheme the Linux build already uses &mdash; created once on first launch, reused after that. Nothing to configure.
 
 ### macos.html | 019 | p
 <b style="color:var(--chalk)">Two honest caveats.</b> CrossOver is commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener" style="color:var(--crema)">CodeWeavers</a> and is not bundled &mdash; you install it yourself, and without it this simply reports as unavailable. And while the plumbing is verified end to end, it has not been run against a large library of real games yet, so treat per-title compatibility as unproven.
@@ -1810,10 +1837,10 @@ The build is not signed &mdash; there is no Apple Developer account behind it ye
 Download the `.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/tag/v1.9.0" target="_blank" rel="noopener" style="color:var(--crema)">1.9.0 release</a> &mdash; the macOS asset is separate from the Linux AppImage, and it sits on that release rather than the newest one.
 
 ### macos.html | 042 | p
-Open the `.dmg` and drag **Cafe Neurotico** into **Applications** (or unzip and move the `.app` there directly).
+Open the `.dmg` and drag <b>Cafe Neurotico</b> into <b>Applications</b> (or unzip and move the `.app` there directly).
 
 ### macos.html | 043 | p
-**Right-click (or Control-click) the app &rarr; Open &rarr; Open** still works on most macOS versions for the first launch. If that option does not appear, a normal double-click gets blocked once &mdash; go to **System Settings &rarr; Privacy &amp; Security** and click **Open Anyway** next to the message about Cafe Neurotico, then confirm once more.
+<b>Right-click (or Control-click) the app &rarr; Open &rarr; Open</b> still works on most macOS versions for the first launch. If that option does not appear, a normal double-click gets blocked once &mdash; go to <b>System Settings &rarr; Privacy &amp; Security</b> and click <b>Open Anyway</b> next to the message about Cafe Neurotico, then confirm once more.
 
 ### macos.html | 044 | p
 If neither shows anything, from Terminal: <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Cafe Neurotico.app"</span> This strips the quarantine flag macOS attaches to anything downloaded from the internet. It only needs doing once per install.
@@ -2046,37 +2073,37 @@ Source Ports &amp; Mods
 you bring the download &middot; the data is already yours
 
 ### ports.html | 005 | p
-Nobody sets out to install GZDoom; they set out to play **Brutal Doom**. So the mod is the entry in your library, the engine that runs it is fetched along the way, and the game data is linked out of the copy you already own. **Twenty-five entries**, one click each &mdash; no wiki, no command line, no second launcher.
+Nobody sets out to install GZDoom; they set out to play <b>Brutal Doom</b>. So the mod is the entry in your library, the engine that runs it is fetched along the way, and the game data is linked out of the copy you already own. <b>Twenty-five entries</b>, one click each &mdash; no wiki, no command line, no second launcher.
 
 ### ports.html | 006 | h5
 the download is yours to fetch
 
 ### ports.html | 007 | p
-Every entry names the project, links its page and says **what the file is called** &mdash; <span style="font-family:var(--mono-stack)">ironwail-0.8.2-win64.zip</span>, and so on. Nothing is pulled automatically, so nothing breaks the day a project renames an asset.
+Every entry names the project, links its page and says <b>what the file is called</b> &mdash; <span style="font-family:var(--mono-stack)">ironwail-0.8.2-win64.zip</span>, and so on. Nothing is pulled automatically, so nothing breaks the day a project renames an asset.
 
 ### ports.html | 008 | h5
 the game data comes from your library
 
 ### ports.html | 009 | p
-Quake's paks, the Doom IWADs, the Build .grp files &mdash; found by probing for the proving file, never by trusting a title, and **linked rather than copied**. The store install is never written into, and the port keeps its own configs and saves.
+Quake's paks, the Doom IWADs, the Build .grp files &mdash; found by probing for the proving file, never by trusting a title, and <b>linked rather than copied</b>. The store install is never written into, and the port keeps its own configs and saves.
 
 ### ports.html | 010 | h5
 the data is settled before anything is unpacked
 
 ### ports.html | 011 | p
-&ldquo;You own Quake but it is not installed&rdquo; is a message that can be acted on. **A port that installs and then cannot start is not.** So the data is resolved first, and the install refuses rather than leaving something unplayable behind.
+&ldquo;You own Quake but it is not installed&rdquo; is a message that can be acted on. <b>A port that installs and then cannot start is not.</b> So the data is resolved first, and the install refuses rather than leaving something unplayable behind.
 
 ### ports.html | 012 | h5
 a mod download is usually a pack
 
 ### ports.html | 013 | p
-One 310MB archive held the mod plus twenty-eight optional extras, and the first file alphabetically was a *voice pack*. The contents are now listed **without unpacking**, largest pre-ticked, and only what is chosen gets extracted &mdash; stacked in load order.
+One 310MB archive held the mod plus twenty-eight optional extras, and the first file alphabetically was a <i>voice pack</i>. The contents are now listed <b>without unpacking</b>, largest pre-ticked, and only what is chosen gets extracted &mdash; stacked in load order.
 
 ### ports.html | 014 | h5
 the engine comes with the mod
 
 ### ports.html | 015 | p
-If no engine is installed, one is installed in the same click; if one already is, it is **shared rather than copied** &mdash; which is how the ZDoom family is designed to work. Which Doom a mod runs on is asked **when Play is pressed**, because that is an evening's mood, not an install-time decision.
+If no engine is installed, one is installed in the same click; if one already is, it is <b>shared rather than copied</b> &mdash; which is how the ZDoom family is designed to work. Which Doom a mod runs on is asked <b>when Play is pressed</b>, because that is an evening's mood, not an install-time decision.
 
 ### ports.html | 016 | h5
 it lands as an ordinary game
@@ -2121,10 +2148,10 @@ MOD
 Any Quake mod or episode
 
 ### ports.html | 030 | p
-Dwell, Arcane Dimensions, Alkaline, Copper &mdash; anything that ships as a folder. Each gets its own library entry, with Quake's data and **every installed Quake engine beside it**, so the engine is chosen at Play time.
+Dwell, Arcane Dimensions, Alkaline, Copper &mdash; anything that ships as a folder. Each gets its own library entry, with Quake's data and <b>every installed Quake engine beside it</b>, so the engine is chosen at Play time.
 
 ### ports.html | 031 | p
-The **id1** paks are linked out of your own Quake install, lower-cased on the way in because GOG ships <span style="font-family:var(--mono-stack)">Id1/PAK0.PAK</span> and the engines ask for <span style="font-family:var(--mono-stack)">id1/pak0.pak</span>.<br> And the music: the 1996 release kept its soundtrack on the CD, which is why GOG's own GLQuake is silent. If **Quake Enhanced** is owned too, its 26 tracks are linked in &mdash; the same recordings, already on your disk, legitimately.
+The <b>id1</b> paks are linked out of your own Quake install, lower-cased on the way in because GOG ships <span style="font-family:var(--mono-stack)">Id1/PAK0.PAK</span> and the engines ask for <span style="font-family:var(--mono-stack)">id1/pak0.pak</span>.<br> And the music: the 1996 release kept its soundtrack on the CD, which is why GOG's own GLQuake is silent. If <b>Quake Enhanced</b> is owned too, its 26 tracks are linked in &mdash; the same recordings, already on your disk, legitimately.
 
 ### ports.html | 032 | div
 ▸ Doom
@@ -2175,7 +2202,7 @@ Any Doom mod or texture pack
 HD texture packs, brightmaps, sprite fixes, map sets. Everything loadable inside the archive is shown and as many as you like can be ticked; they load in name order.
 
 ### ports.html | 048 | p
-Every IWAD you own is linked side by side &mdash; **doom.wad, doom2.wad, tnt.wad, plutonia.wad** &mdash; gathered from as many Doom products as the library holds, because storefronts nest them differently and move them between releases. When a mod has more than one to choose from, the question is asked at Play time and last night's pick is remembered.
+Every IWAD you own is linked side by side &mdash; <b>doom.wad, doom2.wad, tnt.wad, plutonia.wad</b> &mdash; gathered from as many Doom products as the library holds, because storefronts nest them differently and move them between releases. When a mod has more than one to choose from, the question is asked at Play time and last night's pick is remembered.
 
 ### ports.html | 049 | div
 ▸ Wolfenstein 3D
@@ -2190,7 +2217,7 @@ ECWolf
 Wolfenstein 3D and Spear of Destiny with modern resolutions, mouselook and mod support, built on the ZDoom lineage.
 
 ### ports.html | 053 | p
-Whichever release you own is matched **by its file extension** rather than by a list of filenames &mdash; one extension per release covers the entire data set, and there is nothing left to get wrong.
+Whichever release you own is matched <b>by its file extension</b> rather than by a list of filenames &mdash; one extension per release covers the entire data set, and there is nothing left to get wrong.
 
 ### ports.html | 054 | div
 ▸ Build engine
@@ -2277,7 +2304,7 @@ Witchaven II: Blood Vengeance
 The 1996 sequel, bloodier and better lit. Data lifted out of the disc image; plays on BuildGDX.
 
 ### ports.html | 082 | p
-Nobody wants *Raze* in their library; they want **Blood**, and **Duke Nukem 3D**. So each game is its own entry with its own name and its own cover, in its own folder &mdash; which is also the only way two Build games can coexist without fighting over the same <span style="font-family:var(--mono-stack)">tiles000.art</span>.
+Nobody wants <i>Raze</i> in their library; they want <b>Blood</b>, and <b>Duke Nukem 3D</b>. So each game is its own entry with its own name and its own cover, in its own folder &mdash; which is also the only way two Build games can coexist without fighting over the same <span style="font-family:var(--mono-stack)">tiles000.art</span>.
 
 ### ports.html | 083 | div
 ▸ OpenBOR
@@ -2289,10 +2316,10 @@ OPENBOR
 Any OpenBOR game
 
 ### ports.html | 086 | p
-Streets of Rage X, Streets of Vendetta and the hundreds of others. Drop in the archive and **the name is taken from the game itself** &mdash; the download is identified by what is inside it, not by whatever it happened to be called.
+Streets of Rage X, Streets of Vendetta and the hundreds of others. Drop in the archive and <b>the name is taken from the game itself</b> &mdash; the download is identified by what is inside it, not by whatever it happened to be called.
 
 ### ports.html | 087 | p
-One engine, one rigid layout, nothing to curate per game &mdash; so a single entry serves all of them, and as of **1.7** they arrive in a library category of their own rather than being filed under Others.
+One engine, one rigid layout, nothing to curate per game &mdash; so a single entry serves all of them, and as of <b>1.7</b> they arrive in a library category of their own rather than being filed under Others.
 
 ### ports.html | 088 | span
 — nothing else needed
@@ -2331,7 +2358,7 @@ CUSTOM ENGINE
 CannonBall
 
 ### ports.html | 100 | p
-OutRun rewritten in C++ &mdash; 60fps, true widescreen, time trial and continuous modes. Not an emulator. It needs the original arcade ROM set, which no storefront sells, so **the whole manifest is checked before installing** and anything missing is named.
+OutRun rewritten in C++ &mdash; 60fps, true widescreen, time trial and continuous modes. Not an emulator. It needs the original arcade ROM set, which no storefront sells, so <b>the whole manifest is checked before installing</b> and anything missing is named.
 
 ### ports.html | 101 | span
 FOLDER
@@ -2340,7 +2367,7 @@ FOLDER
 A game folder you already have
 
 ### ports.html | 103 | p
-Point at any folder holding a Windows game and it joins the library **staying exactly where it is** &mdash; scanned three levels deep, the likely entry point sorted first, nothing copied and nothing moved. For anything self-contained, or a port with no recipe here yet.
+Point at any folder holding a Windows game and it joins the library <b>staying exactly where it is</b> &mdash; scanned three levels deep, the likely entry point sorted first, nothing copied and nothing moved. For anything self-contained, or a port with no recipe here yet.
 
 ### ports.html | 104 | h4
 why a catalogue, and not an importer
@@ -2352,7 +2379,7 @@ A general importer has to guess: which file in the archive is the game, where th
 A recipe does not guess. It knows what the download is called, which executable is the real one among the six in the folder, which file proves a folder really is Quake, and what has to be true before a single byte is unpacked. That is worth writing down once per project, and it is why this is a list &mdash; twenty-five today, and growing one entry at a time.
 
 ### ports.html | 107 | p
-All of it lives under **Control Panel → Fan Games &amp; Source Ports**.
+All of it lives under <b>Control Panel → Fan Games &amp; Source Ports</b>.
 
 ### ports.html | 108 | a
 ⤓ Download Cafe Neurotico
@@ -2410,7 +2437,7 @@ chip in
 Cafe Neurotico is free, and made by myself on my own time. If it sorted out your gaming life, a contribution keeps the work going.
 
 ### support.html | 006 | p
-**If you donate, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)**
+<b>If you donate, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)</b>
 
 ### support.html | 007 | a
 ☕ Ko-fi · International
