@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Cafe Neurotico">
+  <!-- The period from cafe.neurotico: the wordmark's one cyan accent, on the site's ground.
+       Explicit width/height, not viewBox alone - without an intrinsic size a browser
+       rasterises this into its own default box and the disc lands off-centre.
+       No border: at 16px a 1px rule is most of the tile and reads as noise. -->
+  <rect width="32" height="32" fill="#08090a"/>
+  <circle cx="16" cy="16" r="9.5" fill="#2fe0d6"/>
+</svg>
