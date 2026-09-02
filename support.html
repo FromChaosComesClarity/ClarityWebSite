@@ -1,192 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafe Neurotico — Support &amp; Donate</title>
-  <meta name="description" content="Support Cafe Neurotico — every way to help the project, from a contribution (Ko-fi / PIX) to free ways like starring on GitHub and spreading the word.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Cafe Neurotico">
-  <meta property="og:title" content="Support Cafe Neurotico">
-  <meta property="og:description" content="All the ways to support the project — buy a coffee or help out for free.">
-  <meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/shots/shot-1.webp">
-  <meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/support.html">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Neurotico — Support &amp; Donate</title>
+<meta name="description" content="Support Cafe Neurotico — every way to help the project, from a contribution (Ko-fi / PIX) to free ways like starring on GitHub and spreading the word.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cafe Neurotico">
+<meta property="og:title" content="Support Cafe Neurotico">
+<meta property="og:description" content="All the ways to support the project — buy a coffee or help out for free.">
+<meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/shots/shot-1.webp">
+<meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/support.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --amber:#2fe0d6; --amber-dim:#177c77;
-      --chalk:#dfe8e8; --chalk-dim:#7d9295;
-      --board:#0e1113; --board2:#141819;
-      --mono-stack:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace; --crema:#ff5fa2; --kofi:#FF5E5B; --pix:#32BCAD;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{min-height:100%}
-    body{background:#08090a;color:var(--chalk);font-family:var(--mono-stack);overflow-x:hidden}
-    a{color:inherit}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{padding:clamp(40px,7vh,84px) 0 clamp(10px,2vh,24px)}
+.heart{width:.9em;height:.78em;vertical-align:-.04em;margin-right:.28em}
 
-    /* ───────────── CHALKBOARD ───────────── */
-    #chalk{
-      min-height:100vh;
-      background:
-        radial-gradient(120% 80% at 50% -10%, rgba(255,255,255,.05), transparent 60%),
-        radial-gradient(80% 60% at 80% 110%, rgba(212,163,115,.06), transparent 60%),
-        var(--board);
-      position:relative;
-    }
-    #chalk::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.04;
-      background-image:radial-gradient(circle at 20% 30%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 70% 60%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 40% 80%, #fff 0 1px, transparent 1px);
-      background-size:140px 140px,200px 200px,170px 170px}
-    .wrap{max-width:780px;margin:0 auto;padding:30px 24px 80px;text-align:center;position:relative;z-index:1}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0 0}
+button.btn{cursor:pointer}
+.btn.pix{border-color:var(--magenta);color:var(--magenta);background:rgba(255,95,162,.06)}
+.btn.pix:hover{background:rgba(255,95,162,.14)}
 
-    .back{display:inline-block;font-family:var(--mono-stack);font-size:13px;color:var(--chalk-dim);
-      text-decoration:none;letter-spacing:.5px;margin-bottom:34px;transition:.18s}
-    .back:hover{color:var(--crema)}
+/* The free ways: a name and a line about it, on one rule each. */
+.ways{margin-top:18px;border-top:1px solid var(--line)}
+.way{display:flex;gap:18px;padding:14px 2px;border-bottom:1px solid var(--line);
+  align-items:baseline;flex-wrap:wrap}
+a.way{border:0;border-bottom:1px solid var(--line)}
+a.way:hover{background:var(--surface)}
+.way .name{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
+  min-width:9.5rem;font-weight:700}
+a.way:hover .name{color:var(--cyan)}
+.way .desc{font-size:.88rem;color:var(--muted);flex:1;min-width:0}
 
-    .heart{width:30px;height:26px;vertical-align:-3px;margin-right:8px;filter:drop-shadow(0 0 5px rgba(255,75,62,.5))}
-    .kicker{font-family:var(--mono-stack);font-size:clamp(13px,5vw,20px);color:var(--chalk-dim);
-      transform:rotate(-2deg);margin-bottom:6px}
-    .wordmark{font-family:var(--mono-stack);font-weight:900;letter-spacing:.14em;
-      font-size:clamp(15px,7vw,29px);line-height:1.05;text-transform:uppercase}
-    .wordmark .dot{color:var(--crema)}
-    .rule{width:min(380px,80%);height:0;border-top:2px dashed var(--chalk-dim);opacity:.5;margin:18px auto 8px}
-    .sub{font-family:var(--mono-stack);font-size:clamp(13px,4vw,18px);color:var(--crema)}
-
-    /* support */
-    .support{margin-top:44px;padding-top:30px;border-top:2px dashed rgba(244,239,230,.18)}
-    .support h4{font-family:var(--mono-stack);font-size:30px;color:var(--crema);margin-bottom:6px}
-    .support p{color:var(--chalk-dim);font-size:14px;line-height:1.7;max-width:520px;margin:0 auto 4px}
-    .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:24px 0 8px}
-    .btn{font-family:var(--mono-stack);font-weight:700;font-size:14px;letter-spacing:.04em;
-      padding:11px 20px;border-radius:8px;border:1.5px solid;background:transparent;cursor:pointer;
-      text-decoration:none;transition:.18s;display:inline-flex;align-items:center;gap:9px}
-    .btn:hover{transform:translateY(-2px)}
-    .btn.kofi{border-color:var(--kofi);color:var(--kofi)}
-    .btn.kofi:hover{background:rgba(255,94,91,.12)}
-    .btn.pix{border-color:var(--pix);color:var(--pix)}
-    .btn.pix:hover{background:rgba(50,188,173,.12)}
-    .btn.gh{border-color:var(--chalk-dim);color:var(--chalk)}
-    .btn.gh:hover{background:rgba(244,239,230,.08)}
-    .banner{display:block;max-width:340px;width:80%;margin:10px auto 0;border-radius:10px;
-      opacity:.92;transition:.2s;box-shadow:0 12px 28px rgba(0,0,0,.5)}
-    .banner:hover{opacity:1;transform:scale(1.02)}
-
-    /* free ways list */
-    .ways{margin:18px auto 0;max-width:540px;text-align:left}
-    .way{display:flex;align-items:baseline;gap:14px;padding:14px 4px;
-      border-bottom:1px dashed rgba(244,239,230,.18);text-decoration:none;transition:.15s}
-    .way:hover{background:rgba(244,239,230,.04)}
-    .way .name{font-family:var(--mono-stack);font-weight:900;letter-spacing:.1em;font-size:14px;
-      min-width:120px;text-transform:uppercase;color:var(--chalk)}
-    .way:hover .name{color:var(--crema)}
-    .way .desc{font-family:var(--mono-stack);font-size:21px;color:var(--chalk-dim);line-height:1.15}
-
-    .foot{margin-top:46px;color:var(--chalk-dim);font-size:13px;line-height:1.9}
-    .foot a{color:var(--crema)}
-
-    /* PIX modal */
-    .modal{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.8);
-      display:flex;align-items:center;justify-content:center;padding:20px}
-    .modal.hidden{display:none}
-    .modal-card{background:var(--board2);border:1px solid var(--pix);border-radius:14px;
-      padding:28px;max-width:340px;text-align:center;position:relative}
-    .modal-card h3{color:var(--pix);font-weight:900;letter-spacing:1px;font-family:var(--mono-stack)}
-    .modal-card .x{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--chalk-dim);font-size:20px;cursor:pointer}
-    .modal-card img{width:230px;height:230px;border-radius:8px;margin:18px 0;border:2px solid var(--pix)}
-    .pixkey{font-size:13px;color:var(--chalk-dim);word-break:break-all;user-select:all;margin-bottom:16px}
-    #pix-msg{color:var(--pix);font-size:12px;font-weight:700;margin-top:10px;opacity:0;transition:opacity .3s}
-    @media(max-width:520px){.way{flex-direction:column;gap:2px}.way .name{min-width:0}}
-  </style>
+/* PIX modal — the site's flat bordered block, not a rounded card. */
+.modal{position:fixed;inset:0;z-index:200;background:rgba(4,5,6,.9);
+  display:flex;align-items:center;justify-content:center;padding:20px}
+.modal[hidden]{display:none}
+.modal-card{background:var(--surface);border:1px solid var(--magenta);padding:26px;
+  max-width:360px;width:100%;text-align:center;position:relative}
+.modal-card h3{color:var(--magenta);font-size:.78rem;letter-spacing:.2em;margin:0}
+.modal-card .x{position:absolute;top:10px;right:12px;background:none;border:0;
+  color:var(--muted);font-size:1rem;cursor:pointer;font-family:var(--mono);padding:4px 6px}
+.modal-card .x:hover{color:var(--ink)}
+.modal-card img{width:100%;max-width:230px;margin:18px auto;display:block;border:1px solid var(--line)}
+.pixkey{font-size:.76rem;color:var(--muted);word-break:break-all;user-select:all;margin-bottom:16px}
+#pix-msg{color:var(--magenta);font-size:.72rem;letter-spacing:.1em;margin-top:10px;
+  opacity:0;transition:opacity .3s}
+@media(max-width:520px){.way{gap:2px}.way .name{min-width:0}}
+</style>
 </head>
 <body>
 
-  <main id="chalk">
-    <div class="wrap">
-      <a class="back" href="index.html">&lt; back to cafeneurotico</a>
+<header class="top">
+  <div class="wrap topin">
+    <a class="brand" href="index.html">cafe<span class="dot">.</span>neurotico</a>
+    <nav class="links">
+      <a href="omarchy.html">Omarchy</a>
+      <a href="crema.html">CREMA</a>
+      <a href="library.html">The library</a>
+      <a href="ports.html">Fan games &amp; ports</a>
+      <a href="fixes.html">Game fixes</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap narrow">
 
-      <div class="kicker">ways to support</div>
-      <div class="wordmark">
-        <svg class="heart" viewBox="0 0 7 6" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="0" width="2" height="1" fill="#ff4b3e"/>
-          <rect x="4" y="0" width="2" height="1" fill="#ff4b3e"/>
-          <rect x="0" y="1" width="7" height="1" fill="#ff4b3e"/>
-          <rect x="0" y="2" width="7" height="1" fill="#e5392f"/>
-          <rect x="1" y="3" width="5" height="1" fill="#e5392f"/>
-          <rect x="2" y="4" width="3" height="1" fill="#c62f27"/>
-          <rect x="3" y="5" width="1" height="1" fill="#c62f27"/>
-        </svg>Support
-      </div>
-      <div class="rule"></div>
-      <div class="sub">it keeps the work going</div>
-
-      <!-- buy a coffee -->
-      <div class="support">
-        <h4>chip in</h4>
-        <p>Cafe Neurotico is free, and made by myself on my own time. If it sorted out your gaming life, a contribution keeps the work going.</p>
-        <p style="color:var(--chalk)"><b>If you donate, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)</b></p>
-        <div class="btns">
-          <a href="https://ko-fi.com/cafeneurotico" target="_blank" rel="noopener" class="btn kofi">☕ Ko-fi · International</a>
-          <button class="btn pix" onclick="openPix()">🇧🇷 PIX · Brazil (QR)</button>
-        </div>
-        <a href="https://ko-fi.com/cafeneurotico" target="_blank" rel="noopener">
-          </a>
-      </div>
-
-      <!-- free ways -->
-      <div class="support">
-        <h4>can't donate? help out for free</h4>
-        <p>Every one of these means just as much — and costs nothing.</p>
-        <div class="ways">
-          <a class="way" href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">
-            <span class="name">★ Star it</span><span class="desc">give the repo a star on GitHub — it really helps visibility</span>
-          </a>
-          <a class="way" href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">
-            <span class="name">🐛 Report</span><span class="desc">file bugs &amp; suggest features so the brew gets better</span>
-          </a>
-          <a class="way" href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">
-            <span class="name">📣 Spread it</span><span class="desc">tell a fellow Linux gamer — word of mouth is everything</span>
-          </a>
-          <a class="way" href="mailto:joserobertoazevedo@hey.com">
-            <span class="name">💌 Say hi</span><span class="desc">feedback, a thank-you, or just to chat about coffee</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="foot">
-        Built by J.R.A. · Contact: <a href="mailto:joserobertoazevedo@hey.com">joserobertoazevedo@hey.com</a><br>
-        “more caffeine is <u>more good</u>”
-      </div>
-    </div>
-  </main>
-
-  <!-- PIX modal -->
-  <div id="pix-modal" class="modal hidden">
-    <div class="modal-card">
-      <button class="x" onclick="closePix()">✕</button>
-      <h3>DONATE VIA PIX</h3>
-      <img src="assets/images/pixqrcode.jpg" alt="PIX QR Code">
-      <div class="pixkey">b734a9e2-e479-42f9-abd6-c88d1b8b880e</div>
-      <button class="btn pix" style="width:100%;justify-content:center" onclick="copyPix()">COPY PIX KEY</button>
-      <div id="pix-msg">Copied to clipboard!</div>
-    </div>
+  <div class="hero">
+    <div class="eyebrow"><span>ways to support</span></div>
+    <h1><svg class="heart" viewBox="0 0 7 6" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="0" width="2" height="1" fill="#ff4b3e"/><rect x="4" y="0" width="2" height="1" fill="#ff4b3e"/><rect x="0" y="1" width="7" height="1" fill="#ff4b3e"/><rect x="0" y="2" width="7" height="1" fill="#e5392f"/><rect x="1" y="3" width="5" height="1" fill="#e5392f"/><rect x="2" y="4" width="3" height="1" fill="#c62f27"/><rect x="3" y="5" width="1" height="1" fill="#c62f27"/></svg>Support</h1>
+    <p class="lead" style="margin-top:18px">it keeps the work going</p>
   </div>
 
-  <script>
-    function openPix(){ document.getElementById('pix-modal').classList.remove('hidden'); }
-    function closePix(){ document.getElementById('pix-modal').classList.add('hidden'); }
-    function copyPix(){
-      navigator.clipboard.writeText('b734a9e2-e479-42f9-abd6-c88d1b8b880e').then(()=>{
-        const m=document.getElementById('pix-msg'); m.style.opacity=1; setTimeout(()=>m.style.opacity=0,2000);
-      });
-    }
-    document.getElementById('pix-modal').addEventListener('click', e=>{ if(e.target.id==='pix-modal') closePix(); });
-    document.addEventListener('keydown', e=>{ if(e.key==='Escape') closePix(); });
-  </script>
+  <section>
+    <div class="label">01_chip_in</div>
+    <h2>chip in</h2>
+    <p class="body">Cafe Neurotico is free, and made by myself on my own time. If it sorted out your gaming life, a contribution keeps the work going.</p>
+    <p class="body"><strong>If you donate, <a href="mailto:joserobertoazevedo@hey.com">let me know</a> so I can thank you personally! :)</strong></p>
+    <div class="btns">
+      <a href="https://ko-fi.com/cafeneurotico" target="_blank" rel="noopener" class="btn">☕ Ko-fi · International</a>
+      <button class="btn pix" type="button" onclick="openPix()">🇧🇷 PIX · Brazil (QR)</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">02_free_ways</div>
+    <h2>can't donate? help out for free</h2>
+    <p class="body">Every one of these means just as much — and costs nothing.</p>
+    <div class="ways">
+      <a class="way" href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">
+        <span class="name">★ Star it</span><span class="desc">give the repo a star on GitHub — it really helps visibility</span>
+      </a>
+      <a class="way" href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">
+        <span class="name">🐛 Report</span><span class="desc">file bugs &amp; suggest features so the brew gets better</span>
+      </a>
+      <a class="way" href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">
+        <span class="name">📣 Spread it</span><span class="desc">tell a fellow Linux gamer — word of mouth is everything</span>
+      </a>
+      <a class="way" href="mailto:joserobertoazevedo@hey.com">
+        <span class="name">💌 Say hi</span><span class="desc">feedback, a thank-you, or just to chat about coffee</span>
+      </a>
+    </div>
+    <p class="body" style="margin-top:26px">Built by J.R.A. · Contact: <a href="mailto:joserobertoazevedo@hey.com">joserobertoazevedo@hey.com</a></p>
+    <p class="body">“more caffeine is <u>more good</u>”</p>
+    <a class="back" href="index.html">&lt; back to cafeneurotico</a>
+  </section>
+
+</div>
+
+<div id="pix-modal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Donate via PIX">
+  <div class="modal-card">
+    <button class="x" type="button" onclick="closePix()" aria-label="Close">✕</button>
+    <h3>DONATE VIA PIX</h3>
+    <img src="assets/images/pixqrcode.jpg" alt="PIX QR Code">
+    <div class="pixkey">b734a9e2-e479-42f9-abd6-c88d1b8b880e</div>
+    <button class="btn pix" type="button" style="width:100%;justify-content:center" onclick="copyPix()">COPY PIX KEY</button>
+    <div id="pix-msg">Copied to clipboard!</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap fin">
+    <span>Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷</span>
+    <span>
+      <a href="index.html">Home</a> ·
+      <a href="omarchy.html">Omarchy</a> ·
+      <a href="crema.html">CREMA</a> ·
+      <a href="library.html">The library</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="https://github.com/FromChaosComesClarity/CafeNeurotico">GitHub</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  var pixModal = document.getElementById('pix-modal');
+  function openPix(){ pixModal.hidden = false; }
+  function closePix(){ pixModal.hidden = true; }
+  function copyPix(){
+    navigator.clipboard.writeText('b734a9e2-e479-42f9-abd6-c88d1b8b880e').then(function(){
+      var m = document.getElementById('pix-msg');
+      m.style.opacity = 1; setTimeout(function(){ m.style.opacity = 0; }, 2000);
+    });
+  }
+  pixModal.addEventListener('click', function(e){ if (e.target === pixModal) closePix(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closePix(); });
+</script>
 </body>
 </html>

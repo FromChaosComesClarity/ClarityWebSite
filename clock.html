@@ -1,462 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CafeNeurotico Clock — a desk clock with taste</title>
-  <meta name="description" content="CafeNeurotico Clock — a frameless desk clock for Linux that runs a slow slideshow of the game art your CNGM and EmuLatte libraries already store. Three faces, 93 palettes, click a game to open it. Local-only, no cloud.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Cafe Neurotico">
-  <meta property="og:title" content="CafeNeurotico Clock — a desk clock with taste">
-  <meta property="og:description" content="A frameless desk clock for Linux that wears your game library: Ken Burns slideshow, three faces, 93 palettes, click a game to open it. Local-only.">
-  <meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/images/bg_01.jpg">
-  <meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/clock.html">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CafeNeurotico Clock — a desk clock with taste</title>
+<meta name="description" content="CafeNeurotico Clock — a frameless desk clock for Linux that runs a slow slideshow of the game art your CNGM and EmuLatte libraries already store. Three faces, 93 palettes, click a game to open it. Local-only, no cloud.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cafe Neurotico">
+<meta property="og:title" content="CafeNeurotico Clock — a desk clock with taste">
+<meta property="og:description" content="A frameless desk clock for Linux that wears your game library: Ken Burns slideshow, three faces, 93 palettes, click a game to open it. Local-only.">
+<meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/images/bg_01.jpg">
+<meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/clock.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --amber:#2fe0d6; --amber-dim:#177c77;
-      --chalk:#dfe8e8; --chalk-dim:#7d9295;
-      --board:#0e1113; --board2:#141819;
-      --mono-stack:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace; --crema:#ff5fa2; --kofi:#FF5E5B; --pix:#32BCAD;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{background:#08090a;color:var(--chalk);font-family:var(--mono-stack);overflow-x:hidden}
-    a{color:inherit}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{padding:clamp(40px,7vh,84px) 0 clamp(10px,2vh,24px)}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 0}
+button.btn{cursor:pointer}
+.btn.pix{border-color:var(--magenta);color:var(--magenta);background:rgba(255,95,162,.06)}
+.btn.pix:hover{background:rgba(255,95,162,.14)}
+.dl-meta{font-size:.76rem;color:var(--dim);margin-top:10px;letter-spacing:.06em}
+.tagline{color:var(--muted);margin-top:28px;font-size:.9rem}
 
-    /* ───────────── BOOT TERMINAL ───────────── */
-    #boot{
-      position:fixed;inset:0;z-index:100;background:#050805;
-      display:flex;align-items:center;justify-content:center;
-      font-family:var(--mono-stack);cursor:pointer;
-      transition:opacity .7s ease, transform .7s ease;
-    }
-    #boot.done{opacity:0;transform:scale(1.04);pointer-events:none}
-    #boot-inner{
-      width:min(760px,92vw);color:var(--amber);
-      font-size:clamp(13px,2.4vw,18px);line-height:1.5;
-      text-shadow:0 0 6px rgba(255,176,0,.45);padding:24px;
-      white-space:pre-wrap;
-    }
-    #boot-log .ok{color:#7CFC68;text-shadow:0 0 6px rgba(124,252,104,.45)}
-    #boot-log .big{color:var(--crema);text-shadow:0 0 10px rgba(212,163,115,.5)}
-    .cursor{display:inline-block;width:.6ch;background:var(--amber);
-      animation:blink 1s steps(1) infinite;text-shadow:none}
-    @keyframes blink{50%{opacity:0}}
-    #boot-skip{position:absolute;bottom:22px;left:0;right:0;text-align:center;
-      color:var(--amber-dim);font-size:14px;letter-spacing:1px;opacity:0;transition:opacity .5s}
-    /* CRT scanlines + flicker */
-    #boot::after{content:"";position:absolute;inset:0;pointer-events:none;
-      background:repeating-linear-gradient(rgba(0,0,0,0) 0 2px, rgba(0,0,0,.28) 2px 4px);
-      mix-blend-mode:multiply;animation:flick 5s infinite}
-    @keyframes flick{0%,100%{opacity:1}48%{opacity:.92}50%{opacity:.97}}
+/* the boot intro */
+#boot{position:fixed;inset:0;z-index:400;background:var(--ground);padding:clamp(16px,4vw,48px);
+  cursor:pointer;overflow:hidden}
+#boot.done{opacity:0;transition:opacity .5s ease;pointer-events:none}
+#boot-inner{white-space:pre-wrap;color:var(--muted);font-size:clamp(.72rem,2.1vw,.9rem);line-height:1.9}
+#boot-log strong.ok{color:var(--cyan);font-weight:700}
+#boot-log strong.big{color:var(--ink);letter-spacing:.1em}
+.cursor{background:var(--cyan);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+#boot-skip{position:absolute;bottom:clamp(16px,4vw,48px);left:clamp(16px,4vw,48px);
+  color:var(--dim);font-size:.72rem;letter-spacing:.14em;opacity:0;transition:opacity .4s}
+#boot-lines{display:none}
+body.booting{overflow:hidden}
 
-    /* ───────────── CHALKBOARD ───────────── */
-    #chalk{
-      min-height:100%;opacity:0;transition:opacity .9s ease .15s;
-      background:
-        radial-gradient(120% 80% at 50% -10%, rgba(255,255,255,.05), transparent 60%),
-        radial-gradient(80% 60% at 80% 110%, rgba(212,163,115,.06), transparent 60%),
-        var(--board);
-      position:relative;
-    }
-    #chalk.show{opacity:1}
-    /* faint chalk-dust grain */
-    #chalk::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.04;
-      background-image:radial-gradient(circle at 20% 30%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 70% 60%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 40% 80%, #fff 0 1px, transparent 1px);
-      background-size:140px 140px,200px 200px,170px 170px}
-    .wrap{max-width:780px;margin:0 auto;padding:64px 24px 80px;text-align:center;position:relative;z-index:1}
+/* the three faces */
+.faces{margin-top:26px;border-top:1px solid var(--line)}
+.face{display:flex;gap:18px;padding:13px 2px;border-bottom:1px solid var(--line);
+  align-items:baseline;flex-wrap:wrap}
+.face .name{color:var(--ink);font-weight:700;min-width:10rem}
+.face .desc{color:var(--muted);font-size:.86rem;flex:1;min-width:0}
 
-    .kicker{font-family:var(--mono-stack);font-size:clamp(13px,5vw,20px);color:var(--chalk-dim);
-      transform:rotate(-2deg);margin-bottom:6px}
-    .wordmark{font-family:var(--mono-stack);font-weight:900;letter-spacing:.14em;
-      font-size:clamp(15px,7vw,31px);line-height:1.05;text-transform:uppercase}
-    .wordmark .dot{color:var(--crema)}
-    .rule{width:min(380px,80%);height:0;border-top:2px dashed var(--chalk-dim);opacity:.5;margin:18px auto 8px}
-    .sub{font-family:var(--mono-stack);font-size:clamp(13px,4vw,18px);color:var(--crema)}
+/* screenshots */
+.shots-group{margin-top:26px}
+.glabel{font-size:.72rem;letter-spacing:.2em;color:var(--cyan);margin-bottom:12px}
+.shotgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.shot{margin:0;cursor:zoom-in}
+.shot img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#000}
+.shot:hover img,.shot:focus-visible img{border-color:var(--cyan-dim)}
+.shot figcaption{font-size:.76rem;color:var(--muted);margin-top:8px;line-height:1.45}
 
-    /* ── download ── */
-    .download{margin:34px auto 6px}
-    .btn-dl{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono-stack);font-weight:900;
-      letter-spacing:.08em;font-size:clamp(13px,2.4vw,18px);text-transform:uppercase;
-      padding:16px 32px;border-radius:10px;border:2px solid var(--amber);color:#141414;
-      background:var(--amber);text-decoration:none;transition:.18s;
-      box-shadow:0 10px 30px rgba(255,176,0,.22)}
-    .btn-dl:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(255,176,0,.32)}
-    .dl-meta{font-family:var(--mono-stack);font-size:19px;color:var(--amber-dim);margin-top:12px;letter-spacing:1px}
-    .dl-meta b{color:var(--amber)}
+/* ecosystem */
+.quip{color:var(--magenta);font-size:.82rem;margin:2px 0 10px}
+.cell .tag{font-size:.62rem;letter-spacing:.18em;color:var(--dim);display:block;margin-bottom:8px}
 
-    .menu{margin:42px auto 8px;max-width:520px;text-align:left}
-    .item{display:flex;align-items:baseline;gap:14px;padding:13px 0;
-      border-bottom:1px dashed rgba(244,239,230,.18)}
-    .item .name{font-family:var(--mono-stack);font-weight:900;letter-spacing:.12em;font-size:15px;min-width:132px;text-transform:uppercase}
-    .item .desc{font-family:var(--mono-stack);font-size:22px;color:var(--chalk-dim);line-height:1.1}
-    .tagline{font-family:var(--mono-stack);font-size:clamp(13px,4.5vw,18px);color:var(--chalk);margin:36px 0 4px;transform:rotate(-1deg)}
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:300;background:rgba(4,5,6,.97);display:flex;
+  align-items:center;justify-content:center;flex-direction:column;padding:clamp(12px,3vw,28px)}
+#lb[hidden]{display:none}
+/* ⚠️ width/height auto, or max-width and max-height each squash one axis independently. */
+#lb img{max-width:min(1500px,92vw);max-height:78vh;width:auto;height:auto;object-fit:contain;
+  border:1px solid var(--line);background:#000}
+#lb-cap{color:var(--ink);font-size:.86rem;margin-top:14px;text-align:center;max-width:70ch}
+#lb-count{color:var(--dim);font-size:.72rem;letter-spacing:.18em;margin-top:6px}
+.lb-btn{position:absolute;background:rgba(8,9,10,.7);border:1px solid var(--line);color:var(--ink);
+  font-family:var(--mono);font-size:1.2rem;width:44px;height:44px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;padding:0}
+.lb-btn:hover{border-color:var(--cyan);color:var(--cyan)}
+#lb-prev{left:clamp(8px,2vw,22px);top:50%;transform:translateY(-50%)}
+#lb-next{right:clamp(8px,2vw,22px);top:50%;transform:translateY(-50%)}
+#lb-close{top:clamp(8px,2vw,22px);right:clamp(8px,2vw,22px);font-size:.95rem}
 
-    /* ── section headings ── */
-    .sect{margin-top:56px;padding-top:32px;border-top:2px dashed rgba(244,239,230,.18)}
-    .sect h4{font-family:var(--mono-stack);font-size:clamp(14px,5vw,18px);color:var(--crema);margin-bottom:4px}
-    .sect .lead{color:var(--chalk-dim);font-size:14px;line-height:1.7;max-width:560px;margin:0 auto}
-
-    /* ── feature board ── */
-    .feats{margin:26px auto 0;max-width:600px;text-align:left}
-    .feat{padding:15px 0;border-bottom:1px dashed rgba(244,239,230,.14)}
-    .feat h5{font-family:var(--mono-stack);font-weight:900;letter-spacing:.09em;font-size:13.5px;
-      text-transform:uppercase;color:var(--chalk);margin-bottom:5px}
-    .feat p{font-family:var(--mono-stack);font-size:20px;line-height:1.35;color:var(--chalk-dim)}
-
-    /* ── ecosystem cards ── */
-    .eco{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:26px;text-align:left}
-    .eco-card{background:rgba(0,0,0,.22);border:1px solid rgba(244,239,230,.14);border-radius:12px;padding:20px}
-    .eco-card .tag{display:inline-block;font-family:var(--mono-stack);font-size:15px;letter-spacing:1px;
-      color:var(--amber);border:1px solid var(--amber-dim);border-radius:5px;padding:1px 9px;margin-bottom:10px}
-    .eco-card h5{font-family:var(--mono-stack);font-weight:900;letter-spacing:.1em;font-size:15px;text-transform:uppercase;margin-bottom:4px}
-    .eco-card .quip{font-family:var(--mono-stack);font-size:19px;color:var(--crema);margin-bottom:8px}
-    .eco-card p{color:var(--chalk-dim);font-size:13.5px;line-height:1.65}
-    .eco-card a{color:var(--crema);font-weight:700;text-decoration:none;font-size:13px;display:inline-block;margin-top:10px}
-    .eco-card a:hover{text-decoration:underline}
-
-    /* ── screenshot gallery ── */
-    /* breaks out of the 780px column so the shots are readable */
-    .shots{margin-top:24px;width:min(1120px,92vw);position:relative;left:50%;transform:translateX(-50%)}
-    .shots-group{margin-top:22px}
-    .shots-group > .glabel{font-family:var(--mono-stack);font-size:17px;letter-spacing:2px;
-      color:var(--amber);text-transform:uppercase;text-align:left;margin-bottom:10px;
-      border-bottom:1px dashed rgba(255,176,0,.25);padding-bottom:4px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-    /* a lone shot would otherwise stretch across the whole board */
-    .grid.solo{max-width:540px}
-    /* the wide faces (Ken Burns 900×560, Minimalist 400×160) get roomier tracks */
-    .grid.wide{grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}
-    @media(max-width:480px){.grid.wide{grid-template-columns:1fr}}
-    .shot{margin:0;cursor:zoom-in;text-align:left}
-    .shot img{width:100%;height:auto;display:block;border-radius:9px;border:1px solid rgba(244,239,230,.16);
-      background:var(--board2);box-shadow:0 8px 20px rgba(0,0,0,.42);transition:.2s}
-    .shot:hover img{transform:translateY(-3px);border-color:var(--crema);
-      box-shadow:0 14px 28px rgba(0,0,0,.55)}
-    .shot figcaption{font-family:var(--mono-stack);font-size:18px;color:var(--chalk-dim);
-      line-height:1.2;margin-top:7px}
-
-    /* lightbox */
-    #lb{position:fixed;inset:0;z-index:300;background:rgba(5,6,5,.985);
-      display:flex;align-items:center;justify-content:center;flex-direction:column;padding:24px}
-    #lb.hidden{display:none}
-    #lb img{max-width:min(1500px,94vw);max-height:82vh;border-radius:10px;
-      border:1px solid rgba(244,239,230,.2);box-shadow:0 20px 60px rgba(0,0,0,.7)}
-    #lb-cap{font-family:var(--mono-stack);font-size:22px;color:var(--crema);margin-top:14px;text-align:center}
-    #lb-count{font-family:var(--mono-stack);font-size:16px;color:var(--amber-dim);letter-spacing:2px;margin-top:2px}
-    .lb-btn{position:absolute;background:rgba(0,0,0,.5);border:1px solid rgba(244,239,230,.25);
-      color:var(--chalk);font-size:26px;line-height:1;width:46px;height:46px;border-radius:50%;
-      cursor:pointer;transition:.18s;display:flex;align-items:center;justify-content:center}
-    .lb-btn:hover{background:var(--crema);color:#141414;border-color:var(--crema)}
-    #lb-prev{left:18px;top:50%;transform:translateY(-50%)}
-    #lb-next{right:18px;top:50%;transform:translateY(-50%)}
-    #lb-close{top:18px;right:18px;font-size:20px}
-
-    /* support */
-    .support{margin-top:56px;padding-top:32px;border-top:2px dashed rgba(244,239,230,.18)}
-    .support h4{font-family:var(--mono-stack);font-size:30px;color:var(--crema);margin-bottom:6px}
-    .support p{color:var(--chalk-dim);font-size:14px;line-height:1.7;max-width:520px;margin:0 auto 4px}
-    .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:22px 0 6px}
-    .btn{font-family:var(--mono-stack);font-weight:700;font-size:14px;letter-spacing:.04em;
-      padding:11px 20px;border-radius:8px;border:1.5px solid;background:transparent;cursor:pointer;
-      text-decoration:none;transition:.18s;display:inline-flex;align-items:center;gap:9px}
-    .btn:hover{transform:translateY(-2px)}
-    .btn.kofi{border-color:var(--kofi);color:var(--kofi)}
-    .btn.kofi:hover{background:rgba(255,94,91,.12)}
-    .btn.pix{border-color:var(--pix);color:var(--pix)}
-    .btn.pix:hover{background:rgba(50,188,173,.12)}
-    .btn.gh{border-color:var(--chalk-dim);color:var(--chalk)}
-    .btn.gh:hover{background:rgba(244,239,230,.08)}
-    .banner{display:block;max-width:340px;width:80%;margin:8px auto 0;border-radius:10px;
-      opacity:.92;transition:.2s;box-shadow:0 12px 28px rgba(0,0,0,.5)}
-    .banner:hover{opacity:1;transform:scale(1.02)}
-    .foot{margin-top:46px;color:var(--chalk-dim);font-size:13px;line-height:1.9}
-    .foot a{color:var(--crema)}
-
-    /* PIX modal */
-    .modal{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.8);
-      display:flex;align-items:center;justify-content:center;padding:20px}
-    .modal.hidden{display:none}
-    .modal-card{background:var(--board2);border:1px solid var(--pix);border-radius:14px;
-      padding:28px;max-width:340px;text-align:center;position:relative}
-    .modal-card h3{color:var(--pix);font-weight:900;letter-spacing:1px;font-family:var(--mono-stack)}
-    .modal-card .x{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--chalk-dim);font-size:20px;cursor:pointer}
-    .modal-card img{width:230px;height:230px;border-radius:8px;margin:18px 0;border:2px solid var(--pix)}
-    .pixkey{font-size:13px;color:var(--chalk-dim);word-break:break-all;user-select:all;margin-bottom:16px}
-    #pix-msg{color:var(--pix);font-size:12px;font-weight:700;margin-top:10px;opacity:0;transition:opacity .3s}
-    @media(max-width:520px){.item{flex-direction:column;gap:2px}.item .name{min-width:0}}
-  </style>
+/* PIX modal */
+.modal{position:fixed;inset:0;z-index:320;background:rgba(4,5,6,.9);
+  display:flex;align-items:center;justify-content:center;padding:20px}
+.modal[hidden]{display:none}
+.modal-card{background:var(--surface);border:1px solid var(--magenta);padding:26px;
+  max-width:360px;width:100%;text-align:center;position:relative}
+.modal-card h3{color:var(--magenta);font-size:.78rem;letter-spacing:.2em;margin:0}
+.modal-card .x{position:absolute;top:10px;right:12px;background:none;border:0;color:var(--muted);
+  cursor:pointer;font-family:var(--mono);padding:4px 6px}
+.modal-card img{width:100%;max-width:230px;margin:18px auto;display:block;border:1px solid var(--line)}
+.pixkey{font-size:.76rem;color:var(--muted);word-break:break-all;user-select:all;margin-bottom:16px}
+#pix-msg{color:var(--magenta);font-size:.72rem;letter-spacing:.1em;margin-top:10px;opacity:0;transition:opacity .3s}
+@media(max-width:560px){.face{gap:2px}.face .name{min-width:0}}
+</style>
 </head>
-<body>
+<body class="booting">
 
-  <!-- ░░░░░ FAUX BOOT TERMINAL ░░░░░ -->
-  <div id="boot" title="click to skip">
-    <div id="boot-inner"><span id="boot-log"></span><span class="cursor">&nbsp;</span></div>
-    <div id="boot-skip">click anywhere to skip ▸</div>
+<div id="boot" title="click to skip">
+  <div id="boot-inner"><span id="boot-log"></span><span class="cursor">&nbsp;</span></div>
+  <div id="boot-skip">click anywhere to skip ▸</div>
+  <!-- The boot lines live here, not in the script, so copy-extract.py can reach them. -->
+  <ol id="boot-lines">
+    <li data-delay="380">cnclock@linux:~$ ./wind</li>
+    <li data-delay="260">[ <strong class="ok">ok</strong> ] finding the library........... CNGM + EmuLatte</li>
+    <li data-delay="260">[ <strong class="ok">ok</strong> ] counting the artwork.......... thousands</li>
+    <li data-delay="260">[ <strong class="ok">ok</strong> ] loading 93 palettes........... done</li>
+    <li data-delay="420">[ <strong class="ok">ok</strong> ] winding the spring............ tick</li>
+    <li data-delay="120"></li>
+    <li data-delay="160"><strong class="big">▓▓ CN CLOCK 1.0 ▓▓</strong></li>
+    <li data-delay="700">&gt; a desk clock with taste.</li>
+  </ol>
+</div>
+
+<header class="top">
+  <div class="wrap topin">
+    <a class="brand" href="index.html">cafe<span class="dot">.</span>neurotico</a>
+    <nav class="links">
+      <a href="omarchy.html">Omarchy</a>
+      <a href="crema.html">CREMA</a>
+      <a href="library.html">The library</a>
+      <a href="ports.html">Fan games &amp; ports</a>
+      <a href="fixes.html">Game fixes</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow"><span>on the desktop</span></div>
+    <h1>CN Clock<span class="em">.</span></h1>
+    <p class="lead" style="margin-top:18px">the time, over your library</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/FromChaosComesClarity/CafeNeuroticoClock/releases/latest" target="_blank" rel="noopener">⬇ Download for Linux</a>
+    </div>
+    <div class="dl-meta">version <strong>1.0</strong> · single AppImage · GPL-3.0</div>
+    <div class="faces">
+      <div class="face"><span class="name">Minimalist</span><span class="desc">a small floating widget, out of the way</span></div>
+      <div class="face"><span class="name">CREMA Splash</span><span class="desc">a frosted circle over blurred art</span></div>
+      <div class="face"><span class="name">Ken Burns</span><span class="desc">your game art, panning behind the time</span></div>
+    </div>
+    <div class="tagline">“a desk clock with <u>taste</u>”</div>
   </div>
 
-  <!-- ░░░░░ CHALKBOARD LANDING ░░░░░ -->
-  <main id="chalk">
-    <div class="wrap">
-      <div class="kicker">on the desktop</div>
-      <div class="wordmark">CN Clock<span class="dot">.</span></div>
-      <div class="rule"></div>
-      <div class="sub">the time, over your library</div>
+  <section>
+    <div class="label">01_whats_in_the_cup</div>
+    <h2>what's in the cup</h2>
+    <p class="body">A clock that wears your game library. It reads the art the rest of the ecosystem already keeps on disk, runs it as a slow slideshow behind the time, and gets out of the way.</p>
+    <div class="grid" style="margin-top:20px">
+      <div class="cell"><h3>Three faces</h3>
+        <p>Minimalist, a small dashed widget tinted by your palette. CREMA Splash, a frosted-glass circle framing the clock over blurred art. Ken Burns, game art filling the window with slow pan-and-zoom. Each freely resizable — the clock scales with it.</p></div>
+      <div class="cell"><h3>A slideshow built from art you already have</h3>
+        <p>It scans the folders your <strong>CNGM</strong> and <strong>EmuLatte</strong> libraries already fill — heroes, covers, screenshots, or your own wallpapers. Nothing to import, nothing to configure. No library? It just shows the time.</p></div>
+      <div class="cell"><h3>Click a game to open it</h3>
+        <p>The name under the art is a link. Click it and <strong>Cafe Neurotico</strong> or <strong>EmuLatte</strong> opens straight to that game's page — whichever one the artwork came from. If the app is already running, the click goes to the open window.</p></div>
+      <div class="cell"><h3>93 palettes, one picker</h3>
+        <p>Full parity with Cafe Neurotico — ten families, from Linux-ricing classics to twenty retro operating systems that each bring their own era typeface. A card grid that previews every palette in its own colours, applied live.</p></div>
+      <div class="cell"><h3>Wear any font</h3>
+        <p>Seven interface faces, each previewed in itself, restyling the whole clock. All bundled with the app — nothing is fetched when it launches.</p></div>
+      <div class="cell"><h3>Run as many as you like</h3>
+        <p>Launch it again and again — every clock independent while it runs. A minimal one in a corner, a Ken Burns slideshow on the second monitor, a big CREMA splash on the third.</p></div>
+      <div class="cell"><h3>Frameless, always on top, out of the way</h3>
+        <p>A borderless window that floats above the rest. Drag it anywhere, size it to taste, and add it to your application menu with one button.</p></div>
+      <div class="cell"><h3>Local-only. Yours.</h3>
+        <p>It reads your libraries' art and databases on disk, read-only, and writes exactly one small settings file. No account, no telemetry, no network. Fonts bundled; nothing phones home.</p></div>
+    </div>
+  </section>
 
-      <div class="download">
-        <a class="btn-dl" href="https://github.com/FromChaosComesClarity/CafeNeuroticoClock/releases/latest" target="_blank" rel="noopener">⬇ Download for Linux</a>
-        <div class="dl-meta">version <b>1.0</b> · single AppImage · GPL-3.0</div>
-      </div>
+  <section>
+    <div class="label">02_a_look_inside</div>
+    <h2>a look inside</h2>
+    <p class="body">Click any shot to open it full size.</p>
 
-      <div class="menu">
-        <div class="item"><span class="name">Minimalist</span><span class="desc">a small floating widget, out of the way</span></div>
-        <div class="item"><span class="name">CREMA Splash</span><span class="desc">a frosted circle over blurred art</span></div>
-        <div class="item"><span class="name">Ken Burns</span><span class="desc">your game art, panning behind the time</span></div>
-      </div>
-
-      <div class="tagline">“a desk clock with <u>taste</u>”</div>
-
-      <!-- ░░ what's in the cup ░░ -->
-      <div class="sect">
-        <h4>what's in the cup</h4>
-        <p class="lead">A clock that wears your game library. It reads the art the rest of the ecosystem already keeps on disk, runs it as a slow slideshow behind the time, and gets out of the way.</p>
-        <div class="feats">
-          <div class="feat">
-            <h5>Three faces</h5>
-            <p>Minimalist, a small dashed widget tinted by your palette. CREMA Splash, a frosted-glass circle framing the clock over blurred art. Ken Burns, game art filling the window with slow pan-and-zoom. Each freely resizable — the clock scales with it.</p>
-          </div>
-          <div class="feat">
-            <h5>A slideshow built from art you already have</h5>
-            <p>It scans the folders your <b>CNGM</b> and <b>EmuLatte</b> libraries already fill — heroes, covers, screenshots, or your own wallpapers. Nothing to import, nothing to configure. No library? It just shows the time.</p>
-          </div>
-          <div class="feat">
-            <h5>Click a game to open it</h5>
-            <p>The name under the art is a link. Click it and <b>Cafe Neurotico</b> or <b>EmuLatte</b> opens straight to that game's page — whichever one the artwork came from. If the app is already running, the click goes to the open window.</p>
-          </div>
-          <div class="feat">
-            <h5>93 palettes, one picker</h5>
-            <p>Full parity with Cafe Neurotico — ten families, from Linux-ricing classics to twenty retro operating systems that each bring their own era typeface. A card grid that previews every palette in its own colours, applied live.</p>
-          </div>
-          <div class="feat">
-            <h5>Wear any font</h5>
-            <p>Seven interface faces, each previewed in itself, restyling the whole clock. All bundled with the app — nothing is fetched when it launches.</p>
-          </div>
-          <div class="feat">
-            <h5>Run as many as you like</h5>
-            <p>Launch it again and again — every clock independent while it runs. A minimal one in a corner, a Ken Burns slideshow on the second monitor, a big CREMA splash on the third.</p>
-          </div>
-          <div class="feat">
-            <h5>Frameless, always on top, out of the way</h5>
-            <p>A borderless window that floats above the rest. Drag it anywhere, size it to taste, and add it to your application menu with one button.</p>
-          </div>
-          <div class="feat">
-            <h5>Local-only. Yours.</h5>
-            <p>It reads your libraries' art and databases on disk, read-only, and writes exactly one small settings file. No account, no telemetry, no network. Fonts bundled; nothing phones home.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ░░ screenshots ░░ -->
-      <div class="sect">
-        <h4>a look inside</h4>
-        <p class="lead">Click any shot to open it full size.</p>
-        <div class="shots">
-
-          <div class="shots-group">
-            <div class="glabel">▸ The three faces</div>
-            <div class="grid">
-              <figure class="shot" data-full="assets/screens/clock-kenburns.webp">
-                <img src="assets/screens/clock-kenburns-thumb.webp" loading="lazy" width="640" height="398" alt="Ken Burns mode: Cyberpunk 2077 key art filling the window, the time in large white numerals over it, and the game's name in a label at the bottom-left">
-                <figcaption>your library, panning behind the time</figcaption>
-              </figure>
-              <figure class="shot" data-full="assets/screens/clock-crema.webp">
-                <img src="assets/screens/clock-crema-thumb.webp" loading="lazy" width="640" height="640" alt="CREMA Splash mode: a large frosted-glass circle over blurred Disco Elysium art, framing the time, date and day">
-                <figcaption>a frosted circle over blurred art</figcaption>
-              </figure>
-              <figure class="shot" data-full="assets/screens/clock-minimalist.webp">
-                <img src="assets/screens/clock-minimalist-thumb.webp" loading="lazy" width="640" height="256" alt="Minimalist mode: a small dashed-border widget showing the time and date, floating semi-transparent over the desktop">
-                <figcaption>a small widget that floats on the desktop</figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="shots-group">
-            <div class="glabel">▸ Make it yours</div>
-            <div class="grid">
-              <figure class="shot" data-full="assets/screens/clock-themes.webp">
-                <img src="assets/screens/clock-themes-thumb.webp" loading="lazy" width="640" height="823" alt="The colour-theme picker: a card grid of 93 palettes, each previewed in its own colours, with category filter chips across the top">
-                <figcaption>ninety-three palettes, in their own colours</figcaption>
-              </figure>
-              <figure class="shot" data-full="assets/screens/clock-fonts.webp">
-                <img src="assets/screens/clock-fonts-thumb.webp" loading="lazy" width="640" height="823" alt="The interface-font picker: a list of seven fonts, each rendered in its own typeface">
-                <figcaption>seven fonts, each shown in itself</figcaption>
-              </figure>
-              <figure class="shot" data-full="assets/screens/clock-settings.webp">
-                <img src="assets/screens/clock-settings-thumb.webp" loading="lazy" width="640" height="869" alt="The settings panel: visual theme, art slideshow, image source, colour theme and interface font, above an About section showing version 1.0.1">
-                <figcaption>everything on one short panel</figcaption>
-              </figure>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- ░░ the rest of the ecosystem ░░ -->
-      <div class="sect">
-        <h4>also on the menu</h4>
-        <p class="lead">The clock is complete on its own — but it's happiest sitting next to the libraries it draws from.</p>
-        <div class="eco">
-          <div class="eco-card">
-            <span class="tag">OPTIONAL</span>
-            <h5>Cafe Neurotico</h5>
-            <div class="quip">“more caffeine is more good”</div>
-            <p>The game library suite the clock pulls most of its art from — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with three faces: the Manager, GRINDER and CREMA. Keep it beside the clock and the art appears on its own; click a game name and it opens here.</p>
-            <a href="index.html">Get Cafe Neurotico ▸</a>
-          </div>
-          <div class="eco-card">
-            <span class="tag">OPTIONAL</span>
-            <h5>EmuLatte</h5>
-            <div class="quip">“I use RetroArch BTW”</div>
-            <p>The emulation side — a ROM library manager across 56 systems, with a gamepad-first Couch Mode for the TV. Its art feeds the same slideshow, and a click on a ROM's name opens EmuLatte straight to that game.</p>
-            <a href="emulatte.html">Get EmuLatte ▸</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- support -->
-      <div class="support" id="support">
-        <h4>tip the barista</h4>
-        <p>If the clock earned a spot on your desk, consider chipping in — it keeps the pot warm.</p>
-        <p style="color:var(--chalk)"><b>If you do, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)</b></p>
-        <div class="btns">
-          <a href="https://ko-fi.com/cafeneurotico" target="_blank" rel="noopener" class="btn kofi">☕ Ko-fi (Intl)</a>
-          <button class="btn pix" onclick="openPix()">🇧🇷 PIX — QR Code</button>
-          <a href="https://github.com/FromChaosComesClarity/CafeNeuroticoClock" target="_blank" rel="noopener" class="btn gh">★ GitHub</a>
-        </div>
-        <a href="https://ko-fi.com/cafeneurotico" target="_blank" rel="noopener">
-          </a>
-      </div>
-
-      <div class="foot">
-        Built by J.R.A. · Contact: <a href="mailto:joserobertoazevedo@hey.com">joserobertoazevedo@hey.com</a><br>
-        <a href="index.html">Cafe Neurotico</a> · <a href="emulatte.html">EmuLatte</a> · <a href="support.html">support page</a> · <a href="https://github.com/FromChaosComesClarity/CafeNeuroticoClock" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later
+    <div class="shots-group">
+      <div class="glabel">▸ The three faces</div>
+      <div class="shotgrid">
+        <figure class="shot" data-full="assets/screens/clock-kenburns.webp">
+          <img src="assets/screens/clock-kenburns-thumb.webp" loading="lazy" width="640" height="398" alt="Ken Burns mode: Cyberpunk 2077 key art filling the window, the time in large white numerals over it, and the game's name in a label at the bottom-left">
+          <figcaption>your library, panning behind the time</figcaption>
+        </figure>
+        <figure class="shot" data-full="assets/screens/clock-crema.webp">
+          <img src="assets/screens/clock-crema-thumb.webp" loading="lazy" width="640" height="640" alt="CREMA Splash mode: a large frosted-glass circle over blurred Disco Elysium art, framing the time, date and day">
+          <figcaption>a frosted circle over blurred art</figcaption>
+        </figure>
+        <figure class="shot" data-full="assets/screens/clock-minimalist.webp">
+          <img src="assets/screens/clock-minimalist-thumb.webp" loading="lazy" width="640" height="256" alt="Minimalist mode: a small dashed-border widget showing the time and date, floating semi-transparent over the desktop">
+          <figcaption>a small widget that floats on the desktop</figcaption>
+        </figure>
       </div>
     </div>
-  </main>
 
-  <!-- screenshot lightbox -->
-  <div id="lb" class="hidden" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
-    <button class="lb-btn" id="lb-close" aria-label="Close">✕</button>
-    <button class="lb-btn" id="lb-prev" aria-label="Previous">‹</button>
-    <button class="lb-btn" id="lb-next" aria-label="Next">›</button>
-    <img id="lb-img" src="" alt="">
-    <div id="lb-cap"></div>
-    <div id="lb-count"></div>
-  </div>
-
-  <!-- PIX modal -->
-  <div id="pix-modal" class="modal hidden">
-    <div class="modal-card">
-      <button class="x" onclick="closePix()">✕</button>
-      <h3>DONATE VIA PIX</h3>
-      <img src="assets/images/pixqrcode.jpg" alt="PIX QR Code">
-      <div class="pixkey">b734a9e2-e479-42f9-abd6-c88d1b8b880e</div>
-      <button class="btn pix" style="width:100%;justify-content:center" onclick="copyPix()">COPY PIX KEY</button>
-      <div id="pix-msg">Copied to clipboard!</div>
+    <div class="shots-group">
+      <div class="glabel">▸ Make it yours</div>
+      <div class="shotgrid">
+        <figure class="shot" data-full="assets/screens/clock-themes.webp">
+          <img src="assets/screens/clock-themes-thumb.webp" loading="lazy" width="640" height="823" alt="The colour-theme picker: a card grid of 93 palettes, each previewed in its own colours, with category filter chips across the top">
+          <figcaption>ninety-three palettes, in their own colours</figcaption>
+        </figure>
+        <figure class="shot" data-full="assets/screens/clock-fonts.webp">
+          <img src="assets/screens/clock-fonts-thumb.webp" loading="lazy" width="640" height="823" alt="The interface-font picker: a list of seven fonts, each rendered in its own typeface">
+          <figcaption>seven fonts, each shown in itself</figcaption>
+        </figure>
+        <figure class="shot" data-full="assets/screens/clock-settings.webp">
+          <img src="assets/screens/clock-settings-thumb.webp" loading="lazy" width="640" height="869" alt="The settings panel: visual theme, art slideshow, image source, colour theme and interface font, above an About section showing version 1.0.1">
+          <figcaption>everything on one short panel</figcaption>
+        </figure>
+      </div>
     </div>
+  </section>
+
+  <section>
+    <div class="label">03_also_on_the_menu</div>
+    <h2>also on the menu</h2>
+    <p class="body">The clock is complete on its own — but it's happiest sitting next to the libraries it draws from.</p>
+    <div class="grid" style="margin-top:20px">
+      <div class="cell">
+        <span class="tag">OPTIONAL</span>
+        <h3>Cafe Neurotico</h3>
+        <div class="quip">“more caffeine is more good”</div>
+        <p>The game library suite the clock pulls most of its art from — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with three faces: the Manager, GRINDER and CREMA. Keep it beside the clock and the art appears on its own; click a game name and it opens here.</p>
+        <p><a href="index.html">Get Cafe Neurotico ▸</a></p>
+      </div>
+      <div class="cell">
+        <span class="tag">OPTIONAL</span>
+        <h3>EmuLatte</h3>
+        <div class="quip">“I use RetroArch BTW”</div>
+        <p>The emulation side — a ROM library manager across 56 systems, with a gamepad-first Couch Mode for the TV. Its art feeds the same slideshow, and a click on a ROM's name opens EmuLatte straight to that game.</p>
+        <p><a href="emulatte.html">Get EmuLatte ▸</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="label">04_tip_the_barista</div>
+    <h2>tip the barista</h2>
+    <p class="body">If the clock earned a spot on your desk, consider chipping in — it keeps the pot warm.</p>
+    <p class="body"><strong>If you do, <a href="mailto:joserobertoazevedo@hey.com">let me know</a> so I can thank you personally! :)</strong></p>
+    <div class="btns">
+      <a href="https://ko-fi.com/cafeneurotico" target="_blank" rel="noopener" class="btn">☕ Ko-fi (Intl)</a>
+      <button class="btn pix" type="button" onclick="openPix()">🇧🇷 PIX — QR Code</button>
+      <a href="https://github.com/FromChaosComesClarity/CafeNeuroticoClock" target="_blank" rel="noopener" class="btn ghost">★ GitHub</a>
+    </div>
+    <p class="body" style="margin-top:26px;font-size:.8rem">Built by J.R.A. · Contact: <a href="mailto:joserobertoazevedo@hey.com">joserobertoazevedo@hey.com</a></p>
+    <p class="body" style="font-size:.8rem"><a href="index.html">Cafe Neurotico</a> · <a href="emulatte.html">EmuLatte</a> · <a href="support.html">support page</a> · <a href="https://github.com/FromChaosComesClarity/CafeNeuroticoClock" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later</p>
+    <a class="back" href="index.html">&lt; back to cafe neurotico</a>
+  </section>
+
+</div>
+
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <button class="lb-btn" id="lb-close" aria-label="Close">✕</button>
+  <button class="lb-btn" id="lb-prev" aria-label="Previous">‹</button>
+  <button class="lb-btn" id="lb-next" aria-label="Next">›</button>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-cap"></div>
+  <div id="lb-count"></div>
+</div>
+
+<div id="pix-modal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Donate via PIX">
+  <div class="modal-card">
+    <button class="x" type="button" onclick="closePix()" aria-label="Close">✕</button>
+    <h3>DONATE VIA PIX</h3>
+    <img src="assets/images/pixqrcode.jpg" alt="PIX QR Code">
+    <div class="pixkey">b734a9e2-e479-42f9-abd6-c88d1b8b880e</div>
+    <button class="btn pix" type="button" style="width:100%;justify-content:center" onclick="copyPix()">COPY PIX KEY</button>
+    <div id="pix-msg">Copied to clipboard!</div>
   </div>
+</div>
 
-  <script>
-    // ── Boot sequence ──
-    const log = document.getElementById('boot-log');
-    const boot = document.getElementById('boot');
-    const chalk = document.getElementById('chalk');
-    const skip = document.getElementById('boot-skip');
-    const PROMPT = 'cnclock@linux';
-    // [innerHTML, delayAfter(ms)]
-    const LINES = [
-      [PROMPT + ':~$ ./wind', 380],
-      ['[ <b class="ok">ok</b> ] finding the library........... CNGM + EmuLatte', 260],
-      ['[ <b class="ok">ok</b> ] counting the artwork.......... thousands',      260],
-      ['[ <b class="ok">ok</b> ] loading 93 palettes........... done',           260],
-      ['[ <b class="ok">ok</b> ] winding the spring............ tick',           420],
-      ['', 120],
-      ['<b class="big">▓▓ CN CLOCK 1.0 ▓▓</b>', 160],
-      ['&gt; a desk clock with taste.', 700],
-    ];
-    let done = false;
-    function enter(){
-      if(done) return; done = true;
-      // Own key, so this intro and the other pages' don't suppress each other.
-      try{ sessionStorage.setItem('clk_booted','1'); }catch(e){}
-      boot.classList.add('done');
-      chalk.classList.add('show');
-      setTimeout(()=>{ boot.style.display='none'; }, 800);
-    }
-    boot.addEventListener('click', enter);
-    document.addEventListener('keydown', ()=>{ if(!done) enter(); });
+<footer>
+  <div class="wrap fin">
+    <span>Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷</span>
+    <span>
+      <a href="index.html">Home</a> ·
+      <a href="omarchy.html">Omarchy</a> ·
+      <a href="crema.html">CREMA</a> ·
+      <a href="library.html">The library</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="https://github.com/FromChaosComesClarity/CafeNeurotico">GitHub</a>
+    </span>
+  </div>
+</footer>
 
-    function typeLine(i){
-      if(i >= LINES.length){ skip.style.opacity=0; setTimeout(()=>{ if(!done) enter(); }, 900); return; }
-      log.innerHTML += (i ? '\n' : '') + LINES[i][0];
-      setTimeout(()=>typeLine(i+1), LINES[i][1]);
-    }
+<script>
+// ── Boot sequence ──────────────────────────────────────────────────────────
+// The lines are read out of #boot-lines rather than held here, so they round-trip
+// through website-copy.txt like every other string on the site.
+(function () {
+  var log = document.getElementById('boot-log');
+  var boot = document.getElementById('boot');
+  var skip = document.getElementById('boot-skip');
+  var LINES = [].map.call(document.querySelectorAll('#boot-lines li'),
+                          function (li) { return [li.innerHTML.trim(), +li.dataset.delay || 200]; });
+  var done = false;
 
-    // Returning visitors this session skip straight to the board.
-    let alreadyBooted = false;
-    try{ alreadyBooted = sessionStorage.getItem('clk_booted') === '1'; }catch(e){}
-    if(alreadyBooted){ done=true; boot.style.display='none'; chalk.classList.add('show'); }
-    else { setTimeout(()=>skip.style.opacity=1, 1200); typeLine(0); }
+  function enter() {
+    if (done) return; done = true;
+    try { sessionStorage.setItem('clk_booted', '1'); } catch (e) {}
+    boot.classList.add('done');
+    document.body.classList.remove('booting');
+    setTimeout(function () { boot.style.display = 'none'; }, 800);
+  }
+  boot.addEventListener('click', enter);
+  document.addEventListener('keydown', function () { if (!done) enter(); });
 
-    // ── Screenshot lightbox ──
-    const shots = Array.from(document.querySelectorAll('.shot'));
-    const lb = document.getElementById('lb');
-    const lbImg = document.getElementById('lb-img');
-    const lbCap = document.getElementById('lb-cap');
-    const lbCount = document.getElementById('lb-count');
-    let lbIndex = 0;
+  function typeLine(i) {
+    if (i >= LINES.length) { skip.style.opacity = 0; setTimeout(function () { if (!done) enter(); }, 900); return; }
+    log.innerHTML += (i ? '\n' : '') + LINES[i][0];
+    setTimeout(function () { typeLine(i + 1); }, LINES[i][1]);
+  }
 
-    function showShot(i){
-      lbIndex = (i + shots.length) % shots.length;
-      const fig = shots[lbIndex];
-      lbImg.src = fig.dataset.full;
-      lbImg.alt = fig.querySelector('img').alt;
-      lbCap.textContent = fig.querySelector('figcaption').textContent;
-      lbCount.textContent = (lbIndex + 1) + ' / ' + shots.length;
-    }
-    function openLb(i){ showShot(i); lb.classList.remove('hidden'); }
-    function closeLb(){ lb.classList.add('hidden'); lbImg.src = ''; }
+  var alreadyBooted = false;
+  try { alreadyBooted = sessionStorage.getItem('clk_booted') === '1'; } catch (e) {}
+  if (alreadyBooted) { done = true; boot.style.display = 'none'; document.body.classList.remove('booting'); }
+  else { setTimeout(function () { skip.style.opacity = 1; }, 1200); typeLine(0); }
+})();
 
-    shots.forEach((fig, i) => fig.addEventListener('click', () => openLb(i)));
-    document.getElementById('lb-close').addEventListener('click', closeLb);
-    document.getElementById('lb-prev').addEventListener('click', e => { e.stopPropagation(); showShot(lbIndex - 1); });
-    document.getElementById('lb-next').addEventListener('click', e => { e.stopPropagation(); showShot(lbIndex + 1); });
-    lb.addEventListener('click', e => { if(e.target === lb || e.target === lbImg) closeLb(); });
-    document.addEventListener('keydown', e => {
-      if(lb.classList.contains('hidden')) return;
-      if(e.key === 'Escape') closeLb();
-      if(e.key === 'ArrowLeft') showShot(lbIndex - 1);
-      if(e.key === 'ArrowRight') showShot(lbIndex + 1);
+// ── Screenshot lightbox ────────────────────────────────────────────────────
+(function () {
+  var shots = [].slice.call(document.querySelectorAll('.shot'));
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'),
+      lbCap = document.getElementById('lb-cap'), lbCount = document.getElementById('lb-count');
+  var i = 0;
+  function show(n) {
+    i = (n + shots.length) % shots.length;
+    var fig = shots[i];
+    lbImg.src = fig.dataset.full;
+    lbImg.alt = fig.querySelector('img').alt;
+    lbCap.textContent = fig.querySelector('figcaption').textContent;
+    lbCount.textContent = (i + 1) + ' / ' + shots.length;
+  }
+  function open(n) { show(n); lb.hidden = false; }
+  function close() { lb.hidden = true; lbImg.src = ''; }
+  shots.forEach(function (fig, n) {
+    fig.tabIndex = 0;
+    fig.addEventListener('click', function () { open(n); });
+    fig.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(n); }
     });
+  });
+  document.getElementById('lb-close').addEventListener('click', close);
+  document.getElementById('lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(i - 1); });
+  document.getElementById('lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(i + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb || e.target === lbImg) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(i - 1);
+    if (e.key === 'ArrowRight') show(i + 1);
+  });
+})();
 
-    // ── PIX modal ──
-    function openPix(){ document.getElementById('pix-modal').classList.remove('hidden'); }
-    function closePix(){ document.getElementById('pix-modal').classList.add('hidden'); }
-    function copyPix(){
-      navigator.clipboard.writeText('b734a9e2-e479-42f9-abd6-c88d1b8b880e').then(()=>{
-        const m=document.getElementById('pix-msg'); m.style.opacity=1; setTimeout(()=>m.style.opacity=0,2000);
-      });
-    }
-    document.getElementById('pix-modal').addEventListener('click', e=>{ if(e.target.id==='pix-modal') closePix(); });
-    document.addEventListener('keydown', e=>{ if(e.key==='Escape') closePix(); });
-  </script>
+// ── PIX modal ──────────────────────────────────────────────────────────────
+var pixModal = document.getElementById('pix-modal');
+function openPix(){ pixModal.hidden = false; }
+function closePix(){ pixModal.hidden = true; }
+function copyPix(){
+  navigator.clipboard.writeText('b734a9e2-e479-42f9-abd6-c88d1b8b880e').then(function () {
+    var m = document.getElementById('pix-msg');
+    m.style.opacity = 1; setTimeout(function () { m.style.opacity = 0; }, 2000);
+  });
+}
+pixModal.addEventListener('click', function (e) { if (e.target === pixModal) closePix(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePix(); });
+</script>
 </body>
 </html>

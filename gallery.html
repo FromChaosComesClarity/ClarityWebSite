@@ -11,9 +11,6 @@
 <meta property="og:description" content="105 screenshots: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and CREMA on the big screen.">
 <meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/gallery/cn-2026-08-30_18-50-24.webp">
 <meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/gallery.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -44,7 +41,12 @@ section > p.body{margin-bottom:20px}
 #lb{position:fixed;inset:0;z-index:300;background:rgba(4,5,6,.97);display:flex;
   align-items:center;justify-content:center;flex-direction:column;padding:clamp(12px,3vw,28px)}
 #lb[hidden]{display:none}
-#lb img{max-width:min(1500px,92vw);max-height:78vh;border:1px solid var(--line);background:#000}
+/* ⚠️ width/height are set on the element (they carry the aspect ratio and stop the
+   viewer jumping as an image loads), so both must be released back to auto here.
+   With an explicit width AND height, max-width and max-height apply independently
+   and the picture is squashed to the box instead of fitted to it. */
+#lb img{max-width:min(1500px,92vw);max-height:78vh;width:auto;height:auto;
+  object-fit:contain;border:1px solid var(--line);background:#000}
 #lb-cap{color:var(--ink);font-size:.86rem;margin-top:14px;text-align:center;max-width:70ch;line-height:1.5}
 #lb-count{color:var(--dim);font-size:.72rem;letter-spacing:.18em;margin-top:6px}
 .lb-btn{position:absolute;background:rgba(8,9,10,.7);border:1px solid var(--line);color:var(--ink);
@@ -85,472 +87,472 @@ section > p.body{margin-bottom:20px}
       television. Click any one to see it full size.
     </p>
     <nav class="toc">
-      <a href="#sec-01-the-library">The shelf</a>
-      <a href="#sec-02-a-game-page">A game page</a>
-      <a href="#sec-03-installing">Installing</a>
-      <a href="#sec-04-fan-games-and-source-ports">Fan games and source ports</a>
-      <a href="#sec-05-carts-and-emulators">Carts and emulators</a>
-      <a href="#sec-06-artwork-trailers-manuals-saves">Artwork, trailers, manuals, saves</a>
-      <a href="#sec-07-themes">93 themes</a>
-      <a href="#sec-08-settings">Settings</a>
-      <a href="#sec-09-in-omarchy">In Omarchy</a>
+      <a href="#sec-01-in-omarchy">In Omarchy</a>
+      <a href="#sec-02-the-library">The shelf</a>
+      <a href="#sec-03-a-game-page">A game page</a>
+      <a href="#sec-04-installing">Installing</a>
+      <a href="#sec-05-fan-games-and-source-ports">Fan games and source ports</a>
+      <a href="#sec-06-carts-and-emulators">Carts and emulators</a>
+      <a href="#sec-07-artwork-trailers-manuals-saves">Artwork, trailers, manuals, saves</a>
+      <a href="#sec-08-themes">93 themes</a>
+      <a href="#sec-09-settings">Settings</a>
       <a href="#sec-10-crema">CREMA, on the big screen</a>
       <a href="#sec-11-now-playing">Now playing</a>
     </nav>
   </div>
 
-  <section id="sec-01-the-library">
-    <div class="label">01_the_library</div>
+  <section id="sec-01-in-omarchy">
+    <div class="label">01_in_omarchy</div>
+    <h2>In Omarchy</h2>
+    <p class="body">The bar, the launcher and the notifications — the parts that only work here.</p>
+    <div class="gal">
+      <figure class="gshot" data-i="0" data-full="assets/gallery/cn-2026-08-31_09-21-31.webp" data-w="752" data-h="122">
+        <img src="assets/gallery/cn-2026-08-31_09-21-31-thumb.webp" alt="The bar: how many games are installed, click for the library, middle-click for CREMA." loading="lazy" decoding="async" width="640" height="104">
+        <figcaption>The bar: how many games are installed, click for the library, middle-click for CREMA.</figcaption>
+      </figure>
+      <figure class="gshot" data-i="1" data-full="assets/gallery/cn-2026-08-31_09-20-37.webp" data-w="1600" data-h="671">
+        <img src="assets/gallery/cn-2026-08-31_09-20-37-thumb.webp" alt="The launcher overlay, over the desktop." loading="lazy" decoding="async" width="640" height="269">
+        <figcaption>The launcher overlay, over the desktop.</figcaption>
+      </figure>
+      <figure class="gshot" data-i="2" data-full="assets/gallery/cn-2026-08-31_09-21-12.webp" data-w="1371" data-h="865">
+        <img src="assets/gallery/cn-2026-08-31_09-21-12-thumb.webp" alt="Type a few letters and it finds the game, with its art and a line about it." loading="lazy" decoding="async" width="640" height="404">
+        <figcaption>Type a few letters and it finds the game, with its art and a line about it.</figcaption>
+      </figure>
+      <figure class="gshot" data-i="3" data-full="assets/gallery/cn-2026-08-27_09-14-03.webp" data-w="635" data-h="265">
+        <img src="assets/gallery/cn-2026-08-27_09-14-03-thumb.webp" alt=""Game installed", in the corner." loading="lazy" decoding="async" width="635" height="265">
+        <figcaption>“Game installed”, in the corner.</figcaption>
+      </figure>
+      <figure class="gshot" data-i="4" data-full="assets/gallery/cn-2026-08-27_09-14-36.webp" data-w="543" data-h="216">
+        <img src="assets/gallery/cn-2026-08-27_09-14-36-thumb.webp" alt=""Now Playing", with the game's own cover." loading="lazy" decoding="async" width="543" height="216">
+        <figcaption>“Now Playing”, with the game’s own cover.</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="sec-02-the-library">
+    <div class="label">02_the_library</div>
     <h2>The shelf</h2>
     <p class="body">Every store in one grid, sorted and filtered the way you actually look for something.</p>
     <div class="gal">
-      <figure class="gshot" data-i="0" data-full="assets/gallery/cn-2026-08-27_09-03-57.webp" data-w="1600" data-h="1001">
+      <figure class="gshot" data-i="5" data-full="assets/gallery/cn-2026-08-27_09-03-57.webp" data-w="1600" data-h="1001">
         <img src="assets/gallery/cn-2026-08-27_09-03-57-thumb.webp" alt="All Games: GOG, Steam, Epic, itch and the emulators in one grid." loading="lazy" decoding="async" width="640" height="401">
         <figcaption>All Games: GOG, Steam, Epic, itch and the emulators in one grid.</figcaption>
       </figure>
-      <figure class="gshot" data-i="1" data-full="assets/gallery/cn-2026-08-27_09-01-44.webp" data-w="1600" data-h="1000">
+      <figure class="gshot" data-i="6" data-full="assets/gallery/cn-2026-08-27_09-01-44.webp" data-w="1600" data-h="1000">
         <img src="assets/gallery/cn-2026-08-27_09-01-44-thumb.webp" alt="The GOG shelf on its own, covers with a Play button on each." loading="lazy" decoding="async" width="640" height="400">
         <figcaption>The GOG shelf on its own, covers with a Play button on each.</figcaption>
       </figure>
-      <figure class="gshot" data-i="2" data-full="assets/gallery/cn-2026-08-27_09-12-23.webp" data-w="335" data-h="926">
+      <figure class="gshot" data-i="7" data-full="assets/gallery/cn-2026-08-27_09-12-23.webp" data-w="335" data-h="926">
         <img src="assets/gallery/cn-2026-08-27_09-12-23-thumb.webp" alt="Playlists down the side - genres and moods, not folders." loading="lazy" decoding="async" width="335" height="926">
         <figcaption>Playlists down the side — genres and moods, not folders.</figcaption>
       </figure>
-      <figure class="gshot" data-i="3" data-full="assets/gallery/cn-2026-08-27_09-43-52.webp" data-w="1157" data-h="478">
+      <figure class="gshot" data-i="8" data-full="assets/gallery/cn-2026-08-27_09-43-52.webp" data-w="1157" data-h="478">
         <img src="assets/gallery/cn-2026-08-27_09-43-52-thumb.webp" alt="Sorting: last played, favourites first, want to play, recently added." loading="lazy" decoding="async" width="640" height="264">
         <figcaption>Sorting: last played, favourites first, want to play, recently added.</figcaption>
       </figure>
-      <figure class="gshot" data-i="4" data-full="assets/gallery/cn-2026-08-27_09-44-05.webp" data-w="1158" data-h="522">
+      <figure class="gshot" data-i="9" data-full="assets/gallery/cn-2026-08-27_09-44-05.webp" data-w="1158" data-h="522">
         <img src="assets/gallery/cn-2026-08-27_09-44-05-thumb.webp" alt="Filtering by genre, with a count next to each." loading="lazy" decoding="async" width="640" height="288">
         <figcaption>Filtering by genre, with a count next to each.</figcaption>
       </figure>
-      <figure class="gshot" data-i="5" data-full="assets/gallery/cn-2026-08-27_09-44-15.webp" data-w="1163" data-h="483">
+      <figure class="gshot" data-i="10" data-full="assets/gallery/cn-2026-08-27_09-44-15.webp" data-w="1163" data-h="483">
         <img src="assets/gallery/cn-2026-08-27_09-44-15-thumb.webp" alt="Filtering by playlist." loading="lazy" decoding="async" width="640" height="266">
         <figcaption>Filtering by playlist.</figcaption>
       </figure>
-      <figure class="gshot" data-i="6" data-full="assets/gallery/cn-2026-08-27_09-29-34.webp" data-w="1600" data-h="1006">
+      <figure class="gshot" data-i="11" data-full="assets/gallery/cn-2026-08-27_09-29-34.webp" data-w="1600" data-h="1006">
         <img src="assets/gallery/cn-2026-08-27_09-29-34-thumb.webp" alt="The shelf, with the hero showing whatever you are pointing at." loading="lazy" decoding="async" width="640" height="402">
         <figcaption>The shelf, with the hero showing whatever you are pointing at.</figcaption>
       </figure>
-      <figure class="gshot" data-i="7" data-full="assets/gallery/cn-2026-08-27_09-31-18.webp" data-w="1600" data-h="1000">
+      <figure class="gshot" data-i="12" data-full="assets/gallery/cn-2026-08-27_09-31-18.webp" data-w="1600" data-h="1000">
         <img src="assets/gallery/cn-2026-08-27_09-31-18-thumb.webp" alt="Further down the same shelf." loading="lazy" decoding="async" width="640" height="400">
         <figcaption>Further down the same shelf.</figcaption>
       </figure>
-      <figure class="gshot" data-i="8" data-full="assets/gallery/cn-2026-08-27_09-24-13.webp" data-w="1600" data-h="1006">
+      <figure class="gshot" data-i="13" data-full="assets/gallery/cn-2026-08-27_09-24-13.webp" data-w="1600" data-h="1006">
         <img src="assets/gallery/cn-2026-08-27_09-24-13-thumb.webp" alt="The whole library wearing a light theme." loading="lazy" decoding="async" width="640" height="402">
         <figcaption>The whole library wearing a light theme.</figcaption>
       </figure>
-      <figure class="gshot" data-i="9" data-full="assets/gallery/cn-2026-08-27_09-25-02.webp" data-w="1600" data-h="1003">
+      <figure class="gshot" data-i="14" data-full="assets/gallery/cn-2026-08-27_09-25-02.webp" data-w="1600" data-h="1003">
         <img src="assets/gallery/cn-2026-08-27_09-25-02-thumb.webp" alt="And the same shelf in a blue system theme." loading="lazy" decoding="async" width="640" height="401">
         <figcaption>And the same shelf in a blue system theme.</figcaption>
       </figure>
-      <figure class="gshot" data-i="10" data-full="assets/gallery/cn-2026-08-27_09-32-58.webp" data-w="1600" data-h="1004">
+      <figure class="gshot" data-i="15" data-full="assets/gallery/cn-2026-08-27_09-32-58.webp" data-w="1600" data-h="1004">
         <img src="assets/gallery/cn-2026-08-27_09-32-58-thumb.webp" alt="And again, in the cyberpunk theme." loading="lazy" decoding="async" width="640" height="401">
         <figcaption>And again, in the cyberpunk theme.</figcaption>
       </figure>
     </div>
   </section>
-  <section id="sec-02-a-game-page">
-    <div class="label">02_a_game_page</div>
+  <section id="sec-03-a-game-page">
+    <div class="label">03_a_game_page</div>
     <h2>A game page</h2>
     <p class="body">Artwork, screenshots, a description and the button — the same page whatever the game came from.</p>
     <div class="gal">
-      <figure class="gshot" data-i="11" data-full="assets/gallery/cn-2026-08-27_09-04-49.webp" data-w="1600" data-h="1006">
+      <figure class="gshot" data-i="16" data-full="assets/gallery/cn-2026-08-27_09-04-49.webp" data-w="1600" data-h="1006">
         <img src="assets/gallery/cn-2026-08-27_09-04-49-thumb.webp" alt="Baldur's Gate 3: key art, screenshots and the description." loading="lazy" decoding="async" width="640" height="402">
         <figcaption>Baldur’s Gate 3: key art, screenshots and the description.</figcaption>
       </figure>
-      <figure class="gshot" data-i="12" data-full="assets/gallery/cn-2026-08-27_09-05-22.webp" data-w="1600" data-h="1010">
+      <figure class="gshot" data-i="17" data-full="assets/gallery/cn-2026-08-27_09-05-22.webp" data-w="1600" data-h="1010">
         <img src="assets/gallery/cn-2026-08-27_09-05-22-thumb.webp" alt="Prodeus, with its screenshot strip." loading="lazy" decoding="async" width="640" height="404">
         <figcaption>Prodeus, with its screenshot strip.</figcaption>
       </figure>
-      <figure class="gshot" data-i="13" data-full="assets/gallery/cn-2026-08-27_09-05-44.webp" data-w="1600" data-h="1007">
+      <figure class="gshot" data-i="18" data-full="assets/gallery/cn-2026-08-27_09-05-44.webp" data-w="1600" data-h="1007">
         <img src="assets/gallery/cn-2026-08-27_09-05-44-thumb.webp" alt="The same page scrolled to the description and features." loading="lazy" decoding="async" width="640" height="403">
         <figcaption>The same page scrolled to the description and features.</figcaption>
       </figure>
-      <figure class="gshot" data-i="14" data-full="assets/gallery/cn-2026-08-27_09-35-03.webp" data-w="1377" data-h="1307">
+      <figure class="gshot" data-i="19" data-full="assets/gallery/cn-2026-08-27_09-35-03.webp" data-w="1377" data-h="1307">
         <img src="assets/gallery/cn-2026-08-27_09-35-03-thumb.webp" alt="Baldur's Gate: Enhanced Edition." loading="lazy" decoding="async" width="640" height="607">
         <figcaption>Baldur’s Gate: Enhanced Edition.</figcaption>
       </figure>
-      <figure class="gshot" data-i="15" data-full="assets/gallery/cn-2026-08-27_09-35-50.webp" data-w="1366" data-h="1301">
+      <figure class="gshot" data-i="20" data-full="assets/gallery/cn-2026-08-27_09-35-50.webp" data-w="1366" data-h="1301">
         <img src="assets/gallery/cn-2026-08-27_09-35-50-thumb.webp" alt="The same page, with the manuals that shipped with it listed." loading="lazy" decoding="async" width="640" height="610">
         <figcaption>The same page, with the manuals that shipped with it listed.</figcaption>
       </figure>
-      <figure class="gshot" data-i="16" data-full="assets/gallery/cn-2026-08-27_09-33-09.webp" data-w="1402" data-h="1320">
+      <figure class="gshot" data-i="21" data-full="assets/gallery/cn-2026-08-27_09-33-09.webp" data-w="1402" data-h="1320">
         <img src="assets/gallery/cn-2026-08-27_09-33-09-thumb.webp" alt="Elminage Gothic." loading="lazy" decoding="async" width="640" height="603">
         <figcaption>Elminage Gothic.</figcaption>
       </figure>
-      <figure class="gshot" data-i="17" data-full="assets/gallery/cn-2026-08-27_09-31-36.webp" data-w="1390" data-h="1312">
+      <figure class="gshot" data-i="22" data-full="assets/gallery/cn-2026-08-27_09-31-36.webp" data-w="1390" data-h="1312">
         <img src="assets/gallery/cn-2026-08-27_09-31-36-thumb.webp" alt="halfmoon." loading="lazy" decoding="async" width="640" height="604">
         <figcaption>halfmoon.</figcaption>
       </figure>
-      <figure class="gshot" data-i="18" data-full="assets/gallery/cn-2026-08-27_09-30-26.webp" data-w="1421" data-h="1328">
+      <figure class="gshot" data-i="23" data-full="assets/gallery/cn-2026-08-27_09-30-26.webp" data-w="1421" data-h="1328">
         <img src="assets/gallery/cn-2026-08-27_09-30-26-thumb.webp" alt="System Purge." loading="lazy" decoding="async" width="640" height="598">
         <figcaption>System Purge.</figcaption>
       </figure>
-      <figure class="gshot" data-i="19" data-full="assets/gallery/cn-2026-08-27_09-25-52.webp" data-w="1378" data-h="1313">
+      <figure class="gshot" data-i="24" data-full="assets/gallery/cn-2026-08-27_09-25-52.webp" data-w="1378" data-h="1313">
         <img src="assets/gallery/cn-2026-08-27_09-25-52-thumb.webp" alt="Wizorb, on a page wearing a blue theme." loading="lazy" decoding="async" width="640" height="610">
         <figcaption>Wizorb, on a page wearing a blue theme.</figcaption>
       </figure>
-      <figure class="gshot" data-i="20" data-full="assets/gallery/cn-2026-08-27_09-27-37.webp" data-w="1373" data-h="1306">
+      <figure class="gshot" data-i="25" data-full="assets/gallery/cn-2026-08-27_09-27-37.webp" data-w="1373" data-h="1306">
         <img src="assets/gallery/cn-2026-08-27_09-27-37-thumb.webp" alt="Baldur's Gate, on a page wearing a green terminal theme." loading="lazy" decoding="async" width="640" height="609">
         <figcaption>Baldur’s Gate, on a page wearing a green terminal theme.</figcaption>
       </figure>
-      <figure class="gshot" data-i="21" data-full="assets/gallery/cn-2026-08-27_09-24-25.webp" data-w="1370" data-h="1300">
+      <figure class="gshot" data-i="26" data-full="assets/gallery/cn-2026-08-27_09-24-25.webp" data-w="1370" data-h="1300">
         <img src="assets/gallery/cn-2026-08-27_09-24-25-thumb.webp" alt="DOOM, on a page wearing a light theme." loading="lazy" decoding="async" width="640" height="607">
         <figcaption>DOOM, on a page wearing a light theme.</figcaption>
       </figure>
     </div>
   </section>
-  <section id="sec-03-installing">
-    <div class="label">03_installing</div>
+  <section id="sec-04-installing">
+    <div class="label">04_installing</div>
     <h2>Installing</h2>
     <p class="body">GRINDER underneath: GOG and Epic games installed without a store client, DLCs included.</p>
     <div class="gal">
-      <figure class="gshot" data-i="22" data-full="assets/gallery/cn-2026-08-27_09-44-41.webp" data-w="605" data-h="466">
+      <figure class="gshot" data-i="27" data-full="assets/gallery/cn-2026-08-27_09-44-41.webp" data-w="605" data-h="466">
         <img src="assets/gallery/cn-2026-08-27_09-44-41-thumb.webp" alt="Install a game: native or Windows, where it goes, and what it costs in disk space." loading="lazy" decoding="async" width="605" height="466">
         <figcaption>Install a game: native or Windows, where it goes, and what it costs in disk space.</figcaption>
       </figure>
-      <figure class="gshot" data-i="23" data-full="assets/gallery/cn-2026-08-27_09-01-11.webp" data-w="783" data-h="1081">
+      <figure class="gshot" data-i="28" data-full="assets/gallery/cn-2026-08-27_09-01-11.webp" data-w="783" data-h="1081">
         <img src="assets/gallery/cn-2026-08-27_09-01-11-thumb.webp" alt="The download manager, part-way through Fallout - New California." loading="lazy" decoding="async" width="640" height="884">
         <figcaption>The download manager, part-way through Fallout — New California.</figcaption>
       </figure>
-      <figure class="gshot" data-i="24" data-full="assets/gallery/cn-2026-08-27_11-39-03.webp" data-w="785" data-h="688">
+      <figure class="gshot" data-i="29" data-full="assets/gallery/cn-2026-08-27_11-39-03.webp" data-w="785" data-h="688">
         <img src="assets/gallery/cn-2026-08-27_11-39-03-thumb.webp" alt="The queue working through several at once." loading="lazy" decoding="async" width="640" height="561">
         <figcaption>The queue working through several at once.</figcaption>
       </figure>
-      <figure class="gshot" data-i="25" data-full="assets/gallery/cn-2026-08-27_09-16-22.webp" data-w="470" data-h="168">
+      <figure class="gshot" data-i="30" data-full="assets/gallery/cn-2026-08-27_09-16-22.webp" data-w="470" data-h="168">
         <img src="assets/gallery/cn-2026-08-27_09-16-22-thumb.webp" alt="Updating the library." loading="lazy" decoding="async" width="470" height="168">
         <figcaption>Updating the library.</figcaption>
       </figure>
-      <figure class="gshot" data-i="26" data-full="assets/gallery/cn-2026-08-27_09-08-18.webp" data-w="1353" data-h="875">
+      <figure class="gshot" data-i="31" data-full="assets/gallery/cn-2026-08-27_09-08-18.webp" data-w="1353" data-h="875">
         <img src="assets/gallery/cn-2026-08-27_09-08-18-thumb.webp" alt="GRINDER itself: launch, log, edit, uninstall, per game." loading="lazy" decoding="async" width="640" height="414">
         <figcaption>GRINDER itself: launch, log, edit, uninstall, per game.</figcaption>
       </figure>
-      <figure class="gshot" data-i="27" data-full="assets/gallery/cn-2026-08-27_10-59-00.webp" data-w="850" data-h="387">
+      <figure class="gshot" data-i="32" data-full="assets/gallery/cn-2026-08-27_10-59-00.webp" data-w="850" data-h="387">
         <img src="assets/gallery/cn-2026-08-27_10-59-00-thumb.webp" alt="Manage DLCs, with what is owned and what is missing." loading="lazy" decoding="async" width="640" height="291">
         <figcaption>Manage DLCs, with what is owned and what is missing.</figcaption>
       </figure>
-      <figure class="gshot" data-i="28" data-full="assets/gallery/cn-2026-08-27_11-33-53.webp" data-w="852" data-h="696">
+      <figure class="gshot" data-i="33" data-full="assets/gallery/cn-2026-08-27_11-33-53.webp" data-w="852" data-h="696">
         <img src="assets/gallery/cn-2026-08-27_11-33-53-thumb.webp" alt="Five owned DLCs for Pillars of Eternity, none installed yet." loading="lazy" decoding="async" width="640" height="523">
         <figcaption>Five owned DLCs for Pillars of Eternity, none installed yet.</figcaption>
       </figure>
-      <figure class="gshot" data-i="29" data-full="assets/gallery/cn-2026-08-27_11-34-14.webp" data-w="613" data-h="335">
+      <figure class="gshot" data-i="34" data-full="assets/gallery/cn-2026-08-27_11-34-14.webp" data-w="613" data-h="335">
         <img src="assets/gallery/cn-2026-08-27_11-34-14-thumb.webp" alt="GOG installs DLCs as a set, so it says so before starting." loading="lazy" decoding="async" width="613" height="335">
         <figcaption>GOG installs DLCs as a set, so it says so before starting.</figcaption>
       </figure>
-      <figure class="gshot" data-i="30" data-full="assets/gallery/cn-2026-08-27_11-34-33.webp" data-w="673" data-h="248">
+      <figure class="gshot" data-i="35" data-full="assets/gallery/cn-2026-08-27_11-34-33.webp" data-w="673" data-h="248">
         <img src="assets/gallery/cn-2026-08-27_11-34-33-thumb.webp" alt="Downloading all of them." loading="lazy" decoding="async" width="640" height="236">
         <figcaption>Downloading all of them.</figcaption>
       </figure>
-      <figure class="gshot" data-i="31" data-full="assets/gallery/cn-2026-08-27_11-49-33.webp" data-w="878" data-h="736">
+      <figure class="gshot" data-i="36" data-full="assets/gallery/cn-2026-08-27_11-49-33.webp" data-w="878" data-h="736">
         <img src="assets/gallery/cn-2026-08-27_11-49-33-thumb.webp" alt="And every one installed." loading="lazy" decoding="async" width="640" height="536">
         <figcaption>And every one installed.</figcaption>
       </figure>
-      <figure class="gshot" data-i="32" data-full="assets/gallery/cn-2026-08-27_11-49-14.webp" data-w="512" data-h="171">
+      <figure class="gshot" data-i="37" data-full="assets/gallery/cn-2026-08-27_11-49-14.webp" data-w="512" data-h="171">
         <img src="assets/gallery/cn-2026-08-27_11-49-14-thumb.webp" alt=""Game installed", as a desktop notification." loading="lazy" decoding="async" width="512" height="171">
         <figcaption>“Game installed”, as a desktop notification.</figcaption>
       </figure>
-      <figure class="gshot" data-i="33" data-full="assets/gallery/cn-2026-08-27_11-50-23.webp" data-w="1600" data-h="604">
+      <figure class="gshot" data-i="38" data-full="assets/gallery/cn-2026-08-27_11-50-23.webp" data-w="1600" data-h="604">
         <img src="assets/gallery/cn-2026-08-27_11-50-23-thumb.webp" alt="Pillars of Eternity, launched." loading="lazy" decoding="async" width="640" height="242">
         <figcaption>Pillars of Eternity, launched.</figcaption>
       </figure>
-      <figure class="gshot" data-i="34" data-full="assets/gallery/cn-2026-08-27_11-50-33.webp" data-w="488" data-h="161">
+      <figure class="gshot" data-i="39" data-full="assets/gallery/cn-2026-08-27_11-50-33.webp" data-w="488" data-h="161">
         <img src="assets/gallery/cn-2026-08-27_11-50-33-thumb.webp" alt="The White March, Part 1 - installed." loading="lazy" decoding="async" width="488" height="161">
         <figcaption>The White March, Part 1 — installed.</figcaption>
       </figure>
-      <figure class="gshot" data-i="35" data-full="assets/gallery/cn-2026-08-27_11-50-39.webp" data-w="425" data-h="157">
+      <figure class="gshot" data-i="40" data-full="assets/gallery/cn-2026-08-27_11-50-39.webp" data-w="425" data-h="157">
         <img src="assets/gallery/cn-2026-08-27_11-50-39-thumb.webp" alt="The White March, Part 2 - installed." loading="lazy" decoding="async" width="425" height="157">
         <figcaption>The White March, Part 2 — installed.</figcaption>
       </figure>
-      <figure class="gshot" data-i="36" data-full="assets/gallery/cn-2026-08-27_10-53-16.webp" data-w="602" data-h="398">
+      <figure class="gshot" data-i="41" data-full="assets/gallery/cn-2026-08-27_10-53-16.webp" data-w="602" data-h="398">
         <img src="assets/gallery/cn-2026-08-27_10-53-16-thumb.webp" alt="A source port that needs the original game: point it at files you already own." loading="lazy" decoding="async" width="602" height="398">
         <figcaption>A source port that needs the original game: point it at files you already own.</figcaption>
       </figure>
-      <figure class="gshot" data-i="37" data-full="assets/gallery/cn-2026-08-27_10-57-10.webp" data-w="416" data-h="638">
+      <figure class="gshot" data-i="42" data-full="assets/gallery/cn-2026-08-27_10-57-10.webp" data-w="416" data-h="638">
         <img src="assets/gallery/cn-2026-08-27_10-57-10-thumb.webp" alt="Choosing which executable a port should run." loading="lazy" decoding="async" width="416" height="638">
         <figcaption>Choosing which executable a port should run.</figcaption>
       </figure>
-      <figure class="gshot" data-i="38" data-full="assets/gallery/cn-2026-08-27_09-16-01.webp" data-w="598" data-h="672">
+      <figure class="gshot" data-i="43" data-full="assets/gallery/cn-2026-08-27_09-16-01.webp" data-w="598" data-h="672">
         <img src="assets/gallery/cn-2026-08-27_09-16-01-thumb.webp" alt="Install a custom game by hand: a title and a launch command." loading="lazy" decoding="async" width="598" height="672">
         <figcaption>Install a custom game by hand: a title and a launch command.</figcaption>
       </figure>
-      <figure class="gshot" data-i="39" data-full="assets/gallery/cn-2026-08-27_09-21-51.webp" data-w="826" data-h="246">
+      <figure class="gshot" data-i="44" data-full="assets/gallery/cn-2026-08-27_09-21-51.webp" data-w="826" data-h="246">
         <img src="assets/gallery/cn-2026-08-27_09-21-51-thumb.webp" alt="Or point at a game folder you already have, and leave it where it is." loading="lazy" decoding="async" width="640" height="191">
         <figcaption>Or point at a game folder you already have, and leave it where it is.</figcaption>
       </figure>
     </div>
   </section>
-  <section id="sec-04-fan-games-and-source-ports">
-    <div class="label">04_fan_games_and_source_ports</div>
+  <section id="sec-05-fan-games-and-source-ports">
+    <div class="label">05_fan_games_and_source_ports</div>
     <h2>Fan games and source ports</h2>
     <p class="body">A catalogue that knows what each port needs, and wires it to a game you own so it never lands unplayable.</p>
     <div class="gal">
-      <figure class="gshot" data-i="40" data-full="assets/gallery/cn-2026-08-27_09-06-49.webp" data-w="918" data-h="726">
+      <figure class="gshot" data-i="45" data-full="assets/gallery/cn-2026-08-27_09-06-49.webp" data-w="918" data-h="726">
         <img src="assets/gallery/cn-2026-08-27_09-06-49-thumb.webp" alt="The catalogue: DOOM, Quake, Wolfenstein 3D, Build engine, OutRun, OpenBOR, standalone." loading="lazy" decoding="async" width="640" height="506">
         <figcaption>The catalogue: DOOM, Quake, Wolfenstein 3D, Build engine, OutRun, OpenBOR, standalone.</figcaption>
       </figure>
-      <figure class="gshot" data-i="41" data-full="assets/gallery/cn-2026-08-27_09-19-32.webp" data-w="926" data-h="1260">
+      <figure class="gshot" data-i="46" data-full="assets/gallery/cn-2026-08-27_09-19-32.webp" data-w="926" data-h="1260">
         <img src="assets/gallery/cn-2026-08-27_09-19-32-thumb.webp" alt="Opened at the DOOM family." loading="lazy" decoding="async" width="640" height="871">
         <figcaption>Opened at the DOOM family.</figcaption>
       </figure>
-      <figure class="gshot" data-i="42" data-full="assets/gallery/cn-2026-08-27_09-20-40.webp" data-w="927" data-h="1266">
+      <figure class="gshot" data-i="47" data-full="assets/gallery/cn-2026-08-27_09-20-40.webp" data-w="927" data-h="1266">
         <img src="assets/gallery/cn-2026-08-27_09-20-40-thumb.webp" alt="Engines and total conversions, each with what it needs." loading="lazy" decoding="async" width="640" height="874">
         <figcaption>Engines and total conversions, each with what it needs.</figcaption>
       </figure>
-      <figure class="gshot" data-i="43" data-full="assets/gallery/cn-2026-08-27_09-19-55.webp" data-w="918" data-h="1255">
+      <figure class="gshot" data-i="48" data-full="assets/gallery/cn-2026-08-27_09-19-55.webp" data-w="918" data-h="1255">
         <img src="assets/gallery/cn-2026-08-27_09-19-55-thumb.webp" alt="More of the same list, further down." loading="lazy" decoding="async" width="640" height="875">
         <figcaption>More of the same list, further down.</figcaption>
       </figure>
-      <figure class="gshot" data-i="44" data-full="assets/gallery/cn-2026-08-27_09-20-10.webp" data-w="921" data-h="1031">
+      <figure class="gshot" data-i="49" data-full="assets/gallery/cn-2026-08-27_09-20-10.webp" data-w="921" data-h="1031">
         <img src="assets/gallery/cn-2026-08-27_09-20-10-thumb.webp" alt="The Build engine entries." loading="lazy" decoding="async" width="640" height="716">
         <figcaption>The Build engine entries.</figcaption>
       </figure>
-      <figure class="gshot" data-i="45" data-full="assets/gallery/cn-2026-08-27_09-20-53.webp" data-w="928" data-h="1017">
+      <figure class="gshot" data-i="50" data-full="assets/gallery/cn-2026-08-27_09-20-53.webp" data-w="928" data-h="1017">
         <img src="assets/gallery/cn-2026-08-27_09-20-53-thumb.webp" alt="OutRun and the standalone remakes." loading="lazy" decoding="async" width="640" height="701">
         <figcaption>OutRun and the standalone remakes.</figcaption>
       </figure>
-      <figure class="gshot" data-i="46" data-full="assets/gallery/cn-2026-08-27_09-21-05.webp" data-w="933" data-h="978">
+      <figure class="gshot" data-i="51" data-full="assets/gallery/cn-2026-08-27_09-21-05.webp" data-w="933" data-h="978">
         <img src="assets/gallery/cn-2026-08-27_09-21-05-thumb.webp" alt="An OpenBOR game, with its own install button." loading="lazy" decoding="async" width="640" height="671">
         <figcaption>An OpenBOR game, with its own install button.</figcaption>
       </figure>
-      <figure class="gshot" data-i="47" data-full="assets/gallery/cn-2026-08-27_09-21-26.webp" data-w="918" data-h="1260">
+      <figure class="gshot" data-i="52" data-full="assets/gallery/cn-2026-08-27_09-21-26.webp" data-w="918" data-h="1260">
         <img src="assets/gallery/cn-2026-08-27_09-21-26-thumb.webp" alt="The smaller fan games at the end of the list." loading="lazy" decoding="async" width="640" height="878">
         <figcaption>The smaller fan games at the end of the list.</figcaption>
       </figure>
-      <figure class="gshot" data-i="48" data-full="assets/gallery/cn-2026-08-27_09-14-47.webp" data-w="880" data-h="623">
+      <figure class="gshot" data-i="53" data-full="assets/gallery/cn-2026-08-27_09-14-47.webp" data-w="880" data-h="623">
         <img src="assets/gallery/cn-2026-08-27_09-14-47-thumb.webp" alt="Which DOOM? Every Doom you own, linked to the engine that will run it." loading="lazy" decoding="async" width="640" height="453">
         <figcaption>Which DOOM? Every Doom you own, linked to the engine that will run it.</figcaption>
       </figure>
     </div>
   </section>
-  <section id="sec-05-carts-and-emulators">
-    <div class="label">05_carts_and_emulators</div>
+  <section id="sec-06-carts-and-emulators">
+    <div class="label">06_carts_and_emulators</div>
     <h2>Carts and emulators</h2>
     <p class="body">PICO-8, OpenBOR and the emulator sources, set up once and then just part of the shelf.</p>
     <div class="gal">
-      <figure class="gshot" data-i="49" data-full="assets/gallery/cn-2026-08-27_09-11-18.webp" data-w="1600" data-h="1007">
+      <figure class="gshot" data-i="54" data-full="assets/gallery/cn-2026-08-27_09-11-18.webp" data-w="1600" data-h="1007">
         <img src="assets/gallery/cn-2026-08-27_09-11-18-thumb.webp" alt="The PICO-8 shelf, every cart with its own cover." loading="lazy" decoding="async" width="640" height="403">
         <figcaption>The PICO-8 shelf, every cart with its own cover.</figcaption>
       </figure>
-      <figure class="gshot" data-i="50" data-full="assets/gallery/cn-2026-08-27_09-10-49.webp" data-w="1071" data-h="333">
+      <figure class="gshot" data-i="55" data-full="assets/gallery/cn-2026-08-27_09-10-49.webp" data-w="1071" data-h="333">
         <img src="assets/gallery/cn-2026-08-27_09-10-49-thumb.webp" alt="Pointing the app at the PICO-8 binary and the carts folder." loading="lazy" decoding="async" width="640" height="199">
         <figcaption>Pointing the app at the PICO-8 binary and the carts folder.</figcaption>
       </figure>
-      <figure class="gshot" data-i="51" data-full="assets/gallery/cn-2026-08-27_09-10-34.webp" data-w="1077" data-h="777">
+      <figure class="gshot" data-i="56" data-full="assets/gallery/cn-2026-08-27_09-10-34.webp" data-w="1077" data-h="777">
         <img src="assets/gallery/cn-2026-08-27_09-10-34-thumb.webp" alt="itch.io and PICO-8 as sources, and a scan for game updates." loading="lazy" decoding="async" width="640" height="462">
         <figcaption>itch.io and PICO-8 as sources, and a scan for game updates.</figcaption>
       </figure>
-      <figure class="gshot" data-i="52" data-full="assets/gallery/cn-2026-08-27_09-11-40.webp" data-w="1600" data-h="1004">
+      <figure class="gshot" data-i="57" data-full="assets/gallery/cn-2026-08-27_09-11-40.webp" data-w="1600" data-h="1004">
         <img src="assets/gallery/cn-2026-08-27_09-11-40-thumb.webp" alt="OpenBOR games, on the same shelf as everything else." loading="lazy" decoding="async" width="640" height="402">
         <figcaption>OpenBOR games, on the same shelf as everything else.</figcaption>
       </figure>
     </div>
   </section>
-  <section id="sec-06-artwork-trailers-manuals-saves">
-    <div class="label">06_artwork_trailers_manuals_saves</div>
+  <section id="sec-07-artwork-trailers-manuals-saves">
+    <div class="label">07_artwork_trailers_manuals_saves</div>
     <h2>Artwork, trailers, manuals, saves</h2>
     <p class="body">The things around a game: the metadata, the video, the paperwork and the save files.</p>
     <div class="gal">
-      <figure class="gshot" data-i="53" data-full="assets/gallery/cn-2026-08-27_09-40-50.webp" data-w="1106" data-h="1070">
+      <figure class="gshot" data-i="58" data-full="assets/gallery/cn-2026-08-27_09-40-50.webp" data-w="1106" data-h="1070">
         <img src="assets/gallery/cn-2026-08-27_09-40-50-thumb.webp" alt="Choosing cover artwork." loading="lazy" decoding="async" width="640" height="619">
         <figcaption>Choosing cover artwork.</figcaption>
       </figure>
-      <figure class="gshot" data-i="54" data-full="assets/gallery/cn-2026-08-27_09-41-32.webp" data-w="1103" data-h="1073">
+      <figure class="gshot" data-i="59" data-full="assets/gallery/cn-2026-08-27_09-41-32.webp" data-w="1103" data-h="1073">
         <img src="assets/gallery/cn-2026-08-27_09-41-32-thumb.webp" alt="Choosing an icon." loading="lazy" decoding="async" width="640" height="623">
         <figcaption>Choosing an icon.</figcaption>
       </figure>
-      <figure class="gshot" data-i="55" data-full="assets/gallery/cn-2026-08-27_09-41-13.webp" data-w="1232" data-h="853">
+      <figure class="gshot" data-i="60" data-full="assets/gallery/cn-2026-08-27_09-41-13.webp" data-w="1232" data-h="853">
         <img src="assets/gallery/cn-2026-08-27_09-41-13-thumb.webp" alt="Browsing screenshots to add to a page." loading="lazy" decoding="async" width="640" height="443">
         <figcaption>Browsing screenshots to add to a page.</figcaption>
       </figure>
-      <figure class="gshot" data-i="56" data-full="assets/gallery/cn-2026-08-27_09-40-37.webp" data-w="1386" data-h="1275">
+      <figure class="gshot" data-i="61" data-full="assets/gallery/cn-2026-08-27_09-40-37.webp" data-w="1386" data-h="1275">
         <img src="assets/gallery/cn-2026-08-27_09-40-37-thumb.webp" alt="Editing a game's details by hand." loading="lazy" decoding="async" width="640" height="589">
         <figcaption>Editing a game’s details by hand.</figcaption>
       </figure>
-      <figure class="gshot" data-i="57" data-full="assets/gallery/cn-2026-08-27_09-38-28.webp" data-w="1100" data-h="1090">
+      <figure class="gshot" data-i="62" data-full="assets/gallery/cn-2026-08-27_09-38-28.webp" data-w="1100" data-h="1090">
         <img src="assets/gallery/cn-2026-08-27_09-38-28-thumb.webp" alt="Choosing which trailer to download." loading="lazy" decoding="async" width="640" height="634">
         <figcaption>Choosing which trailer to download.</figcaption>
       </figure>
-      <figure class="gshot" data-i="58" data-full="assets/gallery/cn-2026-08-27_09-39-41.webp" data-w="607" data-h="315">
+      <figure class="gshot" data-i="63" data-full="assets/gallery/cn-2026-08-27_09-39-41.webp" data-w="607" data-h="315">
         <img src="assets/gallery/cn-2026-08-27_09-39-41-thumb.webp" alt="Downloading it." loading="lazy" decoding="async" width="607" height="315">
         <figcaption>Downloading it.</figcaption>
       </figure>
-      <figure class="gshot" data-i="59" data-full="assets/gallery/cn-2026-08-27_09-39-48.webp" data-w="606" data-h="231">
+      <figure class="gshot" data-i="64" data-full="assets/gallery/cn-2026-08-27_09-39-48.webp" data-w="606" data-h="231">
         <img src="assets/gallery/cn-2026-08-27_09-39-48-thumb.webp" alt="Done." loading="lazy" decoding="async" width="606" height="231">
         <figcaption>Done.</figcaption>
       </figure>
-      <figure class="gshot" data-i="60" data-full="assets/gallery/cn-2026-08-27_09-40-11.webp" data-w="1191" data-h="798">
+      <figure class="gshot" data-i="65" data-full="assets/gallery/cn-2026-08-27_09-40-11.webp" data-w="1191" data-h="798">
         <img src="assets/gallery/cn-2026-08-27_09-40-11-thumb.webp" alt="And playing it inside the app." loading="lazy" decoding="async" width="640" height="429">
         <figcaption>And playing it inside the app.</figcaption>
       </figure>
-      <figure class="gshot" data-i="61" data-full="assets/gallery/cn-2026-08-27_09-40-23.webp" data-w="607" data-h="353">
+      <figure class="gshot" data-i="66" data-full="assets/gallery/cn-2026-08-27_09-40-23.webp" data-w="607" data-h="353">
         <img src="assets/gallery/cn-2026-08-27_09-40-23-thumb.webp" alt="Deleting a trailer you no longer want on disk." loading="lazy" decoding="async" width="607" height="353">
         <figcaption>Deleting a trailer you no longer want on disk.</figcaption>
       </figure>
-      <figure class="gshot" data-i="62" data-full="assets/gallery/cn-2026-08-27_09-36-18.webp" data-w="751" data-h="930">
+      <figure class="gshot" data-i="67" data-full="assets/gallery/cn-2026-08-27_09-36-18.webp" data-w="751" data-h="930">
         <img src="assets/gallery/cn-2026-08-27_09-36-18-thumb.webp" alt="The manuals that came with a GOG game." loading="lazy" decoding="async" width="640" height="793">
         <figcaption>The manuals that came with a GOG game.</figcaption>
       </figure>
-      <figure class="gshot" data-i="63" data-full="assets/gallery/cn-2026-08-27_09-37-17.webp" data-w="1116" data-h="1290">
+      <figure class="gshot" data-i="68" data-full="assets/gallery/cn-2026-08-27_09-37-17.webp" data-w="1116" data-h="1290">
         <img src="assets/gallery/cn-2026-08-27_09-37-17-thumb.webp" alt="One of them open in the reader." loading="lazy" decoding="async" width="640" height="740">
         <figcaption>One of them open in the reader.</figcaption>
       </figure>
-      <figure class="gshot" data-i="64" data-full="assets/gallery/cn-2026-08-27_09-37-53.webp" data-w="1116" data-h="1280">
+      <figure class="gshot" data-i="69" data-full="assets/gallery/cn-2026-08-27_09-37-53.webp" data-w="1116" data-h="1280">
         <img src="assets/gallery/cn-2026-08-27_09-37-53-thumb.webp" alt="The Adventurer's Guide, as it shipped." loading="lazy" decoding="async" width="640" height="734">
         <figcaption>The Adventurer’s Guide, as it shipped.</figcaption>
       </figure>
-      <figure class="gshot" data-i="65" data-full="assets/gallery/cn-2026-08-27_09-36-05.webp" data-w="882" data-h="407">
+      <figure class="gshot" data-i="70" data-full="assets/gallery/cn-2026-08-27_09-36-05.webp" data-w="882" data-h="407">
         <img src="assets/gallery/cn-2026-08-27_09-36-05-thumb.webp" alt="Save Manager: a game's saves backed up to a portable zip." loading="lazy" decoding="async" width="640" height="295">
         <figcaption>Save Manager: a game’s saves backed up to a portable zip.</figcaption>
       </figure>
     </div>
   </section>
-  <section id="sec-07-themes">
-    <div class="label">07_themes</div>
+  <section id="sec-08-themes">
+    <div class="label">08_themes</div>
     <h2>93 themes</h2>
     <p class="body">Including a live bridge to whatever theme Omarchy is wearing right now.</p>
     <div class="gal">
-      <figure class="gshot" data-i="66" data-full="assets/gallery/cn-2026-08-27_09-22-58.webp" data-w="1056" data-h="693">
+      <figure class="gshot" data-i="71" data-full="assets/gallery/cn-2026-08-27_09-22-58.webp" data-w="1056" data-h="693">
         <img src="assets/gallery/cn-2026-08-27_09-22-58-thumb.webp" alt="The picker, with Your Desktop - the Omarchy theme - at the top." loading="lazy" decoding="async" width="640" height="420">
         <figcaption>The picker, with Your Desktop — the Omarchy theme — at the top.</figcaption>
       </figure>
-      <figure class="gshot" data-i="67" data-full="assets/gallery/cn-2026-08-27_09-23-10.webp" data-w="1047" data-h="683">
+      <figure class="gshot" data-i="72" data-full="assets/gallery/cn-2026-08-27_09-23-10.webp" data-w="1047" data-h="683">
         <img src="assets/gallery/cn-2026-08-27_09-23-10-thumb.webp" alt="Gaming Legends." loading="lazy" decoding="async" width="640" height="417">
         <figcaption>Gaming Legends.</figcaption>
       </figure>
-      <figure class="gshot" data-i="68" data-full="assets/gallery/cn-2026-08-27_09-23-20.webp" data-w="1053" data-h="690">
+      <figure class="gshot" data-i="73" data-full="assets/gallery/cn-2026-08-27_09-23-20.webp" data-w="1053" data-h="690">
         <img src="assets/gallery/cn-2026-08-27_09-23-20-thumb.webp" alt="Aesthetics." loading="lazy" decoding="async" width="640" height="419">
         <figcaption>Aesthetics.</figcaption>
       </figure>
-      <figure class="gshot" data-i="69" data-full="assets/gallery/cn-2026-08-27_09-31-02.webp" data-w="1060" data-h="700">
+      <figure class="gshot" data-i="74" data-full="assets/gallery/cn-2026-08-27_09-31-02.webp" data-w="1060" data-h="700">
         <img src="assets/gallery/cn-2026-08-27_09-31-02-thumb.webp" alt="Linux ricing." loading="lazy" decoding="async" width="640" height="423">
         <figcaption>Linux ricing.</figcaption>
       </figure>
-      <figure class="gshot" data-i="70" data-full="assets/gallery/cn-2026-08-27_09-32-31.webp" data-w="1058" data-h="692">
+      <figure class="gshot" data-i="75" data-full="assets/gallery/cn-2026-08-27_09-32-31.webp" data-w="1058" data-h="692">
         <img src="assets/gallery/cn-2026-08-27_09-32-31-thumb.webp" alt="Originals and system themes." loading="lazy" decoding="async" width="640" height="419">
         <figcaption>Originals and system themes.</figcaption>
       </figure>
-      <figure class="gshot" data-i="71" data-full="assets/gallery/cn-2026-08-27_09-23-30.webp" data-w="1051" data-h="867">
+      <figure class="gshot" data-i="76" data-full="assets/gallery/cn-2026-08-27_09-23-30.webp" data-w="1051" data-h="867">
         <img src="assets/gallery/cn-2026-08-27_09-23-30-thumb.webp" alt="The system themes: MS-DOS, Commodore 64, Mac OS, Amiga, NeXTSTEP." loading="lazy" decoding="async" width="640" height="528">
         <figcaption>The system themes: MS-DOS, Commodore 64, Mac OS, Amiga, NeXTSTEP.</figcaption>
       </figure>
-      <figure class="gshot" data-i="72" data-full="assets/gallery/cn-2026-08-27_09-23-57.webp" data-w="1061" data-h="851">
+      <figure class="gshot" data-i="77" data-full="assets/gallery/cn-2026-08-27_09-23-57.webp" data-w="1061" data-h="851">
         <img src="assets/gallery/cn-2026-08-27_09-23-57-thumb.webp" alt="The same set, on the light side." loading="lazy" decoding="async" width="640" height="513">
         <figcaption>The same set, on the light side.</figcaption>
       </figure>
-      <figure class="gshot" data-i="73" data-full="assets/gallery/cn-2026-08-27_09-29-17.webp" data-w="1062" data-h="882">
+      <figure class="gshot" data-i="78" data-full="assets/gallery/cn-2026-08-27_09-29-17.webp" data-w="1062" data-h="882">
         <img src="assets/gallery/cn-2026-08-27_09-29-17-thumb.webp" alt="Hovering one to see what it does." loading="lazy" decoding="async" width="640" height="532">
         <figcaption>Hovering one to see what it does.</figcaption>
       </figure>
-      <figure class="gshot" data-i="74" data-full="assets/gallery/cn-2026-08-27_09-22-48.webp" data-w="1072" data-h="683">
+      <figure class="gshot" data-i="79" data-full="assets/gallery/cn-2026-08-27_09-22-48.webp" data-w="1072" data-h="683">
         <img src="assets/gallery/cn-2026-08-27_09-22-48-thumb.webp" alt="Appearance: interface scale, corner style, the Ken Burns effect, the font." loading="lazy" decoding="async" width="640" height="408">
         <figcaption>Appearance: interface scale, corner style, the Ken Burns effect, the font.</figcaption>
       </figure>
-      <figure class="gshot" data-i="75" data-full="assets/gallery/cn-2026-08-27_09-24-47.webp" data-w="1051" data-h="822">
+      <figure class="gshot" data-i="80" data-full="assets/gallery/cn-2026-08-27_09-24-47.webp" data-w="1051" data-h="822">
         <img src="assets/gallery/cn-2026-08-27_09-24-47-thumb.webp" alt="The whole app wearing Commodore 64." loading="lazy" decoding="async" width="640" height="501">
         <figcaption>The whole app wearing Commodore 64.</figcaption>
       </figure>
-      <figure class="gshot" data-i="76" data-full="assets/gallery/cn-2026-08-27_09-26-05.webp" data-w="1401" data-h="1277">
+      <figure class="gshot" data-i="81" data-full="assets/gallery/cn-2026-08-27_09-26-05.webp" data-w="1401" data-h="1277">
         <img src="assets/gallery/cn-2026-08-27_09-26-05-thumb.webp" alt="The control panel in the same blue." loading="lazy" decoding="async" width="640" height="583">
         <figcaption>The control panel in the same blue.</figcaption>
       </figure>
-      <figure class="gshot" data-i="77" data-full="assets/gallery/cn-2026-08-27_09-27-12.webp" data-w="1056" data-h="851">
+      <figure class="gshot" data-i="82" data-full="assets/gallery/cn-2026-08-27_09-27-12.webp" data-w="1056" data-h="851">
         <img src="assets/gallery/cn-2026-08-27_09-27-12-thumb.webp" alt="A green CRT." loading="lazy" decoding="async" width="640" height="516">
         <figcaption>A green CRT.</figcaption>
       </figure>
-      <figure class="gshot" data-i="78" data-full="assets/gallery/cn-2026-08-27_09-27-51.webp" data-w="1402" data-h="1278">
+      <figure class="gshot" data-i="83" data-full="assets/gallery/cn-2026-08-27_09-27-51.webp" data-w="1402" data-h="1278">
         <img src="assets/gallery/cn-2026-08-27_09-27-51-thumb.webp" alt="The control panel in green." loading="lazy" decoding="async" width="640" height="583">
         <figcaption>The control panel in green.</figcaption>
       </figure>
-      <figure class="gshot" data-i="79" data-full="assets/gallery/cn-2026-08-27_09-26-43.webp" data-w="1045" data-h="832">
+      <figure class="gshot" data-i="84" data-full="assets/gallery/cn-2026-08-27_09-26-43.webp" data-w="1045" data-h="832">
         <img src="assets/gallery/cn-2026-08-27_09-26-43-thumb.webp" alt="An amber CRT." loading="lazy" decoding="async" width="640" height="510">
         <figcaption>An amber CRT.</figcaption>
       </figure>
-      <figure class="gshot" data-i="80" data-full="assets/gallery/cn-2026-08-27_09-33-24.webp" data-w="1405" data-h="1285">
+      <figure class="gshot" data-i="85" data-full="assets/gallery/cn-2026-08-27_09-33-24.webp" data-w="1405" data-h="1285">
         <img src="assets/gallery/cn-2026-08-27_09-33-24-thumb.webp" alt="The control panel in cyberpunk." loading="lazy" decoding="async" width="640" height="585">
         <figcaption>The control panel in cyberpunk.</figcaption>
       </figure>
-      <figure class="gshot" data-i="81" data-full="assets/gallery/cn-2026-08-27_09-30-13.webp" data-w="1392" data-h="1265">
+      <figure class="gshot" data-i="86" data-full="assets/gallery/cn-2026-08-27_09-30-13.webp" data-w="1392" data-h="1265">
         <img src="assets/gallery/cn-2026-08-27_09-30-13-thumb.webp" alt="And back to the near-black default." loading="lazy" decoding="async" width="640" height="582">
         <figcaption>And back to the near-black default.</figcaption>
       </figure>
     </div>
   </section>
-  <section id="sec-08-settings">
-    <div class="label">08_settings</div>
+  <section id="sec-09-settings">
+    <div class="label">09_settings</div>
     <h2>Settings</h2>
     <p class="body">One control panel, searchable, with the connections and the system bits in it.</p>
     <div class="gal">
-      <figure class="gshot" data-i="82" data-full="assets/gallery/cn-2026-08-27_09-22-31.webp" data-w="1410" data-h="1273">
+      <figure class="gshot" data-i="87" data-full="assets/gallery/cn-2026-08-27_09-22-31.webp" data-w="1410" data-h="1273">
         <img src="assets/gallery/cn-2026-08-27_09-22-31-thumb.webp" alt="The control panel - search it, or start typing." loading="lazy" decoding="async" width="640" height="578">
         <figcaption>The control panel — search it, or start typing.</figcaption>
       </figure>
-      <figure class="gshot" data-i="83" data-full="assets/gallery/cn-2026-08-27_09-06-26.webp" data-w="1423" data-h="1293">
+      <figure class="gshot" data-i="88" data-full="assets/gallery/cn-2026-08-27_09-06-26.webp" data-w="1423" data-h="1293">
         <img src="assets/gallery/cn-2026-08-27_09-06-26-thumb.webp" alt="Another section of it open." loading="lazy" decoding="async" width="640" height="582">
         <figcaption>Another section of it open.</figcaption>
       </figure>
-      <figure class="gshot" data-i="84" data-full="assets/gallery/cn-2026-08-27_09-09-43.webp" data-w="1066" data-h="1087">
+      <figure class="gshot" data-i="89" data-full="assets/gallery/cn-2026-08-27_09-09-43.webp" data-w="1066" data-h="1087">
         <img src="assets/gallery/cn-2026-08-27_09-09-43-thumb.webp" alt="Connections: GOG, Epic, the Steam API and SteamGridDB." loading="lazy" decoding="async" width="640" height="653">
         <figcaption>Connections: GOG, Epic, the Steam API and SteamGridDB.</figcaption>
       </figure>
-      <figure class="gshot" data-i="85" data-full="assets/gallery/cn-2026-08-27_09-08-55.webp" data-w="1085" data-h="1072">
+      <figure class="gshot" data-i="90" data-full="assets/gallery/cn-2026-08-27_09-08-55.webp" data-w="1085" data-h="1072">
         <img src="assets/gallery/cn-2026-08-27_09-08-55-thumb.webp" alt="The library: history, recently imported, PICO-8, free-to-play, hidden games." loading="lazy" decoding="async" width="640" height="632">
         <figcaption>The library: history, recently imported, PICO-8, free-to-play, hidden games.</figcaption>
       </figure>
-      <figure class="gshot" data-i="86" data-full="assets/gallery/cn-2026-08-27_09-09-12.webp" data-w="1071" data-h="233">
+      <figure class="gshot" data-i="91" data-full="assets/gallery/cn-2026-08-27_09-09-12.webp" data-w="1071" data-h="233">
         <img src="assets/gallery/cn-2026-08-27_09-09-12-thumb.webp" alt="Notifications, and pairing them to a phone through KDE Connect." loading="lazy" decoding="async" width="640" height="139">
         <figcaption>Notifications, and pairing them to a phone through KDE Connect.</figcaption>
       </figure>
-      <figure class="gshot" data-i="87" data-full="assets/gallery/cn-2026-08-27_09-07-17.webp" data-w="1067" data-h="253">
+      <figure class="gshot" data-i="92" data-full="assets/gallery/cn-2026-08-27_09-07-17.webp" data-w="1067" data-h="253">
         <img src="assets/gallery/cn-2026-08-27_09-07-17-thumb.webp" alt="DOS games: automatic, native, or the DOSBox that came with the game." loading="lazy" decoding="async" width="640" height="152">
         <figcaption>DOS games: automatic, native, or the DOSBox that came with the game.</figcaption>
       </figure>
-      <figure class="gshot" data-i="88" data-full="assets/gallery/cn-2026-08-27_09-07-38.webp" data-w="1068" data-h="243">
+      <figure class="gshot" data-i="93" data-full="assets/gallery/cn-2026-08-27_09-07-38.webp" data-w="1068" data-h="243">
         <img src="assets/gallery/cn-2026-08-27_09-07-38-thumb.webp" alt="Manage storage: what each game is costing you." loading="lazy" decoding="async" width="640" height="146">
         <figcaption>Manage storage: what each game is costing you.</figcaption>
       </figure>
-      <figure class="gshot" data-i="89" data-full="assets/gallery/cn-2026-08-27_09-18-18.webp" data-w="1075" data-h="636">
+      <figure class="gshot" data-i="94" data-full="assets/gallery/cn-2026-08-27_09-18-18.webp" data-w="1075" data-h="636">
         <img src="assets/gallery/cn-2026-08-27_09-18-18-thumb.webp" alt="System: backup and restore, the application menu, starting in CREMA." loading="lazy" decoding="async" width="640" height="379">
         <figcaption>System: backup and restore, the application menu, starting in CREMA.</figcaption>
       </figure>
-      <figure class="gshot" data-i="90" data-full="assets/gallery/cn-2026-08-27_09-19-02.webp" data-w="1057" data-h="606">
+      <figure class="gshot" data-i="95" data-full="assets/gallery/cn-2026-08-27_09-19-02.webp" data-w="1057" data-h="606">
         <img src="assets/gallery/cn-2026-08-27_09-19-02-thumb.webp" alt="System tuning, and matching whatever Omarchy theme is running." loading="lazy" decoding="async" width="640" height="367">
         <figcaption>System tuning, and matching whatever Omarchy theme is running.</figcaption>
       </figure>
-      <figure class="gshot" data-i="91" data-full="assets/gallery/cn-2026-08-27_09-17-10.webp" data-w="1096" data-h="1382">
+      <figure class="gshot" data-i="96" data-full="assets/gallery/cn-2026-08-27_09-17-10.webp" data-w="1096" data-h="1382">
         <img src="assets/gallery/cn-2026-08-27_09-17-10-thumb.webp" alt="The manual: the manifesto, and the philosophy behind it." loading="lazy" decoding="async" width="640" height="807">
         <figcaption>The manual: the manifesto, and the philosophy behind it.</figcaption>
       </figure>
-      <figure class="gshot" data-i="92" data-full="assets/gallery/cn-2026-08-27_09-16-40.webp" data-w="643" data-h="970">
+      <figure class="gshot" data-i="97" data-full="assets/gallery/cn-2026-08-27_09-16-40.webp" data-w="643" data-h="970">
         <img src="assets/gallery/cn-2026-08-27_09-16-40-thumb.webp" alt="About: the suite, and what each part of it is for." loading="lazy" decoding="async" width="640" height="965">
         <figcaption>About: the suite, and what each part of it is for.</figcaption>
-      </figure>
-    </div>
-  </section>
-  <section id="sec-09-in-omarchy">
-    <div class="label">09_in_omarchy</div>
-    <h2>In Omarchy</h2>
-    <p class="body">The bar, the launcher and the notifications — the parts that only work here.</p>
-    <div class="gal">
-      <figure class="gshot" data-i="93" data-full="assets/gallery/cn-2026-08-31_09-21-31.webp" data-w="752" data-h="122">
-        <img src="assets/gallery/cn-2026-08-31_09-21-31-thumb.webp" alt="The bar: how many games are installed, click for the library, middle-click for CREMA." loading="lazy" decoding="async" width="640" height="104">
-        <figcaption>The bar: how many games are installed, click for the library, middle-click for CREMA.</figcaption>
-      </figure>
-      <figure class="gshot" data-i="94" data-full="assets/gallery/cn-2026-08-31_09-20-37.webp" data-w="1600" data-h="671">
-        <img src="assets/gallery/cn-2026-08-31_09-20-37-thumb.webp" alt="The launcher overlay, over the desktop." loading="lazy" decoding="async" width="640" height="269">
-        <figcaption>The launcher overlay, over the desktop.</figcaption>
-      </figure>
-      <figure class="gshot" data-i="95" data-full="assets/gallery/cn-2026-08-31_09-21-12.webp" data-w="1371" data-h="865">
-        <img src="assets/gallery/cn-2026-08-31_09-21-12-thumb.webp" alt="Type a few letters and it finds the game, with its art and a line about it." loading="lazy" decoding="async" width="640" height="404">
-        <figcaption>Type a few letters and it finds the game, with its art and a line about it.</figcaption>
-      </figure>
-      <figure class="gshot" data-i="96" data-full="assets/gallery/cn-2026-08-27_09-14-03.webp" data-w="635" data-h="265">
-        <img src="assets/gallery/cn-2026-08-27_09-14-03-thumb.webp" alt=""Game installed", in the corner." loading="lazy" decoding="async" width="635" height="265">
-        <figcaption>“Game installed”, in the corner.</figcaption>
-      </figure>
-      <figure class="gshot" data-i="97" data-full="assets/gallery/cn-2026-08-27_09-14-36.webp" data-w="543" data-h="216">
-        <img src="assets/gallery/cn-2026-08-27_09-14-36-thumb.webp" alt=""Now Playing", with the game's own cover." loading="lazy" decoding="async" width="543" height="216">
-        <figcaption>“Now Playing”, with the game’s own cover.</figcaption>
       </figure>
     </div>
   </section>

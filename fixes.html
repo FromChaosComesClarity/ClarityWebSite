@@ -1,192 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafe Neurotico — Games That Have Been Fixed Individually</title>
-  <meta name="description" content="Real games that did not work on Linux, what turned out to be wrong with each one, and how Cafe Neurotico fixes it — no configuration required.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Cafe Neurotico">
-  <meta property="og:title" content="Games that have been fixed individually">
-  <meta property="og:description" content="Not &quot;improved compatibility&quot;. Named games, named faults, and what was done about each.">
-  <meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/images/coffee_banner.jpg">
-  <meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/fixes.html">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Neurotico — Games That Have Been Fixed Individually</title>
+<meta name="description" content="Real games that did not work on Linux, what turned out to be wrong with each one, and how Cafe Neurotico fixes it — no configuration required.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cafe Neurotico">
+<meta property="og:title" content="Games that have been fixed individually">
+<meta property="og:description" content="Not &quot;improved compatibility&quot;. Named games, named faults, and what was done about each.">
+<meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/images/coffee_banner.jpg">
+<meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/fixes.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --amber:#2fe0d6; --amber-dim:#177c77;
-      --chalk:#dfe8e8; --chalk-dim:#7d9295;
-      --board:#0e1113; --board2:#141819;
-      --mono-stack:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace; --crema:#ff5fa2; --kofi:#FF5E5B; --pix:#32BCAD;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{min-height:100%}
-    body{background:#08090a;color:var(--chalk);font-family:var(--mono-stack);overflow-x:hidden}
-    a{color:inherit}
-
-    /* ───────────── CHALKBOARD ───────────── */
-    #chalk{
-      min-height:100vh;
-      background:
-        radial-gradient(120% 80% at 50% -10%, rgba(255,255,255,.05), transparent 60%),
-        radial-gradient(80% 60% at 80% 110%, rgba(212,163,115,.06), transparent 60%),
-        var(--board);
-      position:relative;
-    }
-    #chalk::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.04;
-      background-image:radial-gradient(circle at 20% 30%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 70% 60%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 40% 80%, #fff 0 1px, transparent 1px);
-      background-size:140px 140px,200px 200px,170px 170px}
-    .wrap{max-width:920px;margin:0 auto;padding:30px 24px 80px;text-align:center;position:relative;z-index:1}
-
-    .back{display:inline-block;font-family:var(--mono-stack);font-size:13px;color:var(--chalk-dim);
-      text-decoration:none;letter-spacing:.5px;margin-bottom:34px;transition:.18s}
-    .back:hover{color:var(--crema)}
-
-    .kicker{font-family:var(--mono-stack);font-size:clamp(13px,5vw,20px);color:var(--chalk-dim);
-      transform:rotate(-2deg);margin-bottom:6px}
-    .wordmark{font-family:var(--mono-stack);font-weight:900;letter-spacing:.14em;
-      font-size:clamp(13px,6vw,24px);line-height:1.05;text-transform:uppercase}
-    .rule{width:min(380px,80%);height:0;border-top:2px dashed var(--chalk-dim);opacity:.5;margin:18px auto 8px}
-    .sub{font-family:var(--mono-stack);font-size:clamp(13px,4vw,18px);color:var(--crema)}
-
-    .lead{color:var(--chalk-dim);font-size:14px;line-height:1.8;max-width:620px;margin:26px auto 0}
-    .lead b{color:var(--chalk)}
-
-    /* ───────────── THE LIST ───────────── */
-    .fixes{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;margin-top:34px;text-align:left}
-    .fix{background:rgba(0,0,0,.22);border:1px solid rgba(244,239,230,.14);border-radius:12px;padding:18px 20px}
-    .fix .game{font-family:var(--mono-stack);font-weight:900;letter-spacing:.06em;font-size:14px;color:var(--crema);margin-bottom:9px;line-height:1.3}
-    .fix .sym{font-family:var(--mono-stack);font-size:14px;color:var(--chalk);line-height:1.3;margin-bottom:9px}
-    .fix .why{color:var(--chalk-dim);font-size:12.5px;line-height:1.6}
-    .fix .why b{color:var(--chalk);font-weight:700}
-    .fix .why + .why{margin-top:8px}
-    .fix:last-child:nth-child(odd){grid-column:1/-1;justify-self:center;max-width:calc(50% - 7px)}
-    @media(max-width:660px){.fix:last-child:nth-child(odd){max-width:none}}
-
-    .sect{margin-top:52px;padding-top:34px;border-top:2px dashed rgba(244,239,230,.18)}
-    .sect h4{font-family:var(--mono-stack);font-size:17px;color:var(--crema);margin-bottom:6px}
-
-    .note{font-family:var(--mono-stack);font-size:14px;color:var(--chalk-dim);margin-top:26px;line-height:1.5}
-    .note a{color:var(--crema)}
-
-    .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
-    .btn{font-family:var(--mono-stack);font-weight:700;font-size:14px;letter-spacing:.04em;
-      padding:11px 20px;border-radius:8px;border:1.5px solid;background:transparent;
-      text-decoration:none;transition:.18s;display:inline-flex;align-items:center;gap:9px}
-    .btn:hover{transform:translateY(-2px)}
-    .btn.gh{border-color:var(--chalk-dim);color:var(--chalk)}
-    .btn.gh:hover{background:rgba(244,239,230,.08)}
-    .btn.dl{border-color:var(--amber);color:var(--amber)}
-    .btn.dl:hover{background:rgba(255,176,0,.12)}
-
-    .foot{margin-top:46px;color:var(--chalk-dim);font-size:13px;line-height:1.9}
-    .foot a{color:var(--crema)}
-  </style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{padding:clamp(40px,7vh,84px) 0 clamp(10px,2vh,24px)}
+/* One panel per game: what it is, what went wrong, what was done. */
+.fix{margin-top:16px}
+.fix h3{margin:0 0 4px}
+.fix .sym{color:var(--magenta);font-size:.86rem;margin-bottom:12px}
+.fix p.body+p.body{margin-top:12px}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 0}
+.seealso{font-size:.8rem}
+</style>
 </head>
 <body>
-  <div id="chalk">
-    <div class="wrap">
-      <a class="back" href="index.html">&lt; back to cafeneurotico</a>
 
-      <div class="kicker">game fixes</div>
-      <div class="wordmark">Fixed Individually</div>
-      <div class="rule"></div>
-      <div class="sub">named games · named faults</div>
-
-      <p class="lead">Not &ldquo;improved compatibility&rdquo;. Each of these is a real game that did not work on
-        Linux, the exact thing that turned out to be wrong with it, and what is now done about it automatically.
-        <b>Nothing here needs to be configured</b> &mdash; the fix is applied when the game is launched.</p>
-
-      <div class="fixes">
-
-        <div class="fix">
-          <div class="game">OutRun 2006: Coast 2 Coast</div>
-          <div class="sym">A white screen. It seems to hang on the SEGA logo, so it gets killed.</div>
-          <p class="why">The intro is a run of video logos, and under a compatibility layer the first one can sit
-            there for a minute or more before the menu ever arrives. It is not frozen &mdash; but nobody waits that
-            long, and nobody should have to. <b>The intro sequence is now skipped</b>, which removes both the wait
-            and the thing that stalls in it.</p>
-          <p class="why">The community patch this relies on installs itself under a filename Wine replaces with its
-            own version, so it was never being loaded to begin with. <b>The game&rsquo;s own copy now wins</b>, which
-            is what happens on Windows.</p>
-        </div>
-
-        <div class="fix">
-          <div class="game">Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)</div>
-          <div class="sym">Comes up untranslated and stops dead at a Japanese error box.</div>
-          <p class="why">The Classic REbirth patch is a graphics library that sits beside the game, and Wine was
-            loading its own version instead &mdash; so the patch never ran at all. <b>The game&rsquo;s own copy is
-            now loaded first</b>, with Wine&rsquo;s kept behind it as a fallback.</p>
-          <p class="why">That fallback is the whole trick: the patch passes anything it does not implement itself
-            through to the real library, and with nothing behind it the game crashes instantly instead.</p>
-        </div>
-
-        <div class="fix">
-          <div class="game">Quake (GOG) &mdash; the Windows builds</div>
-          <div class="sym">GLQuake and both mission packs close instantly. No window, no error.</div>
-          <p class="why">GOG ships this with a 3dfx graphics driver from the nineties, and the same shadowing
-            problem applied: Wine substituted its own, and the game died before a window appeared.
-            <b>The driver GOG shipped is now used</b>, which is the stack the release was built around.</p>
-        </div>
-
-        <div class="fix">
-          <div class="game">Fallout: New California</div>
-          <div class="sym">&ldquo;Fallout: New Vegas does not appear to be installed.&rdquo; Please insert the DVD.</div>
-          <p class="why">Every file downloaded perfectly &mdash; but GOG&rsquo;s installer normally performs three
-            finishing steps afterwards, and nothing on Linux was doing them. <b>Now applied at launch</b>, repairing
-            an install you already have, no reinstall.</p>
-        </div>
-
-        <div class="fix">
-          <div class="game">Realms of Arkania 1 &amp; 2 &middot; Albion</div>
-          <div class="sym">DOSBox opens for half a second, then vanishes.</div>
-          <p class="why">Two faults at once: the configuration files GOG&rsquo;s installer copies were never copied,
-            and the game was being started from the wrong folder &mdash; so DOSBox looked for the game one level too
-            high and quit. <b>Both fixed.</b></p>
-        </div>
-
-        <div class="fix">
-          <div class="game">Colony Ship</div>
-          <div class="sym">Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.</div>
-          <p class="why">One file was damaged on one of GOG&rsquo;s servers &mdash; half of it, then the connection
-            closed, every single time &mdash; and the download kept asking that same server for it. <b>Now each
-            piece is checked and a different server is used</b> when one of them keeps failing.</p>
-        </div>
-
-      </div>
-
-      <div class="sect">
-        <h4>why keep a list like this at all</h4>
-        <p class="lead" style="margin-top:14px">Most things that go wrong under a compatibility layer are fixed by a
-          general rule, and those rules are simply part of the app. What is left over is the awkward remainder:
-          faults that belong to one specific game and to nothing else. Each one costs an evening to work out, and
-          the reason for writing it down is so that nobody has to work it out twice.</p>
-        <p class="lead" style="margin-top:14px">The list is expected to grow. A game that has been added to it
-          behaves, on your machine, the way it did on the machine where the fault was found &mdash; which is the
-          only test that really counts.</p>
-        <div class="btns">
-          <a class="btn dl" href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/latest" target="_blank" rel="noopener">⤓ Download Cafe Neurotico</a>
-          <a class="btn gh" href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Report a game that misbehaves</a>
-        </div>
-        <p class="note">Found one that does not work? <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; this list is how it gets fixed.</p>
-      </div>
-
-      <div class="foot">
-        <a href="index.html">cafeneurotico</a> &middot;
-        <a href="ports.html">source ports &amp; mods</a> &middot;
-        <a href="macos.html">macOS (Experimental)</a> &middot;
-        <a href="support.html">support</a> &middot;
-        <a href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">github</a><br>
-        more caffeine is more good
-      </div>
-    </div>
+<header class="top">
+  <div class="wrap topin">
+    <a class="brand" href="index.html">cafe<span class="dot">.</span>neurotico</a>
+    <nav class="links">
+      <a href="omarchy.html">Omarchy</a>
+      <a href="crema.html">CREMA</a>
+      <a href="library.html">The library</a>
+      <a href="ports.html">Fan games &amp; ports</a>
+      <a href="fixes.html">Game fixes</a>
+      <a href="support.html">Support</a>
+    </nav>
   </div>
+</header>
+<div class="wrap narrow">
+
+  <div class="hero">
+    <div class="eyebrow"><span>game fixes</span><span class="tag">named games · named faults</span></div>
+    <h1>Fixed <span class="em">Individually</span></h1>
+    <p class="lead" style="margin-top:18px">Not &ldquo;improved compatibility&rdquo;. Each of these is a real game that did not work on Linux, the exact thing that turned out to be wrong with it, and what is now done about it automatically. <strong>Nothing here needs to be configured</strong> &mdash; the fix is applied when the game is launched.</p>
+  </div>
+
+  <section>
+    <div class="label">01_named_faults</div>
+
+    <div class="panel fix">
+      <h3>OutRun 2006: Coast 2 Coast</h3>
+      <div class="sym">A white screen. It seems to hang on the SEGA logo, so it gets killed.</div>
+      <p class="body">The intro is a run of video logos, and under a compatibility layer the first one can sit there for a minute or more before the menu ever arrives. It is not frozen &mdash; but nobody waits that long, and nobody should have to. <strong>The intro sequence is now skipped</strong>, which removes both the wait and the thing that stalls in it.</p>
+      <p class="body">The community patch this relies on installs itself under a filename Wine replaces with its own version, so it was never being loaded to begin with. <strong>The game&rsquo;s own copy now wins</strong>, which is what happens on Windows.</p>
+    </div>
+
+    <div class="panel fix">
+      <h3>Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)</h3>
+      <div class="sym">Comes up untranslated and stops dead at a Japanese error box.</div>
+      <p class="body">The Classic REbirth patch is a graphics library that sits beside the game, and Wine was loading its own version instead &mdash; so the patch never ran at all. <strong>The game&rsquo;s own copy is now loaded first</strong>, with Wine&rsquo;s kept behind it as a fallback.</p>
+      <p class="body">That fallback is the whole trick: the patch passes anything it does not implement itself through to the real library, and with nothing behind it the game crashes instantly instead.</p>
+    </div>
+
+    <div class="panel fix">
+      <h3>Quake (GOG) &mdash; the Windows builds</h3>
+      <div class="sym">GLQuake and both mission packs close instantly. No window, no error.</div>
+      <p class="body">GOG ships this with a 3dfx graphics driver from the nineties, and the same shadowing problem applied: Wine substituted its own, and the game died before a window appeared. <strong>The driver GOG shipped is now used</strong>, which is the stack the release was built around.</p>
+    </div>
+
+    <div class="panel fix">
+      <h3>Fallout: New California</h3>
+      <div class="sym">&ldquo;Fallout: New Vegas does not appear to be installed.&rdquo; Please insert the DVD.</div>
+      <p class="body">Every file downloaded perfectly &mdash; but GOG&rsquo;s installer normally performs three finishing steps afterwards, and nothing on Linux was doing them. <strong>Now applied at launch</strong>, repairing an install you already have, no reinstall.</p>
+    </div>
+
+    <div class="panel fix">
+      <h3>Realms of Arkania 1 &amp; 2 &middot; Albion</h3>
+      <div class="sym">DOSBox opens for half a second, then vanishes.</div>
+      <p class="body">Two faults at once: the configuration files GOG&rsquo;s installer copies were never copied, and the game was being started from the wrong folder &mdash; so DOSBox looked for the game one level too high and quit. <strong>Both fixed.</strong></p>
+    </div>
+
+    <div class="panel fix">
+      <h3>Colony Ship</h3>
+      <div class="sym">Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.</div>
+      <p class="body">One file was damaged on one of GOG&rsquo;s servers &mdash; half of it, then the connection closed, every single time &mdash; and the download kept asking that same server for it. <strong>Now each piece is checked and a different server is used</strong> when one of them keeps failing.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">02_why_a_list</div>
+    <h2>why keep a list like this at all</h2>
+    <p class="body">Most things that go wrong under a compatibility layer are fixed by a general rule, and those rules are simply part of the app. What is left over is the awkward remainder: faults that belong to one specific game and to nothing else. Each one costs an evening to work out, and the reason for writing it down is so that nobody has to work it out twice.</p>
+    <p class="body">The list is expected to grow. A game that has been added to it behaves, on your machine, the way it did on the machine where the fault was found &mdash; which is the only test that really counts.</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/latest" target="_blank" rel="noopener">⤓ Download Cafe Neurotico</a>
+      <a class="btn ghost" href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Report a game that misbehaves</a>
+    </div>
+    <div class="note" style="margin-top:26px">
+      <p>Found one that does not work? <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; this list is how it gets fixed.</p>
+    </div>
+    <p class="body seealso" style="margin-top:26px"><a href="index.html">cafeneurotico</a> &middot; <a href="ports.html">source ports &amp; mods</a> &middot; <a href="macos.html">macOS (Experimental)</a> &middot; <a href="support.html">support</a> &middot; <a href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">github</a></p>
+    <p class="body seealso">more caffeine is more good</p>
+    <a class="back" href="index.html">&lt; back to cafeneurotico</a>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap fin">
+    <span>Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷</span>
+    <span>
+      <a href="index.html">Home</a> ·
+      <a href="omarchy.html">Omarchy</a> ·
+      <a href="crema.html">CREMA</a> ·
+      <a href="library.html">The library</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="https://github.com/FromChaosComesClarity/CafeNeurotico">GitHub</a>
+    </span>
+  </div>
+</footer>
 </body>
 </html>
