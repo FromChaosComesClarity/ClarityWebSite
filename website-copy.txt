@@ -51,7 +51,7 @@ A frameless desk clock for Linux that wears your game library: Ken Burns slidesh
 click anywhere to skip ▸
 
 ### clock.html | 003 | div
-on the desk
+on the desktop
 
 ### clock.html | 004 | div
 the time, over your library
@@ -289,7 +289,7 @@ CREMA — <span class="em">the big screen companion</span>
 The same library, the same artwork, the same playlists — on a television, driven with a gamepad, from across a room. Nothing to configure and nothing to sync: it is the same app.
 
 ### crema.html | 010 | div
-01_a_face_for_the_sofa
+01_a_face_for_the_big_screen
 
 ### crema.html | 011 | figcaption
 A game page, sized for a screen you are sitting back from.
@@ -334,16 +334,16 @@ A music player built into the same face: your own folder of music, browsable by 
 It plays. It does not manage.
 
 ### crema.html | 025 | p
-Renaming games, scraping artwork, fetching trailers, typing launch commands, uninstalling — none of that is here. It belongs at the desk, where there is a keyboard.
+Renaming games, scraping artwork, fetching trailers, typing launch commands, uninstalling — none of that is here. It belongs at the desktop mode, where there is a keyboard.
 
 ### crema.html | 026 | p
-What is left is what you would actually want from a sofa: mark a favourite, say you want to play something, add it to a playlist, see achievements, and install a game you own.
+What is left is what you would actually want from a big screen mode: mark a favourite, say you want to play something, add it to a playlist, see achievements, and install a game you own.
 
 ### crema.html | 027 | div
 ⚠ And it never asks for a password
 
 ### crema.html | 028 | p
-CREMA has no store login. If an account needs signing in to, it says so and points you at the desk — a device-code flow with a password field has no business on a television.
+CREMA has no store login. If an account needs signing in to, it says so and points you at the desktop mode — a device-code flow with a password field has no business on a television.
 
 ### crema.html | 029 | a
 &lt; back to cafe neurotico
@@ -539,7 +539,7 @@ the cover wall, on the television
 list and details, gamepad-first
 
 ### emulatte.html | 052 | figcaption
-the game page, built for a sofa
+the game page, built for a big screen
 
 ### emulatte.html | 053 | h4
 also on the menu
@@ -748,13 +748,13 @@ PAGE: index.html
 ==============================================================================
 
 ### index.html | title
-Cafe Neurotico — the game center for Omarchy
+Cafe Neurotico — the game center made for Omarchy
 
 ### index.html | meta:description
-Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place, in the bar, one keystroke away. 2.0 is being built now.
+Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place, in the bar, one keyboard shortcut away. 2.0 is being built now.
 
 ### index.html | og:title
-Cafe Neurotico — the game center for Omarchy
+Cafe Neurotico — the game center made for Omarchy
 
 ### index.html | og:description
 Every game you own, in one place, at home on Omarchy. 2.0 is being built and tested now.
@@ -787,10 +787,10 @@ Support
 2.0 in progress
 
 ### index.html | 010 | h1
-The game center<br><span class="em">for Omarchy.</span>
+cafe<span class="em">.</span>neurotico<br><span class="em"> The Game Center.</span>
 
 ### index.html | 011 | p
-Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place. In the bar. One keystroke away. Cafe Neurotico is being rebuilt around that idea, and **2.0 is what it is becoming.**
+Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place. In the bar. One keyboard shortcut away. Cafe Neurotico is being rebuilt around that idea, and **2.0 is what it is becoming.** **CN** should work in any other Linux distro, but it has found a home in Omarchy, with exclusive features.
 
 ### index.html | 012 | a
 See what is shipping
@@ -811,7 +811,7 @@ no one else does this
 Source ports and fan games that arrive playable
 
 ### index.html | 018 | p
-Point it at the file you downloaded. It knows what each port needs and wires up the game data from a title you already own — so it never lands unplayable.
+It knows what each port needs and wires up the game data from a title you already own — so it never lands unplayable.
 
 ### index.html | 019 | span
 See the catalogue →
@@ -820,7 +820,7 @@ See the catalogue →
 no one else does this
 
 ### index.html | 021 | h3
-Named games, named faults, fixed one at a time
+Fixes for games that didn't work on Linux, embedded in the app.
 
 ### index.html | 022 | p
 Not “improved compatibility”. Specific games that did not run on Linux, what was actually wrong with each, and the fix applied automatically when you install it.
@@ -832,7 +832,7 @@ Read the list →
 omarchy only
 
 ### index.html | 025 | h3
-Your whole library, one keystroke from anywhere
+Your whole library, one keyboard shortcut from anywhere
 
 ### index.html | 026 | p
 A launcher overlay in the bar's own language. Type three letters, press Enter, play — without a window ever opening.
@@ -907,7 +907,7 @@ Where your data lives →
 One app, three faces, all your games
 
 ### index.html | 050 | p
-**The Manager** is the desk: import, organise, scrape, install, launch, with a mouse and keyboard. **CREMA** is the big screen companion: fullscreen, gamepad-first, made for a television across a room. **GRINDER** works underneath both, installing GOG and Epic games without a store client.
+**The Manager** is the desktop app: import, organise, scrape, install, launch, with a mouse and keyboard. **CREMA** is the big screen companion: fullscreen, gamepad-first, made for a television across a room. **GRINDER** works underneath both, installing GOG and Epic games without a store client.
 
 ### index.html | 051 | p
 It is one AppImage. Nothing to install alongside it, and your library, artwork and settings live in a folder beside it — portable, backed up by copying, gone when you delete it.
@@ -922,7 +922,7 @@ What it looks like right now
 Shot on Omarchy, on the machine it is developed on. Nothing here is a mockup.
 
 ### index.html | 055 | div
-**01** — the launcher, one keystroke from anywhere
+**01** — the launcher, one keyboard shortcut from anywhere
 
 ### index.html | 056 | div
 04_at_home_on_omarchy.md
@@ -940,13 +940,13 @@ In the bar
 A widget showing what is installed and what is playing, with a menu one click from the library, the big screen face and your storage.
 
 ### index.html | 061 | h3
-One keystroke away
+One keyboard shortcut away
 
 ### index.html | 062 | p
-A launcher overlay: type a few letters, press Enter, play. Cover art, genre and a sentence about whatever you are pointing at.
+A launcher overlay: type a few letters, press Enter, play. Cover art, genre and a short description of the game.
 
 ### index.html | 063 | h3
-Your theme, not ours
+Omarchy Themes
 
 ### index.html | 064 | p
 It uses the theme Omarchy is using. Install a new one, apply it with `omarchy theme set`, and Cafe Neurotico is wearing it too.
@@ -967,7 +967,7 @@ Fullscreen, on the screen you chose, at the resolution you expect.
 ⚠ Experimental, and honest about it
 
 ### index.html | 070 | p
-What you can download today is the **1.12.x experimental line** — the work in progress, not a settled release. It is used daily on the machine it is built on, and it will have rough edges. **2.0 is the destination**, and there is no date on it. If you want the calm version, wait for that one.
+What you can download today is the **1.12.x experimental line** — the work in progress, in fine tuning, not a settled release yet. It is used daily on the machine it is built on, and it will have rough edges. **2.0 is the destination**, it's coming soon. If you want the calm version, wait for that one.
 
 ### index.html | 071 | span
 Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
@@ -1348,13 +1348,13 @@ PAGE: omarchy.html
 Cafe Neurotico on Omarchy
 
 ### omarchy.html | meta:description
-What Cafe Neurotico does that only works on Omarchy: a bar widget, a launcher overlay one keystroke from your whole library, the live theme bridge, and games that open properly.
+What Cafe Neurotico does that only works on Omarchy: a bar widget, a launcher overlay one keyboard shortcut from your whole library, the live theme bridge, and games that open properly.
 
 ### omarchy.html | og:title
 Cafe Neurotico on Omarchy
 
 ### omarchy.html | og:description
-What Cafe Neurotico does that only works on Omarchy: a bar widget, a launcher overlay one keystroke from your whole library, the live theme bridge, and games that open properly.
+What Cafe Neurotico does that only works on Omarchy: a bar widget, a launcher overlay one keyboard shortcut from your whole library, the live theme bridge, and games that open properly.
 
 ### omarchy.html | 001 | a
 Omarchy
@@ -1381,13 +1381,13 @@ omarchy_only.md
 What it does <span class="em">only here</span>
 
 ### omarchy.html | 009 | p
-Cafe Neurotico should run on any Linux desktop. It is **built and tested on Omarchy**, and there are four things it can do there that it cannot do anywhere else.
+Cafe Neurotico should run on any Linux desktop. However it is **built for, tested on and tailored for Omarchy**, and there are four things it can do there that it cannot do anywhere else.
 
 ### omarchy.html | 010 | div
 01_the_launcher
 
 ### omarchy.html | 011 | h2
-Your whole library, one keystroke away
+Your whole library, one keyboard shortcut away
 
 ### omarchy.html | 012 | p
 Bind a key. Type three letters of a game's name. Press Enter. It plays — with no window opening first, and nothing to click.
@@ -1417,7 +1417,7 @@ Installed count when nothing is running; the game's name when something is. Clic
 **Nothing to configure.** The app writes down where it lives; the widget reads that. No paths to type.
 
 ### omarchy.html | 021 | li
-**It fails quietly.** If the app is missing, you get a bare cup and an offer to fetch it — never a wrong number.
+**It lets you know.** If the app is missing, you get a bare cup and an offer to fetch it — never a wrong number.
 
 ### omarchy.html | 022 | div
 03_the_theme_bridge
@@ -1432,7 +1432,7 @@ Cafe Neurotico uses **the theme Omarchy is currently using**. Install a new them
 Your Desktop sits at the top of the picker, above the app's own themes.
 
 ### omarchy.html | 026 | p
-The 93 themes that ship with the app are still there if you want one of those instead. All three faces draw from the same set, so a look you like on the desk follows you to the sofa.
+The 93 themes that ship with the app are still there if you want one of those instead. All three faces draw from the same set, so a look you like on the desktop mode follows you to the big screen mode.
 
 ### omarchy.html | 027 | div
 04_games_open_properly
@@ -1465,7 +1465,7 @@ The bar widget and the launcher are a companion plugin. It is around nine kiloby
 ⚠ Not published yet
 
 ### omarchy.html | 037 | p
-The plugin is built and in daily use, but it is not on Omarchy's plugin marketplace yet. It goes out with 2.0.
+The plugin is built and in daily testing, but it is not on Omarchy's plugin marketplace yet. It goes out with 2.0.
 
 ### omarchy.html | 038 | a
 &lt; back to cafe neurotico
@@ -1881,7 +1881,7 @@ it keeps the work going
 chip in
 
 ### support.html | 005 | p
-Cafe Neurotico is free, and made by one person on their own time. If it sorted out your gaming life, a contribution keeps the work going.
+Cafe Neurotico is free, and made by myself on my own time. If it sorted out your gaming life, a contribution keeps the work going.
 
 ### support.html | 006 | p
 **If you donate, <a href="mailto:joserobertoazevedo@hey.com" style="color:var(--crema)">let me know</a> so I can thank you personally! :)**
