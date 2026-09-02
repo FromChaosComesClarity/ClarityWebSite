@@ -744,6 +744,529 @@ support
 github
 
 ==============================================================================
+PAGE: gallery.html
+==============================================================================
+
+### gallery.html | title
+Screenshots — every corner of Cafe Neurotico
+
+### gallery.html | meta:description
+105 screenshots of Cafe Neurotico on Omarchy: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and CREMA on the big screen.
+
+### gallery.html | og:title
+Screenshots — every corner of Cafe Neurotico
+
+### gallery.html | og:description
+105 screenshots: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and CREMA on the big screen.
+
+### gallery.html | 001 | a
+Omarchy
+
+### gallery.html | 002 | a
+CREMA
+
+### gallery.html | 003 | a
+The library
+
+### gallery.html | 004 | a
+Fan games &amp; ports
+
+### gallery.html | 005 | a
+Game fixes
+
+### gallery.html | 006 | a
+Support
+
+### gallery.html | 007 | span
+gallery
+
+### gallery.html | 008 | h1
+Every corner of it, <span class="em">in 105 screenshots.</span>
+
+### gallery.html | 009 | p
+Taken on Omarchy, on the machine it is built on. The library, a game page, installing without a store client, the fan games catalogue, the themes, the bar, and CREMA on the television. Click any one to see it full size.
+
+### gallery.html | 010 | a
+The shelf
+
+### gallery.html | 011 | a
+A game page
+
+### gallery.html | 012 | a
+Installing
+
+### gallery.html | 013 | a
+Fan games and source ports
+
+### gallery.html | 014 | a
+Carts and emulators
+
+### gallery.html | 015 | a
+Artwork, trailers, manuals, saves
+
+### gallery.html | 016 | a
+93 themes
+
+### gallery.html | 017 | a
+Settings
+
+### gallery.html | 018 | a
+In Omarchy
+
+### gallery.html | 019 | a
+CREMA, on the big screen
+
+### gallery.html | 020 | a
+Now playing
+
+### gallery.html | 021 | div
+01_the_library
+
+### gallery.html | 022 | h2
+The shelf
+
+### gallery.html | 023 | p
+Every store in one grid, sorted and filtered the way you actually look for something.
+
+### gallery.html | 024 | figcaption
+All Games: GOG, Steam, Epic, itch and the emulators in one grid.
+
+### gallery.html | 025 | figcaption
+The GOG shelf on its own, covers with a Play button on each.
+
+### gallery.html | 026 | figcaption
+Playlists down the side — genres and moods, not folders.
+
+### gallery.html | 027 | figcaption
+Sorting: last played, favourites first, want to play, recently added.
+
+### gallery.html | 028 | figcaption
+Filtering by genre, with a count next to each.
+
+### gallery.html | 029 | figcaption
+Filtering by playlist.
+
+### gallery.html | 030 | figcaption
+The shelf, with the hero showing whatever you are pointing at.
+
+### gallery.html | 031 | figcaption
+Further down the same shelf.
+
+### gallery.html | 032 | figcaption
+The whole library wearing a light theme.
+
+### gallery.html | 033 | figcaption
+And the same shelf in a blue system theme.
+
+### gallery.html | 034 | figcaption
+And again, in the cyberpunk theme.
+
+### gallery.html | 035 | div
+02_a_game_page
+
+### gallery.html | 036 | h2
+A game page
+
+### gallery.html | 037 | p
+Artwork, screenshots, a description and the button — the same page whatever the game came from.
+
+### gallery.html | 038 | figcaption
+Baldur’s Gate 3: key art, screenshots and the description.
+
+### gallery.html | 039 | figcaption
+Prodeus, with its screenshot strip.
+
+### gallery.html | 040 | figcaption
+The same page scrolled to the description and features.
+
+### gallery.html | 041 | figcaption
+Baldur’s Gate: Enhanced Edition.
+
+### gallery.html | 042 | figcaption
+The same page, with the manuals that shipped with it listed.
+
+### gallery.html | 043 | figcaption
+Elminage Gothic.
+
+### gallery.html | 044 | figcaption
+halfmoon.
+
+### gallery.html | 045 | figcaption
+System Purge.
+
+### gallery.html | 046 | figcaption
+Wizorb, on a page wearing a blue theme.
+
+### gallery.html | 047 | figcaption
+Baldur’s Gate, on a page wearing a green terminal theme.
+
+### gallery.html | 048 | figcaption
+DOOM, on a page wearing a light theme.
+
+### gallery.html | 049 | div
+03_installing
+
+### gallery.html | 050 | h2
+Installing
+
+### gallery.html | 051 | p
+GRINDER underneath: GOG and Epic games installed without a store client, DLCs included.
+
+### gallery.html | 052 | figcaption
+Install a game: native or Windows, where it goes, and what it costs in disk space.
+
+### gallery.html | 053 | figcaption
+The download manager, part-way through Fallout — New California.
+
+### gallery.html | 054 | figcaption
+The queue working through several at once.
+
+### gallery.html | 055 | figcaption
+Updating the library.
+
+### gallery.html | 056 | figcaption
+GRINDER itself: launch, log, edit, uninstall, per game.
+
+### gallery.html | 057 | figcaption
+Manage DLCs, with what is owned and what is missing.
+
+### gallery.html | 058 | figcaption
+Five owned DLCs for Pillars of Eternity, none installed yet.
+
+### gallery.html | 059 | figcaption
+GOG installs DLCs as a set, so it says so before starting.
+
+### gallery.html | 060 | figcaption
+Downloading all of them.
+
+### gallery.html | 061 | figcaption
+And every one installed.
+
+### gallery.html | 062 | figcaption
+“Game installed”, as a desktop notification.
+
+### gallery.html | 063 | figcaption
+Pillars of Eternity, launched.
+
+### gallery.html | 064 | figcaption
+The White March, Part 1 — installed.
+
+### gallery.html | 065 | figcaption
+The White March, Part 2 — installed.
+
+### gallery.html | 066 | figcaption
+A source port that needs the original game: point it at files you already own.
+
+### gallery.html | 067 | figcaption
+Choosing which executable a port should run.
+
+### gallery.html | 068 | figcaption
+Install a custom game by hand: a title and a launch command.
+
+### gallery.html | 069 | figcaption
+Or point at a game folder you already have, and leave it where it is.
+
+### gallery.html | 070 | div
+04_fan_games_and_source_ports
+
+### gallery.html | 071 | h2
+Fan games and source ports
+
+### gallery.html | 072 | p
+A catalogue that knows what each port needs, and wires it to a game you own so it never lands unplayable.
+
+### gallery.html | 073 | figcaption
+The catalogue: DOOM, Quake, Wolfenstein 3D, Build engine, OutRun, OpenBOR, standalone.
+
+### gallery.html | 074 | figcaption
+Opened at the DOOM family.
+
+### gallery.html | 075 | figcaption
+Engines and total conversions, each with what it needs.
+
+### gallery.html | 076 | figcaption
+More of the same list, further down.
+
+### gallery.html | 077 | figcaption
+The Build engine entries.
+
+### gallery.html | 078 | figcaption
+OutRun and the standalone remakes.
+
+### gallery.html | 079 | figcaption
+An OpenBOR game, with its own install button.
+
+### gallery.html | 080 | figcaption
+The smaller fan games at the end of the list.
+
+### gallery.html | 081 | figcaption
+Which DOOM? Every Doom you own, linked to the engine that will run it.
+
+### gallery.html | 082 | div
+05_carts_and_emulators
+
+### gallery.html | 083 | h2
+Carts and emulators
+
+### gallery.html | 084 | p
+PICO-8, OpenBOR and the emulator sources, set up once and then just part of the shelf.
+
+### gallery.html | 085 | figcaption
+The PICO-8 shelf, every cart with its own cover.
+
+### gallery.html | 086 | figcaption
+Pointing the app at the PICO-8 binary and the carts folder.
+
+### gallery.html | 087 | figcaption
+itch.io and PICO-8 as sources, and a scan for game updates.
+
+### gallery.html | 088 | figcaption
+OpenBOR games, on the same shelf as everything else.
+
+### gallery.html | 089 | div
+06_artwork_trailers_manuals_saves
+
+### gallery.html | 090 | h2
+Artwork, trailers, manuals, saves
+
+### gallery.html | 091 | p
+The things around a game: the metadata, the video, the paperwork and the save files.
+
+### gallery.html | 092 | figcaption
+Choosing cover artwork.
+
+### gallery.html | 093 | figcaption
+Choosing an icon.
+
+### gallery.html | 094 | figcaption
+Browsing screenshots to add to a page.
+
+### gallery.html | 095 | figcaption
+Editing a game’s details by hand.
+
+### gallery.html | 096 | figcaption
+Choosing which trailer to download.
+
+### gallery.html | 097 | figcaption
+Downloading it.
+
+### gallery.html | 098 | figcaption
+Done.
+
+### gallery.html | 099 | figcaption
+And playing it inside the app.
+
+### gallery.html | 100 | figcaption
+Deleting a trailer you no longer want on disk.
+
+### gallery.html | 101 | figcaption
+The manuals that came with a GOG game.
+
+### gallery.html | 102 | figcaption
+One of them open in the reader.
+
+### gallery.html | 103 | figcaption
+The Adventurer’s Guide, as it shipped.
+
+### gallery.html | 104 | figcaption
+Save Manager: a game’s saves backed up to a portable zip.
+
+### gallery.html | 105 | div
+07_themes
+
+### gallery.html | 106 | h2
+93 themes
+
+### gallery.html | 107 | p
+Including a live bridge to whatever theme Omarchy is wearing right now.
+
+### gallery.html | 108 | figcaption
+The picker, with Your Desktop — the Omarchy theme — at the top.
+
+### gallery.html | 109 | figcaption
+Gaming Legends.
+
+### gallery.html | 110 | figcaption
+Aesthetics.
+
+### gallery.html | 111 | figcaption
+Linux ricing.
+
+### gallery.html | 112 | figcaption
+Originals and system themes.
+
+### gallery.html | 113 | figcaption
+The system themes: MS-DOS, Commodore 64, Mac OS, Amiga, NeXTSTEP.
+
+### gallery.html | 114 | figcaption
+The same set, on the light side.
+
+### gallery.html | 115 | figcaption
+Hovering one to see what it does.
+
+### gallery.html | 116 | figcaption
+Appearance: interface scale, corner style, the Ken Burns effect, the font.
+
+### gallery.html | 117 | figcaption
+The whole app wearing Commodore 64.
+
+### gallery.html | 118 | figcaption
+The control panel in the same blue.
+
+### gallery.html | 119 | figcaption
+A green CRT.
+
+### gallery.html | 120 | figcaption
+The control panel in green.
+
+### gallery.html | 121 | figcaption
+An amber CRT.
+
+### gallery.html | 122 | figcaption
+The control panel in cyberpunk.
+
+### gallery.html | 123 | figcaption
+And back to the near-black default.
+
+### gallery.html | 124 | div
+08_settings
+
+### gallery.html | 125 | h2
+Settings
+
+### gallery.html | 126 | p
+One control panel, searchable, with the connections and the system bits in it.
+
+### gallery.html | 127 | figcaption
+The control panel — search it, or start typing.
+
+### gallery.html | 128 | figcaption
+Another section of it open.
+
+### gallery.html | 129 | figcaption
+Connections: GOG, Epic, the Steam API and SteamGridDB.
+
+### gallery.html | 130 | figcaption
+The library: history, recently imported, PICO-8, free-to-play, hidden games.
+
+### gallery.html | 131 | figcaption
+Notifications, and pairing them to a phone through KDE Connect.
+
+### gallery.html | 132 | figcaption
+DOS games: automatic, native, or the DOSBox that came with the game.
+
+### gallery.html | 133 | figcaption
+Manage storage: what each game is costing you.
+
+### gallery.html | 134 | figcaption
+System: backup and restore, the application menu, starting in CREMA.
+
+### gallery.html | 135 | figcaption
+System tuning, and matching whatever Omarchy theme is running.
+
+### gallery.html | 136 | figcaption
+The manual: the manifesto, and the philosophy behind it.
+
+### gallery.html | 137 | figcaption
+About: the suite, and what each part of it is for.
+
+### gallery.html | 138 | div
+09_in_omarchy
+
+### gallery.html | 139 | h2
+In Omarchy
+
+### gallery.html | 140 | p
+The bar, the launcher and the notifications — the parts that only work here.
+
+### gallery.html | 141 | figcaption
+The bar: how many games are installed, click for the library, middle-click for CREMA.
+
+### gallery.html | 142 | figcaption
+The launcher overlay, over the desktop.
+
+### gallery.html | 143 | figcaption
+Type a few letters and it finds the game, with its art and a line about it.
+
+### gallery.html | 144 | figcaption
+“Game installed”, in the corner.
+
+### gallery.html | 145 | figcaption
+“Now Playing”, with the game’s own cover.
+
+### gallery.html | 146 | div
+10_crema
+
+### gallery.html | 147 | h2
+CREMA, on the big screen
+
+### gallery.html | 148 | p
+The same library on a television, driven with a gamepad from across a room.
+
+### gallery.html | 149 | figcaption
+The home screen: what you have played, a pick for today, and the shelf underneath.
+
+### gallery.html | 150 | figcaption
+The same screen in the morning.
+
+### gallery.html | 151 | figcaption
+A game page, sized for a screen you are sitting back from.
+
+### gallery.html | 152 | figcaption
+A game’s video running the full width of the screen.
+
+### gallery.html | 153 | div
+11_now_playing
+
+### gallery.html | 154 | h2
+Now playing
+
+### gallery.html | 155 | p
+What it looks like when a game is actually starting.
+
+### gallery.html | 156 | figcaption
+System Purge.
+
+### gallery.html | 157 | figcaption
+The library dimming behind it.
+
+### gallery.html | 158 | figcaption
+halfmoon.
+
+### gallery.html | 159 | a
+&lt; back to cafe neurotico
+
+### gallery.html | 160 | button
+&#8592;
+
+### gallery.html | 161 | button
+&#8594;
+
+### gallery.html | 162 | button
+&#10005;
+
+### gallery.html | 163 | span
+Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+
+### gallery.html | 164 | a
+Home
+
+### gallery.html | 165 | a
+Omarchy
+
+### gallery.html | 166 | a
+CREMA
+
+### gallery.html | 167 | a
+The library
+
+### gallery.html | 168 | a
+Support
+
+### gallery.html | 169 | a
+GitHub
+
+==============================================================================
 PAGE: index.html
 ==============================================================================
 
@@ -924,76 +1447,79 @@ Shot on Omarchy, on the machine it is developed on. Nothing here is a mockup.
 ### index.html | 055 | div
 **01** — the launcher, one keyboard shortcut from anywhere
 
-### index.html | 056 | div
+### index.html | 056 | p
+[All 105 screenshots, in one place →](gallery.html)
+
+### index.html | 057 | div
 04_at_home_on_omarchy.md
 
-### index.html | 057 | h2
+### index.html | 058 | h2
 It found a home
 
-### index.html | 058 | p
+### index.html | 059 | p
 Cafe Neurotico should run on any Linux desktop, but it's being built and tested on **Omarchy**, with its no-nonsense no BS mentality — which is why it now behaves like part of it rather than a visitor.
 
-### index.html | 059 | h3
+### index.html | 060 | h3
 In the bar
 
-### index.html | 060 | p
+### index.html | 061 | p
 A widget showing what is installed and what is playing, with a menu one click from the library, the big screen face and your storage.
 
-### index.html | 061 | h3
+### index.html | 062 | h3
 One keyboard shortcut away
 
-### index.html | 062 | p
+### index.html | 063 | p
 A launcher overlay: type a few letters, press Enter, play. Cover art, genre and a short description of the game.
 
-### index.html | 063 | h3
+### index.html | 064 | h3
 Omarchy Themes
 
-### index.html | 064 | p
+### index.html | 065 | p
 It uses the theme Omarchy is using. Install a new one, apply it with `omarchy theme set`, and Cafe Neurotico is wearing it too.
 
-### index.html | 065 | h3
+### index.html | 066 | h3
 Games open properly
 
-### index.html | 066 | p
+### index.html | 067 | p
 Fullscreen, on the screen you chose, at the resolution you expect.
 
-### index.html | 067 | p
+### index.html | 068 | p
 [Everything it does on Omarchy →](omarchy.html)
 
-### index.html | 068 | div
+### index.html | 069 | div
 05_where_it_stands.txt
 
-### index.html | 069 | div
+### index.html | 070 | div
 ⚠ Experimental, and honest about it
 
-### index.html | 070 | p
+### index.html | 071 | p
 What you can download today is the **1.12.x experimental line** — the work in progress, in fine tuning, not a settled release yet. It is used daily on the machine it is built on, and it will have rough edges. **2.0 is the destination**, it's coming soon. If you want the calm version, wait for that one.
 
-### index.html | 071 | span
+### index.html | 072 | span
 Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### index.html | 072 | a
+### index.html | 073 | a
 Omarchy
 
-### index.html | 073 | a
+### index.html | 074 | a
 CREMA
 
-### index.html | 074 | a
+### index.html | 075 | a
 The library
 
-### index.html | 075 | a
+### index.html | 076 | a
 macOS
 
-### index.html | 076 | a
+### index.html | 077 | a
 Clock
 
-### index.html | 077 | a
+### index.html | 078 | a
 EmuLatte
 
-### index.html | 078 | a
+### index.html | 079 | a
 Support
 
-### index.html | 079 | a
+### index.html | 080 | a
 GitHub
 
 ==============================================================================
