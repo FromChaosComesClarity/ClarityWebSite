@@ -1,256 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafe Neurotico — macOS, Experimental</title>
-  <meta name="description" content="Cafe Neurotico now runs on Apple Silicon Macs — the same codebase, a second host, still labelled Experimental. What works today, what doesn't yet, and how to install an unsigned build.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Cafe Neurotico">
-  <meta property="og:title" content="Cafe Neurotico on macOS — Experimental">
-  <meta property="og:description" content="A second host, same codebase. Steam and GOG, the full library, native GOG installs — and since 1.9, Windows games through CrossOver.">
-  <meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/images/coffee_banner.jpg">
-  <meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/macos.html">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Neurotico — macOS, Experimental</title>
+<meta name="description" content="Cafe Neurotico now runs on Apple Silicon Macs — the same codebase, a second host, still labelled Experimental. What works today, what doesn't yet, and how to install an unsigned build.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cafe Neurotico">
+<meta property="og:title" content="Cafe Neurotico on macOS — Experimental">
+<meta property="og:description" content="A second host, same codebase. Steam and GOG, the full library, native GOG installs — and since 1.9, Windows games through CrossOver.">
+<meta property="og:image" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/assets/images/coffee_banner.jpg">
+<meta property="og:url" content="https://fromchaoscomesclarity.github.io/CafeNeuroticoWebSite/macos.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --amber:#2fe0d6; --amber-dim:#177c77;
-      --chalk:#dfe8e8; --chalk-dim:#7d9295;
-      --board:#0e1113; --board2:#141819;
-      --mono-stack:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace; --crema:#ff5fa2; --kofi:#FF5E5B; --pix:#32BCAD;
-      --mac:#e58a70;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{min-height:100%}
-    body{background:#08090a;color:var(--chalk);font-family:var(--mono-stack);overflow-x:hidden}
-    a{color:inherit}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{padding:clamp(40px,7vh,84px) 0 clamp(10px,2vh,24px)}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 0}
 
-    #chalk{
-      min-height:100vh;
-      background:
-        radial-gradient(120% 80% at 50% -10%, rgba(255,255,255,.05), transparent 60%),
-        radial-gradient(80% 60% at 80% 110%, rgba(212,163,115,.06), transparent 60%),
-        var(--board);
-      position:relative;
-    }
-    #chalk::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.04;
-      background-image:radial-gradient(circle at 20% 30%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 70% 60%, #fff 0 1px, transparent 1px),
-        radial-gradient(circle at 40% 80%, #fff 0 1px, transparent 1px);
-      background-size:140px 140px,200px 200px,170px 170px}
-    .wrap{max-width:820px;margin:0 auto;padding:30px 24px 80px;text-align:center;position:relative;z-index:1}
+/* what works / what doesn't: a mark, a heading, a line */
+.feat{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:18px}
+.feat > div{background:var(--surface);padding:18px 20px;display:flex;gap:14px}
+.feat .mark{flex:0 0 auto;line-height:1.6;font-size:.9rem}
+.feat .mark.ok{color:var(--cyan)}
+.feat .mark.no{color:var(--magenta)}
+.feat .txt{min-width:0}
+.feat h3{margin:0 0 6px}
+.feat p{font-size:.86rem;color:var(--muted)}
+.feat p+p{margin-top:10px}
+.feat .new{font-size:.62rem;letter-spacing:.16em;color:var(--magenta);
+  border:1px solid var(--magenta);padding:1px 6px;margin-left:8px;white-space:nowrap}
 
-    .back{display:inline-block;font-family:var(--mono-stack);font-size:13px;color:var(--chalk-dim);
-      text-decoration:none;letter-spacing:.5px;margin-bottom:34px;transition:.18s}
-    .back:hover{color:var(--crema)}
+/* install steps */
+ol.steps{list-style:none;counter-reset:step;margin-top:18px}
+ol.steps li{counter-increment:step;position:relative;padding-left:2.6rem;margin-top:16px;color:var(--muted)}
+ol.steps li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:0;
+  color:var(--cyan);font-size:.8rem;letter-spacing:.1em}
+ol.steps li strong{color:var(--ink)}
+.codeblock{display:block;background:var(--raised);border:1px solid var(--line);
+  padding:12px 14px;margin-top:10px;color:var(--amber);font-size:.86rem;
+  overflow-x:auto;white-space:pre}
 
-    .kicker{font-family:var(--mono-stack);font-size:clamp(13px,5vw,20px);color:var(--chalk-dim);
-      transform:rotate(-2deg);margin-bottom:6px}
-    .wordmark{font-family:var(--mono-stack);font-weight:900;letter-spacing:.14em;
-      font-size:clamp(13px,6vw,24px);line-height:1.05;text-transform:uppercase}
-    .wordmark .badge{display:inline-block;vertical-align:middle;font-family:var(--mono-stack);
-      font-size:15px;letter-spacing:2px;color:var(--mac);border:1px solid var(--mac);
-      border-radius:6px;padding:3px 10px;margin-left:10px;text-transform:uppercase}
-    .rule{width:min(380px,80%);height:0;border-top:2px dashed var(--chalk-dim);opacity:.5;margin:18px auto 8px}
-    .sub{font-family:var(--mono-stack);font-size:clamp(13px,4vw,18px);color:var(--crema)}
-
-    .lead{color:var(--chalk-dim);font-size:14px;line-height:1.8;max-width:640px;margin:26px auto 0}
-    .lead b{color:var(--chalk)}
-
-    .sect{margin-top:52px;padding-top:34px;border-top:2px dashed rgba(244,239,230,.18);text-align:left}
-    .sect h4{font-family:var(--mono-stack);font-size:17px;color:var(--crema);margin-bottom:6px;text-align:center}
-    .sect .lead2{color:var(--chalk-dim);font-size:14px;line-height:1.8;max-width:640px;margin:0 auto 22px;text-align:center}
-
-    .only{margin:0 auto;max-width:640px}
-    .only-item{display:flex;gap:14px;padding:15px 0;border-bottom:1px dashed rgba(244,239,230,.14)}
-    .only-mark{font-family:var(--mono-stack);font-size:19px;flex-shrink:0;line-height:1.5;opacity:.9}
-    .only-mark.ok{color:#7CFC68}
-    .only-mark.no{color:var(--chalk-dim)}
-    .only-item h5{font-family:var(--mono-stack);font-weight:900;letter-spacing:.09em;font-size:13.5px;
-      text-transform:uppercase;color:var(--chalk);margin-bottom:5px}
-    .only-item p{color:var(--chalk-dim);font-size:13.5px;line-height:1.6}
-
-    .steps{margin:0 auto;max-width:640px;counter-reset:step}
-    .step{display:flex;gap:16px;padding:14px 0;border-bottom:1px dashed rgba(244,239,230,.14)}
-    .step:last-child{border-bottom:none}
-    .step .n{counter-increment:step;font-family:var(--mono-stack);font-size:20px;color:var(--mac);
-      flex-shrink:0;width:26px;text-align:center}
-    .step .n::before{content:counter(step)}
-    .step p{color:var(--chalk-dim);font-size:13.5px;line-height:1.7}
-    .step p b{color:var(--chalk)}
-    .step code{background:rgba(0,0,0,.4);border:1px solid rgba(244,239,230,.18);border-radius:5px;
-      padding:1px 6px;font-family:var(--mono-stack);font-size:14px;color:var(--amber)}
-    .codeblock{display:block;background:rgba(0,0,0,.4);border:1px solid rgba(244,239,230,.18);
-      border-radius:8px;padding:12px 14px;margin-top:8px;font-family:var(--mono-stack);
-      font-size:15px;color:var(--amber);overflow-x:auto;white-space:pre}
-    /* ⚠️ .step is a flex container, and a flex item's default min-width:auto is min-content —
-       so the <p> holding the block above refused to shrink below the 615px of unwrappable
-       xattr command inside it, dragging the whole page to 682px on a 390px screen. The
-       overflow-x:auto above could never fire while its own parent was being widened to fit.
-       min-width:0 lets the paragraph shrink, and the code block scrolls on its own as meant. */
-    .step p{min-width:0}
-
-    table.paths{width:100%;border-collapse:collapse;margin:0 auto;max-width:640px;font-size:13px}
-    table.paths th{font-family:var(--mono-stack);font-weight:900;letter-spacing:.06em;text-transform:uppercase;
-      font-size:11.5px;color:var(--chalk-dim);text-align:left;padding:0 0 10px;border-bottom:1px dashed rgba(244,239,230,.25)}
-    table.paths td{padding:12px 0;border-bottom:1px dashed rgba(244,239,230,.14);color:var(--chalk-dim);vertical-align:top}
-    table.paths td:first-child{color:var(--chalk);padding-right:14px;white-space:nowrap}
-    table.paths td code{font-family:var(--mono-stack);font-size:14px;color:var(--amber)}
-
-    /* Below ~560px this table is what sets the page's minimum width: the first column is
-       nowrap and the second holds unbreakable path tokens — together about 700px, on a 390px
-       screen. site.css puts overflow-x:hidden on the body, so there is no scrolling to what
-       that pushes off the edge; it has to wrap instead. */
-    @media (max-width:560px){
-      table.paths td:first-child{white-space:normal}
-      table.paths td code{overflow-wrap:anywhere}
-    }
-
-    .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
-    .btn{font-family:var(--mono-stack);font-weight:700;font-size:14px;letter-spacing:.04em;
-      padding:11px 20px;border-radius:8px;border:1.5px solid;background:transparent;
-      text-decoration:none;transition:.18s;display:inline-flex;align-items:center;gap:9px}
-    .btn:hover{transform:translateY(-2px)}
-    .btn.gh{border-color:var(--chalk-dim);color:var(--chalk)}
-    .btn.gh:hover{background:rgba(244,239,230,.08)}
-    .btn.dl{border-color:var(--mac);color:var(--mac)}
-    .btn.dl:hover{background:rgba(229,138,112,.12)}
-
-    .note{font-family:var(--mono-stack);font-size:14px;color:var(--chalk-dim);margin-top:26px;line-height:1.5;text-align:center}
-    .note a{color:var(--crema)}
-
-    .foot{margin-top:46px;color:var(--chalk-dim);font-size:13px;line-height:1.9;text-align:center}
-    .foot a{color:var(--crema)}
-    .macver{font-family:var(--mono-stack);font-size:19px;color:var(--amber-dim);letter-spacing:.5px;margin:14px 0 0}
-    .macver b{color:var(--amber)}
-  </style>
+/* where things live */
+table.paths{width:100%;border-collapse:collapse;margin-top:18px;font-size:.84rem}
+table.paths th{color:var(--dim);text-align:left;font-size:.7rem;letter-spacing:.18em;
+  text-transform:uppercase;padding:0 0 10px;border-bottom:1px solid var(--line);font-weight:400}
+table.paths td{padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted);vertical-align:top}
+table.paths td:first-child{color:var(--ink);padding-right:16px}
+@media(max-width:560px){
+  table.paths td code{overflow-wrap:anywhere}
+  .feat > div{flex-direction:column;gap:8px}
+}
+</style>
 </head>
 <body>
-  <div id="chalk">
-    <div class="wrap">
-      <a class="back" href="index.html">&lt; back to cafeneurotico</a>
 
-      <div class="kicker">a second host</div>
-      <div class="wordmark">macOS<span class="badge">experimental</span></div>
-      <div class="rule"></div>
-      <div class="sub">same codebase · Apple Silicon</div>
+<header class="top">
+  <div class="wrap topin">
+    <a class="brand" href="index.html">cafe<span class="dot">.</span>neurotico</a>
+    <nav class="links">
+      <a href="omarchy.html">Omarchy</a>
+      <a href="crema.html">CREMA</a>
+      <a href="library.html">The library</a>
+      <a href="ports.html">Fan games &amp; ports</a>
+      <a href="fixes.html">Game fixes</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap narrow">
 
-      <p class="lead">Linux stays the primary platform &mdash; it is what gets tested first and ships
-        fastest. The macOS build lives behind its own file in the same codebase rather than a fork, and
-        it is real, not a proof of concept: <b>Steam and GOG sign-in, the full library, and
-        installing and launching native GOG games all work today</b>, through the app&rsquo;s own
-        download engine, not a browser hand-off. <b>Since 1.9, Windows games run too</b>, through
-        CrossOver. It is labelled Experimental because it is younger and unsigned, not because it is a
-        demo.</p>
-
-      <p class="macver">current macOS build: <b>1.9.0</b> &middot; Linux is on 1.9.1, a Linux-only fix &mdash; the two hosts are not always on the same number.</p>
-
-      <div class="btns">
-        <a class="btn dl" href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/tag/v1.9.0" target="_blank" rel="noopener">⤓ Download for macOS &mdash; 1.9.0</a>
-        <a class="btn gh" href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">Source on GitHub</a>
-      </div>
-
-      <div class="sect">
-        <h4>what works today</h4>
-        <div class="only">
-          <div class="only-item"><span class="only-mark ok">&#10003;</span><div>
-            <h5>The full library</h5>
-            <p>Steam and GOG sign-in, sync and browsing, across all three faces &mdash; the Manager, CREMA, and GRINDER.</p>
-          </div></div>
-          <div class="only-item"><span class="only-mark ok">&#10003;</span><div>
-            <h5>Native GOG installs</h5>
-            <p>Real downloads through <code style="font-family:var(--mono-stack);color:var(--amber)">gogdl</code> directly, for games that ship an Apple Silicon build &mdash; not a link out to a browser.</p>
-          </div></div>
-          <div class="only-item"><span class="only-mark ok">&#10003;</span><div>
-            <h5>Windows games, through CrossOver <span style="font-family:var(--mono-stack);font-size:14px;color:var(--mac);letter-spacing:1px;">NEW IN 1.9</span></h5>
-            <p>Titles that only ship a Windows build are no longer off-limits. Cafe Neurotico drives
-               <b>CrossOver</b> directly, giving each game its own bottle under the same per-game scheme the
-               Linux build already uses &mdash; created once on first launch, reused after that. Nothing to
-               configure.</p>
-            <p style="margin-top:8px"><b style="color:var(--chalk)">Two honest caveats.</b> CrossOver is
-               commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener" style="color:var(--crema)">CodeWeavers</a>
-               and is not bundled &mdash; you install it yourself, and without it this simply reports as
-               unavailable. And while the plumbing is verified end to end, it has not been run against a
-               large library of real games yet, so treat per-title compatibility as unproven.</p>
-          </div></div>
-          <div class="only-item"><span class="only-mark ok">&#10003;</span><div>
-            <h5>Knowing which games are actually native</h5>
-            <p>A Mac-Native filter sits next to the store filters in the library, with a small apple badge on the cover art of anything that qualifies. GOG is checked instantly from data the app already has; Steam needs one manual scan since it is a live per-game lookup.</p>
-          </div></div>
-          <div class="only-item"><span class="only-mark ok">&#10003;</span><div>
-            <h5>Everything that is not platform-specific</h5>
-            <p>Artwork, genres, playlists, save-game backups, themes &mdash; all of it, because almost all of the app is the same code that runs on Linux.</p>
-          </div></div>
-        </div>
-      </div>
-
-      <div class="sect">
-        <h4>what doesn't work yet</h4>
-        <div class="only">
-          <div class="only-item"><span class="only-mark no">&#9656;</span><div>
-            <h5>Epic sign-in</h5>
-            <p>Signing in to Epic does not yet hold on macOS &mdash; the browser-based approval completes,
-               but the credentials are not written where <code style="font-family:var(--mono-stack);color:var(--amber)">legendary</code>
-               looks for them, so the library sync comes back empty. Steam and GOG are unaffected. This is
-               being worked on; until it lands, treat macOS as a Steam-and-GOG build.</p>
-          </div></div>
-          <div class="only-item"><span class="only-mark no">&#9656;</span><div>
-            <h5>Anti-cheat</h5>
-            <p>BattlEye and EAC are not wired up. CrossOver advertises its own support for both, but nothing here has been tested against a game that uses them, so assume multiplayer titles that rely on anti-cheat will not run.</p>
-          </div></div>
-          <div class="only-item"><span class="only-mark no">&#9656;</span><div>
-            <h5>A picker for which screen a game opens on</h5>
-            <p>A KDE-only feature on Linux; no macOS equivalent exists yet.</p>
-          </div></div>
-          <div class="only-item"><span class="only-mark no">&#9656;</span><div>
-            <h5>Custom installers, source ports and mods</h5>
-            <p>The whole recipe catalogue &mdash; Ironwail, GZDoom, the Build-engine games and the rest &mdash; is Linux-only for now.</p>
-          </div></div>
-        </div>
-      </div>
-
-      <div class="sect">
-        <h4>install</h4>
-        <p class="lead2">The build is not signed &mdash; there is no Apple Developer account behind it yet &mdash; so the first launch needs one extra step. That is the standard cost of an app that has not gone through notarization, not a sign that something is broken.</p>
-        <div class="steps">
-          <div class="step"><span class="n"></span><p>Download the <code>.dmg</code> (or the <code>.zip</code>) from the <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/tag/v1.9.0" target="_blank" rel="noopener" style="color:var(--crema)">1.9.0 release</a> &mdash; the macOS asset is separate from the Linux AppImage, and it sits on that release rather than the newest one.</p></div>
-          <div class="step"><span class="n"></span><p>Open the <code>.dmg</code> and drag <b>Cafe Neurotico</b> into <b>Applications</b> (or unzip and move the <code>.app</code> there directly).</p></div>
-          <div class="step"><span class="n"></span><p><b>Right-click (or Control-click) the app &rarr; Open &rarr; Open</b> still works on most macOS versions for the first launch. If that option does not appear, a normal double-click gets blocked once &mdash; go to <b>System Settings &rarr; Privacy &amp; Security</b> and click <b>Open Anyway</b> next to the message about Cafe Neurotico, then confirm once more.</p></div>
-          <div class="step"><span class="n"></span><p>If neither shows anything, from Terminal:
-            <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Cafe Neurotico.app"</span>
-            This strips the quarantine flag macOS attaches to anything downloaded from the internet. It only needs doing once per install.</p></div>
-        </div>
-      </div>
-
-      <div class="sect">
-        <h4>where things live</h4>
-        <p class="lead2">Everything is under <code style="font-family:var(--mono-stack);color:var(--amber)">~/Library/Application Support/</code>. Deleting the app and installing a new build never touches the library.</p>
-        <table class="paths">
-          <tr><th>What</th><th>Where</th></tr>
-          <tr><td>Your library (games, artwork, playlists, settings)</td><td><code>CafeNeurotico/GameManagerConfig/</code></td></tr>
-          <tr><td>GOG/Epic install state, auth, launch logs</td><td><code>CafeNeurotico/GRINDERConfig/</code></td></tr>
-          <tr><td>Installed games (default location)</td><td><code>~/Games/CafeNeurotico/</code></td></tr>
-        </table>
-      </div>
-
-      <div class="sect" style="border-top:none;margin-top:40px;padding-top:0">
-        <p class="note">Something look wrong, or missing from this list? <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; macOS reports are genuinely useful right now, this build needs them.</p>
-      </div>
-
-      <div class="foot">
-        <a href="index.html">cafeneurotico</a> &middot;
-        <a href="fixes.html">fixed individually</a> &middot;
-        <a href="ports.html">source ports &amp; mods</a> &middot;
-        <a href="support.html">support</a> &middot;
-        <a href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">github</a><br>
-        more caffeine is more good
-      </div>
+  <div class="hero">
+    <div class="eyebrow"><span>a second host</span><span class="tag">experimental</span></div>
+    <h1>macOS</h1>
+    <p class="lead" style="margin-top:18px">same codebase · Apple Silicon</p>
+    <p class="body" style="margin-top:18px">Linux stays the primary platform &mdash; it is what gets tested first and ships fastest. The macOS build lives behind its own file in the same codebase rather than a fork, and it is real, not a proof of concept: <strong>Steam and GOG sign-in, the full library, and installing and launching native GOG games all work today</strong>, through the app&rsquo;s own download engine, not a browser hand-off. <strong>Since 1.9, Windows games run too</strong>, through CrossOver. It is labelled Experimental because it is younger and unsigned, not because it is a demo.</p>
+    <p class="body">current macOS build: <strong>1.9.0</strong> &middot; Linux is on 1.9.1, a Linux-only fix &mdash; the two hosts are not always on the same number.</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/tag/v1.9.0" target="_blank" rel="noopener">⤓ Download for macOS &mdash; 1.9.0</a>
+      <a class="btn ghost" href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">Source on GitHub</a>
     </div>
   </div>
+
+  <section>
+    <div class="label">01_what_works_today</div>
+    <h2>what works today</h2>
+    <div class="feat">
+      <div><span class="mark ok">&#10003;</span><div class="txt">
+        <h3>The full library</h3>
+        <p>Steam and GOG sign-in, sync and browsing, across all three faces &mdash; the Manager, CREMA, and GRINDER.</p>
+      </div></div>
+      <div><span class="mark ok">&#10003;</span><div class="txt">
+        <h3>Native GOG installs</h3>
+        <p>Real downloads through <code>gogdl</code> directly, for games that ship an Apple Silicon build &mdash; not a link out to a browser.</p>
+      </div></div>
+      <div><span class="mark ok">&#10003;</span><div class="txt">
+        <h3>Windows games, through CrossOver <span class="new">NEW IN 1.9</span></h3>
+        <p>Titles that only ship a Windows build are no longer off-limits. Cafe Neurotico drives <strong>CrossOver</strong> directly, giving each game its own bottle under the same per-game scheme the Linux build already uses &mdash; created once on first launch, reused after that. Nothing to configure.</p>
+        <p><strong>Two honest caveats.</strong> CrossOver is commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener">CodeWeavers</a> and is not bundled &mdash; you install it yourself, and without it this simply reports as unavailable. And while the plumbing is verified end to end, it has not been run against a large library of real games yet, so treat per-title compatibility as unproven.</p>
+      </div></div>
+      <div><span class="mark ok">&#10003;</span><div class="txt">
+        <h3>Knowing which games are actually native</h3>
+        <p>A Mac-Native filter sits next to the store filters in the library, with a small apple badge on the cover art of anything that qualifies. GOG is checked instantly from data the app already has; Steam needs one manual scan since it is a live per-game lookup.</p>
+      </div></div>
+      <div><span class="mark ok">&#10003;</span><div class="txt">
+        <h3>Everything that is not platform-specific</h3>
+        <p>Artwork, genres, playlists, save-game backups, themes &mdash; all of it, because almost all of the app is the same code that runs on Linux.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">02_not_yet</div>
+    <h2>what doesn't work yet</h2>
+    <div class="feat">
+      <div><span class="mark no">&#9656;</span><div class="txt">
+        <h3>Epic sign-in</h3>
+        <p>Signing in to Epic does not yet hold on macOS &mdash; the browser-based approval completes, but the credentials are not written where <code>legendary</code> looks for them, so the library sync comes back empty. Steam and GOG are unaffected. This is being worked on; until it lands, treat macOS as a Steam-and-GOG build.</p>
+      </div></div>
+      <div><span class="mark no">&#9656;</span><div class="txt">
+        <h3>Anti-cheat</h3>
+        <p>BattlEye and EAC are not wired up. CrossOver advertises its own support for both, but nothing here has been tested against a game that uses them, so assume multiplayer titles that rely on anti-cheat will not run.</p>
+      </div></div>
+      <div><span class="mark no">&#9656;</span><div class="txt">
+        <h3>A picker for which screen a game opens on</h3>
+        <p>A KDE-only feature on Linux; no macOS equivalent exists yet.</p>
+      </div></div>
+      <div><span class="mark no">&#9656;</span><div class="txt">
+        <h3>Custom installers, source ports and mods</h3>
+        <p>The whole recipe catalogue &mdash; Ironwail, GZDoom, the Build-engine games and the rest &mdash; is Linux-only for now.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">03_install</div>
+    <h2>install</h2>
+    <p class="body">The build is not signed &mdash; there is no Apple Developer account behind it yet &mdash; so the first launch needs one extra step. That is the standard cost of an app that has not gone through notarization, not a sign that something is broken.</p>
+    <ol class="steps">
+      <li>Download the <code>.dmg</code> (or the <code>.zip</code>) from the <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/tag/v1.9.0" target="_blank" rel="noopener">1.9.0 release</a> &mdash; the macOS asset is separate from the Linux AppImage, and it sits on that release rather than the newest one.</li>
+      <li>Open the <code>.dmg</code> and drag <strong>Cafe Neurotico</strong> into <strong>Applications</strong> (or unzip and move the <code>.app</code> there directly).</li>
+      <li><strong>Right-click (or Control-click) the app &rarr; Open &rarr; Open</strong> still works on most macOS versions for the first launch. If that option does not appear, a normal double-click gets blocked once &mdash; go to <strong>System Settings &rarr; Privacy &amp; Security</strong> and click <strong>Open Anyway</strong> next to the message about Cafe Neurotico, then confirm once more.</li>
+      <li>If neither shows anything, from Terminal:
+        <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Cafe Neurotico.app"</span>
+        This strips the quarantine flag macOS attaches to anything downloaded from the internet. It only needs doing once per install.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="label">04_where_things_live</div>
+    <h2>where things live</h2>
+    <p class="body">Everything is under <code>~/Library/Application Support/</code>. Deleting the app and installing a new build never touches the library.</p>
+    <table class="paths">
+      <tr><th>What</th><th>Where</th></tr>
+      <tr><td>Your library (games, artwork, playlists, settings)</td><td><code>CafeNeurotico/GameManagerConfig/</code></td></tr>
+      <tr><td>GOG/Epic install state, auth, launch logs</td><td><code>CafeNeurotico/GRINDERConfig/</code></td></tr>
+      <tr><td>Installed games (default location)</td><td><code>~/Games/CafeNeurotico/</code></td></tr>
+    </table>
+    <div class="note" style="margin-top:30px">
+      <p>Something look wrong, or missing from this list? <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; macOS reports are genuinely useful right now, this build needs them.</p>
+    </div>
+    <p class="body" style="margin-top:26px;font-size:.8rem"><a href="index.html">cafeneurotico</a> &middot; <a href="fixes.html">fixed individually</a> &middot; <a href="ports.html">source ports &amp; mods</a> &middot; <a href="support.html">support</a> &middot; <a href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">github</a></p>
+    <p class="body" style="font-size:.8rem">more caffeine is more good</p>
+    <a class="back" href="index.html">&lt; back to cafeneurotico</a>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap fin">
+    <span>Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷</span>
+    <span>
+      <a href="index.html">Home</a> ·
+      <a href="omarchy.html">Omarchy</a> ·
+      <a href="crema.html">CREMA</a> ·
+      <a href="library.html">The library</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="https://github.com/FromChaosComesClarity/CafeNeurotico">GitHub</a>
+    </span>
+  </div>
+</footer>
 </body>
 </html>
