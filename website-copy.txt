@@ -1601,7 +1601,7 @@ Where your data lives →
 02_what_it_is.md
 
 ### index.html | 049 | h2
-One app, three faces, all your games
+One app, two faces, all your games
 
 ### index.html | 050 | p
 **The Manager** is the desktop app: import, organise, scrape, install, launch, with a mouse and keyboard. **CREMA** is the big screen companion: fullscreen, gamepad-first, made for a television across a room. **GRINDER** works underneath both, installing GOG and Epic games without a store client.
@@ -2204,7 +2204,7 @@ Cafe Neurotico uses **the theme Omarchy is currently using**. Install a new them
 Your Desktop sits at the top of the picker, above the app's own themes.
 
 ### omarchy.html | 026 | p
-The 93 themes that ship with the app are still there if you want one of those instead. All three faces draw from the same set, so a look you like on the desktop mode follows you to the big screen mode.
+The 93 themes that ship with the app are still there if you want one of those instead. Both faces draw from the same set, so a look you like on the desktop mode follows you to the big screen mode.
 
 ### omarchy.html | 027 | div
 04_games_open_properly
