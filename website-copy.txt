@@ -1,4 +1,4 @@
-CAFE NEUROTICO — ALL WEBSITE COPY
+CLARITY — ALL WEBSITE COPY
 =================================
 
 Every word on the site, in one file. Rewrite anything below in your own voice and hand it
@@ -33,13 +33,13 @@ PAGE: clock.html
 ==============================================================================
 
 ### clock.html | title
-CafeNeurotico Clock — a desk clock with taste
+Clarity Clock — a desk clock with taste
 
 ### clock.html | meta:description
-CafeNeurotico Clock — a frameless desk clock for Linux that runs a slow slideshow of the game art your CNGM and EmuLatte libraries already store. Three faces, 93 palettes, click a game to open it. Local-only, no cloud.
+Clarity Clock — a frameless desk clock for Linux that runs a slow slideshow of the game art your Clarity and EmuLatte libraries already store. Three faces, 93 palettes, click a game to open it. Local-only, no cloud.
 
 ### clock.html | og:title
-CafeNeurotico Clock — a desk clock with taste
+Clarity Clock — a desk clock with taste
 
 ### clock.html | og:description
 A frameless desk clock for Linux that wears your game library: Ken Burns slideshow, three faces, 93 palettes, click a game to open it. Local-only.
@@ -54,7 +54,7 @@ click anywhere to skip ▸
 cnclock@linux:~$ ./wind
 
 ### clock.html | 004 | li
-[ <strong class="ok">ok</strong> ] finding the library........... CNGM + EmuLatte
+[ <strong class="ok">ok</strong> ] finding the library........... Clarity + EmuLatte
 
 ### clock.html | 005 | li
 [ <strong class="ok">ok</strong> ] counting the artwork.......... thousands
@@ -75,7 +75,7 @@ cnclock@linux:~$ ./wind
 Omarchy
 
 ### clock.html | 011 | a
-CREMA
+Couch Mode
 
 ### clock.html | 012 | a
 The library
@@ -111,7 +111,7 @@ Minimalist
 a small floating widget, out of the way
 
 ### clock.html | 023 | span
-CREMA Splash
+Couch Mode Splash
 
 ### clock.html | 024 | span
 a frosted circle over blurred art
@@ -135,25 +135,25 @@ A clock that wears your game library. It reads the art the rest of the ecosystem
 Three faces
 
 ### clock.html | 031 | p
-Minimalist, a small dashed widget tinted by your palette. CREMA Splash, a frosted-glass circle framing the clock over blurred art. Ken Burns, game art filling the window with slow pan-and-zoom. Each freely resizable — the clock scales with it.
+Minimalist, a small dashed widget tinted by your palette. Couch Mode Splash, a frosted-glass circle framing the clock over blurred art. Ken Burns, game art filling the window with slow pan-and-zoom. Each freely resizable — the clock scales with it.
 
 ### clock.html | 032 | h3
 A slideshow built from art you already have
 
 ### clock.html | 033 | p
-It scans the folders your **CNGM** and **EmuLatte** libraries already fill — heroes, covers, screenshots, or your own wallpapers. Nothing to import, nothing to configure. No library? It just shows the time.
+It scans the folders your **Clarity** and **EmuLatte** libraries already fill — heroes, covers, screenshots, or your own wallpapers. Nothing to import, nothing to configure. No library? It just shows the time.
 
 ### clock.html | 034 | h3
 Click a game to open it
 
 ### clock.html | 035 | p
-The name under the art is a link. Click it and **Cafe Neurotico** or **EmuLatte** opens straight to that game's page — whichever one the artwork came from. If the app is already running, the click goes to the open window.
+The name under the art is a link. Click it and **Clarity** or **EmuLatte** opens straight to that game's page — whichever one the artwork came from. If the app is already running, the click goes to the open window.
 
 ### clock.html | 036 | h3
 93 palettes, one picker
 
 ### clock.html | 037 | p
-Full parity with Cafe Neurotico — ten families, from Linux-ricing classics to twenty retro operating systems that each bring their own era typeface. A card grid that previews every palette in its own colours, applied live.
+Full parity with Clarity — ten families, from Linux-ricing classics to twenty retro operating systems that each bring their own era typeface. A card grid that previews every palette in its own colours, applied live.
 
 ### clock.html | 038 | h3
 Wear any font
@@ -165,7 +165,7 @@ Seven interface faces, each previewed in itself, restyling the whole clock. All 
 Run as many as you like
 
 ### clock.html | 041 | p
-Launch it again and again — every clock independent while it runs. A minimal one in a corner, a Ken Burns slideshow on the second monitor, a big CREMA splash on the third.
+Launch it again and again — every clock independent while it runs. A minimal one in a corner, a Ken Burns slideshow on the second monitor, a big Couch Mode splash on the third.
 
 ### clock.html | 042 | h3
 Frameless, always on top, out of the way
@@ -225,16 +225,16 @@ The clock is complete on its own — but it's happiest sitting next to the libra
 OPTIONAL
 
 ### clock.html | 061 | h3
-Cafe Neurotico
+Clarity
 
 ### clock.html | 062 | div
 “more caffeine is more good”
 
 ### clock.html | 063 | p
-The game library suite the clock pulls most of its art from — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with two faces — the Manager and CREMA — and GRINDER working headless underneath them. Keep it beside the clock and the art appears on its own; click a game name and it opens here.
+The game library suite the clock pulls most of its art from — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with two faces — the Manager and Couch Mode — and Installer working headless underneath them. Keep it beside the clock and the art appears on its own; click a game name and it opens here.
 
 ### clock.html | 064 | p
-[Get Cafe Neurotico ▸](index.html)
+[Get Clarity ▸](index.html)
 
 ### clock.html | 065 | span
 OPTIONAL
@@ -252,10 +252,10 @@ The emulation side — a ROM library manager across 56 systems, with a gamepad-f
 [Get EmuLatte ▸](emulatte.html)
 
 ### clock.html | 070 | div
-04_tip_the_barista
+04_spread_the_good_vibes
 
 ### clock.html | 071 | h2
-tip the barista
+spread the good vibes
 
 ### clock.html | 072 | p
 If the clock earned a spot on your desk, consider chipping in — it keeps the pot warm.
@@ -276,10 +276,10 @@ If the clock earned a spot on your desk, consider chipping in — it keeps the p
 Built by J.R.A. · Contact: [joserobertoazevedo@hey.com](mailto:joserobertoazevedo@hey.com)
 
 ### clock.html | 078 | p
-[Cafe Neurotico](index.html) · [EmuLatte](emulatte.html) · [support page](support.html) · <a href="https://github.com/FromChaosComesClarity/CafeNeuroticoClock" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later
+[Clarity](index.html) · [EmuLatte](emulatte.html) · [support page](support.html) · <a href="https://github.com/FromChaosComesClarity/ClarityClock" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later
 
 ### clock.html | 079 | a
-&lt; back to cafe neurotico
+&lt; back to clarity
 
 ### clock.html | 080 | h3
 DONATE VIA PIX
@@ -294,7 +294,7 @@ COPY PIX KEY
 Copied to clipboard!
 
 ### clock.html | 084 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### clock.html | 085 | a
 Home
@@ -303,7 +303,7 @@ Home
 Omarchy
 
 ### clock.html | 087 | a
-CREMA
+Couch Mode
 
 ### clock.html | 088 | a
 The library
@@ -315,127 +315,127 @@ Support
 GitHub
 
 ==============================================================================
-PAGE: crema.html
+PAGE: couch.html
 ==============================================================================
 
-### crema.html | title
-CREMA — the big screen companion
+### couch.html | title
+Couch Mode — the big screen companion
 
-### crema.html | meta:description
+### couch.html | meta:description
 The same library on a television: fullscreen, gamepad-first, with artwork, trailers, achievements and a jukebox with a real spectrum.
 
-### crema.html | og:title
-CREMA — the big screen companion
+### couch.html | og:title
+Couch Mode — the big screen companion
 
-### crema.html | og:description
+### couch.html | og:description
 The same library on a television: fullscreen, gamepad-first, with artwork, trailers, achievements and a jukebox with a real spectrum.
 
-### crema.html | 001 | a
+### couch.html | 001 | a
 Omarchy
 
-### crema.html | 002 | a
-CREMA
+### couch.html | 002 | a
+Couch Mode
 
-### crema.html | 003 | a
+### couch.html | 003 | a
 The library
 
-### crema.html | 004 | a
+### couch.html | 004 | a
 Fan games &amp; ports
 
-### crema.html | 005 | a
+### couch.html | 005 | a
 Game fixes
 
-### crema.html | 006 | a
+### couch.html | 006 | a
 Support
 
-### crema.html | 007 | span
-crema.md
+### couch.html | 007 | span
+couch.md
 
-### crema.html | 008 | h1
-CREMA — <span class="em">the big screen companion</span>
+### couch.html | 008 | h1
+Couch Mode — <span class="em">the big screen companion</span>
 
-### crema.html | 009 | p
+### couch.html | 009 | p
 The same library, the same artwork, the same playlists — on a television, driven with a gamepad, from across a room. Nothing to configure and nothing to sync: it is the same app.
 
-### crema.html | 010 | div
+### couch.html | 010 | div
 01_a_face_for_the_big_screen
 
-### crema.html | 011 | figcaption
+### couch.html | 011 | figcaption
 A game page, sized for a screen you are sitting back from.
 
-### crema.html | 012 | p
-Run the same AppImage with `--crema`, or send it there from the Manager, the bar menu or an autostart entry. Your library is already there.
+### couch.html | 012 | p
+Run the same AppImage with `--couch`, or send it there from the Manager, the bar menu or an autostart entry. Your library is already there.
 
-### crema.html | 013 | div
+### couch.html | 013 | div
 02_browsing
 
-### crema.html | 014 | h2
+### couch.html | 014 | h2
 Made for looking, not managing
 
-### crema.html | 015 | figcaption
+### couch.html | 015 | figcaption
 The gallery. Covers, at a size that reads from the far end of a room.
 
-### crema.html | 016 | li
+### couch.html | 016 | li
 **A home screen** with what you played last, a pick for today, and what you have been meaning to get to.
 
-### crema.html | 017 | li
+### couch.html | 017 | li
 **Genres, playlists and history** as ways through the shelf, not as forms to fill in.
 
-### crema.html | 018 | li
+### couch.html | 018 | li
 **Trailers and screenshots** on the page, playing while you decide.
 
-### crema.html | 019 | li
+### couch.html | 019 | li
 **Achievements** from GOG and Steam in one list.
 
-### crema.html | 020 | div
+### couch.html | 020 | div
 03_the_jukebox
 
-### crema.html | 021 | h2
+### couch.html | 021 | h2
 Your music, with a real spectrum
 
-### crema.html | 022 | p
+### couch.html | 022 | p
 A music player built into the same face: your own folder of music, browsable by artist and album, with a full-screen now-playing view. The visualiser reads the audio that is actually playing rather than animating on a timer.
 
-### crema.html | 023 | div
+### couch.html | 023 | div
 04_what_it_deliberately_will_not_do
 
-### crema.html | 024 | h2
+### couch.html | 024 | h2
 It plays. It does not manage.
 
-### crema.html | 025 | p
+### couch.html | 025 | p
 Renaming games, scraping artwork, fetching trailers, typing launch commands, uninstalling — none of that is here. It belongs at the desktop mode, where there is a keyboard.
 
-### crema.html | 026 | p
+### couch.html | 026 | p
 What is left is what you would actually want from a big screen mode: mark a favourite, say you want to play something, add it to a playlist, see achievements, and install a game you own.
 
-### crema.html | 027 | div
+### couch.html | 027 | div
 ⚠ And it never asks for a password
 
-### crema.html | 028 | p
-CREMA has no store login. If an account needs signing in to, it says so and points you at the desktop mode — a device-code flow with a password field has no business on a television.
+### couch.html | 028 | p
+Couch Mode has no store login. If an account needs signing in to, it says so and points you at the desktop mode — a device-code flow with a password field has no business on a television.
 
-### crema.html | 029 | a
-&lt; back to cafe neurotico
+### couch.html | 029 | a
+&lt; back to clarity
 
-### crema.html | 030 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+### couch.html | 030 | span
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### crema.html | 031 | a
+### couch.html | 031 | a
 Home
 
-### crema.html | 032 | a
+### couch.html | 032 | a
 Omarchy
 
-### crema.html | 033 | a
-CREMA
+### couch.html | 033 | a
+Couch Mode
 
-### crema.html | 034 | a
+### couch.html | 034 | a
 The library
 
-### crema.html | 035 | a
+### couch.html | 035 | a
 Support
 
-### crema.html | 036 | a
+### couch.html | 036 | a
 GitHub
 
 ==============================================================================
@@ -485,7 +485,7 @@ emulatte@linux:~$ ./pour
 Omarchy
 
 ### emulatte.html | 011 | a
-CREMA
+Couch Mode
 
 ### emulatte.html | 012 | a
 The library
@@ -671,22 +671,22 @@ Separate apps, same roof. EmuLatte is complete on its own — these are here if 
 OPTIONAL
 
 ### emulatte.html | 073 | h3
-Cafe Neurotico
+Clarity
 
 ### emulatte.html | 074 | div
 “more caffeine is more good”
 
 ### emulatte.html | 075 | p
-The rest of the library — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with two faces — the Manager and CREMA — and GRINDER working headless underneath them. Your ROM collection stays here in EmuLatte; you pick which games cross over by **exporting them to Cafe Neurotico from inside EmuLatte**, and those arrive as ordinary entries under an **Emulation** category.
+The rest of the library — Steam, GOG, Epic, Flatpak, itch.io and PICO-8 — in one Electron binary with two faces — the Manager and Couch Mode — and Installer working headless underneath them. Your ROM collection stays here in EmuLatte; you pick which games cross over by **exporting them to Clarity from inside EmuLatte**, and those arrive as ordinary entries under an **Emulation** category.
 
 ### emulatte.html | 076 | p
-[Get Cafe Neurotico ▸](index.html)
+[Get Clarity ▸](index.html)
 
 ### emulatte.html | 077 | span
 OPTIONAL
 
 ### emulatte.html | 078 | h3
-CafeNeurotico Clock
+Clarity Clock
 
 ### emulatte.html | 079 | div
 “a desk clock with taste”
@@ -698,10 +698,10 @@ A standalone clock that runs a slow slideshow of your library's artwork — Ken 
 [Get the Clock ▸](clock.html)
 
 ### emulatte.html | 082 | div
-04_tip_the_barista
+04_spread_the_good_vibes
 
 ### emulatte.html | 083 | h2
-tip the barista
+spread the good vibes
 
 ### emulatte.html | 084 | p
 If EmuLatte sorted out your ROM collection, consider chipping in — it keeps the pot warm.
@@ -722,10 +722,10 @@ If EmuLatte sorted out your ROM collection, consider chipping in — it keeps th
 Built by J.R.A. · Contact: [joserobertoazevedo@hey.com](mailto:joserobertoazevedo@hey.com)
 
 ### emulatte.html | 090 | p
-[Cafe Neurotico](index.html) · [support page](support.html) · <a href="https://github.com/FromChaosComesClarity/EmuLatte" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later
+[Clarity](index.html) · [support page](support.html) · <a href="https://github.com/FromChaosComesClarity/EmuLatte" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later
 
 ### emulatte.html | 091 | a
-&lt; back to cafe neurotico
+&lt; back to clarity
 
 ### emulatte.html | 092 | h3
 DONATE VIA PIX
@@ -740,7 +740,7 @@ COPY PIX KEY
 Copied to clipboard!
 
 ### emulatte.html | 096 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### emulatte.html | 097 | a
 Home
@@ -749,7 +749,7 @@ Home
 Omarchy
 
 ### emulatte.html | 099 | a
-CREMA
+Couch Mode
 
 ### emulatte.html | 100 | a
 The library
@@ -765,10 +765,10 @@ PAGE: fixes.html
 ==============================================================================
 
 ### fixes.html | title
-Cafe Neurotico — Games That Have Been Fixed Individually
+Clarity — Games That Have Been Fixed Individually
 
 ### fixes.html | meta:description
-Real games that did not work on Linux, what turned out to be wrong with each one, and how Cafe Neurotico fixes it — no configuration required.
+Real games that did not work on Linux, what turned out to be wrong with each one, and how Clarity fixes it — no configuration required.
 
 ### fixes.html | og:title
 Games that have been fixed individually
@@ -780,7 +780,7 @@ Not "improved compatibility". Named games, named faults, and what was done about
 Omarchy
 
 ### fixes.html | 002 | a
-CREMA
+Couch Mode
 
 ### fixes.html | 003 | a
 The library
@@ -882,25 +882,25 @@ Most things that go wrong under a compatibility layer are fixed by a general rul
 The list is expected to grow. A game that has been added to it behaves, on your machine, the way it did on the machine where the fault was found &mdash; which is the only test that really counts.
 
 ### fixes.html | 036 | a
-⤓ Download Cafe Neurotico
+⤓ Download Clarity
 
 ### fixes.html | 037 | a
 Report a game that misbehaves
 
 ### fixes.html | 038 | p
-Found one that does not work? <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; this list is how it gets fixed.
+Found one that does not work? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; this list is how it gets fixed.
 
 ### fixes.html | 039 | p
-[cafeneurotico](index.html) &middot; [source ports &amp; mods](ports.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">github</a>
+[clarity](index.html) &middot; [source ports &amp; mods](ports.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
 ### fixes.html | 040 | p
 more caffeine is more good
 
 ### fixes.html | 041 | a
-&lt; back to cafeneurotico
+&lt; back to clarity
 
 ### fixes.html | 042 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### fixes.html | 043 | a
 Home
@@ -909,7 +909,7 @@ Home
 Omarchy
 
 ### fixes.html | 045 | a
-CREMA
+Couch Mode
 
 ### fixes.html | 046 | a
 The library
@@ -925,22 +925,22 @@ PAGE: gallery.html
 ==============================================================================
 
 ### gallery.html | title
-Screenshots — every corner of Cafe Neurotico
+Screenshots — every corner of Clarity
 
 ### gallery.html | meta:description
-104 screenshots of Cafe Neurotico on Omarchy: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and CREMA on the big screen.
+104 screenshots of Clarity on Omarchy: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and Couch Mode on the big screen.
 
 ### gallery.html | og:title
-Screenshots — every corner of Cafe Neurotico
+Screenshots — every corner of Clarity
 
 ### gallery.html | og:description
-104 screenshots: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and CREMA on the big screen.
+104 screenshots: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and Couch Mode on the big screen.
 
 ### gallery.html | 001 | a
 Omarchy
 
 ### gallery.html | 002 | a
-CREMA
+Couch Mode
 
 ### gallery.html | 003 | a
 The library
@@ -961,7 +961,7 @@ gallery
 Every corner of it, <span class="em">in 104 screenshots.</span>
 
 ### gallery.html | 009 | p
-Taken on Omarchy, on the machine it is built on. The library, a game page, installing without a store client, the fan games catalogue, the themes, the bar, and CREMA on the television. Click any one to see it full size.
+Taken on Omarchy, on the machine it is built on. The library, a game page, installing without a store client, the fan games catalogue, the themes, the bar, and Couch Mode on the television. Click any one to see it full size.
 
 ### gallery.html | 010 | a
 In Omarchy
@@ -991,7 +991,7 @@ Artwork, trailers, manuals, saves
 Settings
 
 ### gallery.html | 019 | a
-CREMA, on the big screen
+Couch Mode, on the big screen
 
 ### gallery.html | 020 | a
 Now playing
@@ -1006,7 +1006,7 @@ In Omarchy
 The bar, the launcher and the notifications — the parts that only work here.
 
 ### gallery.html | 024 | figcaption
-The Omarchy bar: how many games are installed. Click for the library, middle-click for CREMA.
+The Omarchy bar: how many games are installed. Click for the library, middle-click for Couch Mode.
 
 ### gallery.html | 025 | figcaption
 The launcher overlay, one keyboard shortcut away.
@@ -1111,7 +1111,7 @@ DOOM, in a light theme.
 Installing
 
 ### gallery.html | 059 | p
-GRINDER underneath: GOG and Epic games installed without a store client, DLCs included.
+Installer underneath: GOG and Epic games installed without a store client, DLCs included.
 
 ### gallery.html | 060 | figcaption
 Installing a game: Linux native or Windows, where it goes, and how much space it needs.
@@ -1357,7 +1357,7 @@ DOS games: automatic, native, or the DOSBox that came with the game.
 Manage storage: how much space each game uses.
 
 ### gallery.html | 141 | figcaption
-System: backup and restore, the application menu, and starting in CREMA.
+System: backup and restore, the application menu, and starting in Couch Mode.
 
 ### gallery.html | 142 | figcaption
 System tuning, and matching the Omarchy theme you’re running.
@@ -1369,16 +1369,16 @@ The manual: the manifesto and the philosophy behind it.
 About: the suite, and what each part does.
 
 ### gallery.html | 145 | div
-10_crema
+10_couch
 
 ### gallery.html | 146 | h2
-CREMA, on the big screen
+Couch Mode, on the big screen
 
 ### gallery.html | 147 | p
 The same library on a television, driven with a gamepad from across a room.
 
 ### gallery.html | 148 | figcaption
-CREMA’s home screen: what you’ve played, a pick for today, and the library underneath.
+Couch Mode’s home screen: what you’ve played, a pick for today, and the library underneath.
 
 ### gallery.html | 149 | figcaption
 The same screen in the morning.
@@ -1408,7 +1408,7 @@ The library dimming behind it.
 halfmoon.
 
 ### gallery.html | 158 | a
-&lt; back to cafe neurotico
+&lt; back to clarity
 
 ### gallery.html | 159 | button
 &#8592;
@@ -1420,7 +1420,7 @@ halfmoon.
 &#10005;
 
 ### gallery.html | 162 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### gallery.html | 163 | a
 Home
@@ -1429,7 +1429,7 @@ Home
 Omarchy
 
 ### gallery.html | 165 | a
-CREMA
+Couch Mode
 
 ### gallery.html | 166 | a
 The library
@@ -1445,13 +1445,13 @@ PAGE: index.html
 ==============================================================================
 
 ### index.html | title
-Cafe Neurotico — the game center made for Omarchy
+Clarity — the game manager made for Omarchy
 
 ### index.html | meta:description
 Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place, in the bar, one keyboard shortcut away. 2.0 is being built now.
 
 ### index.html | og:title
-Cafe Neurotico — the game center made for Omarchy
+Clarity — the game manager made for Omarchy
 
 ### index.html | og:description
 Every game you own, in one place, at home on Omarchy. 2.0 is being built and tested now.
@@ -1484,10 +1484,10 @@ Support
 2.0 in progress
 
 ### index.html | 010 | h1
-cafe<span class="em">.</span>neurotico<br><span class="em"> The Game Center.</span>
+clar<span class="em">.</span>ity<br><span class="em"> The Game Manager.</span>
 
 ### index.html | 011 | p
-Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place. In the bar. One keyboard shortcut away. Cafe Neurotico is being rebuilt around that idea, and **2.0 is what it is becoming.** **CN** should work in any other Linux distro, but it has found a home in Omarchy, with exclusive features.
+Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place. In the bar. One keyboard shortcut away. Clarity is being rebuilt around that idea, and **2.0 is what it is becoming.** **CN** should work in any other Linux distro, but it has found a home in Omarchy, with exclusive features.
 
 ### index.html | 012 | a
 See what is shipping
@@ -1559,7 +1559,7 @@ The same library, on the big screen
 A second face built for a television and a gamepad — artwork, trailers, a jukebox with a real spectrum, and no keyboard anywhere.
 
 ### index.html | 035 | span
-Meet CREMA →
+Meet Couch Mode →
 
 ### index.html | 036 | div
 no one else does this
@@ -1604,7 +1604,7 @@ Where your data lives →
 One app, two faces, all your games
 
 ### index.html | 050 | p
-**The Manager** is the desktop app: import, organise, scrape, install, launch, with a mouse and keyboard. **CREMA** is the big screen companion: fullscreen, gamepad-first, made for a television across a room. **GRINDER** works underneath both, installing GOG and Epic games without a store client.
+**The Manager** is the desktop app: import, organise, scrape, install, launch, with a mouse and keyboard. **Couch Mode** is the big screen companion: fullscreen, gamepad-first, made for a television across a room. **Installer** works underneath both, installing GOG and Epic games without a store client.
 
 ### index.html | 051 | p
 It is one AppImage. Nothing to install alongside it, and your library, artwork and settings live in a folder beside it — portable, backed up by copying, gone when you delete it.
@@ -1640,13 +1640,13 @@ Shot on Omarchy, on the machine it is developed on. Nothing here is a mockup.
 **07** — the manuals that came with your GOG game
 
 ### index.html | 062 | span
-**08** — CREMA’s home screen, on the big screen
+**08** — Couch Mode’s home screen, on the big screen
 
 ### index.html | 063 | span
 **09** — a game page built for a television
 
 ### index.html | 064 | span
-**10** — browsing covers in CREMA
+**10** — browsing covers in Couch Mode
 
 ### index.html | 065 | p
 [All 104 screenshots, in one place →](gallery.html)
@@ -1658,7 +1658,7 @@ Shot on Omarchy, on the machine it is developed on. Nothing here is a mockup.
 It found a home
 
 ### index.html | 068 | p
-Cafe Neurotico should run on any Linux desktop, but it's being built and tested on **Omarchy**, with its no-nonsense no BS mentality — which is why it now behaves like part of it rather than a visitor.
+Clarity should run on any Linux desktop, but it's being built and tested on **Omarchy**, with its no-nonsense no BS mentality — which is why it now behaves like part of it rather than a visitor.
 
 ### index.html | 069 | h3
 In the bar
@@ -1676,7 +1676,7 @@ A launcher overlay: type a few letters, press Enter, play. Cover art, genre and 
 Omarchy Themes
 
 ### index.html | 074 | p
-It uses the theme Omarchy is using. Install a new one, apply it with `omarchy theme set`, and Cafe Neurotico is wearing it too.
+It uses the theme Omarchy is using. Install a new one, apply it with `omarchy theme set`, and Clarity is wearing it too.
 
 ### index.html | 075 | h3
 Games open properly
@@ -1697,13 +1697,13 @@ Fullscreen, on the screen you chose, at the resolution you expect.
 What you can download today is the **1.12.x experimental line** — the work in progress, in fine tuning, not a settled release yet. It is used daily on the machine it is built on, and it will have rough edges. **2.0 is the destination**, it's coming soon. If you want the calm version, wait for that one.
 
 ### index.html | 081 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### index.html | 082 | a
 Omarchy
 
 ### index.html | 083 | a
-CREMA
+Couch Mode
 
 ### index.html | 084 | a
 The library
@@ -1728,13 +1728,13 @@ PAGE: library.html
 ==============================================================================
 
 ### library.html | title
-The library — Cafe Neurotico
+The library — Clarity
 
 ### library.html | meta:description
 Six kinds of game on one shelf, manuals and achievements and saves on the game page, and a library that is a folder you can carry.
 
 ### library.html | og:title
-The library — Cafe Neurotico
+The library — Clarity
 
 ### library.html | og:description
 Six kinds of game on one shelf, manuals and achievements and saves on the game page, and a library that is a folder you can carry.
@@ -1743,7 +1743,7 @@ Six kinds of game on one shelf, manuals and achievements and saves on the game p
 Omarchy
 
 ### library.html | 002 | a
-CREMA
+Couch Mode
 
 ### library.html | 003 | a
 The library
@@ -1848,10 +1848,10 @@ The games that do not just work
 Some games need more than a launch command. Those get handled one at a time — [named games with named faults](fixes.html) — and the things that are not games at all, like source ports and fan remakes, get [their own catalogue](ports.html).
 
 ### library.html | 037 | a
-&lt; back to cafe neurotico
+&lt; back to clarity
 
 ### library.html | 038 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### library.html | 039 | a
 Home
@@ -1860,7 +1860,7 @@ Home
 Omarchy
 
 ### library.html | 041 | a
-CREMA
+Couch Mode
 
 ### library.html | 042 | a
 The library
@@ -1876,13 +1876,13 @@ PAGE: macos.html
 ==============================================================================
 
 ### macos.html | title
-Cafe Neurotico — macOS, Experimental
+Clarity — macOS, Experimental
 
 ### macos.html | meta:description
-Cafe Neurotico now runs on Apple Silicon Macs — the same codebase, a second host, still labelled Experimental. What works today, what doesn't yet, and how to install an unsigned build.
+Clarity now runs on Apple Silicon Macs — the same codebase, a second host, still labelled Experimental. What works today, what doesn't yet, and how to install an unsigned build.
 
 ### macos.html | og:title
-Cafe Neurotico on macOS — Experimental
+Clarity on macOS — Experimental
 
 ### macos.html | og:description
 A second host, same codebase. Steam and GOG, the full library, native GOG installs — and since 1.9, Windows games through CrossOver.
@@ -1891,7 +1891,7 @@ A second host, same codebase. Steam and GOG, the full library, native GOG instal
 Omarchy
 
 ### macos.html | 002 | a
-CREMA
+Couch Mode
 
 ### macos.html | 003 | a
 The library
@@ -1942,7 +1942,7 @@ what works today
 The full library
 
 ### macos.html | 019 | p
-Steam and GOG sign-in, sync and browsing, across both faces &mdash; the Manager and CREMA &mdash; with GRINDER installing underneath them.
+Steam and GOG sign-in, sync and browsing, across both faces &mdash; the Manager and Couch Mode &mdash; with Installer installing underneath them.
 
 ### macos.html | 020 | span
 &#10003;
@@ -1960,7 +1960,7 @@ Real downloads through `gogdl` directly, for games that ship an Apple Silicon bu
 Windows games, through CrossOver <span class="new">NEW IN 1.9</span>
 
 ### macos.html | 025 | p
-Titles that only ship a Windows build are no longer off-limits. Cafe Neurotico drives **CrossOver** directly, giving each game its own bottle under the same per-game scheme the Linux build already uses &mdash; created once on first launch, reused after that. Nothing to configure.
+Titles that only ship a Windows build are no longer off-limits. Clarity drives **CrossOver** directly, giving each game its own bottle under the same per-game scheme the Linux build already uses &mdash; created once on first launch, reused after that. Nothing to configure.
 
 ### macos.html | 026 | p
 **Two honest caveats.** CrossOver is commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener">CodeWeavers</a> and is not bundled &mdash; you install it yourself, and without it this simply reports as unavailable. And while the plumbing is verified end to end, it has not been run against a large library of real games yet, so treat per-title compatibility as unproven.
@@ -2035,16 +2035,16 @@ install
 The build is not signed &mdash; there is no Apple Developer account behind it yet &mdash; so the first launch needs one extra step. That is the standard cost of an app that has not gone through notarization, not a sign that something is broken.
 
 ### macos.html | 050 | li
-Download the `.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/releases/tag/v1.9.0" target="_blank" rel="noopener">1.9.0 release</a> &mdash; the macOS asset is separate from the Linux AppImage, and it sits on that release rather than the newest one.
+Download the `.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/tag/v1.9.0" target="_blank" rel="noopener">1.9.0 release</a> &mdash; the macOS asset is separate from the Linux AppImage, and it sits on that release rather than the newest one.
 
 ### macos.html | 051 | li
-Open the `.dmg` and drag **Cafe Neurotico** into **Applications** (or unzip and move the `.app` there directly).
+Open the `.dmg` and drag **Clarity** into **Applications** (or unzip and move the `.app` there directly).
 
 ### macos.html | 052 | li
-**Right-click (or Control-click) the app &rarr; Open &rarr; Open** still works on most macOS versions for the first launch. If that option does not appear, a normal double-click gets blocked once &mdash; go to **System Settings &rarr; Privacy &amp; Security** and click **Open Anyway** next to the message about Cafe Neurotico, then confirm once more.
+**Right-click (or Control-click) the app &rarr; Open &rarr; Open** still works on most macOS versions for the first launch. If that option does not appear, a normal double-click gets blocked once &mdash; go to **System Settings &rarr; Privacy &amp; Security** and click **Open Anyway** next to the message about Clarity, then confirm once more.
 
 ### macos.html | 053 | li
-If neither shows anything, from Terminal: <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Cafe Neurotico.app"</span> This strips the quarantine flag macOS attaches to anything downloaded from the internet. It only needs doing once per install.
+If neither shows anything, from Terminal: <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Clarity.app"</span> This strips the quarantine flag macOS attaches to anything downloaded from the internet. It only needs doing once per install.
 
 ### macos.html | 054 | div
 04_where_things_live
@@ -2065,34 +2065,34 @@ Where
 Your library (games, artwork, playlists, settings)
 
 ### macos.html | 060 | td
-`CafeNeurotico/GameManagerConfig/`
+`Clarity/GameManagerConfig/`
 
 ### macos.html | 061 | td
 GOG/Epic install state, auth, launch logs
 
 ### macos.html | 062 | td
-`CafeNeurotico/GRINDERConfig/`
+`Clarity/InstallerConfig/`
 
 ### macos.html | 063 | td
 Installed games (default location)
 
 ### macos.html | 064 | td
-`~/Games/CafeNeurotico/`
+`~/Games/Clarity/`
 
 ### macos.html | 065 | p
-Something look wrong, or missing from this list? <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; macOS reports are genuinely useful right now, this build needs them.
+Something look wrong, or missing from this list? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; macOS reports are genuinely useful right now, this build needs them.
 
 ### macos.html | 066 | p
-[cafeneurotico](index.html) &middot; [fixed individually](fixes.html) &middot; [source ports &amp; mods](ports.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">github</a>
+[clarity](index.html) &middot; [fixed individually](fixes.html) &middot; [source ports &amp; mods](ports.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
 ### macos.html | 067 | p
 more caffeine is more good
 
 ### macos.html | 068 | a
-&lt; back to cafeneurotico
+&lt; back to clarity
 
 ### macos.html | 069 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### macos.html | 070 | a
 Home
@@ -2101,7 +2101,7 @@ Home
 Omarchy
 
 ### macos.html | 072 | a
-CREMA
+Couch Mode
 
 ### macos.html | 073 | a
 The library
@@ -2117,22 +2117,22 @@ PAGE: omarchy.html
 ==============================================================================
 
 ### omarchy.html | title
-Cafe Neurotico on Omarchy
+Clarity on Omarchy
 
 ### omarchy.html | meta:description
-What Cafe Neurotico does that only works on Omarchy: a bar widget, a launcher overlay one keyboard shortcut from your whole library, the live theme bridge, and games that open properly.
+What Clarity does that only works on Omarchy: a bar widget, a launcher overlay one keyboard shortcut from your whole library, the live theme bridge, and games that open properly.
 
 ### omarchy.html | og:title
-Cafe Neurotico on Omarchy
+Clarity on Omarchy
 
 ### omarchy.html | og:description
-What Cafe Neurotico does that only works on Omarchy: a bar widget, a launcher overlay one keyboard shortcut from your whole library, the live theme bridge, and games that open properly.
+What Clarity does that only works on Omarchy: a bar widget, a launcher overlay one keyboard shortcut from your whole library, the live theme bridge, and games that open properly.
 
 ### omarchy.html | 001 | a
 Omarchy
 
 ### omarchy.html | 002 | a
-CREMA
+Couch Mode
 
 ### omarchy.html | 003 | a
 The library
@@ -2153,7 +2153,7 @@ omarchy_only.md
 What it does <span class="em">only here</span>
 
 ### omarchy.html | 009 | p
-Cafe Neurotico should run on any Linux desktop. However it is **built for, tested on and tailored for Omarchy**, and there are four things it can do there that it cannot do anywhere else.
+Clarity should run on any Linux desktop. However it is **built for, tested on and tailored for Omarchy**, and there are four things it can do there that it cannot do anywhere else.
 
 ### omarchy.html | 010 | div
 01_the_launcher
@@ -2183,7 +2183,7 @@ A widget that knows what you are playing
 Installed count when nothing is running; the game's name when something is. Click it for a menu one step from the library, the big screen face, Manage Storage and the Control Panel.
 
 ### omarchy.html | 019 | li
-**What is playing comes from the compositor, not the app.** Cafe Neurotico launches a game and gets out of the way — it is usually not running while you play, so asking it would give the wrong answer for exactly the case the widget exists to show.
+**What is playing comes from the compositor, not the app.** Clarity launches a game and gets out of the way — it is usually not running while you play, so asking it would give the wrong answer for exactly the case the widget exists to show.
 
 ### omarchy.html | 020 | li
 **Nothing to configure.** The app writes down where it lives; the widget reads that. No paths to type.
@@ -2198,7 +2198,7 @@ Installed count when nothing is running; the game's name when something is. Clic
 It wears the theme you already chose
 
 ### omarchy.html | 024 | p
-Cafe Neurotico uses **the theme Omarchy is currently using**. Install a new theme, apply it, and the app is wearing it too — the same colours, not an approximation of them.
+Clarity uses **the theme Omarchy is currently using**. Install a new theme, apply it, and the app is wearing it too — the same colours, not an approximation of them.
 
 ### omarchy.html | 025 | figcaption
 Your Desktop sits at the top of the picker, above the app's own themes.
@@ -2231,7 +2231,7 @@ Under a tiling window manager a game would otherwise be fitted into whatever slo
 Getting it
 
 ### omarchy.html | 035 | p
-The bar widget and the launcher are a companion plugin. It is around nine kilobytes of code — no library, no launcher and no games of its own — so it needs Cafe Neurotico installed. Installed without it, it says so and offers to fetch it, in a terminal you can watch.
+The bar widget and the launcher are a companion plugin. It is around nine kilobytes of code — no library, no launcher and no games of its own — so it needs Clarity installed. Installed without it, it says so and offers to fetch it, in a terminal you can watch.
 
 ### omarchy.html | 036 | div
 ⚠ Not published yet
@@ -2240,10 +2240,10 @@ The bar widget and the launcher are a companion plugin. It is around nine kiloby
 The plugin is built and in daily testing, but it is not on Omarchy's plugin marketplace yet. It goes out with 2.0.
 
 ### omarchy.html | 038 | a
-&lt; back to cafe neurotico
+&lt; back to clarity
 
 ### omarchy.html | 039 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### omarchy.html | 040 | a
 Home
@@ -2252,7 +2252,7 @@ Home
 Omarchy
 
 ### omarchy.html | 042 | a
-CREMA
+Couch Mode
 
 ### omarchy.html | 043 | a
 The library
@@ -2268,7 +2268,7 @@ PAGE: ports.html
 ==============================================================================
 
 ### ports.html | title
-Cafe Neurotico — Source Ports & Mods
+Clarity — Source Ports & Mods
 
 ### ports.html | meta:description
 Twenty-five source ports, mods, fan games and Build-engine games that install in one click — with the game data linked out of the library you already own.
@@ -2283,7 +2283,7 @@ Nobody sets out to install GZDoom; they set out to play Brutal Doom. The mod is 
 Omarchy
 
 ### ports.html | 002 | a
-CREMA
+Couch Mode
 
 ### ports.html | 003 | a
 The library
@@ -2640,25 +2640,25 @@ A recipe does not guess. It knows what the download is called, which executable 
 All of it lives under **Control Panel → Fan Games &amp; Source Ports**.
 
 ### ports.html | 121 | a
-⤓ Download Cafe Neurotico
+⤓ Download Clarity
 
 ### ports.html | 122 | a
 Suggest a port or mod
 
 ### ports.html | 123 | p
-Something missing that ought to be here? <a href="https://github.com/FromChaosComesClarity/CafeNeurotico/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; say where the download comes from, and it can be added.
+Something missing that ought to be here? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; say where the download comes from, and it can be added.
 
 ### ports.html | 124 | p
-[cafeneurotico](index.html) &middot; [games fixed individually](fixes.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/CafeNeurotico" target="_blank" rel="noopener">github</a>
+[clarity](index.html) &middot; [games fixed individually](fixes.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
 ### ports.html | 125 | p
 more caffeine is more good
 
 ### ports.html | 126 | a
-&lt; back to cafeneurotico
+&lt; back to clarity
 
 ### ports.html | 127 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### ports.html | 128 | a
 Home
@@ -2667,7 +2667,7 @@ Home
 Omarchy
 
 ### ports.html | 130 | a
-CREMA
+Couch Mode
 
 ### ports.html | 131 | a
 The library
@@ -2683,13 +2683,13 @@ PAGE: support.html
 ==============================================================================
 
 ### support.html | title
-Cafe Neurotico — Support & Donate
+Clarity — Support & Donate
 
 ### support.html | meta:description
-Support Cafe Neurotico — every way to help the project, from a contribution (Ko-fi / PIX) to free ways like starring on GitHub and spreading the word.
+Support Clarity — every way to help the project, from a contribution (Ko-fi / PIX) to free ways like starring on GitHub and spreading the word.
 
 ### support.html | og:title
-Support Cafe Neurotico
+Support Clarity
 
 ### support.html | og:description
 All the ways to support the project — buy a coffee or help out for free.
@@ -2698,7 +2698,7 @@ All the ways to support the project — buy a coffee or help out for free.
 Omarchy
 
 ### support.html | 002 | a
-CREMA
+Couch Mode
 
 ### support.html | 003 | a
 The library
@@ -2728,7 +2728,7 @@ it keeps the work going
 chip in
 
 ### support.html | 012 | p
-Cafe Neurotico is free, and made by myself on my own time. If it sorted out your gaming life, a contribution keeps the work going.
+Clarity is free, and made by myself on my own time. If it sorted out your gaming life, a contribution keeps the work going.
 
 ### support.html | 013 | p
 **If you donate, [let me know](mailto:joserobertoazevedo@hey.com) so I can thank you personally! :)**
@@ -2779,7 +2779,7 @@ Built by J.R.A. · Contact: [joserobertoazevedo@hey.com](mailto:joserobertoazeve
 “more caffeine is <u>more good</u>”
 
 ### support.html | 029 | a
-&lt; back to cafeneurotico
+&lt; back to clarity
 
 ### support.html | 030 | h3
 DONATE VIA PIX
@@ -2794,7 +2794,7 @@ COPY PIX KEY
 Copied to clipboard!
 
 ### support.html | 034 | span
-Cafe Neurotico · GPL-3.0-or-later · built in Brazil 🇧🇷
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
 ### support.html | 035 | a
 Home
@@ -2803,7 +2803,7 @@ Home
 Omarchy
 
 ### support.html | 037 | a
-CREMA
+Couch Mode
 
 ### support.html | 038 | a
 The library

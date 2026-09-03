@@ -5,7 +5,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;family=Share+Tech+Mono&amp;display=swap');
       .brand-small { font-family: 'Share Tech Mono', monospace; font-size: 18px; fill: #bbbbbb; letter-spacing: 4px; }
       .brand-large { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 40px; fill: #ffffff; letter-spacing: 1px; }
-      .cngm-accent { fill: #D4A373; } 
+      .clarity-accent { fill: #D4A373; } 
     </style>
   </defs>
 
@@ -30,6 +30,6 @@
   </g>
 
   <!-- Typography -->
-  <text x="130" y="46" class="brand-small">CAFE NEUROTICO</text>
-  <text x="128" y="96" class="brand-large">GAME <tspan class="cngm-accent">MANAGER</tspan></text>
+  <text x="130" y="46" class="brand-small">CLARITY</text>
+  <text x="128" y="96" class="brand-large">GAME <tspan class="clarity-accent">MANAGER</tspan></text>
 </svg>

@@ -5,11 +5,11 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;family=Share+Tech+Mono&amp;display=swap');
       .brand-small { font-family: 'Share Tech Mono', monospace; font-size: 18px; fill: #bbbbbb; letter-spacing: 4px; }
       .brand-large { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 44px; fill: #ffffff; letter-spacing: 3px; }
-      .crema-accent { fill: #D4A373; }
+      .couch-accent { fill: #D4A373; }
     </style>
   </defs>
 
-  <!-- The ABXY Foam Icon -->
+  <!-- The ABXY Icon -->
   <g transform="translate(10, 10) scale(0.195)">
     <rect width="512" height="512" rx="112" fill="#2C1E16"/>
     <path d="M 380 256 C 490 256, 490 150, 380 150" fill="none" stroke="#D4A373" stroke-width="24" stroke-linecap="round"/>
@@ -26,6 +26,6 @@
   </g>
 
   <!-- Typography -->
-  <text x="130" y="46" class="brand-small">CAFE NEUROTICO</text>
-  <text x="128" y="96" class="brand-large crema-accent">CREMA</text>
+  <text x="130" y="46" class="brand-small">CLARITY</text>
+  <text x="128" y="96" class="brand-large couch-accent">Couch Mode</text>
 </svg>

@@ -309,7 +309,7 @@ def verify():
     return 0
 
 
-HEADER = """CAFE NEUROTICO — ALL WEBSITE COPY
+HEADER = """CLARITY — ALL WEBSITE COPY
 =================================
 
 Every word on the site, in one file. Rewrite anything below in your own voice and hand it
