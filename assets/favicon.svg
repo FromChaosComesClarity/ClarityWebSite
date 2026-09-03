@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Clarity">
-  <!-- The period from clar.ity: the wordmark's one cyan accent, on the site's ground.
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512" role="img" aria-label="Clarity">
+  <!-- The Aperture C, the app's own mark, on the site's ground.
        Explicit width/height, not viewBox alone - without an intrinsic size a browser
-       rasterises this into its own default box and the disc lands off-centre.
-       No border: at 16px a 1px rule is most of the tile and reads as noise. -->
-  <rect width="32" height="32" fill="#08090a"/>
-  <circle cx="16" cy="16" r="9.5" fill="#2fe0d6"/>
+       rasterises this into its own default box and the mark lands off-centre. -->
+  <rect rx="112" fill="#0e1113"/><path d="M348.3 137.8 A150 150 0 1 0 348.3 374.2" fill="none" stroke="#2fe0d6" stroke-width="56" stroke-linecap="round"/><circle cx="256" cy="256" r="34" fill="#4a5f5e"/>
 </svg>
