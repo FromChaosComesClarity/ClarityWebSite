@@ -1,4 +1,4 @@
-/* ── Clarity — the shared identity ───────────────────────────────────
+/* ── Clarity, the shared identity ───────────────────────────────────
    After cliamp.stream, chosen for this phase: near-black ground, one cyan accent
    with magenta as the second voice, monospace throughout, box-drawing rules
    rather than cards, numbered file-name section labels, flat surfaces.
@@ -95,7 +95,7 @@ footer a:hover{color:var(--cyan)}
 
 /* ── Small screens ───────────────────────────────────────────────────────────
    header.top is sticky, so whatever it costs it costs for the whole scroll. Measured
-   at 320px the seven links wrapped to three rows and the bar stood 171px tall — a fifth
+   at 320px the seven links wrapped to three rows and the bar stood 171px tall, a fifth
    of the screen, permanently. Tightening the gap and the type pulls it back to two rows. */
 @media (max-width:560px){
   .topin{padding:10px 0;gap:10px}

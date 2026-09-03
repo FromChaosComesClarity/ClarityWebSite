@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Pull every piece of visible copy out of the site into one editable text file — and put it
+"""Pull every piece of visible copy out of the site into one editable text file, and put it
 back again afterwards.
 
     python3 tools/copy-extract.py extract  > website-copy.txt
     python3 tools/copy-extract.py apply    < website-copy.txt
 
 ⚠️ The point of this is the ROUND TRIP. Extract, change nothing, apply, and the HTML must come
-back byte-for-byte identical — that is checked by `verify`, and it is what makes it safe to
+back byte-for-byte identical. That is checked by `verify`, and it is what makes it safe to
 hand the file to someone and take their rewrite back.
 
 ⚠️ Replacements are applied by character offset, right to left, so the HTML is never
@@ -17,7 +17,7 @@ Inline markup survives as light markers, so the file stays readable:
 
     **bold**   *italic*   `code`   [text](href)
 
-Anything else in a string — an entity, a <br>, a nested span — is left exactly as it is.
+Anything else in a string (an entity, a <br>, a nested span) is left exactly as it is.
 """
 
 import glob
@@ -42,7 +42,7 @@ INLINE_OUT = [
     # round trip untouched, which is the whole promise of this file.
     (re.compile(r"<em>(.*?)</em>", re.S), r"*\1*"),
     (re.compile(r"<code>(.*?)</code>", re.S), r"`\1`"),
-    # ⚠️ Only a bare <a href>. A link carrying a class or a target must keep its raw tag —
+    # ⚠️ Only a bare <a href>. A link carrying a class or a target must keep its raw tag,
     # the marker form has nowhere to put the other attributes, and dropping them silently
     # rewrote the site's own brand link into a plain one.
     (re.compile(r'<a href="([^"]*)">(.*?)</a>', re.S), r"[\2](\1)"),
@@ -56,7 +56,7 @@ INLINE_IN = [
 
 
 def attr_escape(text):
-    """Escape for a double-quoted attribute — and ⚠️ NOT the apostrophe.
+    """Escape for a double-quoted attribute, and ⚠️ NOT the apostrophe.
 
     html.escape(quote=True) turns ' into &#x27;, which is valid but is not what the pages
     contain: an apostrophe inside a double-quoted attribute needs no escaping, and rewriting
@@ -141,7 +141,7 @@ def containers(path):
             continue
         # Must actually say something once its own markup is stripped. ⚠️ The filter lives
         # HERE and not in extract(), because both sides number the blocks from this same list
-        # — filtering on one side only would shift every key on the other.
+        # Filtering on one side only would shift every key on the other.
         plain = re.sub(r"<[^>]+>", "", inner).strip()
         if not plain:
             continue
@@ -238,7 +238,7 @@ def apply_edits(edited):
             if not m:
                 continue
             # ⚠️ The title is unescaped on the way out, so it has to be escaped on the way
-            # back in — otherwise "Ports &amp; Mods" returns as raw "&" and the page carries
+            # back in, otherwise "Ports &amp; Mods" returns as raw "&" and the page carries
             # an unescaped ampersand.
             new_text = attr_escape(edited[k]) if name != "title" else html.escape(edited[k], quote=False)
             if new_text != m.group(1):
@@ -256,12 +256,12 @@ def check_markers():
 
     ⚠️ This exists because the round-trip check below CANNOT catch a bad conversion.
     apply_edits() skips any block whose text is unchanged, so extracting and re-applying
-    without editing never runs from_markers() at all — and a <b> that comes back as
+    without editing never runs from_markers() at all, and a <b> that comes back as
     <strong> therefore passed a clean `verify` for as long as nobody edited that block.
 
     So: take every block's real markup, push it out to markers and straight back, and
     require the result to match. Whitespace is normalised on both sides because the
-    markers do not carry line breaks — a rewritten block legitimately reflows onto one
+    markers do not carry line breaks, and a rewritten block legitimately reflows onto one
     line, and that is not what we are hunting here. Tags, entities and attributes are.
     """
     problems = []
@@ -309,7 +309,7 @@ def verify():
     return 0
 
 
-HEADER = """CLARITY — ALL WEBSITE COPY
+HEADER = """CLARITY: ALL WEBSITE COPY
 =================================
 
 Every word on the site, in one file. Rewrite anything below in your own voice and hand it
@@ -317,7 +317,7 @@ back; it goes straight into the pages.
 
 HOW TO EDIT
 -----------
-  * Change the text UNDER a "###" line. Never change the "###" line itself — that is the
+  * Change the text UNDER a "###" line. Never change the "###" line itself. That is the
     address the text goes back to.
   * A block can be as many lines as you like. It ends at the next "###".
   * To delete a piece of copy, leave the block empty.
@@ -326,7 +326,8 @@ FORMATTING YOU CAN USE
 ----------------------
   **bold**            *italic*            `code`            [link text](page.html)
 
-Anything else — an &mdash;, a <br>, an emoji — just leave as you find it.
+Anything else, a <br> or an emoji, just leave as you find it.
+    No em dashes, please: a comma, a colon or a full stop instead.
 
 WHAT THE LABELS MEAN
 --------------------

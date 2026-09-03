@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clarity — the game manager made for Omarchy</title>
-<meta name="description" content="Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place, in the bar, one keyboard shortcut away. 2.0 is being built now.">
+<title>Clarity: the game manager I always wanted</title>
+<meta name="description" content="Every game I own: Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods, all in one place, in the bar, one shortcut away. From chaos comes clarity. Built for Omarchy.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Clarity">
-<meta property="og:title" content="Clarity — the game manager made for Omarchy">
-<meta property="og:description" content="Every game you own, in one place, at home on Omarchy. 2.0 is being built and tested now.">
+<meta property="og:title" content="Clarity: the game manager I always wanted">
+<meta property="og:description" content="Every game you own, in one place, at home on Omarchy. From chaos comes clarity. 2.0 is being built now.">
 <meta property="og:image" content="https://fromchaoscomesclarity.github.io/ClarityWebSite/assets/shots/shot-1.webp">
 <meta property="og:url" content="https://fromchaoscomesclarity.github.io/ClarityWebSite/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -25,7 +25,7 @@
 .sub{max-width:62ch;color:var(--muted);margin-top:20px;font-size:clamp(.95rem,1.6vw,1.08rem)}
 .cta{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
 
-/* ── “Things ONLY CN can do” — the carousel ──────────────────────────────
+/* ── “Things ONLY Clarity does”, the carousel ──────────────────────────────
    A horizontal track that scrolls itself. Each card is a headline and a picture;
    the detail lives on its own page, which is this site's standing rule. */
 .only{padding:clamp(30px,5vh,58px) 0 clamp(40px,7vh,80px)}
@@ -72,7 +72,7 @@ a.card:hover{border-color:var(--cyan-dim)}
 .caption b,.caption strong{color:var(--cyan);font-weight:500}
 /* All ten captions live in the markup so copy-extract.py can reach them; only the
    current one shows. They used to sit in a JavaScript array, where the extractor
-   could not see them — and they drifted out of step with the rest of the site. */
+   could not see them, and they drifted out of step with the rest of the site. */
 .caption .shotcap{display:none}
 .caption .shotcap.on{display:inline}
 .dots{display:flex;gap:8px;flex-wrap:wrap}
@@ -85,7 +85,7 @@ a.card:hover{border-color:var(--cyan-dim)}
 
 <header class="top">
   <div class="wrap topin">
-    <a class="brand" href="index.html">clar<span class="dot">.</span>ity</a>
+    <a class="brand" href="index.html">clarity</a>
     <nav class="links">
       <a href="#only">Only here</a>
       <a href="#what">What it is</a>
@@ -105,19 +105,19 @@ a.card:hover{border-color:var(--cyan-dim)}
       <span>01_now_building</span>
       <span class="tag">2.0 in progress</span>
     </div>
-    <h1>clar<span class="em">.</span>ity<br><span class="em"> The Game Manager.</span></h1>
-    <p class="sub">Every game you own — Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods — in one place. In the bar. One keyboard shortcut away. Clarity is being rebuilt around that idea, and <strong>2.0 is what it is becoming.</strong> <strong>CN</strong> should work in any other Linux distro, but it has found a home in Omarchy, with exclusive features.</p>
+    <h1>clarity<br><span class="em"> The Game Manager.</span></h1>
+    <p class="sub">Every game you own. Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods, all in one place. In the bar. One keyboard shortcut away. I started this because my library was scattered across three apps and one <strong>enormous</strong> Excel file (I'm old, it's fine), and I wanted a single thing that just handled all of it. It should run on any Linux distro, but it found a home on Omarchy, and that's where the good stuff lives.</p>
     <div class="cta">
       <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases">See what is shipping</a>
       <a class="btn ghost" href="https://github.com/FromChaosComesClarity/Clarity">The code</a>
     </div>
   </div>
 
-  <!-- ── Things ONLY CN can do ─────────────────────────────────────────── -->
+  <!-- ── Things ONLY Clarity does ─────────────────────────────────────────── -->
   <div class="only" id="only">
     <div class="only-head">
-      <h2>Things <span class="hot">ONLY</span> CN can do:</h2>
-      <span class="only-hint">drag, or wait — it moves on its own</span>
+      <h2>Things <span class="hot">ONLY</span> Clarity does:</h2>
+      <span class="only-hint">drag it, or wait. it moves on its own</span>
     </div>
 
     <div class="rail">
@@ -128,7 +128,7 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="txt">
             <div class="tagline">no one else does this</div>
             <h3>Source ports and fan games that arrive playable</h3>
-            <p>It knows what each port needs and wires up the game data from a title you already own — so it never lands unplayable.</p>
+            <p>It knows what each port needs and wires up the game data from a title you already own, so it never lands unplayable. No hunting for the right file at one in the morning.</p>
             <span class="more">See the catalogue →</span>
           </div>
         </a>
@@ -137,8 +137,8 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="cap"><img src="assets/shots/shot-3.webp" alt="A game page in the Manager showing artwork, description, achievements and a play button." loading="lazy" width="1600" height="1000"></div>
           <div class="txt">
             <div class="tagline">no one else does this</div>
-            <h3>Fixes for games that didn't work on Linux, embedded in the app.</h3>
-            <p>Not “improved compatibility”. Specific games that did not run on Linux, what was actually wrong with each, and the fix applied automatically when you install it.</p>
+            <h3>Fixes for games that didn't work on Linux, baked in</h3>
+            <p>Not “improved compatibility”. Actual games that would not run, what was wrong with each one, and the fix applied for you at install time. I hit every one of these myself. That's how they got in there.</p>
             <span class="more">Read the list →</span>
           </div>
         </a>
@@ -147,8 +147,8 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="cap"><img src="assets/shots/shot-1.webp" alt="The launcher overlay open over an Omarchy desktop, listing games with cover art beside them." loading="lazy" width="1600" height="1000"></div>
           <div class="txt">
             <div class="tagline">omarchy only</div>
-            <h3>Your whole library, one keyboard shortcut from anywhere</h3>
-            <p>A launcher overlay in the bar's own language. Type three letters, press Enter, play — without a window ever opening.</p>
+            <h3>Your whole library, one shortcut from anywhere</h3>
+            <p>Hit the shortcut, type three letters, press Enter, play. No window ever opens. This is the one I use most, honestly.</p>
             <span class="more">What it does on Omarchy →</span>
           </div>
         </a>
@@ -158,7 +158,7 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="txt">
             <div class="tagline">omarchy only</div>
             <h3>It wears the theme you already chose</h3>
-            <p>Install a theme, apply it, and the app is wearing it too. Not a lookalike — the same colours your desktop is using.</p>
+            <p>Install an Omarchy theme, apply it, and Clarity is wearing it too. Not a lookalike. The same colours your desktop is using right now.</p>
             <span class="more">How the bridge works →</span>
           </div>
         </a>
@@ -168,7 +168,7 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="txt">
             <div class="tagline">no one else does this</div>
             <h3>The same library, on the big screen</h3>
-            <p>A second face built for a television and a gamepad — artwork, trailers, a jukebox with a real spectrum, and no keyboard anywhere.</p>
+            <p>A second face built for a television and a controller: artwork, trailers, a jukebox with a real spectrum, and no keyboard anywhere. It's a fucking beautiful couch mode and I'm not sorry about it.</p>
             <span class="more">Meet Couch Mode →</span>
           </div>
         </a>
@@ -177,8 +177,8 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="cap"><img src="assets/shots/shot-7.webp" alt="A game page listing several downloadable manuals for Baldur's Gate." loading="lazy" width="1600" height="1000"></div>
           <div class="txt">
             <div class="tagline">no one else does this</div>
-            <h3>Manuals, achievements and saves, in the app</h3>
-            <p>The PDF that came with your GOG game, read in place. Achievements from two stores in one list. Save games backed up and restored without leaving the page.</p>
+            <h3>Manuals, achievements and saves, all in the app</h3>
+            <p>The PDF that shipped with your GOG game, read right there in its own window. Achievements from two stores in one list. Saves backed up and restored without leaving the page. If you played those old RPGs, you know.</p>
             <span class="more">What a game page holds →</span>
           </div>
         </a>
@@ -188,7 +188,7 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="txt">
             <div class="tagline">no one else does this</div>
             <h3>Six kinds of game, one shelf</h3>
-            <p>Steam, GOG, Epic, itch, Flatpak, PICO-8 carts and emulated ROMs sitting side by side — sorted, filtered and searched as one library instead of six.</p>
+            <p>Steam, GOG, Epic, itch, Flatpak, PICO-8 carts and emulated ROMs sitting side by side, sorted, filtered and searched as one library instead of six. This is the whole reason I started building it.</p>
             <span class="more">How importing works →</span>
           </div>
         </a>
@@ -198,7 +198,7 @@ a.card:hover{border-color:var(--cyan-dim)}
           <div class="txt">
             <div class="tagline">no one else does this</div>
             <h3>Your library is a folder you can carry</h3>
-            <p>Everything lives beside the AppImage. Copy the folder to another machine and your covers, playlists, saves and settings arrive with it. No account, no cloud, no sync.</p>
+            <p>Everything lives beside the AppImage. Copy that folder to another machine and your covers, playlists, saves and settings come with it. No account, no cloud, no sync, nobody's server.</p>
             <span class="more">Where your data lives →</span>
           </div>
         </a>
@@ -211,19 +211,14 @@ a.card:hover{border-color:var(--cyan-dim)}
   <section id="what">
     <div class="label">02_what_it_is.md</div>
     <h2>One app, two faces, all your games</h2>
-    <p class="body"><strong>The Manager</strong> is the desktop app: import, organise, scrape, install, launch, with a mouse and keyboard. <strong>Couch Mode</strong> is the big screen companion: fullscreen, gamepad-first, made for a television across a room. <strong>Installer</strong> works underneath both, installing GOG and Epic games without a store client.</p>
-    <p class="body">
-      It is one AppImage. Nothing to install alongside it, and your library, artwork and settings
-      live in a folder beside it — portable, backed up by copying, gone when you delete it.
-    </p>
+    <p class="body"><strong>The Manager</strong> is the desktop app: import, organise, scrape, install, launch, with a mouse and keyboard. <strong>Couch Mode</strong> is the big screen one: fullscreen, gamepad-first, made for a television across the room. <strong>Installer</strong> works underneath both, pulling your GOG and Epic games down without a store client anywhere in sight.</p>
+    <p class="body">It's one AppImage. Nothing to install alongside it, and your library, artwork and settings sit in a folder next to it. Portable, backed up by copying it, gone when you delete it.</p>
   </section>
 
   <section id="shots">
     <div class="label">03_screens.webp</div>
     <h2>What it looks like right now</h2>
-    <p class="body" style="margin-bottom:22px">
-      Shot on Omarchy, on the machine it is developed on. Nothing here is a mockup.
-    </p>
+    <p class="body" style="margin-bottom:22px">Shot on Omarchy, on the machine it's built on. Nothing here is a mockup.</p>
 
     <div class="shots">
       <div class="stage" id="stage">
@@ -240,16 +235,16 @@ a.card:hover{border-color:var(--cyan-dim)}
       </div>
       <div class="shotbar">
         <div class="caption" id="caption">
-          <span class="shotcap on"><strong>01</strong> — the launcher, one keyboard shortcut from anywhere</span>
-          <span class="shotcap"><strong>02</strong> — the library on the desktop</span>
-          <span class="shotcap"><strong>03</strong> — a game page, with everything about it in one place</span>
-          <span class="shotcap"><strong>04</strong> — source ports and fan games, installed from your own file</span>
-          <span class="shotcap"><strong>05</strong> — the theme picker, wearing your desktop’s colours</span>
-          <span class="shotcap"><strong>06</strong> — achievements from two stores in one list</span>
-          <span class="shotcap"><strong>07</strong> — the manuals that came with your GOG game</span>
-          <span class="shotcap"><strong>08</strong> — Couch Mode’s home screen, on the big screen</span>
-          <span class="shotcap"><strong>09</strong> — a game page built for a television</span>
-          <span class="shotcap"><strong>10</strong> — browsing covers in Couch Mode</span>
+          <span class="shotcap on"><strong>01</strong> · the launcher, one keyboard shortcut from anywhere</span>
+          <span class="shotcap"><strong>02</strong> · the library on the desktop</span>
+          <span class="shotcap"><strong>03</strong> · a game page, with everything about it in one place</span>
+          <span class="shotcap"><strong>04</strong> · source ports and fan games, installed from your own file</span>
+          <span class="shotcap"><strong>05</strong> · the theme picker, wearing your desktop’s colours</span>
+          <span class="shotcap"><strong>06</strong> · achievements from two stores in one list</span>
+          <span class="shotcap"><strong>07</strong> · the manuals that came with your GOG game</span>
+          <span class="shotcap"><strong>08</strong> · Couch Mode’s home screen, on the big screen</span>
+          <span class="shotcap"><strong>09</strong> · a game page built for a television</span>
+          <span class="shotcap"><strong>10</strong> · browsing covers in Couch Mode</span>
         </div>
         <div class="dots" id="dots"></div>
       </div>
@@ -260,20 +255,16 @@ a.card:hover{border-color:var(--cyan-dim)}
   <section id="omarchy">
     <div class="label">04_at_home_on_omarchy.md</div>
     <h2>It found a home</h2>
-    <p class="body">
-      Clarity should run on any Linux desktop, but it's being built and tested on
-      <strong>Omarchy</strong>, with its no-nonsense no BS mentality — which is why it now
-      behaves like part of it rather than a visitor.
-    </p>
+    <p class="body">Clarity should run on any Linux desktop, but it's built and tested on <strong>Omarchy</strong>, which is no-nonsense, no BS, everyone welcome. That's why it behaves like part of the system now instead of a visitor knocking at the door.</p>
 
     <div class="grid" style="margin-top:26px">
       <div class="cell">
         <h3>In the bar</h3>
-        <p>A widget showing what is installed and what is playing, with a menu one click from the library, the big screen face and your storage.</p>
+        <p>A widget showing what's installed and what's playing, with a menu one click from the library, the big screen face and your storage.</p>
       </div>
       <div class="cell">
         <h3>One keyboard shortcut away</h3>
-        <p>A launcher overlay: type a few letters, press Enter, play. Cover art, genre and a short description of the game.</p>
+        <p>A launcher overlay: type a few letters, press Enter, play. Cover art, genre, and a short description of the game.</p>
       </div>
       <div class="cell">
         <h3>Omarchy Themes</h3>
@@ -281,7 +272,7 @@ a.card:hover{border-color:var(--cyan-dim)}
       </div>
       <div class="cell">
         <h3>Games open properly</h3>
-        <p>Fullscreen, on the screen you chose, at the resolution you expect.</p>
+        <p>Fullscreen, on the screen you picked, at the resolution you expect. No fighting the tiler.</p>
       </div>
     </div>
 
@@ -292,7 +283,7 @@ a.card:hover{border-color:var(--cyan-dim)}
     <div class="label">05_where_it_stands.txt</div>
     <div class="note">
       <div class="h">⚠ Experimental, and honest about it</div>
-      <p>What you can download today is the <strong>1.12.x experimental line</strong> — the work in progress, in fine tuning, not a settled release yet. It is used daily on the machine it is built on, and it will have rough edges. <strong>2.0 is the destination</strong>, it's coming soon. If you want the calm version, wait for that one.</p>
+      <p>What you can download today is the <strong>1.12.x experimental line</strong>. Work in progress, still being fine-tuned, not a settled release. I use it every single day on the machine it's built on, and it <em>will</em> have rough edges. <strong>2.0 is where it's going</strong>, and it's coming soon. If you want the calm version, wait for that one.</p>
     </div>
   </section>
 
@@ -350,7 +341,7 @@ a.card:hover{border-color:var(--cyan-dim)}
   show(0); start();
 })();
 
-/* ── The “only CN” carousel ─────────────────────────────────────────────
+/* ── The “only Clarity” carousel ─────────────────────────────────────────────
    Scrolls itself along a real scroll container, so a drag, a trackpad swipe and
    a keyboard tab all still work. Stops the moment anyone touches it. */
 (function () {
@@ -374,7 +365,7 @@ a.card:hover{border-color:var(--cyan-dim)}
   }
   function start() { if (!reduced && !human) { stop(); timer = setInterval(function () { step(i + 1); }, 4200); } }
   function stop() { if (timer) { clearInterval(timer); timer = 0; } }
-  /* Once someone scrolls it themselves, it is theirs — it does not wrestle back. */
+  /* Once someone scrolls it themselves, it is theirs. It does not wrestle back. */
   function surrender() { human = true; stop(); }
 
   cards.forEach(function (_, n) {

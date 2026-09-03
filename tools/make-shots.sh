@@ -7,9 +7,9 @@
 # Input files should already be named semantically, because the name becomes the URL:
 #   desktop-library.png  couch-wall.png  couch-crt-gamepage.png  themes-systems.png
 #
-# Two traps this exists to avoid (both bit the CN gallery):
+# Two traps this exists to avoid (both bit the gallery):
 #   · width/height must come from the real file, never a guess
-#   · replacing an image without renaming it does not reach anyone — the Pages CDN and the
+#   · replacing an image without renaming it does not reach anyone. The Pages CDN and the
 #     browser keep serving the cached bytes. Rename, or the swap will look broken and not be.
 set -euo pipefail
 

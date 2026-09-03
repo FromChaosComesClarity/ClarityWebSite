@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clarity — macOS, Experimental</title>
-<meta name="description" content="Clarity now runs on Apple Silicon Macs — the same codebase, a second host, still labelled Experimental. What works today, what doesn't yet, and how to install an unsigned build.">
+<title>Clarity on macOS (Experimental)</title>
+<meta name="description" content="Clarity runs on Apple Silicon Macs now. Same codebase, second host, still labelled Experimental. What works today, what doesn't yet, and how to install an unsigned build.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Clarity">
-<meta property="og:title" content="Clarity on macOS — Experimental">
-<meta property="og:description" content="A second host, same codebase. Steam and GOG, the full library, native GOG installs — and since 1.9, Windows games through CrossOver.">
+<meta property="og:title" content="Clarity on macOS (Experimental)">
+<meta property="og:description" content="A second host, same codebase. Steam and GOG, the full library, native GOG installs, and since 1.9, Windows games through CrossOver.">
 <meta property="og:image" content="https://fromchaoscomesclarity.github.io/ClarityWebSite/assets/images/clarity_banner.jpg">
 <meta property="og:url" content="https://fromchaoscomesclarity.github.io/ClarityWebSite/macos.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -61,7 +61,7 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
 
 <header class="top">
   <div class="wrap topin">
-    <a class="brand" href="index.html">clar<span class="dot">.</span>ity</a>
+    <a class="brand" href="index.html">clarity</a>
     <nav class="links">
       <a href="omarchy.html">Omarchy</a>
       <a href="couch.html">Couch Mode</a>
@@ -78,10 +78,10 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
     <div class="eyebrow"><span>a second host</span><span class="tag">experimental</span></div>
     <h1>macOS</h1>
     <p class="lead" style="margin-top:18px">same codebase · Apple Silicon</p>
-    <p class="body" style="margin-top:18px">Linux stays the primary platform &mdash; it is what gets tested first and ships fastest. The macOS build lives behind its own file in the same codebase rather than a fork, and it is real, not a proof of concept: <strong>Steam and GOG sign-in, the full library, and installing and launching native GOG games all work today</strong>, through the app&rsquo;s own download engine, not a browser hand-off. <strong>Since 1.9, Windows games run too</strong>, through CrossOver. It is labelled Experimental because it is younger and unsigned, not because it is a demo.</p>
-    <p class="body">current macOS build: <strong>1.9.0</strong> &middot; Linux is on 1.9.1, a Linux-only fix &mdash; the two hosts are not always on the same number.</p>
+    <p class="body" style="margin-top:18px">Linux stays the primary platform. It's what gets tested first and ships fastest. The macOS build lives behind its own file in the same codebase rather than a fork, and it's real rather than a proof of concept: <strong>Steam and GOG sign-in, the full library, and installing and launching games.</strong></p>
+    <p class="body">current macOS build: <strong>1.9.0</strong> &middot; Linux is on 1.9.1, a Linux-only fix, so the two hosts aren't always on the same number.</p>
     <div class="btns">
-      <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/tag/v1.9.0" target="_blank" rel="noopener">⤓ Download for macOS &mdash; 1.9.0</a>
+      <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/tag/v1.9.0" target="_blank" rel="noopener">⤓ Download for macOS &middot; 1.9.0</a>
       <a class="btn ghost" href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">Source on GitHub</a>
     </div>
   </div>
@@ -92,24 +92,24 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
     <div class="feat">
       <div><span class="mark ok">&#10003;</span><div class="txt">
         <h3>The full library</h3>
-        <p>Steam and GOG sign-in, sync and browsing, across both faces &mdash; the Manager and Couch Mode &mdash; with Installer installing underneath them.</p>
+        <p>Steam and GOG sign-in, sync and browsing, across both faces, the Manager and Couch Mode, with Installer working underneath them.</p>
       </div></div>
       <div><span class="mark ok">&#10003;</span><div class="txt">
         <h3>Native GOG installs</h3>
-        <p>Real downloads through <code>gogdl</code> directly, for games that ship an Apple Silicon build &mdash; not a link out to a browser.</p>
+        <p>Real downloads through <code>gogdl</code> directly, for games that ship an Apple Silicon build. Not a link out to a browser.</p>
       </div></div>
       <div><span class="mark ok">&#10003;</span><div class="txt">
         <h3>Windows games, through CrossOver <span class="new">NEW IN 1.9</span></h3>
-        <p>Titles that only ship a Windows build are no longer off-limits. Clarity drives <strong>CrossOver</strong> directly, giving each game its own bottle under the same per-game scheme the Linux build already uses &mdash; created once on first launch, reused after that. Nothing to configure.</p>
-        <p><strong>Two honest caveats.</strong> CrossOver is commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener">CodeWeavers</a> and is not bundled &mdash; you install it yourself, and without it this simply reports as unavailable. And while the plumbing is verified end to end, it has not been run against a large library of real games yet, so treat per-title compatibility as unproven.</p>
+        <p>Titles that only ship a Windows build aren't off-limits any more. Clarity drives <strong>CrossOver</strong> directly, giving each game its own bottle under the same per-game scheme the Linux build already uses. Created once on first launch, reused after that. Nothing to configure.</p>
+        <p><strong>Two honest caveats.</strong> CrossOver is commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener">CodeWeavers</a> and isn't bundled, so you install it yourself, and without it this simply reports as unavailable. And while the plumbing is verified, I haven't put a big library of Windows games through it yet.</p>
       </div></div>
       <div><span class="mark ok">&#10003;</span><div class="txt">
         <h3>Knowing which games are actually native</h3>
-        <p>A Mac-Native filter sits next to the store filters in the library, with a small apple badge on the cover art of anything that qualifies. GOG is checked instantly from data the app already has; Steam needs one manual scan since it is a live per-game lookup.</p>
+        <p>A Mac-Native filter sits next to the store filters in the library, with a small apple badge on the cover art of anything that qualifies. GOG is checked instantly from data the app already has. Steam needs one manual scan, since that's a live per-game lookup.</p>
       </div></div>
       <div><span class="mark ok">&#10003;</span><div class="txt">
         <h3>Everything that is not platform-specific</h3>
-        <p>Artwork, genres, playlists, save-game backups, themes &mdash; all of it, because almost all of the app is the same code that runs on Linux.</p>
+        <p>Artwork, genres, playlists, save-game backups, themes, all of it. Almost all of the app is the same code that runs on Linux.</p>
       </div></div>
     </div>
   </section>
@@ -120,19 +120,19 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
     <div class="feat">
       <div><span class="mark no">&#9656;</span><div class="txt">
         <h3>Epic sign-in</h3>
-        <p>Signing in to Epic does not yet hold on macOS &mdash; the browser-based approval completes, but the credentials are not written where <code>legendary</code> looks for them, so the library sync comes back empty. Steam and GOG are unaffected. This is being worked on; until it lands, treat macOS as a Steam-and-GOG build.</p>
+        <p>Signing in to Epic doesn't hold on macOS yet. The browser-based approval completes, but the credentials aren't written where <code>legendary</code> looks for them, so the library sync comes back empty. Steam and GOG are unaffected. I'm working on it. Until it lands, treat macOS as Steam and GOG only.</p>
       </div></div>
       <div><span class="mark no">&#9656;</span><div class="txt">
         <h3>Anti-cheat</h3>
-        <p>BattlEye and EAC are not wired up. CrossOver advertises its own support for both, but nothing here has been tested against a game that uses them, so assume multiplayer titles that rely on anti-cheat will not run.</p>
+        <p>BattlEye and EAC aren't wired up. CrossOver advertises its own support for both, but nothing here has been tested against a game that uses them, so assume multiplayer titles relying on anti-cheat won't run.</p>
       </div></div>
       <div><span class="mark no">&#9656;</span><div class="txt">
         <h3>A picker for which screen a game opens on</h3>
-        <p>A KDE-only feature on Linux; no macOS equivalent exists yet.</p>
+        <p>A KDE-only feature on Linux. There's no macOS equivalent yet.</p>
       </div></div>
       <div><span class="mark no">&#9656;</span><div class="txt">
         <h3>Custom installers, source ports and mods</h3>
-        <p>The whole recipe catalogue &mdash; Ironwail, GZDoom, the Build-engine games and the rest &mdash; is Linux-only for now.</p>
+        <p>The whole recipe catalogue, Ironwail, GZDoom, the Build-engine games and the rest, is Linux-only for now.</p>
       </div></div>
     </div>
   </section>
@@ -140,11 +140,11 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
   <section>
     <div class="label">03_install</div>
     <h2>install</h2>
-    <p class="body">The build is not signed &mdash; there is no Apple Developer account behind it yet &mdash; so the first launch needs one extra step. That is the standard cost of an app that has not gone through notarization, not a sign that something is broken.</p>
+    <p class="body">The build isn't signed, because there's no Apple Developer account behind it yet, so the first launch needs one extra step. That's the standard cost of an app that hasn't gone through notarization, not a sign something is broken.</p>
     <ol class="steps">
-      <li>Download the <code>.dmg</code> (or the <code>.zip</code>) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/tag/v1.9.0" target="_blank" rel="noopener">1.9.0 release</a> &mdash; the macOS asset is separate from the Linux AppImage, and it sits on that release rather than the newest one.</li>
+      <li>Download the <code>.dmg</code> (or the <code>.zip</code>) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/tag/v1.9.0" target="_blank" rel="noopener">1.9.0 release</a>. The macOS asset is separate from the Linux AppImage, and it sits on that release rather than the newest one.</li>
       <li>Open the <code>.dmg</code> and drag <strong>Clarity</strong> into <strong>Applications</strong> (or unzip and move the <code>.app</code> there directly).</li>
-      <li><strong>Right-click (or Control-click) the app &rarr; Open &rarr; Open</strong> still works on most macOS versions for the first launch. If that option does not appear, a normal double-click gets blocked once &mdash; go to <strong>System Settings &rarr; Privacy &amp; Security</strong> and click <strong>Open Anyway</strong> next to the message about Clarity, then confirm once more.</li>
+      <li><strong>Right-click (or Control-click) the app &rarr; Open &rarr; Open</strong> still works on most macOS versions for the first launch. If that option doesn't appear, a normal double-click gets blocked once, so go to <strong>System Settings &rarr; Privacy &amp; Security</strong> and click <strong>Open Anyway</strong>.</li>
       <li>If neither shows anything, from Terminal:
         <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Clarity.app"</span>
         This strips the quarantine flag macOS attaches to anything downloaded from the internet. It only needs doing once per install.</li>
@@ -162,10 +162,10 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
       <tr><td>Installed games (default location)</td><td><code>~/Games/Clarity/</code></td></tr>
     </table>
     <div class="note" style="margin-top:30px">
-      <p>Something look wrong, or missing from this list? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a> &mdash; macOS reports are genuinely useful right now, this build needs them.</p>
+      <p>Something look wrong, or missing from this list? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. macOS reports are genuinely useful right now, this build needs them.</p>
     </div>
     <p class="body" style="margin-top:26px;font-size:.8rem"><a href="index.html">clarity</a> &middot; <a href="fixes.html">fixed individually</a> &middot; <a href="ports.html">source ports &amp; mods</a> &middot; <a href="support.html">support</a> &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a></p>
-    <p class="body" style="font-size:.8rem">more caffeine is more good</p>
+    <p class="body" style="font-size:.8rem">stay positive and love your life</p>
     <a class="back" href="index.html">&lt; back to clarity</a>
   </section>
 
