@@ -941,13 +941,13 @@ PAGE: gallery.html
 Screenshots: every corner of Clarity
 
 ### gallery.html | meta:description
-104 screenshots of Clarity on Omarchy: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and Couch Mode on the big screen.
+78 screenshots of Clarity on Omarchy: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and Couch Mode on the big screen.
 
 ### gallery.html | og:title
 Screenshots: every corner of Clarity
 
 ### gallery.html | og:description
-104 screenshots: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and Couch Mode on the big screen.
+78 screenshots: the library, game pages, installing, fan games and source ports, 93 themes, the bar and launcher, and Couch Mode on the big screen.
 
 ### gallery.html | 001 | a
 clarity
@@ -974,7 +974,7 @@ Support
 gallery
 
 ### gallery.html | 009 | h1
-Every corner of it, <span class="em">in 104 screenshots.</span>
+Every corner of it, <span class="em">in 78 screenshots.</span>
 
 ### gallery.html | 010 | p
 Taken on Omarchy, on the machine it is built on. The library, a game page, installing without a store client, the fan games catalogue, the themes, the bar, and Couch Mode on the television. Click any one to see it full size.
@@ -989,7 +989,7 @@ The library
 A game page
 
 ### gallery.html | 014 | a
-Installing
+Installing and storage
 
 ### gallery.html | 015 | a
 Fan games and source ports
@@ -1019,441 +1019,363 @@ Now playing
 In Omarchy
 
 ### gallery.html | 024 | p
-The bar, the launcher and the notifications. The parts that only work here.
+The bar, the launcher and the first run. The parts that only work here.
 
 ### gallery.html | 025 | figcaption
-The Omarchy bar: how many games are installed. Click for the library, middle-click for Couch Mode.
+The Omarchy bar says Clarity is not installed yet, and how to fetch it.
 
 ### gallery.html | 026 | figcaption
-The launcher overlay, one keyboard shortcut away.
+The launcher overlay before anything is installed.
 
 ### gallery.html | 027 | figcaption
-Type a few letters and it finds the game, with cover art, genre and a short description.
+The first install, running in a terminal you can actually watch.
 
 ### gallery.html | 028 | figcaption
-A desktop notification when a game finishes installing.
+The bar widget: how many games are installed, and what a click does.
 
 ### gallery.html | 029 | figcaption
-A desktop notification when a game starts, with its cover.
+The bar menu. Everything the app does, one click from the bar.
 
-### gallery.html | 030 | div
+### gallery.html | 030 | figcaption
+The launcher overlay open over the desktop, one keyboard shortcut away.
+
+### gallery.html | 031 | figcaption
+Searching the launcher, installed games first and the rest below.
+
+### gallery.html | 032 | div
 02_the_library
 
-### gallery.html | 031 | h2
+### gallery.html | 033 | h2
 The library
 
-### gallery.html | 032 | p
-Every store in one grid, sorted and filtered the way you actually look for something.
-
-### gallery.html | 033 | figcaption
-All Games: GOG, Steam, Epic, itch and emulators in one library.
-
-### gallery.html | 034 | figcaption
-The library filtered to GOG only. Every game has a Play button.
+### gallery.html | 034 | p
+Everything you own in one grid, however you want to slice it.
 
 ### gallery.html | 035 | figcaption
-Playlists in the sidebar, by genre and mood.
+The library grid: every game you own, with a button under each one.
 
 ### gallery.html | 036 | figcaption
-Sort by last played, favourites, want to play or recently added.
+The home dashboard: what to play, what is new, what is on sale.
 
 ### gallery.html | 037 | figcaption
-Filter by genre. Each one shows how many games it has.
+A playlist. Your own shelves, however you like to sort them.
 
-### gallery.html | 038 | figcaption
-Filter by playlist.
-
-### gallery.html | 039 | figcaption
-The library. The hero image shows whatever game you’re pointing at.
-
-### gallery.html | 040 | figcaption
-The same library, scrolled down.
-
-### gallery.html | 041 | figcaption
-The library in a light theme.
-
-### gallery.html | 042 | figcaption
-The same library in a blue system theme.
-
-### gallery.html | 043 | figcaption
-And in the Cyberpunk theme.
-
-### gallery.html | 044 | div
+### gallery.html | 038 | div
 03_a_game_page
 
-### gallery.html | 045 | h2
+### gallery.html | 039 | h2
 A game page
 
-### gallery.html | 046 | p
-Artwork, screenshots, a description and the button. The same page whatever the game came from.
+### gallery.html | 040 | p
+Artwork, metadata, achievements, and one button that matters.
 
-### gallery.html | 047 | figcaption
-Baldur’s Gate 3: key art, screenshots and the description.
+### gallery.html | 041 | figcaption
+A game page: key art, screenshots, description, and one play button.
 
-### gallery.html | 048 | figcaption
-Prodeus, with its screenshots.
+### gallery.html | 042 | figcaption
+The same page further down, with the metadata it scraped for you.
 
-### gallery.html | 049 | figcaption
-The same page, scrolled to the description and features.
+### gallery.html | 043 | figcaption
+Achievements, read straight from the game.
 
-### gallery.html | 050 | figcaption
-Baldur’s Gate: Enhanced Edition.
+### gallery.html | 044 | figcaption
+Edit details. The launch command field is the one that changes everything.
 
-### gallery.html | 051 | figcaption
-The same page, listing the manuals that came with the game.
-
-### gallery.html | 052 | figcaption
-Elminage Gothic.
-
-### gallery.html | 053 | figcaption
-halfmoon.
-
-### gallery.html | 054 | figcaption
-System Purge.
-
-### gallery.html | 055 | figcaption
-Wizorb, in a blue theme.
-
-### gallery.html | 056 | figcaption
-Baldur’s Gate, in a green terminal theme.
-
-### gallery.html | 057 | figcaption
-DOOM, in a light theme.
-
-### gallery.html | 058 | div
+### gallery.html | 045 | div
 04_installing
 
-### gallery.html | 059 | h2
-Installing
+### gallery.html | 046 | h2
+Installing and storage
 
-### gallery.html | 060 | p
-Installer underneath: GOG and Epic games installed without a store client, DLCs included.
+### gallery.html | 047 | p
+Where the games live, and how to move them when the drive fills up.
 
-### gallery.html | 061 | figcaption
-Installing a game: Linux native or Windows, where it goes, and how much space it needs.
+### gallery.html | 048 | figcaption
+The library updating itself in the background.
 
-### gallery.html | 062 | figcaption
-The download manager, part way through Fallout: New California.
+### gallery.html | 049 | figcaption
+Manage storage: every installed game and what it costs you in disk.
 
-### gallery.html | 063 | figcaption
-Several downloads in the queue at once.
+### gallery.html | 050 | figcaption
+Moving a game to another drive, the way it always should have worked.
 
-### gallery.html | 064 | figcaption
-Updating the library.
+### gallery.html | 051 | figcaption
+Deleting an install. The game stays in your library, saves are untouched.
 
-### gallery.html | 065 | figcaption
-Manage DLCs: what you own, and what isn’t installed yet.
-
-### gallery.html | 066 | figcaption
-Five DLCs owned for Pillars of Eternity, none installed yet.
-
-### gallery.html | 067 | figcaption
-GOG installs DLCs as a set, and it tells you before it starts.
-
-### gallery.html | 068 | figcaption
-Downloading all of them.
-
-### gallery.html | 069 | figcaption
-All of them installed.
-
-### gallery.html | 070 | figcaption
-The desktop notification when it’s done.
-
-### gallery.html | 071 | figcaption
-Pillars of Eternity, running.
-
-### gallery.html | 072 | figcaption
-The White March, Part 1, installed.
-
-### gallery.html | 073 | figcaption
-The White March, Part 2, installed.
-
-### gallery.html | 074 | figcaption
-A source port needs the original game. Point it at the files you already own.
-
-### gallery.html | 075 | figcaption
-Choosing which executable the port runs.
-
-### gallery.html | 076 | figcaption
-Adding a custom game by hand: a title and a launch command.
-
-### gallery.html | 077 | figcaption
-Or point at a game folder you already have. Nothing is moved or copied.
-
-### gallery.html | 078 | div
+### gallery.html | 052 | div
 05_fan_games_and_source_ports
 
-### gallery.html | 079 | h2
+### gallery.html | 053 | h2
 Fan games and source ports
 
-### gallery.html | 080 | p
-A catalogue that knows what each port needs, and wires it to a game you own so it never lands unplayable.
+### gallery.html | 054 | p
+You download the port. Clarity does the rest.
 
-### gallery.html | 081 | figcaption
-The catalogue: DOOM, Quake, Wolfenstein 3D, Build engine, OutRun, OpenBOR and standalone games.
+### gallery.html | 055 | figcaption
+Ports and mods, sitting in the Control Panel with everything else.
 
-### gallery.html | 082 | figcaption
-The DOOM section.
+### gallery.html | 056 | figcaption
+The source ports catalogue, grouped by the game it needs.
 
-### gallery.html | 083 | figcaption
-Engines and total conversions, each listing what it needs.
+### gallery.html | 057 | figcaption
+Brutal Doom and friends, each one telling you exactly what file it wants.
 
-### gallery.html | 084 | figcaption
-The same list, scrolled down.
-
-### gallery.html | 085 | figcaption
-The Build engine games.
-
-### gallery.html | 086 | figcaption
-OutRun and the standalone remakes.
-
-### gallery.html | 087 | figcaption
-An OpenBOR game, with its own install button.
-
-### gallery.html | 088 | figcaption
-The smaller fan games at the end of the list.
-
-### gallery.html | 089 | figcaption
-Which DOOM? Every Doom you own, linked to the engine that runs it.
-
-### gallery.html | 090 | div
+### gallery.html | 058 | div
 06_carts_and_emulators
 
-### gallery.html | 091 | h2
+### gallery.html | 059 | h2
 Carts and emulators
 
-### gallery.html | 092 | p
-PICO-8, OpenBOR and the emulator sources, set up once and then just part of the library.
+### gallery.html | 060 | p
+Cartridges, carts and roms sit in the same library as everything else.
 
-### gallery.html | 093 | figcaption
-The PICO-8 library, every cart with its own cover.
+### gallery.html | 061 | figcaption
+PICO-8 carts in the same library as everything else.
 
-### gallery.html | 094 | figcaption
-Pointing the app at the PICO-8 binary and the carts folder.
+### gallery.html | 062 | figcaption
+Emulation on the couch, browsed like any other shelf.
 
-### gallery.html | 095 | figcaption
-itch.io and PICO-8 as sources, plus a scan for game updates.
-
-### gallery.html | 096 | figcaption
-OpenBOR games, in the same library as everything else.
-
-### gallery.html | 097 | div
+### gallery.html | 063 | div
 07_artwork_trailers_manuals_saves
 
-### gallery.html | 098 | h2
+### gallery.html | 064 | h2
 Artwork, trailers, manuals, saves
 
-### gallery.html | 099 | p
-The things around a game: the metadata, the video, the paperwork and the save files.
+### gallery.html | 065 | p
+Fetched once, kept on your disk, yours to back up.
 
-### gallery.html | 100 | figcaption
-Choosing cover art.
+### gallery.html | 066 | figcaption
+Picking a trailer to keep on your own disk.
 
-### gallery.html | 101 | figcaption
-Choosing an icon.
+### gallery.html | 067 | figcaption
+The trailer downloading.
 
-### gallery.html | 102 | figcaption
-Browsing screenshots to add to the game page.
+### gallery.html | 068 | figcaption
+Playing it back later, with no connection needed.
 
-### gallery.html | 103 | figcaption
-Editing a game’s details by hand.
+### gallery.html | 069 | figcaption
+Removing a trailer you no longer want on disk.
 
-### gallery.html | 104 | figcaption
-Choosing which trailer to download.
+### gallery.html | 070 | figcaption
+The manuals a GOG game shipped with, ready to read or download.
 
-### gallery.html | 105 | figcaption
-Downloading it.
+### gallery.html | 071 | figcaption
+Reading one of them without leaving the app.
 
-### gallery.html | 106 | figcaption
-Downloaded.
+### gallery.html | 072 | figcaption
+The save manager: back the whole thing up to a zip you can carry.
 
-### gallery.html | 107 | figcaption
-Playing it inside the app.
+### gallery.html | 073 | figcaption
+Adding a game to a playlist.
 
-### gallery.html | 108 | figcaption
-Deleting a trailer you don’t want on disk.
+### gallery.html | 074 | figcaption
+Managing the DLC a GOG game came with.
 
-### gallery.html | 109 | figcaption
-The manuals that came with a GOG game.
-
-### gallery.html | 110 | figcaption
-One of them open in the reader.
-
-### gallery.html | 111 | figcaption
-The Adventurer’s Guide, exactly as it shipped.
-
-### gallery.html | 112 | figcaption
-Save Manager: a game’s saves backed up to a portable zip.
-
-### gallery.html | 113 | div
+### gallery.html | 075 | div
 08_themes
 
-### gallery.html | 114 | h2
+### gallery.html | 076 | h2
 93 themes
 
-### gallery.html | 115 | p
-Including a live bridge to whatever theme Omarchy is wearing right now.
+### gallery.html | 077 | p
+The whole app changes clothes, and it can follow your desktop while it does.
 
-### gallery.html | 116 | figcaption
-The theme picker. Your Desktop, the Omarchy theme, sits at the top.
+### gallery.html | 078 | figcaption
+The theme picker, with Your Desktop at the top holding your Omarchy colours.
 
-### gallery.html | 117 | figcaption
-Gaming Legends.
+### gallery.html | 079 | figcaption
+The Systems category, where the old machines live.
 
-### gallery.html | 118 | figcaption
-Aesthetics.
+### gallery.html | 080 | figcaption
+The library wearing Commodore 64.
 
-### gallery.html | 119 | figcaption
-Linux Ricing.
+### gallery.html | 081 | figcaption
+A game page in the same Commodore 64 palette.
 
-### gallery.html | 120 | figcaption
-Originals &amp; System.
+### gallery.html | 082 | figcaption
+Picking MacOS 1.0.
 
-### gallery.html | 121 | figcaption
-The system themes: MS-DOS, Commodore 64, Mac OS, Amiga, NeXTSTEP.
+### gallery.html | 083 | figcaption
+The library in MacOS 1.0, black on white and all.
 
-### gallery.html | 122 | figcaption
-The same set, in their light versions.
+### gallery.html | 084 | figcaption
+A game page to match.
 
-### gallery.html | 123 | figcaption
-Hovering a theme to preview it.
+### gallery.html | 085 | figcaption
+Picking IBM 3270, the green CRT.
 
-### gallery.html | 124 | figcaption
-Appearance: interface scale, corner style, Ken Burns effect and the font.
+### gallery.html | 086 | figcaption
+The library in green phosphor.
 
-### gallery.html | 125 | figcaption
-The whole app in the Commodore 64 theme.
+### gallery.html | 087 | figcaption
+And a game page, still perfectly readable.
 
-### gallery.html | 126 | figcaption
-The control panel in the same theme.
+### gallery.html | 088 | figcaption
+Couch Mode has the same theme system, on the controller.
 
-### gallery.html | 127 | figcaption
-A green CRT theme.
+### gallery.html | 089 | figcaption
+Cyberpunk on the big screen.
 
-### gallery.html | 128 | figcaption
-The control panel in green.
+### gallery.html | 090 | figcaption
+Commodore 64 on the big screen.
 
-### gallery.html | 129 | figcaption
-An amber CRT theme.
+### gallery.html | 091 | figcaption
+Amber CRT on the big screen.
 
-### gallery.html | 130 | figcaption
-The control panel in Cyberpunk.
+### gallery.html | 092 | figcaption
+Even the jukebox follows the theme.
 
-### gallery.html | 131 | figcaption
-And back to the default.
+### gallery.html | 093 | figcaption
+And the interface font is yours to pick too.
 
-### gallery.html | 132 | div
+### gallery.html | 094 | div
 09_settings
 
-### gallery.html | 133 | h2
+### gallery.html | 095 | h2
 Settings
 
-### gallery.html | 134 | p
-One control panel, searchable, with the connections and the system bits in it.
+### gallery.html | 096 | p
+The knobs, and the manual that explains every one of them.
 
-### gallery.html | 135 | figcaption
-The control panel. Search it, or just start typing.
+### gallery.html | 097 | figcaption
+Per game compatibility: Proton, prefixes, launch arguments, the lot.
 
-### gallery.html | 136 | figcaption
-Another section of it.
+### gallery.html | 098 | figcaption
+The Control Panel.
 
-### gallery.html | 137 | figcaption
-Connections: GOG, Epic, the Steam API and SteamGridDB.
+### gallery.html | 099 | figcaption
+The Omarchy section: what is installed, what is missing, and the command to fix it.
 
-### gallery.html | 138 | figcaption
-Library settings: history, recently imported, PICO-8, free-to-play and hidden games.
+### gallery.html | 100 | figcaption
+Matching your Omarchy theme, and choosing how a game&#x27;s window opens.
 
-### gallery.html | 139 | figcaption
-Notifications, and sending them to your phone through KDE Connect.
+### gallery.html | 101 | figcaption
+The manual, built into the app.
 
-### gallery.html | 140 | figcaption
-DOS games: automatic, native, or the DOSBox that came with the game.
-
-### gallery.html | 141 | figcaption
-Manage storage: how much space each game uses.
-
-### gallery.html | 142 | figcaption
-System: backup and restore, the application menu, and starting in Couch Mode.
-
-### gallery.html | 143 | figcaption
-System tuning, and matching the Omarchy theme you’re running.
-
-### gallery.html | 144 | figcaption
-The manual: the manifesto and the philosophy behind it.
-
-### gallery.html | 145 | figcaption
-About: the suite, and what each part does.
-
-### gallery.html | 146 | div
+### gallery.html | 102 | div
 10_couch
 
-### gallery.html | 147 | h2
+### gallery.html | 103 | h2
 Couch Mode, on the big screen
 
-### gallery.html | 148 | p
-The same library on a television, driven with a gamepad from across a room.
+### gallery.html | 104 | p
+Same library, ten feet away, driven entirely by a controller.
 
-### gallery.html | 149 | figcaption
-Couch Mode’s home screen: what you’ve played, a pick for today, and the library underneath.
+### gallery.html | 105 | figcaption
+Couch Mode starting up.
 
-### gallery.html | 150 | figcaption
-The same screen in the morning.
+### gallery.html | 106 | figcaption
+The Couch home screen: your numbers, today&#x27;s pick, and what you just imported.
 
-### gallery.html | 151 | figcaption
-A game page, built for the big screen.
+### gallery.html | 107 | figcaption
+Home, with something playing in the corner.
 
-### gallery.html | 152 | figcaption
-A game’s video running full width.
+### gallery.html | 108 | figcaption
+Further down: the wishlist, the deals and the news.
 
-### gallery.html | 153 | div
+### gallery.html | 109 | figcaption
+Reading the news on the TV, without reaching for a laptop.
+
+### gallery.html | 110 | figcaption
+A Couch game page, key art filling the screen.
+
+### gallery.html | 111 | figcaption
+The description and screenshots, one button away.
+
+### gallery.html | 112 | figcaption
+Another one, because DOOM deserves the whole screen.
+
+### gallery.html | 113 | figcaption
+Its description, on the couch.
+
+### gallery.html | 114 | figcaption
+Achievements, on the couch.
+
+### gallery.html | 115 | figcaption
+Game options, without a mouse anywhere near it.
+
+### gallery.html | 116 | figcaption
+Browsing by store, in a card flow you steer with a stick.
+
+### gallery.html | 117 | figcaption
+The same shelf as a grid of covers.
+
+### gallery.html | 118 | figcaption
+Or as a list, when you know what you are after.
+
+### gallery.html | 119 | figcaption
+Favourites, one shelf along.
+
+### gallery.html | 120 | figcaption
+Sorting the shelf.
+
+### gallery.html | 121 | figcaption
+Your playlists, on the big screen.
+
+### gallery.html | 122 | figcaption
+Searching with a controller, which is less painful than it sounds.
+
+### gallery.html | 123 | figcaption
+The system menu.
+
+### gallery.html | 124 | figcaption
+Pick your gamepad&#x27;s button icons: Xbox, PlayStation or Nintendo.
+
+### gallery.html | 125 | figcaption
+Every control, listed for pad and keyboard.
+
+### gallery.html | 126 | figcaption
+How to wake it up from the sofa.
+
+### gallery.html | 127 | figcaption
+The screensaver, built from your own screenshots.
+
+### gallery.html | 128 | div
 11_now_playing
 
-### gallery.html | 154 | h2
+### gallery.html | 129 | h2
 Now playing
 
-### gallery.html | 155 | p
-What it looks like when a game is actually starting.
+### gallery.html | 130 | p
+There is a jukebox in here, because of course there is.
 
-### gallery.html | 156 | figcaption
-System Purge.
+### gallery.html | 131 | figcaption
+The jukebox: your music, browsed like the library.
 
-### gallery.html | 157 | figcaption
-The library dimming behind it.
+### gallery.html | 132 | figcaption
+Now playing, full screen, with the controls that drive it.
 
-### gallery.html | 158 | figcaption
-halfmoon.
-
-### gallery.html | 159 | a
+### gallery.html | 133 | a
 &lt; back to clarity
 
-### gallery.html | 160 | button
+### gallery.html | 134 | button
 &#8592;
 
-### gallery.html | 161 | button
+### gallery.html | 135 | button
 &#8594;
 
-### gallery.html | 162 | button
+### gallery.html | 136 | button
 &#10005;
 
-### gallery.html | 163 | span
+### gallery.html | 137 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### gallery.html | 164 | a
+### gallery.html | 138 | a
 Home
 
-### gallery.html | 165 | a
+### gallery.html | 139 | a
 Omarchy
 
-### gallery.html | 166 | a
+### gallery.html | 140 | a
 Couch Mode
 
-### gallery.html | 167 | a
+### gallery.html | 141 | a
 The library
 
-### gallery.html | 168 | a
+### gallery.html | 142 | a
 Support
 
-### gallery.html | 169 | a
+### gallery.html | 143 | a
 GitHub
 
 ==============================================================================
@@ -1668,7 +1590,7 @@ Shot on Omarchy, on the machine it's built on. Nothing here is a mockup.
 **10** · browsing covers in Couch Mode
 
 ### index.html | 066 | p
-[All 104 screenshots, in one place →](gallery.html)
+[All 78 screenshots, in one place →](gallery.html)
 
 ### index.html | 067 | div
 04_at_home_on_omarchy.md
