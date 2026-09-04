@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clarity Clock: a desk clock with taste</title>
-<meta name="description" content="A frameless desk clock for Linux that runs a slow slideshow of the game art your Clarity and EmuLatte libraries already store. Three faces, 93 palettes, click a game to open it. Local only, no cloud.">
+<meta name="description" content="A frameless desk clock for Linux that runs a slideshow of the art your Clarity and EmuLatte libraries already store. Three faces, 93 palettes, click a game to open it. Local only.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Clarity">
 <meta property="og:title" content="Clarity Clock: a desk clock with taste">
@@ -100,7 +100,7 @@ body.booting{overflow:hidden}
   <div id="boot-skip">click anywhere to skip ▸</div>
   <!-- The boot lines live here, not in the script, so copy-extract.py can reach them. -->
   <ol id="boot-lines">
-    <li data-delay="380">cnclock@linux:~$ ./wind</li>
+    <li data-delay="380">clarityclock@linux:~$ ./wind</li>
     <li data-delay="260">[ <strong class="ok">ok</strong> ] finding the library........... Clarity + EmuLatte</li>
     <li data-delay="260">[ <strong class="ok">ok</strong> ] counting the artwork.......... thousands</li>
     <li data-delay="260">[ <strong class="ok">ok</strong> ] loading 93 palettes........... done</li>
@@ -143,26 +143,26 @@ body.booting{overflow:hidden}
   </div>
 
   <section>
-    <div class="label">01_whats_in_the_cup</div>
+    <div class="label">01_what_it_does</div>
     <h2>what it does</h2>
-    <p class="body">A clock that wears your game library. It reads the art the rest of the ecosystem already keeps on disk, runs it as a slow slideshow behind the time, and then gets out of the way.</p>
+    <p class="body">A clock that wears your game library. It reads art already on disk, runs it as a slow slideshow behind the time, and gets out of the way.</p>
     <div class="grid" style="margin-top:20px">
       <div class="cell"><h3>Three faces</h3>
-        <p>Minimalist, a small dashed widget tinted by your palette. Couch Mode Splash, a frosted-glass circle framing the clock over blurred art. Ken Burns, game art filling the window with a slow pan and zoom. Each one freely resizable, and the clock scales with it.</p></div>
+        <p>Minimalist, a small widget tinted by your palette. Couch Mode Splash, a frosted circle over blurred art. Ken Burns, a slow pan across the art. All resizable.</p></div>
       <div class="cell"><h3>A slideshow built from art you already have</h3>
-        <p>It scans the folders your <strong>Clarity</strong> and <strong>EmuLatte</strong> libraries already fill: heroes, covers, screenshots, or your own wallpapers. Nothing to import, nothing to configure. No library? It just shows you the time.</p></div>
+        <p>It scans the folders <strong>Clarity</strong> and <strong>EmuLatte</strong> already fill: heroes, covers, screenshots, or your own wallpapers. Nothing to import. No library? It just shows the time.</p></div>
       <div class="cell"><h3>Click a game to open it</h3>
-        <p>The name under the art is a link. Click it and <strong>Clarity</strong> or <strong>EmuLatte</strong> opens straight to that game's page, whichever one the artwork came from. If the app is already running, the click goes to the open window.</p></div>
+        <p>The name under the art is a link. Click it and <strong>Clarity</strong> or <strong>EmuLatte</strong> opens on that game's page. If the app is running, it goes to the open window.</p></div>
       <div class="cell"><h3>93 palettes, one picker</h3>
-        <p>Full parity with Clarity: ten families, from Linux-ricing classics to twenty retro operating systems that each bring their own era typeface. A card grid previews every palette in its own colours, applied live.</p></div>
+        <p>Full parity with Clarity: ten families, from ricing classics to twenty retro operating systems with their own era typefaces. Every palette previewed in its own colours, applied live.</p></div>
       <div class="cell"><h3>Wear any font</h3>
-        <p>Seven interface faces, each previewed in itself, restyling the whole clock. All bundled with the app, so nothing gets fetched when it launches.</p></div>
+        <p>Seven interface faces, each previewed in itself. All bundled, nothing fetched at launch.</p></div>
       <div class="cell"><h3>Run as many as you like</h3>
-        <p>Launch it again and again. Every clock is independent while it runs. A minimal one in a corner, a Ken Burns slideshow on the second monitor, a big Couch Mode splash on the third.</p></div>
+        <p>Launch it again and again, each one independent. A minimal one in a corner, Ken Burns on the second monitor, a splash on the third.</p></div>
       <div class="cell"><h3>Frameless, always on top, out of the way</h3>
-        <p>A borderless window that floats above the rest. Drag it anywhere, size it to taste, and add it to your application menu with one button.</p></div>
+        <p>A borderless window that floats above the rest. Drag it, size it, add it to your application menu with one button.</p></div>
       <div class="cell"><h3>Local-only. Yours.</h3>
-        <p>It reads your libraries' art and databases on disk, read-only, and writes exactly one small settings file. No account, no telemetry, no network. Fonts bundled; nothing phones home.</p></div>
+        <p>Reads your libraries read-only, writes one small settings file. No account, no telemetry, no network.</p></div>
     </div>
   </section>
 
@@ -211,20 +211,20 @@ body.booting{overflow:hidden}
   <section>
     <div class="label">03_also_on_the_menu</div>
     <h2>also on the menu</h2>
-    <p class="body">The clock is complete on its own, but it's happiest sitting next to the libraries it draws from.</p>
+    <p class="body">Complete on its own, happiest next to the libraries it draws from.</p>
     <div class="grid" style="margin-top:20px">
       <div class="cell">
         <span class="tag">OPTIONAL</span>
         <h3>Clarity</h3>
         <div class="quip">“from chaos comes clarity”</div>
-        <p>The game library suite the clock pulls most of its art from. Steam, GOG, Epic, Flatpak, itch.io and PICO-8, in one Electron binary with two faces, the Manager and Couch Mode, and Installer working headless underneath them. Keep it beside the clock and the art appears on its own.</p>
+        <p>Where most of the art comes from. Steam, GOG, Epic, Flatpak, itch.io and PICO-8 in one binary. Keep it beside the clock and the art appears on its own.</p>
         <p><a href="index.html">Get Clarity ▸</a></p>
       </div>
       <div class="cell">
         <span class="tag">OPTIONAL</span>
         <h3>EmuLatte</h3>
         <div class="quip">“I use RetroArch BTW”</div>
-        <p>The emulation side: a ROM library manager across 56 systems, with a gamepad-first Couch Mode for the TV. Its art feeds the same slideshow, and a click on a ROM's name opens EmuLatte straight to that game.</p>
+        <p>The emulation side: a ROM library across 56 systems, with a gamepad-first Couch Mode. Its art feeds the same slideshow, and a click opens EmuLatte on that game.</p>
         <p><a href="emulatte.html">Get EmuLatte ▸</a></p>
       </div>
     </div>
@@ -233,10 +233,10 @@ body.booting{overflow:hidden}
   <section id="support">
     <div class="label">04_spread_the_good_vibes</div>
     <h2>spread the good vibes</h2>
-    <p class="body">If the clock earned a spot on your desk, consider chipping in. It keeps the good vibes flowing.</p>
+    <p class="body">If it earned a spot on your desk, consider chipping in.</p>
     <p class="body"><strong>If you do, <a href="mailto:joserobertoazevedo@hey.com">let me know</a> so I can thank you personally! :)</strong></p>
     <div class="btns">
-      <a href="https://ko-fi.com/clarity" target="_blank" rel="noopener" class="btn">☕ Ko-fi (Intl)</a>
+      <a href="https://ko-fi.com/clarity" target="_blank" rel="noopener" class="btn">💙 Ko-fi (Intl)</a>
       <button class="btn pix" type="button" onclick="openPix()">🇧🇷 PIX &middot; QR Code</button>
       <a href="https://github.com/FromChaosComesClarity/ClarityClock" target="_blank" rel="noopener" class="btn ghost">★ GitHub</a>
     </div>

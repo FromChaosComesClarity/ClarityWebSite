@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clarity: games I fixed one at a time</title>
-<meta name="description" content="Real games that didn't work on Linux, what turned out to be wrong with each one, and how Clarity fixes it. Nothing to configure.">
+<meta name="description" content="Real games that didn't work on Linux, what was wrong with each, and how Clarity fixes it. Nothing to configure.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Clarity">
 <meta property="og:title" content="Games I fixed one at a time">
@@ -49,7 +49,7 @@
   <div class="hero">
     <div class="eyebrow"><span>game fixes</span><span class="tag">named games · named faults</span></div>
     <h1>Fixed <span class="em">Individually</span></h1>
-    <p class="lead" style="margin-top:18px">Not &ldquo;improved compatibility&rdquo;. Every one of these is a real game that did not work on Linux, the exact thing that turned out to be wrong with it, and what now happens about it automatically. <strong>Nothing here needs configuring.</strong> The fix goes on when the game launches. I hit all of these myself, which is how they ended up on the list.</p>
+    <p class="lead" style="margin-top:18px">Not &ldquo;improved compatibility&rdquo;. Real games that did not work, the exact fault, and the fix. <strong>Nothing needs configuring</strong>, it goes on when the game launches.</p>
   </div>
 
   <section>
@@ -58,47 +58,47 @@
     <div class="panel fix">
       <h3>OutRun 2006: Coast 2 Coast</h3>
       <div class="sym">A white screen. It seems to hang on the SEGA logo, so it gets killed.</div>
-      <p class="body">The intro is a run of video logos, and under a compatibility layer the first one can sit there for a minute or more before the menu ever arrives. It isn't frozen, but nobody waits that long, and nobody should have to. <strong>The intro sequence is now skipped</strong>, which removes the wait and the thing that stalls in it.</p>
-      <p class="body">The community patch this relies on installs itself under a filename Wine replaces with its own version, so it was never being loaded to begin with. <strong>The game&rsquo;s own copy now wins</strong>, which is what happens on Windows.</p>
+      <p class="body">The intro is a run of video logos, and under a compatibility layer the first can sit there a minute or more. Not frozen, but nobody waits that long. <strong>The intro is now skipped.</strong></p>
+      <p class="body">The community patch installs under a filename Wine replaces with its own, so it never loaded. <strong>The game&rsquo;s own copy now wins</strong>, as on Windows.</p>
     </div>
 
     <div class="panel fix">
       <h3>Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)</h3>
       <div class="sym">Comes up untranslated and stops dead at a Japanese error box.</div>
-      <p class="body">The Classic REbirth patch is a graphics library that sits beside the game, and Wine was loading its own version instead, so the patch never ran at all. <strong>The game&rsquo;s own copy is now loaded first</strong>, with Wine&rsquo;s kept behind it as a fallback.</p>
-      <p class="body">That fallback is the whole trick: the patch passes anything it doesn't implement itself through to the real library, and with nothing behind it the game crashes instantly instead.</p>
+      <p class="body">The patch is a graphics library beside the game, and Wine loaded its own instead, so it never ran. <strong>The game&rsquo;s own copy is now loaded first</strong>, with Wine&rsquo;s behind it as a fallback.</p>
+      <p class="body">The fallback is the trick: the patch passes what it doesn't implement through to the real library. With nothing behind it, the game crashes instantly.</p>
     </div>
 
     <div class="panel fix">
       <h3>Quake (GOG), the Windows builds</h3>
       <div class="sym">GLQuake and both mission packs close instantly. No window, no error.</div>
-      <p class="body">GOG ships this with a 3dfx graphics driver from the nineties, and the same shadowing problem applied: Wine substituted its own, and the game died before a window appeared. <strong>The driver GOG shipped is now used</strong>, which is the stack the release was built around.</p>
+      <p class="body">GOG ships a 3dfx driver from the nineties, and Wine substituted its own, so the game died before a window appeared. <strong>The driver GOG shipped is now used.</strong></p>
     </div>
 
     <div class="panel fix">
       <h3>Fallout: New California</h3>
       <div class="sym">&ldquo;Fallout: New Vegas does not appear to be installed.&rdquo; Please insert the DVD.</div>
-      <p class="body">Every file downloaded perfectly. But GOG&rsquo;s installer normally performs three finishing steps afterwards, and nothing on Linux was doing them. <strong>Now applied at launch</strong>, repairing an install you already have. No reinstall.</p>
+      <p class="body">Every file downloaded perfectly, but GOG&rsquo;s installer performs three finishing steps afterwards and nothing on Linux did them. <strong>Now applied at launch</strong>, repairing the install you have. No reinstall.</p>
     </div>
 
     <div class="panel fix">
       <h3>Realms of Arkania 1 &amp; 2 &middot; Albion</h3>
       <div class="sym">DOSBox opens for half a second, then vanishes.</div>
-      <p class="body">Two faults at once. The configuration files GOG&rsquo;s installer copies were never copied, and the game was being started from the wrong folder, so DOSBox looked for it one level too high and quit. <strong>Both fixed.</strong></p>
+      <p class="body">Two faults. The configuration files GOG&rsquo;s installer copies were never copied, and the game started from the wrong folder, so DOSBox looked one level too high and quit. <strong>Both fixed.</strong></p>
     </div>
 
     <div class="panel fix">
       <h3>Colony Ship</h3>
       <div class="sym">Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.</div>
-      <p class="body">One file was damaged on one of GOG&rsquo;s servers. Half of it would arrive, then the connection closed, every single time, and the download kept asking that same server for it. <strong>Now each piece is checked and a different server is used</strong> when one of them keeps failing.</p>
+      <p class="body">One file was damaged on a GOG server. Half arrived, the connection closed, every time, and the download kept asking that same server. <strong>Now each piece is checked and a different server is used</strong> when one keeps failing.</p>
     </div>
   </section>
 
   <section>
     <div class="label">02_why_a_list</div>
     <h2>why keep a list like this at all</h2>
-    <p class="body">Most of what goes wrong under a compatibility layer gets solved by a general rule, and those rules are just part of the app. What's left is the awkward remainder: faults that belong to one specific game and nothing else. Each one costs an evening to work out. Writing them down is the least I can do for the next person who hits the same wall at midnight.</p>
-    <p class="body">The list will grow. A game that's on it behaves on your machine the way it did on the machine where I found the fault. That's the only test that really counts.</p>
+    <p class="body">Most of what goes wrong is solved by a general rule, and those are part of the app. What's left belongs to one game and nothing else. Each costs an evening. Writing them down is the least I can do.</p>
+    <p class="body">The list will grow. A game on it behaves on your machine the way it did on mine.</p>
     <div class="btns">
       <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">⤓ Download Clarity</a>
       <a class="btn ghost" href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Report a game that misbehaves</a>
