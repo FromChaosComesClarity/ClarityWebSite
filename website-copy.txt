@@ -1503,10 +1503,10 @@ Support
 2.0 in progress
 
 ### index.html | 011 | h1
-clarity<br><span class="em"> The Game Manager.</span>
+CLARITY<br><span class="em"> The Game Manager</span>
 
 ### index.html | 012 | p
-Every game you own. Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods, all in one place. In the bar. One keyboard shortcut away. I started this because my library was scattered across three apps and one **enormous** Excel file (I'm old, it's fine), and I wanted a single thing that just handled all of it. It should run on any Linux distro, but it found a home on Omarchy, and that's where the good stuff lives.
+Every game you own. Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods, all in one place. In the bar. One keyboard shortcut away. Clarity is built for, tested on and has exclusive features on Omarchy. It should run on any other Linux distro that can run AppImages though.
 
 ### index.html | 013 | a
 See what is shipping
@@ -1527,7 +1527,7 @@ no one else does this
 Source ports and fan games that arrive playable
 
 ### index.html | 019 | p
-It knows what each port needs and wires up the game data from a title you already own, so it never lands unplayable. No hunting for the right file at one in the morning.
+It knows what each port needs and wires up the game data from a title you already own, so it never lands unplayable. No hunting for the right file at 1:00AM, when you're already sleep-deprived.
 
 ### index.html | 020 | span
 See the catalogue →
@@ -1575,7 +1575,7 @@ no one else does this
 The same library, on the big screen
 
 ### index.html | 035 | p
-A second face built for a television and a controller: artwork, trailers, a jukebox with a real spectrum, and no keyboard anywhere. It's a fucking beautiful couch mode and I'm not sorry about it.
+A big screen mode built for a television and a controller: artwork, trailers, a jukebox with a real spectrum, and no keyboard anywhere.
 
 ### index.html | 036 | span
 Meet Couch Mode →
@@ -1599,7 +1599,7 @@ no one else does this
 Six kinds of game, one shelf
 
 ### index.html | 043 | p
-Steam, GOG, Epic, itch, Flatpak, PICO-8 carts and emulated ROMs sitting side by side, sorted, filtered and searched as one library instead of six. This is the whole reason I started building it.
+Steam, GOG, Epic, itch, Flatpak, PICO-8 carts and emulated ROMs sitting side by side, sorted, filtered and searched as one library instead of six.
 
 ### index.html | 044 | span
 How importing works →
@@ -1677,13 +1677,13 @@ Shot on Omarchy, on the machine it's built on. Nothing here is a mockup.
 It found a home
 
 ### index.html | 069 | p
-Clarity should run on any Linux desktop, but it's built and tested on **Omarchy**, which is no-nonsense, no BS, everyone welcome. That's why it behaves like part of the system now instead of a visitor knocking at the door.
+Clarity should run on any Linux desktop, but it's built for and tested on **Omarchy**, and follows its no-nonsense, no BS, everyone is welcome philosophy.
 
 ### index.html | 070 | h3
 In the bar
 
 ### index.html | 071 | p
-A widget showing what's installed and what's playing, with a menu one click from the library, the big screen face and your storage.
+A widget showing what's installed and what's playing, with a menu that takes you where you want to go.
 
 ### index.html | 072 | h3
 One keyboard shortcut away
@@ -2296,7 +2296,7 @@ PAGE: ports.html
 ==============================================================================
 
 ### ports.html | title
-Clarity: Source Ports &amp; Mods
+Clarity: Source Ports & Mods
 
 ### ports.html | meta:description
 Twenty-five source ports, mods, fan games and Build-engine games that install in one click, with the game data linked out of the library you already own.
@@ -2714,7 +2714,7 @@ PAGE: support.html
 ==============================================================================
 
 ### support.html | title
-Clarity: Support &amp; Donate
+Clarity: Support & Donate
 
 ### support.html | meta:description
 Support Clarity: everything from a contribution (Ko-fi / PIX) to the free stuff, like a star on GitHub, a bug report, or telling a friend.
