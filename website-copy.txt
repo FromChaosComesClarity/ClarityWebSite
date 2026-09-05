@@ -380,7 +380,7 @@ Run the same AppImage with `--couch`, or send it there from the Manager, the bar
 Made for looking, not managing
 
 ### couch.html | 016 | figcaption
-Covers big enough to read from the sofa.
+The carousel always displays 3 random screenshots from that category.
 
 ### couch.html | 017 | li
 **A home screen**: what you played last, a pick for today, the one you keep meaning to get to.
