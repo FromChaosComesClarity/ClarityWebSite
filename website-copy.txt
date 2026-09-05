@@ -2136,7 +2136,7 @@ Installed count when nothing's running, the game's name when something is. Click
 **Nothing to configure.** The app writes down where it lives, the widget reads it.
 
 ### omarchy.html | 021 | li
-**It's honest when it can't help.** No app, a bare mark and an offer to fetch it. Never a wrong number.
+If Clarity isn't installed yet, it asks you to do it, 1-click.
 
 ### omarchy.html | 022 | div
 03_the_theme_bridge
