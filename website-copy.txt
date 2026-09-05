@@ -2103,7 +2103,7 @@ omarchy_only.md
 What it does <span class="em">only here</span>
 
 ### omarchy.html | 010 | p
-Runs on any Linux desktop. **Built for, tested on and tailored to Omarchy**, where it does four things it can't do anywhere else.
+Built for, tested on and tailored to Omarchy
 
 ### omarchy.html | 011 | div
 01_the_launcher
