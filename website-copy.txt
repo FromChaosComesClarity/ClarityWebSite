@@ -2136,7 +2136,7 @@ Installed count when nothing's running, the game's name when something is. Click
 **Nothing to configure.** The app writes down where it lives, the widget reads it.
 
 ### omarchy.html | 021 | li
-**It's honest when it can't help.** No app, a bare mark and an offer to fetch it. Never a wrong number.
+If Clarity isn't installed yet, it asks you to do it, 1-click.
 
 ### omarchy.html | 022 | div
 03_the_theme_bridge
@@ -2178,7 +2178,7 @@ Under a tiler a game normally gets squeezed into a free slot and resized, a seco
 Getting it
 
 ### omarchy.html | 035 | p
-The bar widget and the launcher are a companion plugin, about nine kilobytes, so it needs Clarity installed. Without it, it says so and offers to fetch it in a terminal you can watch.
+The bar widget and the launcher are a companion plugin, about seventy kilobytes, so it needs Clarity installed. Without it, it says so and offers to fetch it in a terminal you can watch.
 
 ### omarchy.html | 036 | div
 ⚠ Not published yet
