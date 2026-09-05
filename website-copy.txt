@@ -2103,7 +2103,7 @@ omarchy_only.md
 What it does <span class="em">only here</span>
 
 ### omarchy.html | 010 | p
-Runs on any Linux desktop. **Built for, tested on and tailored to Omarchy**, where it does four things it can't do anywhere else.
+Built for, tested on and tailored to Omarchy
 
 ### omarchy.html | 011 | div
 01_the_launcher
@@ -2112,10 +2112,10 @@ Runs on any Linux desktop. **Built for, tested on and tailored to Omarchy**, whe
 Your whole library, one shortcut away
 
 ### omarchy.html | 013 | p
-Bind a key. Type three letters. Enter. It plays. No window first, nothing to click.
+meta+ctrl+G. Type three letters. Enter. It plays. No window first, nothing to click.
 
 ### omarchy.html | 014 | figcaption
-Cover, genre, year, hours played, and a sentence about whatever you're pointing at.
+Cover, genre, year, hours played, and a short description.
 
 ### omarchy.html | 015 | p
 It searches games *and* the app's own actions in one list, so “quake” and “storage” are the same gesture. Games you own but haven't installed show up too, and Enter opens the page with the Install button on it.
