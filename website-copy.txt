@@ -2178,7 +2178,7 @@ Under a tiler a game normally gets squeezed into a free slot and resized, a seco
 Getting it
 
 ### omarchy.html | 035 | p
-The bar widget and the launcher are a companion plugin, about nine kilobytes, so it needs Clarity installed. Without it, it says so and offers to fetch it in a terminal you can watch.
+The bar widget and the launcher are a companion plugin, about seventy kilobytes, so it needs Clarity installed. Without it, it says so and offers to fetch it in a terminal you can watch.
 
 ### omarchy.html | 036 | div
 ⚠ Not published yet
