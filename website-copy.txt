@@ -907,7 +907,7 @@ Found one that doesn't work? <a href="https://github.com/FromChaosComesClarity/C
 [clarity](index.html) &middot; [source ports &amp; mods](ports.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
 ### fixes.html | 041 | p
-stay positive and love your life
+From Chaos Comes Clarity
 
 ### fixes.html | 042 | a
 &lt; back to clarity
@@ -1473,7 +1473,7 @@ omarchy only
 Your library, one shortcut away
 
 ### index.html | 027 | p
-Shortcut, three letters, Enter, play. No window ever opens.
+Shortcut, three letters, Enter, play.
 
 ### index.html | 028 | span
 What it does on Omarchy →
@@ -2033,7 +2033,7 @@ Something wrong or missing? <a href="https://github.com/FromChaosComesClarity/Cl
 [clarity](index.html) &middot; [fixed individually](fixes.html) &middot; [source ports &amp; mods](ports.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
 ### macos.html | 068 | p
-stay positive and love your life
+From Chaos Comes Clarity
 
 ### macos.html | 069 | a
 &lt; back to clarity
@@ -2605,7 +2605,7 @@ Something missing? <a href="https://github.com/FromChaosComesClarity/Clarity/iss
 [clarity](index.html) &middot; [games fixed individually](fixes.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
 ### ports.html | 126 | p
-stay positive and love your life
+From Chaos Comes Clarity
 
 ### ports.html | 127 | a
 &lt; back to clarity
@@ -2732,7 +2732,7 @@ feedback, or just to say what's up
 Built by J.R.A. · Contact: [joserobertoazevedo@hey.com](mailto:joserobertoazevedo@hey.com)
 
 ### support.html | 029 | p
-“stay positive and <u>love your life</u>”
+“From Chaos Comes <u>Clarity</u>”
 
 ### support.html | 030 | a
 &lt; back to clarity
