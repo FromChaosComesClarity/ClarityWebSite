@@ -2112,7 +2112,7 @@ Built for, tested on and tailored to Omarchy
 Your whole library, one shortcut away
 
 ### omarchy.html | 013 | p
-Bind a key. Type three letters. Enter. It plays. No window first, nothing to click.
+meta+ctrl+G. Type three letters. Enter. It plays. No window first, nothing to click.
 
 ### omarchy.html | 014 | figcaption
 Cover, genre, year, hours played, and a sentence about whatever you're pointing at.
