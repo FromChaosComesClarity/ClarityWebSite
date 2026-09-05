@@ -2133,84 +2133,81 @@ A widget that knows what you're playing
 Installed count when nothing's running, the game's name when something is. Click for a menu to the library, the big screen face, storage and the Control Panel.
 
 ### omarchy.html | 020 | li
-**What's playing comes from the compositor, not the app.** Clarity launches a game and gets out of the way, so asking it would give the wrong answer for exactly the case the widget exists to show.
-
-### omarchy.html | 021 | li
 **Nothing to configure.** The app writes down where it lives, the widget reads it.
 
-### omarchy.html | 022 | li
+### omarchy.html | 021 | li
 **It's honest when it can't help.** No app, a bare mark and an offer to fetch it. Never a wrong number.
 
-### omarchy.html | 023 | div
+### omarchy.html | 022 | div
 03_the_theme_bridge
 
-### omarchy.html | 024 | h2
+### omarchy.html | 023 | h2
 It wears the theme you already chose
 
-### omarchy.html | 025 | p
+### omarchy.html | 024 | p
 Clarity uses **the theme Omarchy is using right now**. Apply a new one and the app wears it too. The same colours, not an approximation.
 
-### omarchy.html | 026 | figcaption
+### omarchy.html | 025 | figcaption
 Your Desktop sits at the top of the picker, above the app's own themes.
 
-### omarchy.html | 027 | p
+### omarchy.html | 026 | p
 The 93 themes that ship with the app are still there. Both faces draw from the same set, so a look follows you to the big screen.
 
-### omarchy.html | 028 | div
+### omarchy.html | 027 | div
 04_games_open_properly
 
-### omarchy.html | 029 | h2
+### omarchy.html | 028 | h2
 Fullscreen, on the right screen
 
-### omarchy.html | 030 | p
+### omarchy.html | 029 | p
 Under a tiler a game normally gets squeezed into a free slot and resized, a second before it goes fullscreen anyway. Here games open **fullscreen from the first frame**, on the monitor you picked, at the resolution you expect.
 
-### omarchy.html | 031 | li
+### omarchy.html | 030 | li
 **Floating and tiled are still there**, for a game whose launcher window needs to stay small.
 
-### omarchy.html | 032 | li
+### omarchy.html | 031 | li
 **Changes take effect when you ask**, not at your next login.
 
-### omarchy.html | 033 | li
+### omarchy.html | 032 | li
 **The screen you choose is remembered**, and games arrive there every time.
 
-### omarchy.html | 034 | div
+### omarchy.html | 033 | div
 05_the_plugin
 
-### omarchy.html | 035 | h2
+### omarchy.html | 034 | h2
 Getting it
 
-### omarchy.html | 036 | p
+### omarchy.html | 035 | p
 The bar widget and the launcher are a companion plugin, about nine kilobytes, so it needs Clarity installed. Without it, it says so and offers to fetch it in a terminal you can watch.
 
-### omarchy.html | 037 | div
+### omarchy.html | 036 | div
 ⚠ Not published yet
 
-### omarchy.html | 038 | p
+### omarchy.html | 037 | p
 Built and in daily testing, not on Omarchy's plugin marketplace yet. It goes out with 2.0.
 
-### omarchy.html | 039 | a
+### omarchy.html | 038 | a
 &lt; back to clarity
 
-### omarchy.html | 040 | span
+### omarchy.html | 039 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### omarchy.html | 041 | a
+### omarchy.html | 040 | a
 Home
 
-### omarchy.html | 042 | a
+### omarchy.html | 041 | a
 Omarchy
 
-### omarchy.html | 043 | a
+### omarchy.html | 042 | a
 Couch Mode
 
-### omarchy.html | 044 | a
+### omarchy.html | 043 | a
 The library
 
-### omarchy.html | 045 | a
+### omarchy.html | 044 | a
 Support
 
-### omarchy.html | 046 | a
+### omarchy.html | 045 | a
 GitHub
 
 ==============================================================================
