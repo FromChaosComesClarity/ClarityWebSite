@@ -1425,10 +1425,10 @@ Support
 2.0 in progress
 
 ### index.html | 011 | h1
-CLARITY<br><span class="em"> The Game Manager</span>
+CLARITY<br><span class="em"> Game Manager built for Omarchy</span>
 
 ### index.html | 012 | p
-Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods. One library. In the bar, one shortcut away. Built for Omarchy. Runs on any distro that runs AppImages.
+Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods. One library. In the bar, one shortcut away. Built for Omarchy.
 
 ### index.html | 013 | a
 See what is shipping
