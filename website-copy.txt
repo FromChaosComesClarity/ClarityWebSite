@@ -1473,7 +1473,7 @@ omarchy only
 Your library, one shortcut away
 
 ### index.html | 027 | p
-Shortcut, three letters, Enter, play.
+Meta+Ctrl+G, three letters, Enter, play.
 
 ### index.html | 028 | span
 What it does on Omarchy →
@@ -1732,7 +1732,7 @@ Steam, GOG, Epic, itch, PICO-8 and emulated games, as one library.
 **PICO-8 carts.** Hundreds, with their own artwork.
 
 ### library.html | 018 | li
-**Emulated games.** Brought across from EmuLatte and kept in step.
+**Emulated games.** Brought across from EmuLatte.
 
 ### library.html | 019 | p
 Covers, art, logos, descriptions, genres, years, HowLongToBeat times and review scores, fetched once and **kept on your disk**. A store changing its API doesn't empty your shelf.
