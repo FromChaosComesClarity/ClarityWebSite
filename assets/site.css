@@ -110,3 +110,71 @@ footer a:hover{color:var(--cyan)}
   *{transition:none!important;animation:none!important}
   html{scroll-behavior:auto}
 }
+
+/* ── News ──────────────────────────────────────────────────────────────────
+   A banner strip on the home page and the story list on news.html.
+
+   The rail is built as a carousel from the start even though there is one
+   story in it: slides are flex children with scroll-snap, so a second one
+   needs markup and nothing else. The dots hide themselves at one slide. */
+.news{margin:56px 0 0}
+.news-head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:18px;flex-wrap:wrap}
+.news-head h2{margin:0}
+.news-all{font-size:.78rem;letter-spacing:.14em;color:var(--dim);text-decoration:none;white-space:nowrap;transition:color .18s}
+.news-all:hover{color:var(--cyan)}
+
+.news-rail{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border:1px solid var(--line)}
+.news-rail::-webkit-scrollbar{display:none}
+.news-track{display:flex}
+
+.slide{position:relative;flex:0 0 100%;scroll-snap-align:start;display:flex;gap:clamp(18px,3vw,38px);
+  align-items:center;padding:clamp(20px,3vw,34px);background:var(--surface);overflow:hidden;isolation:isolate}
+/* The art sits BEHIND the copy rather than beside it: Fallout London is warm
+   orange and this site is near-black and cyan, so the screenshot is dimmed and
+   allowed to glow through the scrim instead of competing with the chrome. The
+   scrim is opaque where the type sits and clears toward the right edge. */
+.slide-shot{position:absolute;inset:0;z-index:-2;width:100%;height:100%;
+  object-fit:cover;object-position:center 38%;opacity:.62;filter:saturate(.82)}
+.slide::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,var(--surface) 0%,rgba(14,17,19,.95) 42%,
+    rgba(14,17,19,.82) 68%,rgba(14,17,19,.28) 100%)}
+
+.slide-art{flex:0 0 auto;width:clamp(96px,13vw,150px)}
+.slide-art img{display:block;width:100%;height:auto;border:1px solid var(--line);
+  box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.slide-body{min-width:0}
+.slide-tag{display:inline-block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ground);background:var(--cyan);padding:4px 9px;margin-bottom:12px;font-weight:700}
+.slide-body h3{margin:0 0 10px;color:var(--ink);font-size:clamp(1rem,2.1vw,1.32rem);line-height:1.28;letter-spacing:-.01em}
+.slide-body p{margin:0 0 16px;color:var(--muted);font-size:.86rem;max-width:56ch}
+
+.news-dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
+.news-dots:has(> :only-child){display:none}
+.news-dot{width:7px;height:7px;border-radius:50%;background:var(--line);border:0;padding:0;cursor:pointer;transition:background .2s}
+.news-dot[aria-current="true"]{background:var(--cyan)}
+
+/* Stacked, the copy no longer sits to the left of the art, so the scrim turns
+   vertical: the top stays open for the picture and it closes under the type. */
+@media (max-width:620px){
+  .slide{flex-direction:column;align-items:flex-start}
+  .slide-art{width:118px}
+  .slide-shot{opacity:.5;object-position:center 30%}
+  .slide::after{background:linear-gradient(180deg,rgba(14,17,19,.30) 0%,
+    rgba(14,17,19,.86) 34%,var(--surface) 52%)}
+}
+
+/* ── The "new" flag on a game fix ──────────────────────────────────────── */
+.badge-new{display:inline-block;vertical-align:middle;margin-left:10px;font-size:.6rem;letter-spacing:.18em;
+  text-transform:uppercase;font-weight:700;color:var(--ground);background:var(--cyan);padding:3px 7px;
+  position:relative;top:-2px}
+
+/* ── news.html ─────────────────────────────────────────────────────────── */
+.post{border:1px solid var(--line);background:var(--surface);padding:clamp(20px,3vw,30px);margin-top:18px}
+.post + .post{margin-top:16px}
+.post-date{font-size:.7rem;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+.post h2{margin:10px 0 4px;font-size:clamp(1.1rem,2.4vw,1.5rem)}
+.post .kicker{color:var(--magenta);font-size:.84rem;margin-bottom:14px}
+.post p.body{font-size:.9rem}
+.post p.body + p.body{margin-top:12px}
+.post-figure{margin:0 0 18px;border:1px solid var(--line);overflow:hidden}
+.post-figure img{display:block;width:100%;height:auto}

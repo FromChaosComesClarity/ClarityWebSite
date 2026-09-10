@@ -91,231 +91,234 @@ Fan games &amp; ports
 Game fixes
 
 ### clock.html | 016 | a
+News
+
+### clock.html | 017 | a
 Support
 
-### clock.html | 017 | span
+### clock.html | 018 | span
 on the desktop
 
-### clock.html | 018 | h1
+### clock.html | 019 | h1
 Clarity Clock<span class="em">.</span>
 
-### clock.html | 019 | p
+### clock.html | 020 | p
 the time, over your library
 
-### clock.html | 020 | a
+### clock.html | 021 | a
 ⬇ Download for Linux
 
-### clock.html | 021 | div
+### clock.html | 022 | div
 version **1.0** · single AppImage · GPL-3.0
 
-### clock.html | 022 | span
+### clock.html | 023 | span
 Minimalist
 
-### clock.html | 023 | span
+### clock.html | 024 | span
 a small floating widget, out of the way
 
-### clock.html | 024 | span
+### clock.html | 025 | span
 Couch Mode Splash
 
-### clock.html | 025 | span
-a frosted circle over blurred art
-
 ### clock.html | 026 | span
-Ken Burns
+a frosted circle over blurred art
 
 ### clock.html | 027 | span
+Ken Burns
+
+### clock.html | 028 | span
 your game art, panning behind the time
 
-### clock.html | 028 | div
+### clock.html | 029 | div
 01_what_it_does
 
-### clock.html | 029 | h2
+### clock.html | 030 | h2
 what it does
 
-### clock.html | 030 | p
+### clock.html | 031 | p
 A clock that wears your game library. It reads art already on disk, runs it as a slow slideshow behind the time, and gets out of the way.
 
-### clock.html | 031 | h3
+### clock.html | 032 | h3
 Three faces
 
-### clock.html | 032 | p
+### clock.html | 033 | p
 Minimalist, a small widget tinted by your palette. Couch Mode Splash, a frosted circle over blurred art. Ken Burns, a slow pan across the art. All resizable.
 
-### clock.html | 033 | h3
+### clock.html | 034 | h3
 A slideshow built from art you already have
 
-### clock.html | 034 | p
+### clock.html | 035 | p
 It scans the folders **Clarity** and **EmuLatte** already fill: heroes, covers, screenshots, or your own wallpapers. Nothing to import. No library? It just shows the time.
 
-### clock.html | 035 | h3
+### clock.html | 036 | h3
 Click a game to open it
 
-### clock.html | 036 | p
+### clock.html | 037 | p
 The name under the art is a link. Click it and **Clarity** or **EmuLatte** opens on that game's page. If the app is running, it goes to the open window.
 
-### clock.html | 037 | h3
+### clock.html | 038 | h3
 93 palettes, one picker
 
-### clock.html | 038 | p
+### clock.html | 039 | p
 Full parity with Clarity: ten families, from ricing classics to twenty retro operating systems with their own era typefaces. Every palette previewed in its own colours, applied live.
 
-### clock.html | 039 | h3
+### clock.html | 040 | h3
 Wear any font
 
-### clock.html | 040 | p
+### clock.html | 041 | p
 Seven interface faces, each previewed in itself. All bundled, nothing fetched at launch.
 
-### clock.html | 041 | h3
+### clock.html | 042 | h3
 Run as many as you like
 
-### clock.html | 042 | p
+### clock.html | 043 | p
 Launch it again and again, each one independent. A minimal one in a corner, Ken Burns on the second monitor, a splash on the third.
 
-### clock.html | 043 | h3
+### clock.html | 044 | h3
 Frameless, always on top, out of the way
 
-### clock.html | 044 | p
+### clock.html | 045 | p
 A borderless window that floats above the rest. Drag it, size it, add it to your application menu with one button.
 
-### clock.html | 045 | h3
+### clock.html | 046 | h3
 Local-only. Yours.
 
-### clock.html | 046 | p
+### clock.html | 047 | p
 Reads your libraries read-only, writes one small settings file. No account, no telemetry, no network.
 
-### clock.html | 047 | div
+### clock.html | 048 | div
 02_a_look_inside
 
-### clock.html | 048 | h2
+### clock.html | 049 | h2
 a look inside
 
-### clock.html | 049 | p
+### clock.html | 050 | p
 Click any shot to open it full size.
 
-### clock.html | 050 | div
+### clock.html | 051 | div
 ▸ The three faces
 
-### clock.html | 051 | figcaption
+### clock.html | 052 | figcaption
 your library, panning behind the time
 
-### clock.html | 052 | figcaption
+### clock.html | 053 | figcaption
 a frosted circle over blurred art
 
-### clock.html | 053 | figcaption
+### clock.html | 054 | figcaption
 a small widget that floats on the desktop
 
-### clock.html | 054 | div
+### clock.html | 055 | div
 ▸ Make it yours
 
-### clock.html | 055 | figcaption
+### clock.html | 056 | figcaption
 ninety-three palettes, in their own colours
 
-### clock.html | 056 | figcaption
+### clock.html | 057 | figcaption
 seven fonts, each shown in itself
 
-### clock.html | 057 | figcaption
+### clock.html | 058 | figcaption
 everything on one short panel
 
-### clock.html | 058 | div
+### clock.html | 059 | div
 03_also_on_the_menu
 
-### clock.html | 059 | h2
+### clock.html | 060 | h2
 also on the menu
 
-### clock.html | 060 | p
+### clock.html | 061 | p
 Complete on its own, happiest next to the libraries it draws from.
 
-### clock.html | 061 | span
+### clock.html | 062 | span
 OPTIONAL
 
-### clock.html | 062 | h3
+### clock.html | 063 | h3
 Clarity
 
-### clock.html | 063 | div
+### clock.html | 064 | div
 “from chaos comes clarity”
 
-### clock.html | 064 | p
+### clock.html | 065 | p
 Where most of the art comes from. Steam, GOG, Epic, Flatpak, itch.io and PICO-8 in one binary. Keep it beside the clock and the art appears on its own.
 
-### clock.html | 065 | p
+### clock.html | 066 | p
 [Get Clarity ▸](index.html)
 
-### clock.html | 066 | span
+### clock.html | 067 | span
 OPTIONAL
 
-### clock.html | 067 | h3
+### clock.html | 068 | h3
 EmuLatte
 
-### clock.html | 068 | div
+### clock.html | 069 | div
 “I use RetroArch BTW”
 
-### clock.html | 069 | p
+### clock.html | 070 | p
 The emulation side: a ROM library across 56 systems, with a gamepad-first Couch Mode. Its art feeds the same slideshow, and a click opens EmuLatte on that game.
 
-### clock.html | 070 | p
+### clock.html | 071 | p
 [Get EmuLatte ▸](emulatte.html)
 
-### clock.html | 071 | div
+### clock.html | 072 | div
 04_spread_the_good_vibes
 
-### clock.html | 072 | h2
+### clock.html | 073 | h2
 spread the good vibes
 
-### clock.html | 073 | p
+### clock.html | 074 | p
 If it earned a spot on your desk, consider chipping in.
 
-### clock.html | 074 | p
+### clock.html | 075 | p
 **If you do, [let me know](mailto:joserobertoazevedo@hey.com) so I can thank you personally! :)**
 
-### clock.html | 075 | a
+### clock.html | 076 | a
 💙 Ko-fi (Intl)
 
-### clock.html | 076 | button
+### clock.html | 077 | button
 🇧🇷 PIX &middot; QR Code
 
-### clock.html | 077 | a
+### clock.html | 078 | a
 ★ GitHub
 
-### clock.html | 078 | p
+### clock.html | 079 | p
 Built by J.R.A. · Contact: [joserobertoazevedo@hey.com](mailto:joserobertoazevedo@hey.com)
 
-### clock.html | 079 | p
+### clock.html | 080 | p
 [Clarity](index.html) · [EmuLatte](emulatte.html) · [support page](support.html) · <a href="https://github.com/FromChaosComesClarity/ClarityClock" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later
 
-### clock.html | 080 | a
+### clock.html | 081 | a
 &lt; back to clarity
 
-### clock.html | 081 | h3
+### clock.html | 082 | h3
 DONATE VIA PIX
 
-### clock.html | 082 | div
+### clock.html | 083 | div
 b734a9e2-e479-42f9-abd6-c88d1b8b880e
 
-### clock.html | 083 | button
+### clock.html | 084 | button
 COPY PIX KEY
 
-### clock.html | 084 | div
+### clock.html | 085 | div
 Copied to clipboard!
 
-### clock.html | 085 | span
+### clock.html | 086 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### clock.html | 086 | a
+### clock.html | 087 | a
 Home
 
-### clock.html | 087 | a
+### clock.html | 088 | a
 Omarchy
 
-### clock.html | 088 | a
+### clock.html | 089 | a
 Couch Mode
 
-### clock.html | 089 | a
+### clock.html | 090 | a
 The library
 
-### clock.html | 090 | a
+### clock.html | 091 | a
 Support
 
-### clock.html | 091 | a
+### clock.html | 092 | a
 GitHub
 
 ==============================================================================
@@ -353,96 +356,99 @@ Fan games &amp; ports
 Game fixes
 
 ### couch.html | 007 | a
+News
+
+### couch.html | 008 | a
 Support
 
-### couch.html | 008 | span
+### couch.html | 009 | span
 couch.md
 
-### couch.html | 009 | h1
+### couch.html | 010 | h1
 Couch Mode <span class="em">on the big screen</span>
 
-### couch.html | 010 | p
+### couch.html | 011 | p
 The same library, artwork and playlists, on a television, driven with a controller. Nothing to configure, nothing to sync.
 
-### couch.html | 011 | div
+### couch.html | 012 | div
 01_a_face_for_the_big_screen
 
-### couch.html | 012 | figcaption
+### couch.html | 013 | figcaption
 A game page, sized for the far end of the room.
 
-### couch.html | 013 | p
+### couch.html | 014 | p
 Run the same AppImage with `--couch`, or send it there from the Manager, the bar menu, or autostart.
 
-### couch.html | 014 | div
+### couch.html | 015 | div
 02_browsing
 
-### couch.html | 015 | h2
+### couch.html | 016 | h2
 Made for looking, not managing
 
-### couch.html | 016 | figcaption
+### couch.html | 017 | figcaption
 The carousel always displays 3 random screenshots from that category.
 
-### couch.html | 017 | li
+### couch.html | 018 | li
 **A home screen**: what you played last, a pick for today, the one you keep meaning to get to.
 
-### couch.html | 018 | li
+### couch.html | 019 | li
 **Genres, playlists and history** as ways through the shelf.
 
-### couch.html | 019 | li
+### couch.html | 020 | li
 **Trailers and screenshots** playing while you decide.
 
-### couch.html | 020 | li
+### couch.html | 021 | li
 **Achievements** from GOG and Steam in one list.
 
-### couch.html | 021 | div
+### couch.html | 022 | div
 03_the_jukebox
 
-### couch.html | 022 | h2
+### couch.html | 023 | h2
 Your music, with a real spectrum
 
-### couch.html | 023 | p
+### couch.html | 024 | p
 Your own folder of music, browsable by artist and album, with a full-screen now-playing view. The visualiser reads the audio actually playing, not a timer.
 
-### couch.html | 024 | div
+### couch.html | 025 | div
 04_what_it_deliberately_will_not_do
 
-### couch.html | 025 | h2
+### couch.html | 026 | h2
 It plays. It doesn't manage.
 
-### couch.html | 026 | p
+### couch.html | 027 | p
 Renaming, scraping, fetching trailers, launch commands, uninstalling. None of it here. That belongs on the desktop.
 
-### couch.html | 027 | p
+### couch.html | 028 | p
 What's left is what you want from a big screen: favourite it, add it to a playlist, check achievements, install it. Then play.
 
-### couch.html | 028 | div
+### couch.html | 029 | div
 ⚠ And it never asks for a password
 
-### couch.html | 029 | p
+### couch.html | 030 | p
 No store login. If an account needs signing into, it says so and points you back to the desktop. A password field has no business on a television.
 
-### couch.html | 030 | a
+### couch.html | 031 | a
 &lt; back to clarity
 
-### couch.html | 031 | span
+### couch.html | 032 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### couch.html | 032 | a
+### couch.html | 033 | a
 Home
 
-### couch.html | 033 | a
+### couch.html | 034 | a
 Omarchy
 
-### couch.html | 034 | a
+### couch.html | 035 | a
 Couch Mode
 
-### couch.html | 035 | a
+### couch.html | 036 | a
 The library
 
-### couch.html | 036 | a
+### couch.html | 037 | a
 Support
 
-### couch.html | 037 | a
+### couch.html | 038 | a
 GitHub
 
 ==============================================================================
@@ -507,267 +513,270 @@ Fan games &amp; ports
 Game fixes
 
 ### emulatte.html | 016 | a
+News
+
+### emulatte.html | 017 | a
 Support
 
-### emulatte.html | 017 | span
+### emulatte.html | 018 | span
 on the emulation side
 
-### emulatte.html | 018 | h1
+### emulatte.html | 019 | h1
 EmuLatte<span class="em">.</span>
 
-### emulatte.html | 019 | p
+### emulatte.html | 020 | p
 a ROM library, properly filed
 
-### emulatte.html | 020 | a
+### emulatte.html | 021 | a
 ⬇ Download for Linux
 
-### emulatte.html | 021 | div
+### emulatte.html | 022 | div
 version **1.0** · single AppImage · GPL-3.0
 
-### emulatte.html | 022 | span
+### emulatte.html | 023 | span
 Library
 
-### emulatte.html | 023 | span
+### emulatte.html | 024 | span
 56 systems, filed the way you'd file them
 
-### emulatte.html | 024 | span
+### emulatte.html | 025 | span
 Scrapers
 
-### emulatte.html | 025 | span
+### emulatte.html | 026 | span
 five sources, one picker, art that stays put
 
-### emulatte.html | 026 | span
+### emulatte.html | 027 | span
 Couch Mode
 
-### emulatte.html | 027 | span
+### emulatte.html | 028 | span
 the fullscreen, gamepad-first face for the TV
 
-### emulatte.html | 028 | div
+### emulatte.html | 029 | div
 01_what_it_does
 
-### emulatte.html | 029 | h2
+### emulatte.html | 030 | h2
 what it does
 
-### emulatte.html | 030 | p
+### emulatte.html | 031 | p
 A ROM library manager that does the boring parts properly, and a second face for when you just want to play.
 
-### emulatte.html | 031 | h3
+### emulatte.html | 032 | h3
 56 systems, with opinions
 
-### emulatte.html | 032 | p
+### emulatte.html | 033 | p
 Every preset arrives with a RetroArch core chosen and the platform IDs the scrapers need. Point it at a folder. Your ROMs are never moved, copied or renamed.
 
-### emulatte.html | 033 | h3
+### emulatte.html | 034 | h3
 It finds your emulators for you
 
-### emulatte.html | 034 | p
+### emulatte.html | 035 | p
 It sweeps the machine for what's installed, RetroArch native, Flatpak, standalone cores, and maps them to systems. No launch commands to type.
 
-### emulatte.html | 035 | h3
+### emulatte.html | 036 | h3
 Five scraping sources, one picker
 
-### emulatte.html | 036 | p
+### emulatte.html | 037 | p
 ScreenScraper, SteamGridDB, TheGamesDB, IGDB and MobyGames. Metadata from one, artwork from another. It all lands on your disk and stays.
 
-### emulatte.html | 037 | h3
+### emulatte.html | 038 | h3
 Its own RetroArch, untouched by yours
 
-### emulatte.html | 038 | p
+### emulatte.html | 039 | p
 It drives a config of its own. Your **retroarch.cfg** is never read or written. Per-system and per-game overrides for the odd one out.
 
-### emulatte.html | 039 | h3
+### emulatte.html | 040 | h3
 Achievements, trailers, and the actual manual
 
-### emulatte.html | 040 | p
+### emulatte.html | 041 | p
 RetroAchievements progress per game. Trailers via a bundled yt-dlp. And the scanned booklet from the box, straight from ScreenScraper.
 
-### emulatte.html | 041 | h3
+### emulatte.html | 042 | h3
 Couch Mode
 
-### emulatte.html | 042 | p
+### emulatte.html | 043 | p
 Fullscreen, gamepad-first, play-only, three layouts including a real 640×480 CRT mode. Save states, a screenshot screensaver, ambient sound, and a combo that brings you back mid-game.
 
-### emulatte.html | 043 | h3
+### emulatte.html | 044 | h3
 92 themes, 10 families
 
-### emulatte.html | 044 | p
+### emulatte.html | 045 | p
 Both faces carry all of them, including twenty retro operating systems with their own era typefaces. MS-DOS, Workbench, NeXTSTEP, green phosphor. Fonts bundled.
 
-### emulatte.html | 045 | h3
+### emulatte.html | 046 | h3
 Local-only. Yours.
 
-### emulatte.html | 046 | p
+### emulatte.html | 047 | p
 One folder next to the AppImage holds the lot. No account, no telemetry, no cloud. Copy it and your library comes too.
 
-### emulatte.html | 047 | div
+### emulatte.html | 048 | div
 02_a_look_inside
 
-### emulatte.html | 048 | h2
+### emulatte.html | 049 | h2
 a look inside
 
-### emulatte.html | 049 | p
+### emulatte.html | 050 | p
 Click any shot to open it full size.
 
-### emulatte.html | 050 | div
+### emulatte.html | 051 | div
 ▸ The desktop face
 
-### emulatte.html | 051 | figcaption
+### emulatte.html | 052 | figcaption
 the whole collection, one shelf
 
-### emulatte.html | 052 | figcaption
+### emulatte.html | 053 | figcaption
 the game page, art and all
 
-### emulatte.html | 053 | figcaption
+### emulatte.html | 054 | figcaption
 one system at a time, with its own hero
 
-### emulatte.html | 054 | figcaption
+### emulatte.html | 055 | figcaption
 for when the scraper guesses wrong
 
-### emulatte.html | 055 | div
+### emulatte.html | 056 | div
 ▸ RetroArch &amp; save states
 
-### emulatte.html | 056 | figcaption
+### emulatte.html | 057 | figcaption
 RetroArch, explained in plain language
 
-### emulatte.html | 057 | figcaption
+### emulatte.html | 058 | figcaption
 for the one game that needs something different
 
-### emulatte.html | 058 | figcaption
+### emulatte.html | 059 | figcaption
 every save state you own, memory-card style
 
-### emulatte.html | 059 | figcaption
+### emulatte.html | 060 | figcaption
 drop straight back into a save
 
-### emulatte.html | 060 | div
+### emulatte.html | 061 | div
 ▸ Playlists, themes &amp; extras
 
-### emulatte.html | 061 | figcaption
+### emulatte.html | 062 | figcaption
 playlists that cut across systems
 
-### emulatte.html | 062 | figcaption
+### emulatte.html | 063 | figcaption
 twenty retro systems, each in its own typeface
 
-### emulatte.html | 063 | figcaption
+### emulatte.html | 064 | figcaption
 trailers downloaded, not streamed
 
-### emulatte.html | 064 | figcaption
+### emulatte.html | 065 | figcaption
 the booklet that came in the box
 
-### emulatte.html | 065 | div
+### emulatte.html | 066 | div
 ▸ Couch Mode, the TV face
 
-### emulatte.html | 066 | figcaption
+### emulatte.html | 067 | figcaption
 pick a system without getting up
 
-### emulatte.html | 067 | figcaption
+### emulatte.html | 068 | figcaption
 the cover wall, on the television
 
-### emulatte.html | 068 | figcaption
+### emulatte.html | 069 | figcaption
 list and details, gamepad-first
 
-### emulatte.html | 069 | figcaption
+### emulatte.html | 070 | figcaption
 the game page, built for a big screen
 
-### emulatte.html | 070 | div
+### emulatte.html | 071 | div
 03_also_on_the_menu
 
-### emulatte.html | 071 | h2
+### emulatte.html | 072 | h2
 also on the menu
 
-### emulatte.html | 072 | p
+### emulatte.html | 073 | p
 Separate apps, same roof. EmuLatte is complete on its own.
 
-### emulatte.html | 073 | span
+### emulatte.html | 074 | span
 OPTIONAL
 
-### emulatte.html | 074 | h3
+### emulatte.html | 075 | h3
 Clarity
 
-### emulatte.html | 075 | div
+### emulatte.html | 076 | div
 “from chaos comes clarity”
 
-### emulatte.html | 076 | p
+### emulatte.html | 077 | p
 The rest of the library: Steam, GOG, Epic, Flatpak, itch.io and PICO-8, in one binary with two faces and Installer underneath. Your ROMs stay here. You pick what crosses over by **exporting it**.
 
-### emulatte.html | 077 | p
+### emulatte.html | 078 | p
 [Get Clarity ▸](index.html)
 
-### emulatte.html | 078 | span
+### emulatte.html | 079 | span
 OPTIONAL
 
-### emulatte.html | 079 | h3
+### emulatte.html | 080 | h3
 Clarity Clock
 
-### emulatte.html | 080 | div
+### emulatte.html | 081 | div
 “a desk clock with taste”
 
-### emulatte.html | 081 | p
+### emulatte.html | 082 | p
 A standalone clock that runs a slideshow of your library's artwork, with Ken Burns pans and configurable faces. Sits happily on a second screen.
 
-### emulatte.html | 082 | p
+### emulatte.html | 083 | p
 [Get the Clock ▸](clock.html)
 
-### emulatte.html | 083 | div
+### emulatte.html | 084 | div
 04_spread_the_good_vibes
 
-### emulatte.html | 084 | h2
+### emulatte.html | 085 | h2
 spread the good vibes
 
-### emulatte.html | 085 | p
+### emulatte.html | 086 | p
 If EmuLatte sorted out your ROM collection, consider chipping in.
 
-### emulatte.html | 086 | p
+### emulatte.html | 087 | p
 **If you do, [let me know](mailto:joserobertoazevedo@hey.com) so I can thank you personally! :)**
 
-### emulatte.html | 087 | a
+### emulatte.html | 088 | a
 💙 Ko-fi (Intl)
 
-### emulatte.html | 088 | button
+### emulatte.html | 089 | button
 🇧🇷 PIX &middot; QR Code
 
-### emulatte.html | 089 | a
+### emulatte.html | 090 | a
 ★ GitHub
 
-### emulatte.html | 090 | p
+### emulatte.html | 091 | p
 Built by J.R.A. · Contact: [joserobertoazevedo@hey.com](mailto:joserobertoazevedo@hey.com)
 
-### emulatte.html | 091 | p
+### emulatte.html | 092 | p
 [Clarity](index.html) · [support page](support.html) · <a href="https://github.com/FromChaosComesClarity/EmuLatte" target="_blank" rel="noopener">source on GitHub</a> · GPL-3.0-or-later
 
-### emulatte.html | 092 | a
+### emulatte.html | 093 | a
 &lt; back to clarity
 
-### emulatte.html | 093 | h3
+### emulatte.html | 094 | h3
 DONATE VIA PIX
 
-### emulatte.html | 094 | div
+### emulatte.html | 095 | div
 b734a9e2-e479-42f9-abd6-c88d1b8b880e
 
-### emulatte.html | 095 | button
+### emulatte.html | 096 | button
 COPY PIX KEY
 
-### emulatte.html | 096 | div
+### emulatte.html | 097 | div
 Copied to clipboard!
 
-### emulatte.html | 097 | span
+### emulatte.html | 098 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### emulatte.html | 098 | a
+### emulatte.html | 099 | a
 Home
 
-### emulatte.html | 099 | a
+### emulatte.html | 100 | a
 Omarchy
 
-### emulatte.html | 100 | a
+### emulatte.html | 101 | a
 Couch Mode
 
-### emulatte.html | 101 | a
+### emulatte.html | 102 | a
 The library
 
-### emulatte.html | 102 | a
+### emulatte.html | 103 | a
 Support
 
-### emulatte.html | 103 | a
+### emulatte.html | 104 | a
 GitHub
 
 ==============================================================================
@@ -805,144 +814,147 @@ Fan games &amp; ports
 Game fixes
 
 ### fixes.html | 007 | a
-Support
+News
 
-### fixes.html | 008 | span
-game fixes
+### fixes.html | 008 | a
+Support
 
 ### fixes.html | 009 | span
+game fixes
+
+### fixes.html | 010 | span
 named games · named faults
 
-### fixes.html | 010 | h1
+### fixes.html | 011 | h1
 Fixed <span class="em">Individually</span>
 
-### fixes.html | 011 | p
+### fixes.html | 012 | p
 Not &ldquo;improved compatibility&rdquo;. Real games that did not work, the exact fault, and the fix. **Nothing needs configuring**, it goes on when the game launches.
 
-### fixes.html | 012 | div
+### fixes.html | 013 | div
 01_named_faults
 
-### fixes.html | 013 | h3
+### fixes.html | 014 | h3
 OutRun 2006: Coast 2 Coast
 
-### fixes.html | 014 | div
+### fixes.html | 015 | div
 A white screen. It seems to hang on the SEGA logo, so it gets killed.
 
-### fixes.html | 015 | p
+### fixes.html | 016 | p
 The intro is a run of video logos, and under a compatibility layer the first can sit there a minute or more. Not frozen, but nobody waits that long. **The intro is now skipped.**
 
-### fixes.html | 016 | p
+### fixes.html | 017 | p
 The community patch installs under a filename Wine replaces with its own, so it never loaded. **The game&rsquo;s own copy now wins**, as on Windows.
 
-### fixes.html | 017 | h3
+### fixes.html | 018 | h3
 Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)
 
-### fixes.html | 018 | div
+### fixes.html | 019 | div
 Comes up untranslated and stops dead at a Japanese error box.
 
-### fixes.html | 019 | p
+### fixes.html | 020 | p
 The patch is a graphics library beside the game, and Wine loaded its own instead, so it never ran. **The game&rsquo;s own copy is now loaded first**, with Wine&rsquo;s behind it as a fallback.
 
-### fixes.html | 020 | p
+### fixes.html | 021 | p
 The fallback is the trick: the patch passes what it doesn't implement through to the real library. With nothing behind it, the game crashes instantly.
 
-### fixes.html | 021 | h3
+### fixes.html | 022 | h3
 Quake (GOG), the Windows builds
 
-### fixes.html | 022 | div
+### fixes.html | 023 | div
 GLQuake and both mission packs close instantly. No window, no error.
 
-### fixes.html | 023 | p
+### fixes.html | 024 | p
 GOG ships a 3dfx driver from the nineties, and Wine substituted its own, so the game died before a window appeared. **The driver GOG shipped is now used.**
 
-### fixes.html | 024 | h3
+### fixes.html | 025 | h3
 Fallout: New California
 
-### fixes.html | 025 | div
+### fixes.html | 026 | div
 &ldquo;Fallout: New Vegas does not appear to be installed.&rdquo; Please insert the DVD.
 
-### fixes.html | 026 | p
+### fixes.html | 027 | p
 Every file downloaded perfectly, but GOG&rsquo;s installer performs three finishing steps afterwards and nothing on Linux did them. **Now applied at launch**, repairing the install you have. No reinstall.
 
-### fixes.html | 027 | h3
-Fallout: London One-click Edition
+### fixes.html | 028 | h3
+Fallout: London One-click Edition<span class="badge-new">new</span>
 
-### fixes.html | 028 | div
+### fixes.html | 029 | div
 Music plays over a black screen, then a warning about loose files and a browser tab you did not ask for.
 
-### fixes.html | 029 | p
+### fixes.html | 030 | p
 The same story as New California, one game later. GOG&rsquo;s installer has finishing steps and nothing on Linux performed them, so the plugin list never arrived and none of London ever loaded. **Now applied at launch**, repairing the install you have.
 
-### fixes.html | 030 | p
+### fixes.html | 031 | p
 The switch that turns loose files on had to go somewhere other than the file GOG writes it to, which is why it looked like it was already set. **Put where the engine actually reads it**, and it survives the game rewriting its own settings every time it starts.
 
-### fixes.html | 031 | h3
+### fixes.html | 032 | h3
 Realms of Arkania 1 &amp; 2 &middot; Albion
 
-### fixes.html | 032 | div
+### fixes.html | 033 | div
 DOSBox opens for half a second, then vanishes.
 
-### fixes.html | 033 | p
+### fixes.html | 034 | p
 Two faults. The configuration files GOG&rsquo;s installer copies were never copied, and the game started from the wrong folder, so DOSBox looked one level too high and quit. **Both fixed.**
 
-### fixes.html | 034 | h3
+### fixes.html | 035 | h3
 Colony Ship
 
-### fixes.html | 035 | div
+### fixes.html | 036 | div
 Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.
 
-### fixes.html | 036 | p
+### fixes.html | 037 | p
 One file was damaged on a GOG server. Half arrived, the connection closed, every time, and the download kept asking that same server. **Now each piece is checked and a different server is used** when one keeps failing.
 
-### fixes.html | 037 | div
+### fixes.html | 038 | div
 02_why_a_list
 
-### fixes.html | 038 | h2
+### fixes.html | 039 | h2
 why keep a list like this at all
 
-### fixes.html | 039 | p
+### fixes.html | 040 | p
 Most of what goes wrong is solved by a general rule, and those are part of the app. What's left belongs to one game and nothing else. Each costs an evening. Writing them down is the least I can do.
 
-### fixes.html | 040 | p
+### fixes.html | 041 | p
 The list will grow. A game on it behaves on your machine the way it did on mine.
 
-### fixes.html | 041 | a
+### fixes.html | 042 | a
 ⤓ Download Clarity
 
-### fixes.html | 042 | a
+### fixes.html | 043 | a
 Report a game that misbehaves
 
-### fixes.html | 043 | p
+### fixes.html | 044 | p
 Found one that doesn't work? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. This list is how it gets fixed.
 
-### fixes.html | 044 | p
+### fixes.html | 045 | p
 [clarity](index.html) &middot; [source ports &amp; mods](ports.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
-### fixes.html | 045 | p
+### fixes.html | 046 | p
 From Chaos Comes Clarity
 
-### fixes.html | 046 | a
+### fixes.html | 047 | a
 &lt; back to clarity
 
-### fixes.html | 047 | span
+### fixes.html | 048 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### fixes.html | 048 | a
+### fixes.html | 049 | a
 Home
 
-### fixes.html | 049 | a
+### fixes.html | 050 | a
 Omarchy
 
-### fixes.html | 050 | a
+### fixes.html | 051 | a
 Couch Mode
 
-### fixes.html | 051 | a
+### fixes.html | 052 | a
 The library
 
-### fixes.html | 052 | a
+### fixes.html | 053 | a
 Support
 
-### fixes.html | 053 | a
+### fixes.html | 054 | a
 GitHub
 
 ==============================================================================
@@ -980,414 +992,417 @@ Fan games &amp; ports
 Game fixes
 
 ### gallery.html | 007 | a
+News
+
+### gallery.html | 008 | a
 Support
 
-### gallery.html | 008 | span
+### gallery.html | 009 | span
 gallery
 
-### gallery.html | 009 | h1
+### gallery.html | 010 | h1
 Every corner of it, <span class="em">in 78 screenshots.</span>
 
-### gallery.html | 010 | p
+### gallery.html | 011 | p
 Taken on Omarchy, on the machine it is built on. Click any one for full size.
 
-### gallery.html | 011 | a
-In Omarchy
-
 ### gallery.html | 012 | a
-The library
+In Omarchy
 
 ### gallery.html | 013 | a
-A game page
+The library
 
 ### gallery.html | 014 | a
-Installing and storage
-
-### gallery.html | 015 | a
-Fan games and source ports
-
-### gallery.html | 016 | a
-Carts and emulators
-
-### gallery.html | 017 | a
-Artwork, trailers, manuals, saves
-
-### gallery.html | 018 | a
-93 themes
-
-### gallery.html | 019 | a
-Settings
-
-### gallery.html | 020 | a
-Couch Mode, on the big screen
-
-### gallery.html | 021 | a
-Now playing
-
-### gallery.html | 022 | div
-01_in_omarchy
-
-### gallery.html | 023 | h2
-In Omarchy
-
-### gallery.html | 024 | p
-The bar, the launcher and the first run. Only here.
-
-### gallery.html | 025 | figcaption
-The bar, before Clarity is installed, offering to fetch it.
-
-### gallery.html | 026 | figcaption
-The launcher overlay before anything is installed.
-
-### gallery.html | 027 | figcaption
-The first install, in a terminal you can watch.
-
-### gallery.html | 028 | figcaption
-The bar widget: how many games are installed.
-
-### gallery.html | 029 | figcaption
-The bar menu, one click from everything.
-
-### gallery.html | 030 | figcaption
-The launcher overlay, one shortcut away.
-
-### gallery.html | 031 | figcaption
-Searching: installed games first, the rest below.
-
-### gallery.html | 032 | div
-02_the_library
-
-### gallery.html | 033 | h2
-The library
-
-### gallery.html | 034 | p
-Everything you own in one grid.
-
-### gallery.html | 035 | figcaption
-The library grid, a button under each game.
-
-### gallery.html | 036 | figcaption
-The home dashboard: what to play, what is new, what is on sale.
-
-### gallery.html | 037 | figcaption
-A playlist. Your own shelves.
-
-### gallery.html | 038 | div
-03_a_game_page
-
-### gallery.html | 039 | h2
 A game page
 
-### gallery.html | 040 | p
-Artwork, metadata, achievements, and one button that matters.
-
-### gallery.html | 041 | figcaption
-A game page: key art, screenshots, description, play.
-
-### gallery.html | 042 | figcaption
-Further down, the metadata it scraped.
-
-### gallery.html | 043 | figcaption
-Achievements, read straight from the game.
-
-### gallery.html | 044 | figcaption
-Edit details. The launch command field does the heavy lifting.
-
-### gallery.html | 045 | div
-04_installing
-
-### gallery.html | 046 | h2
+### gallery.html | 015 | a
 Installing and storage
 
-### gallery.html | 047 | p
-Where games live, and how to move them.
-
-### gallery.html | 048 | figcaption
-The library updating itself in the background.
-
-### gallery.html | 049 | figcaption
-Manage storage: every install and what it costs in disk.
-
-### gallery.html | 050 | figcaption
-Moving a game to another drive.
-
-### gallery.html | 051 | figcaption
-Deleting an install. The game stays, saves untouched.
-
-### gallery.html | 052 | div
-05_fan_games_and_source_ports
-
-### gallery.html | 053 | h2
+### gallery.html | 016 | a
 Fan games and source ports
 
-### gallery.html | 054 | p
-You download the port. Clarity does the rest.
-
-### gallery.html | 055 | figcaption
-Ports and mods in the Control Panel.
-
-### gallery.html | 056 | figcaption
-The source ports catalogue, grouped by the game it needs.
-
-### gallery.html | 057 | figcaption
-Brutal Doom and friends, each naming the file it wants.
-
-### gallery.html | 058 | div
-06_carts_and_emulators
-
-### gallery.html | 059 | h2
+### gallery.html | 017 | a
 Carts and emulators
 
-### gallery.html | 060 | p
-Carts and ROMs, in the same library as everything else.
-
-### gallery.html | 061 | figcaption
-PICO-8 carts on the same shelf.
-
-### gallery.html | 062 | figcaption
-Emulation on the couch, browsed like any other shelf.
-
-### gallery.html | 063 | div
-07_artwork_trailers_manuals_saves
-
-### gallery.html | 064 | h2
+### gallery.html | 018 | a
 Artwork, trailers, manuals, saves
 
-### gallery.html | 065 | p
-Fetched once, kept on your disk, yours to back up.
-
-### gallery.html | 066 | figcaption
-Picking a trailer to keep on your own disk.
-
-### gallery.html | 067 | figcaption
-The trailer downloading.
-
-### gallery.html | 068 | figcaption
-Playing it back later, no connection needed.
-
-### gallery.html | 069 | figcaption
-Removing a trailer you no longer want on disk.
-
-### gallery.html | 070 | figcaption
-The manuals a GOG game shipped with.
-
-### gallery.html | 071 | figcaption
-Reading one of them without leaving the app.
-
-### gallery.html | 072 | figcaption
-The save manager: the whole thing to a zip.
-
-### gallery.html | 073 | figcaption
-Adding a game to a playlist.
-
-### gallery.html | 074 | figcaption
-Managing the DLC a GOG game came with.
-
-### gallery.html | 075 | div
-08_themes
-
-### gallery.html | 076 | h2
+### gallery.html | 019 | a
 93 themes
 
-### gallery.html | 077 | p
-The whole app changes clothes, and can follow your desktop.
-
-### gallery.html | 078 | figcaption
-The theme picker, Your Desktop at the top.
-
-### gallery.html | 079 | figcaption
-The Systems category, where the old machines live.
-
-### gallery.html | 080 | figcaption
-The library wearing Commodore 64.
-
-### gallery.html | 081 | figcaption
-A game page in the same Commodore 64 palette.
-
-### gallery.html | 082 | figcaption
-Picking MacOS 1.0.
-
-### gallery.html | 083 | figcaption
-The library in MacOS 1.0, black on white and all.
-
-### gallery.html | 084 | figcaption
-A game page to match.
-
-### gallery.html | 085 | figcaption
-Picking IBM 3270, the green CRT.
-
-### gallery.html | 086 | figcaption
-The library in green phosphor.
-
-### gallery.html | 087 | figcaption
-And a game page, still perfectly readable.
-
-### gallery.html | 088 | figcaption
-The same theme system, on the controller.
-
-### gallery.html | 089 | figcaption
-Cyberpunk on the big screen.
-
-### gallery.html | 090 | figcaption
-Commodore 64 on the big screen.
-
-### gallery.html | 091 | figcaption
-Amber CRT on the big screen.
-
-### gallery.html | 092 | figcaption
-Even the jukebox follows the theme.
-
-### gallery.html | 093 | figcaption
-And the interface font is yours to pick too.
-
-### gallery.html | 094 | div
-09_settings
-
-### gallery.html | 095 | h2
+### gallery.html | 020 | a
 Settings
 
-### gallery.html | 096 | p
-The knobs, and the manual for every one.
-
-### gallery.html | 097 | figcaption
-Per game: Proton, prefixes, launch arguments.
-
-### gallery.html | 098 | figcaption
-The Control Panel.
-
-### gallery.html | 099 | figcaption
-The Omarchy section: what is installed, what is missing, the command to fix it.
-
-### gallery.html | 100 | figcaption
-Matching your Omarchy theme, and how a game&#x27;s window opens.
-
-### gallery.html | 101 | figcaption
-The manual, built into the app.
-
-### gallery.html | 102 | div
-10_couch
-
-### gallery.html | 103 | h2
+### gallery.html | 021 | a
 Couch Mode, on the big screen
 
-### gallery.html | 104 | p
-Same library, ten feet away, on a controller.
-
-### gallery.html | 105 | figcaption
-Couch Mode starting up.
-
-### gallery.html | 106 | figcaption
-The Couch home screen: your numbers, today&#x27;s pick, what you just imported.
-
-### gallery.html | 107 | figcaption
-Home, with something playing in the corner.
-
-### gallery.html | 108 | figcaption
-Further down: the wishlist, the deals and the news.
-
-### gallery.html | 109 | figcaption
-Reading the news on the TV.
-
-### gallery.html | 110 | figcaption
-A Couch game page, key art filling the screen.
-
-### gallery.html | 111 | figcaption
-The description and screenshots, one button away.
-
-### gallery.html | 112 | figcaption
-Another one, because DOOM deserves the whole screen.
-
-### gallery.html | 113 | figcaption
-Its description, on the couch.
-
-### gallery.html | 114 | figcaption
-Achievements, on the couch.
-
-### gallery.html | 115 | figcaption
-Game options, without a mouse anywhere near it.
-
-### gallery.html | 116 | figcaption
-Browsing by store, steered with a stick.
-
-### gallery.html | 117 | figcaption
-The same shelf as a grid of covers.
-
-### gallery.html | 118 | figcaption
-Or as a list, when you know what you are after.
-
-### gallery.html | 119 | figcaption
-Favourites, one shelf along.
-
-### gallery.html | 120 | figcaption
-Sorting the shelf.
-
-### gallery.html | 121 | figcaption
-Your playlists, on the big screen.
-
-### gallery.html | 122 | figcaption
-Searching with a controller.
-
-### gallery.html | 123 | figcaption
-The system menu.
-
-### gallery.html | 124 | figcaption
-Button icons: Xbox, PlayStation or Nintendo.
-
-### gallery.html | 125 | figcaption
-Every control, listed for pad and keyboard.
-
-### gallery.html | 126 | figcaption
-How to wake it up from the sofa.
-
-### gallery.html | 127 | figcaption
-The screensaver, built from your own screenshots.
-
-### gallery.html | 128 | div
-11_now_playing
-
-### gallery.html | 129 | h2
+### gallery.html | 022 | a
 Now playing
 
-### gallery.html | 130 | p
-There is a jukebox in here, because of course there is.
+### gallery.html | 023 | div
+01_in_omarchy
 
-### gallery.html | 131 | figcaption
-The jukebox: your music, browsed like the library.
+### gallery.html | 024 | h2
+In Omarchy
 
-### gallery.html | 132 | figcaption
-Now playing, full screen.
+### gallery.html | 025 | p
+The bar, the launcher and the first run. Only here.
 
-### gallery.html | 133 | a
-&lt; back to clarity
+### gallery.html | 026 | figcaption
+The bar, before Clarity is installed, offering to fetch it.
 
-### gallery.html | 134 | button
-&#8592;
+### gallery.html | 027 | figcaption
+The launcher overlay before anything is installed.
 
-### gallery.html | 135 | button
-&#8594;
+### gallery.html | 028 | figcaption
+The first install, in a terminal you can watch.
 
-### gallery.html | 136 | button
-&#10005;
+### gallery.html | 029 | figcaption
+The bar widget: how many games are installed.
 
-### gallery.html | 137 | span
-Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
+### gallery.html | 030 | figcaption
+The bar menu, one click from everything.
 
-### gallery.html | 138 | a
-Home
+### gallery.html | 031 | figcaption
+The launcher overlay, one shortcut away.
 
-### gallery.html | 139 | a
-Omarchy
+### gallery.html | 032 | figcaption
+Searching: installed games first, the rest below.
 
-### gallery.html | 140 | a
-Couch Mode
+### gallery.html | 033 | div
+02_the_library
 
-### gallery.html | 141 | a
+### gallery.html | 034 | h2
 The library
 
+### gallery.html | 035 | p
+Everything you own in one grid.
+
+### gallery.html | 036 | figcaption
+The library grid, a button under each game.
+
+### gallery.html | 037 | figcaption
+The home dashboard: what to play, what is new, what is on sale.
+
+### gallery.html | 038 | figcaption
+A playlist. Your own shelves.
+
+### gallery.html | 039 | div
+03_a_game_page
+
+### gallery.html | 040 | h2
+A game page
+
+### gallery.html | 041 | p
+Artwork, metadata, achievements, and one button that matters.
+
+### gallery.html | 042 | figcaption
+A game page: key art, screenshots, description, play.
+
+### gallery.html | 043 | figcaption
+Further down, the metadata it scraped.
+
+### gallery.html | 044 | figcaption
+Achievements, read straight from the game.
+
+### gallery.html | 045 | figcaption
+Edit details. The launch command field does the heavy lifting.
+
+### gallery.html | 046 | div
+04_installing
+
+### gallery.html | 047 | h2
+Installing and storage
+
+### gallery.html | 048 | p
+Where games live, and how to move them.
+
+### gallery.html | 049 | figcaption
+The library updating itself in the background.
+
+### gallery.html | 050 | figcaption
+Manage storage: every install and what it costs in disk.
+
+### gallery.html | 051 | figcaption
+Moving a game to another drive.
+
+### gallery.html | 052 | figcaption
+Deleting an install. The game stays, saves untouched.
+
+### gallery.html | 053 | div
+05_fan_games_and_source_ports
+
+### gallery.html | 054 | h2
+Fan games and source ports
+
+### gallery.html | 055 | p
+You download the port. Clarity does the rest.
+
+### gallery.html | 056 | figcaption
+Ports and mods in the Control Panel.
+
+### gallery.html | 057 | figcaption
+The source ports catalogue, grouped by the game it needs.
+
+### gallery.html | 058 | figcaption
+Brutal Doom and friends, each naming the file it wants.
+
+### gallery.html | 059 | div
+06_carts_and_emulators
+
+### gallery.html | 060 | h2
+Carts and emulators
+
+### gallery.html | 061 | p
+Carts and ROMs, in the same library as everything else.
+
+### gallery.html | 062 | figcaption
+PICO-8 carts on the same shelf.
+
+### gallery.html | 063 | figcaption
+Emulation on the couch, browsed like any other shelf.
+
+### gallery.html | 064 | div
+07_artwork_trailers_manuals_saves
+
+### gallery.html | 065 | h2
+Artwork, trailers, manuals, saves
+
+### gallery.html | 066 | p
+Fetched once, kept on your disk, yours to back up.
+
+### gallery.html | 067 | figcaption
+Picking a trailer to keep on your own disk.
+
+### gallery.html | 068 | figcaption
+The trailer downloading.
+
+### gallery.html | 069 | figcaption
+Playing it back later, no connection needed.
+
+### gallery.html | 070 | figcaption
+Removing a trailer you no longer want on disk.
+
+### gallery.html | 071 | figcaption
+The manuals a GOG game shipped with.
+
+### gallery.html | 072 | figcaption
+Reading one of them without leaving the app.
+
+### gallery.html | 073 | figcaption
+The save manager: the whole thing to a zip.
+
+### gallery.html | 074 | figcaption
+Adding a game to a playlist.
+
+### gallery.html | 075 | figcaption
+Managing the DLC a GOG game came with.
+
+### gallery.html | 076 | div
+08_themes
+
+### gallery.html | 077 | h2
+93 themes
+
+### gallery.html | 078 | p
+The whole app changes clothes, and can follow your desktop.
+
+### gallery.html | 079 | figcaption
+The theme picker, Your Desktop at the top.
+
+### gallery.html | 080 | figcaption
+The Systems category, where the old machines live.
+
+### gallery.html | 081 | figcaption
+The library wearing Commodore 64.
+
+### gallery.html | 082 | figcaption
+A game page in the same Commodore 64 palette.
+
+### gallery.html | 083 | figcaption
+Picking MacOS 1.0.
+
+### gallery.html | 084 | figcaption
+The library in MacOS 1.0, black on white and all.
+
+### gallery.html | 085 | figcaption
+A game page to match.
+
+### gallery.html | 086 | figcaption
+Picking IBM 3270, the green CRT.
+
+### gallery.html | 087 | figcaption
+The library in green phosphor.
+
+### gallery.html | 088 | figcaption
+And a game page, still perfectly readable.
+
+### gallery.html | 089 | figcaption
+The same theme system, on the controller.
+
+### gallery.html | 090 | figcaption
+Cyberpunk on the big screen.
+
+### gallery.html | 091 | figcaption
+Commodore 64 on the big screen.
+
+### gallery.html | 092 | figcaption
+Amber CRT on the big screen.
+
+### gallery.html | 093 | figcaption
+Even the jukebox follows the theme.
+
+### gallery.html | 094 | figcaption
+And the interface font is yours to pick too.
+
+### gallery.html | 095 | div
+09_settings
+
+### gallery.html | 096 | h2
+Settings
+
+### gallery.html | 097 | p
+The knobs, and the manual for every one.
+
+### gallery.html | 098 | figcaption
+Per game: Proton, prefixes, launch arguments.
+
+### gallery.html | 099 | figcaption
+The Control Panel.
+
+### gallery.html | 100 | figcaption
+The Omarchy section: what is installed, what is missing, the command to fix it.
+
+### gallery.html | 101 | figcaption
+Matching your Omarchy theme, and how a game&#x27;s window opens.
+
+### gallery.html | 102 | figcaption
+The manual, built into the app.
+
+### gallery.html | 103 | div
+10_couch
+
+### gallery.html | 104 | h2
+Couch Mode, on the big screen
+
+### gallery.html | 105 | p
+Same library, ten feet away, on a controller.
+
+### gallery.html | 106 | figcaption
+Couch Mode starting up.
+
+### gallery.html | 107 | figcaption
+The Couch home screen: your numbers, today&#x27;s pick, what you just imported.
+
+### gallery.html | 108 | figcaption
+Home, with something playing in the corner.
+
+### gallery.html | 109 | figcaption
+Further down: the wishlist, the deals and the news.
+
+### gallery.html | 110 | figcaption
+Reading the news on the TV.
+
+### gallery.html | 111 | figcaption
+A Couch game page, key art filling the screen.
+
+### gallery.html | 112 | figcaption
+The description and screenshots, one button away.
+
+### gallery.html | 113 | figcaption
+Another one, because DOOM deserves the whole screen.
+
+### gallery.html | 114 | figcaption
+Its description, on the couch.
+
+### gallery.html | 115 | figcaption
+Achievements, on the couch.
+
+### gallery.html | 116 | figcaption
+Game options, without a mouse anywhere near it.
+
+### gallery.html | 117 | figcaption
+Browsing by store, steered with a stick.
+
+### gallery.html | 118 | figcaption
+The same shelf as a grid of covers.
+
+### gallery.html | 119 | figcaption
+Or as a list, when you know what you are after.
+
+### gallery.html | 120 | figcaption
+Favourites, one shelf along.
+
+### gallery.html | 121 | figcaption
+Sorting the shelf.
+
+### gallery.html | 122 | figcaption
+Your playlists, on the big screen.
+
+### gallery.html | 123 | figcaption
+Searching with a controller.
+
+### gallery.html | 124 | figcaption
+The system menu.
+
+### gallery.html | 125 | figcaption
+Button icons: Xbox, PlayStation or Nintendo.
+
+### gallery.html | 126 | figcaption
+Every control, listed for pad and keyboard.
+
+### gallery.html | 127 | figcaption
+How to wake it up from the sofa.
+
+### gallery.html | 128 | figcaption
+The screensaver, built from your own screenshots.
+
+### gallery.html | 129 | div
+11_now_playing
+
+### gallery.html | 130 | h2
+Now playing
+
+### gallery.html | 131 | p
+There is a jukebox in here, because of course there is.
+
+### gallery.html | 132 | figcaption
+The jukebox: your music, browsed like the library.
+
+### gallery.html | 133 | figcaption
+Now playing, full screen.
+
+### gallery.html | 134 | a
+&lt; back to clarity
+
+### gallery.html | 135 | button
+&#8592;
+
+### gallery.html | 136 | button
+&#8594;
+
+### gallery.html | 137 | button
+&#10005;
+
+### gallery.html | 138 | span
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
+
+### gallery.html | 139 | a
+Home
+
+### gallery.html | 140 | a
+Omarchy
+
+### gallery.html | 141 | a
+Couch Mode
+
 ### gallery.html | 142 | a
-Support
+The library
 
 ### gallery.html | 143 | a
+Support
+
+### gallery.html | 144 | a
 GitHub
 
 ==============================================================================
@@ -1428,252 +1443,273 @@ Fan games &amp; ports
 Game fixes
 
 ### index.html | 008 | a
-Support
+News
 
-### index.html | 009 | span
-01_now_building
+### index.html | 009 | a
+Support
 
 ### index.html | 010 | span
+01_now_building
+
+### index.html | 011 | span
 2.0 in progress
 
-### index.html | 011 | h1
+### index.html | 012 | h1
 CLARITY<br><span class="em"> Game Manager built for Omarchy</span>
 
-### index.html | 012 | p
+### index.html | 013 | p
 Steam, GOG, Epic, itch, PICO-8, emulators, fan games, source ports and mods. One library. In the bar, one shortcut away. Built for Omarchy.
 
-### index.html | 013 | a
+### index.html | 014 | a
 See what is shipping
 
-### index.html | 014 | a
+### index.html | 015 | a
 The code
 
-### index.html | 015 | h2
+### index.html | 016 | h2
+News
+
+### index.html | 017 | a
+all stories &rarr;
+
+### index.html | 018 | div
+New recipe
+
+### index.html | 019 | h3
+GOG&rsquo;s Fallout: London 1-click install crash at launch has been fixed!
+
+### index.html | 020 | p
+It installed perfectly and then played its music over a black screen. GOG&rsquo;s installer has finishing steps, and nothing on Linux performed them. Now done at launch, repairing the install you already have.
+
+### index.html | 021 | a
+Read more
+
+### index.html | 022 | h2
 Things <span class="hot">ONLY</span> Clarity does:
 
-### index.html | 016 | span
+### index.html | 023 | span
 drag it, or wait. it moves on its own
 
-### index.html | 017 | div
+### index.html | 024 | div
 no one else does this
 
-### index.html | 018 | h3
+### index.html | 025 | h3
 Source ports and fan games that arrive playable
 
-### index.html | 019 | p
+### index.html | 026 | p
 Wires up the game data from a title you already own. Never lands unplayable. No hunting for the right file at 1:00AM.
 
-### index.html | 020 | span
+### index.html | 027 | span
 See the catalogue →
 
-### index.html | 021 | div
+### index.html | 028 | div
 no one else does this
 
-### index.html | 022 | h3
+### index.html | 029 | h3
 Fixes for games that didn't work on Linux
 
-### index.html | 023 | p
+### index.html | 030 | p
 Not “improved compatibility”. Named games that would not run, what was wrong, and the fix applied at install time.
 
-### index.html | 024 | span
+### index.html | 031 | span
 Read the list →
 
-### index.html | 025 | div
+### index.html | 032 | div
 omarchy only
 
-### index.html | 026 | h3
+### index.html | 033 | h3
 Your library, one shortcut away
 
-### index.html | 027 | p
+### index.html | 034 | p
 Meta+Ctrl+G, three letters, Enter, play.
 
-### index.html | 028 | span
+### index.html | 035 | span
 What it does on Omarchy →
 
-### index.html | 029 | div
+### index.html | 036 | div
 omarchy only
 
-### index.html | 030 | h3
+### index.html | 037 | h3
 It wears the theme you already chose
 
-### index.html | 031 | p
+### index.html | 038 | p
 Apply an Omarchy theme and Clarity wears it too. The same colours, not a lookalike.
 
-### index.html | 032 | span
+### index.html | 039 | span
 How the bridge works →
 
-### index.html | 033 | div
+### index.html | 040 | div
 no one else does this
 
-### index.html | 034 | h3
+### index.html | 041 | h3
 The same library, on the big screen
 
-### index.html | 035 | p
+### index.html | 042 | p
 For a television and a controller: artwork, trailers, a jukebox with a real spectrum. No keyboard.
 
-### index.html | 036 | span
+### index.html | 043 | span
 Meet Couch Mode →
 
-### index.html | 037 | div
+### index.html | 044 | div
 no one else does this
 
-### index.html | 038 | h3
+### index.html | 045 | h3
 Manuals, achievements and saves, in the app
 
-### index.html | 039 | p
+### index.html | 046 | p
 GOG manuals in their own window. Achievements from two stores in one list. Saves backed up and restored on the page.
 
-### index.html | 040 | span
+### index.html | 047 | span
 What a game page holds →
 
-### index.html | 041 | div
+### index.html | 048 | div
 no one else does this
 
-### index.html | 042 | h3
+### index.html | 049 | h3
 Six kinds of game, one shelf
 
-### index.html | 043 | p
+### index.html | 050 | p
 Steam, GOG, Epic, itch, Flatpak, PICO-8 carts and ROMs. Sorted, filtered and searched as one library, not six.
 
-### index.html | 044 | span
+### index.html | 051 | span
 How importing works →
 
-### index.html | 045 | div
+### index.html | 052 | div
 no one else does this
 
-### index.html | 046 | h3
+### index.html | 053 | h3
 Your library is a folder you can carry
 
-### index.html | 047 | p
+### index.html | 054 | p
 Everything lives beside the AppImage. Copy the folder and your covers, playlists, saves and settings come too. No account, no cloud, nobody's server.
 
-### index.html | 048 | span
+### index.html | 055 | span
 Where your data lives →
 
-### index.html | 049 | div
+### index.html | 056 | div
 02_what_it_is.md
 
-### index.html | 050 | h2
+### index.html | 057 | h2
 One app, two faces
 
-### index.html | 051 | p
+### index.html | 058 | p
 **The Manager**: the desktop app. Import, organise, scrape, install, launch. **Couch Mode**: fullscreen and gamepad-first, for the television. **Installer**: pulls your GOG and Epic games down, no store client.
 
-### index.html | 052 | p
+### index.html | 059 | p
 One AppImage. Library, artwork and settings sit in a folder next to it. Backed up by copying, gone when you delete it.
 
-### index.html | 053 | div
+### index.html | 060 | div
 03_screens.webp
 
-### index.html | 054 | h2
+### index.html | 061 | h2
 What it looks like
 
-### index.html | 055 | p
+### index.html | 062 | p
 Shot on Omarchy. No mockups.
 
-### index.html | 056 | span
+### index.html | 063 | span
 **01** · the launcher, one shortcut from anywhere
 
-### index.html | 057 | span
+### index.html | 064 | span
 **02** · the library on the desktop
 
-### index.html | 058 | span
+### index.html | 065 | span
 **03** · a game page, everything in one place
 
-### index.html | 059 | span
+### index.html | 066 | span
 **04** · source ports and fan games, from your own file
 
-### index.html | 060 | span
+### index.html | 067 | span
 **05** · the theme picker, wearing your desktop’s colours
 
-### index.html | 061 | span
+### index.html | 068 | span
 **06** · achievements from two stores in one list
 
-### index.html | 062 | span
+### index.html | 069 | span
 **07** · your GOG game's manuals
 
-### index.html | 063 | span
+### index.html | 070 | span
 **08** · Couch Mode’s home screen
 
-### index.html | 064 | span
+### index.html | 071 | span
 **09** · a game page for a television
 
-### index.html | 065 | span
+### index.html | 072 | span
 **10** · browsing covers in Couch Mode
 
-### index.html | 066 | p
+### index.html | 073 | p
 [All 78 screenshots →](gallery.html)
 
-### index.html | 067 | div
+### index.html | 074 | div
 04_at_home_on_omarchy.md
 
-### index.html | 068 | h2
+### index.html | 075 | h2
 It found a home
 
-### index.html | 069 | p
+### index.html | 076 | p
 Runs on any Linux desktop. Built for and tested on **Omarchy**, and follows its no-nonsense, no BS, everyone is welcome philosophy.
 
-### index.html | 070 | h3
+### index.html | 077 | h3
 In the bar
 
-### index.html | 071 | p
+### index.html | 078 | p
 What's installed, what's playing, and a menu that takes you where you want to go.
 
-### index.html | 072 | h3
+### index.html | 079 | h3
 One keyboard shortcut away
 
-### index.html | 073 | p
+### index.html | 080 | p
 Type a few letters, Enter, play. Cover art, genre, a short description.
 
-### index.html | 074 | h3
+### index.html | 081 | h3
 Omarchy Themes
 
-### index.html | 075 | p
+### index.html | 082 | p
 Apply one with `omarchy theme set` and Clarity is wearing it too.
 
-### index.html | 076 | h3
+### index.html | 083 | h3
 Games open properly
 
-### index.html | 077 | p
+### index.html | 084 | p
 Fullscreen, right screen, right resolution. No fighting the tiler.
 
-### index.html | 078 | p
+### index.html | 085 | p
 [Everything it does on Omarchy →](omarchy.html)
 
-### index.html | 079 | div
+### index.html | 086 | div
 05_where_it_stands.txt
 
-### index.html | 080 | div
+### index.html | 087 | div
 ⚠ Experimental, and honest about it
 
-### index.html | 081 | p
+### index.html | 088 | p
 Today's download is **1.14.0**. I use it daily, and it still has rough edges. **2.0 is coming soon**.
 
-### index.html | 082 | span
+### index.html | 089 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### index.html | 083 | a
+### index.html | 090 | a
 Omarchy
 
-### index.html | 084 | a
+### index.html | 091 | a
 Couch Mode
 
-### index.html | 085 | a
+### index.html | 092 | a
 The library
 
-### index.html | 086 | a
+### index.html | 093 | a
 macOS
 
-### index.html | 087 | a
+### index.html | 094 | a
 Clock
 
-### index.html | 088 | a
+### index.html | 095 | a
 EmuLatte
 
-### index.html | 089 | a
+### index.html | 096 | a
 Support
 
-### index.html | 090 | a
+### index.html | 097 | a
 GitHub
 
 ==============================================================================
@@ -1711,120 +1747,123 @@ Fan games &amp; ports
 Game fixes
 
 ### library.html | 007 | a
+News
+
+### library.html | 008 | a
 Support
 
-### library.html | 008 | span
+### library.html | 009 | span
 the_library.md
 
-### library.html | 009 | h1
+### library.html | 010 | h1
 One shelf, <span class="em">everything on it</span>
 
-### library.html | 010 | p
+### library.html | 011 | p
 Six places in, one library out.
 
-### library.html | 011 | div
+### library.html | 012 | div
 01_importing
 
-### library.html | 012 | h2
+### library.html | 013 | h2
 Six kinds of game, one shelf
 
-### library.html | 013 | figcaption
+### library.html | 014 | figcaption
 Steam, GOG, Epic, itch, PICO-8 and emulated games, as one library.
 
-### library.html | 014 | li
+### library.html | 015 | li
 **Steam.** Your whole account, with playtime and achievements.
 
-### library.html | 015 | li
+### library.html | 016 | li
 **GOG and Epic.** Signed in inside the app, installed without a store client.
 
-### library.html | 016 | li
+### library.html | 017 | li
 **itch.io, Flatpak and the rest.** If it runs from a terminal, it goes on the shelf.
 
-### library.html | 017 | li
+### library.html | 018 | li
 **PICO-8 carts.** Hundreds, with their own artwork.
 
-### library.html | 018 | li
+### library.html | 019 | li
 **Emulated games.** Brought across from EmuLatte.
 
-### library.html | 019 | p
+### library.html | 020 | p
 Covers, art, logos, descriptions, genres, years, HowLongToBeat times and review scores, fetched once and **kept on your disk**. A store changing its API doesn't empty your shelf.
 
-### library.html | 020 | div
+### library.html | 021 | div
 02_the_game_page
 
-### library.html | 021 | h2
+### library.html | 022 | h2
 Everything about a game, in one place
 
-### library.html | 022 | figcaption
+### library.html | 023 | figcaption
 Your GOG game's manuals, fetched, kept, read in place.
 
-### library.html | 023 | li
+### library.html | 024 | li
 **Manuals.** GOG ships PDFs with loads of games and never says so. Downloaded, attached, read in place.
 
-### library.html | 024 | li
+### library.html | 025 | li
 **Achievements** from GOG and Steam in a single list, with what you've unlocked.
 
-### library.html | 025 | li
+### library.html | 026 | li
 **Save games** backed up to a zip and restored, without leaving the page.
 
-### library.html | 026 | li
+### library.html | 027 | li
 **Trailers**, screenshots, and a description actually worth reading.
 
-### library.html | 027 | li
+### library.html | 028 | li
 **Compatibility.** Proton version, prefix, winetricks, environment variables, all per game.
 
-### library.html | 028 | div
+### library.html | 029 | div
 03_your_data
 
-### library.html | 029 | h2
+### library.html | 030 | h2
 The library is a folder you can carry
 
-### library.html | 030 | p
+### library.html | 031 | p
 One folder beside the AppImage: the database, covers, screenshots, playlists, save backups, settings.
 
-### library.html | 031 | li
+### library.html | 032 | li
 **Copy it and it moves.** Another machine, another drive, a USB stick.
 
-### library.html | 032 | li
+### library.html | 033 | li
 **Back it up by copying it.** No export step, nothing to export.
 
-### library.html | 033 | li
+### library.html | 034 | li
 **Delete it and it's gone.** Nothing left behind anywhere else.
 
-### library.html | 034 | li
+### library.html | 035 | li
 **No account, no cloud.** Nowhere to upload to.
 
-### library.html | 035 | div
+### library.html | 036 | div
 04_and_the_awkward_ones
 
-### library.html | 036 | h2
+### library.html | 037 | h2
 The games that don't just work
 
-### library.html | 037 | p
+### library.html | 038 | p
 Some need more than a launch command: [named games with named faults](fixes.html). Source ports and fan remakes get [their own catalogue](ports.html).
 
-### library.html | 038 | a
+### library.html | 039 | a
 &lt; back to clarity
 
-### library.html | 039 | span
+### library.html | 040 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### library.html | 040 | a
+### library.html | 041 | a
 Home
 
-### library.html | 041 | a
+### library.html | 042 | a
 Omarchy
 
-### library.html | 042 | a
+### library.html | 043 | a
 Couch Mode
 
-### library.html | 043 | a
+### library.html | 044 | a
 The library
 
-### library.html | 044 | a
+### library.html | 045 | a
 Support
 
-### library.html | 045 | a
+### library.html | 046 | a
 GitHub
 
 ==============================================================================
@@ -1862,213 +1901,334 @@ Fan games &amp; ports
 Game fixes
 
 ### macos.html | 007 | a
-Support
+News
 
-### macos.html | 008 | span
-a second host
+### macos.html | 008 | a
+Support
 
 ### macos.html | 009 | span
+a second host
+
+### macos.html | 010 | span
 experimental
 
-### macos.html | 010 | h1
+### macos.html | 011 | h1
 macOS
 
-### macos.html | 011 | p
+### macos.html | 012 | p
 same codebase · Apple Silicon
 
-### macos.html | 012 | p
+### macos.html | 013 | p
 Linux stays primary: tested first, ships fastest. The macOS build is in the same codebase, not a fork, and it's real: **Steam and GOG sign-in, the full library, installing and launching games.**
 
-### macos.html | 013 | p
+### macos.html | 014 | p
 current macOS build: **1.13.1**, attached to the 1.14.0 release. The Mac cannot be packaged from Linux, so it runs a version behind and has no Manage Storage buttons yet.
 
-### macos.html | 014 | a
+### macos.html | 015 | a
 ⤓ Download for macOS &middot; 1.13.1
 
-### macos.html | 015 | a
+### macos.html | 016 | a
 Source on GitHub
 
-### macos.html | 016 | div
+### macos.html | 017 | div
 01_what_works_today
 
-### macos.html | 017 | h2
+### macos.html | 018 | h2
 what works today
 
-### macos.html | 018 | span
+### macos.html | 019 | span
 &#10003;
 
-### macos.html | 019 | h3
+### macos.html | 020 | h3
 The full library
 
-### macos.html | 020 | p
+### macos.html | 021 | p
 Steam and GOG sign-in, sync and browsing, across both faces, with Installer underneath.
 
-### macos.html | 021 | span
+### macos.html | 022 | span
 &#10003;
 
-### macos.html | 022 | h3
+### macos.html | 023 | h3
 Native GOG installs
 
-### macos.html | 023 | p
+### macos.html | 024 | p
 Real downloads through `gogdl`, for games that ship an Apple Silicon build. Not a link out to a browser.
 
-### macos.html | 024 | span
+### macos.html | 025 | span
 &#10003;
 
-### macos.html | 025 | h3
+### macos.html | 026 | h3
 Windows games, through CrossOver <span class="new">NEW IN 1.9</span>
 
-### macos.html | 026 | p
+### macos.html | 027 | p
 Windows-only titles aren't off-limits. Clarity drives **CrossOver** directly, giving each game its own bottle, created on first launch and reused. Nothing to configure.
 
-### macos.html | 027 | p
+### macos.html | 028 | p
 **Two caveats.** CrossOver is commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener">CodeWeavers</a>, not bundled, so you install it yourself. Without it this reports as unavailable. The plumbing is verified, but I have not run a big library through it.
 
-### macos.html | 028 | span
+### macos.html | 029 | span
 &#10003;
 
-### macos.html | 029 | h3
+### macos.html | 030 | h3
 Knowing which games are actually native
 
-### macos.html | 030 | p
+### macos.html | 031 | p
 A Mac-Native filter next to the store filters, with an apple badge on the cover. GOG is instant. Steam needs one manual scan, it's a live per-game lookup.
 
-### macos.html | 031 | span
+### macos.html | 032 | span
 &#10003;
 
-### macos.html | 032 | h3
+### macos.html | 033 | h3
 Everything that is not platform-specific
 
-### macos.html | 033 | p
+### macos.html | 034 | p
 Artwork, genres, playlists, save backups, themes. Almost all of it is the same code that runs on Linux.
 
-### macos.html | 034 | div
+### macos.html | 035 | div
 02_not_yet
 
-### macos.html | 035 | h2
+### macos.html | 036 | h2
 what doesn't work yet
 
-### macos.html | 036 | span
+### macos.html | 037 | span
 &#9656;
 
-### macos.html | 037 | h3
+### macos.html | 038 | h3
 Epic sign-in
 
-### macos.html | 038 | p
+### macos.html | 039 | p
 The browser approval completes, but the credentials aren't written where `legendary` looks, so the sync comes back empty. Steam and GOG are unaffected. Treat macOS as Steam and GOG for now.
 
-### macos.html | 039 | span
+### macos.html | 040 | span
 &#9656;
 
-### macos.html | 040 | h3
+### macos.html | 041 | h3
 Anti-cheat
 
-### macos.html | 041 | p
+### macos.html | 042 | p
 BattlEye and EAC aren't wired up. CrossOver claims support for both, but nothing here has been tested against a game that uses them. Assume anti-cheat multiplayer won't run.
 
-### macos.html | 042 | span
+### macos.html | 043 | span
 &#9656;
 
-### macos.html | 043 | h3
+### macos.html | 044 | h3
 A picker for which screen a game opens on
 
-### macos.html | 044 | p
+### macos.html | 045 | p
 A KDE-only feature on Linux. There's no macOS equivalent yet.
 
-### macos.html | 045 | span
+### macos.html | 046 | span
 &#9656;
 
-### macos.html | 046 | h3
+### macos.html | 047 | h3
 Custom installers, source ports and mods
 
-### macos.html | 047 | p
+### macos.html | 048 | p
 The whole recipe catalogue, Ironwail, GZDoom, the Build-engine games, is Linux-only for now.
 
-### macos.html | 048 | div
+### macos.html | 049 | div
 03_install
 
-### macos.html | 049 | h2
+### macos.html | 050 | h2
 install
 
-### macos.html | 050 | p
+### macos.html | 051 | p
 The build isn't signed, there's no Apple Developer account behind it yet, so the first launch needs one extra step. Standard for anything unnotarized, not a sign something is broken.
 
-### macos.html | 051 | li
+### macos.html | 052 | li
 Download `Clarity-1.13.1.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">latest release</a>. It sits beside the Linux AppImage, and its filename carries its own version.
 
-### macos.html | 052 | li
+### macos.html | 053 | li
 Open the `.dmg` and drag **Clarity** into **Applications** (or unzip and move the `.app` there directly).
 
-### macos.html | 053 | li
+### macos.html | 054 | li
 **Right-click (or Control-click) the app &rarr; Open &rarr; Open** works on most macOS versions. If that option doesn't appear, double-click once to get blocked, then **System Settings &rarr; Privacy &amp; Security** and **Open Anyway**.
 
-### macos.html | 054 | li
+### macos.html | 055 | li
 If neither works, from Terminal: <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Clarity Game Manager.app"</span> This strips the quarantine flag. Once per install.
 
-### macos.html | 055 | div
+### macos.html | 056 | div
 04_where_things_live
 
-### macos.html | 056 | h2
+### macos.html | 057 | h2
 where things live
 
-### macos.html | 057 | p
+### macos.html | 058 | p
 Everything is under `~/Library/Application Support/`. Replacing the app never touches the library.
 
-### macos.html | 058 | th
+### macos.html | 059 | th
 What
 
-### macos.html | 059 | th
+### macos.html | 060 | th
 Where
 
-### macos.html | 060 | td
+### macos.html | 061 | td
 Your library (games, artwork, playlists, settings)
 
-### macos.html | 061 | td
+### macos.html | 062 | td
 `Clarity/GameManagerConfig/`
 
-### macos.html | 062 | td
+### macos.html | 063 | td
 GOG/Epic install state, auth, launch logs
 
-### macos.html | 063 | td
+### macos.html | 064 | td
 `Clarity/InstallerConfig/`
 
-### macos.html | 064 | td
+### macos.html | 065 | td
 Installed games (default location)
 
-### macos.html | 065 | td
+### macos.html | 066 | td
 `~/Games/Clarity/`
 
-### macos.html | 066 | p
+### macos.html | 067 | p
 Something wrong or missing? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. macOS reports are genuinely useful right now.
 
-### macos.html | 067 | p
+### macos.html | 068 | p
 [clarity](index.html) &middot; [fixed individually](fixes.html) &middot; [source ports &amp; mods](ports.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
-### macos.html | 068 | p
+### macos.html | 069 | p
 From Chaos Comes Clarity
 
-### macos.html | 069 | a
+### macos.html | 070 | a
 &lt; back to clarity
 
-### macos.html | 070 | span
+### macos.html | 071 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### macos.html | 071 | a
+### macos.html | 072 | a
 Home
 
-### macos.html | 072 | a
+### macos.html | 073 | a
 Omarchy
 
-### macos.html | 073 | a
+### macos.html | 074 | a
 Couch Mode
 
-### macos.html | 074 | a
+### macos.html | 075 | a
 The library
 
-### macos.html | 075 | a
+### macos.html | 076 | a
 Support
 
-### macos.html | 076 | a
+### macos.html | 077 | a
+GitHub
+
+==============================================================================
+PAGE: news.html
+==============================================================================
+
+### news.html | title
+Clarity: news
+
+### news.html | meta:description
+What changed in Clarity, and why. Fixes, releases and the occasional detour, written up as they happen.
+
+### news.html | og:title
+Clarity news
+
+### news.html | og:description
+What changed, and why. Fixes, releases and the occasional detour.
+
+### news.html | 001 | a
+clarity
+
+### news.html | 002 | a
+Omarchy
+
+### news.html | 003 | a
+Couch Mode
+
+### news.html | 004 | a
+The library
+
+### news.html | 005 | a
+Fan games &amp; ports
+
+### news.html | 006 | a
+Game fixes
+
+### news.html | 007 | a
+News
+
+### news.html | 008 | a
+Support
+
+### news.html | 009 | span
+news
+
+### news.html | 010 | span
+newest first
+
+### news.html | 011 | h1
+What <span class="em">changed</span>
+
+### news.html | 012 | p
+Fixes, releases and the occasional detour. Short pieces, written when the thing actually works rather than when it was started.
+
+### news.html | 013 | div
+01_latest
+
+### news.html | 014 | div
+10 September 2026 &middot; game fix &middot; Clarity 1.15.3
+
+### news.html | 015 | h2
+Fallout: London installed perfectly, then refused to start
+
+### news.html | 016 | div
+Music over a black screen, a warning about loose files, and a browser tab nobody asked for.
+
+### news.html | 017 | p
+The GOG one-click edition downloads beautifully. Every file arrives, nothing errors, the library shows it as installed. Then you press play and the game opens for about a second, the music starts over a black screen, a little warning appears about loose files, and your browser opens a mod page you did not ask for.
+
+### news.html | 018 | p
+It is the second time this exact shape of fault has turned up, and it has the same cause as the first. A GOG installer does not stop when the files land. It performs finishing steps afterwards, copying configuration and a plugin list into places the game will look. On Windows those steps run. On Linux the download finishes and that is the end of it, so the game is complete and misconfigured at the same time, which is the most annoying way for something to be broken.
+
+### news.html | 019 | p
+Two things were missing. London&rsquo;s plugin list never reached the game, so none of London ever loaded, which is the black screen. And loose file loading stayed switched off, which is what the warning was about before the game gave up.
+
+### news.html | 020 | p
+The second one cost the evening. The setting that turns loose files on is written by GOG into one file, and Fallout 4 only honours it from a different one. So it was there, it looked right, and it did nothing. Putting the same lines where the engine actually reads them is what let the game start, and it survives Fallout 4 rewriting its own settings on every launch, which it does.
+
+### news.html | 021 | p
+Both steps now run when you press play, repairing the install you already have. No reinstall, nothing to configure, and it only touches files that are missing, so if you have set any of this up by hand it is left exactly as you left it.
+
+### news.html | 022 | a
+Get 1.15.3
+
+### news.html | 023 | a
+All game fixes
+
+### news.html | 024 | div
+02_about_this_page
+
+### news.html | 025 | p
+Most of what goes wrong is solved by a general rule, and those just ship. What lands here is the rest: a named game, a named fault, and what it took. The [Game fixes](fixes.html) page is the running list; this is where the longer version goes when there is one worth telling.
+
+### news.html | 026 | p
+[clarity](index.html) &middot; [game fixes](fixes.html) &middot; [github](https://github.com/FromChaosComesClarity/Clarity)
+
+### news.html | 027 | a
+&lt; back to clarity
+
+### news.html | 028 | span
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
+
+### news.html | 029 | a
+Home
+
+### news.html | 030 | a
+Omarchy
+
+### news.html | 031 | a
+Couch Mode
+
+### news.html | 032 | a
+News
+
+### news.html | 033 | a
+Support
+
+### news.html | 034 | a
 GitHub
 
 ==============================================================================
@@ -2106,120 +2266,123 @@ Fan games &amp; ports
 Game fixes
 
 ### omarchy.html | 007 | a
+News
+
+### omarchy.html | 008 | a
 Support
 
-### omarchy.html | 008 | span
+### omarchy.html | 009 | span
 omarchy_only.md
 
-### omarchy.html | 009 | h1
+### omarchy.html | 010 | h1
 What it does <span class="em">only here</span>
 
-### omarchy.html | 010 | p
+### omarchy.html | 011 | p
 Built for, tested on and tailored to Omarchy
 
-### omarchy.html | 011 | div
+### omarchy.html | 012 | div
 01_the_launcher
 
-### omarchy.html | 012 | h2
+### omarchy.html | 013 | h2
 Your whole library, one shortcut away
 
-### omarchy.html | 013 | p
+### omarchy.html | 014 | p
 meta+ctrl+G. Type three letters. Enter. It plays. No window first, nothing to click.
 
-### omarchy.html | 014 | figcaption
+### omarchy.html | 015 | figcaption
 Cover, genre, year, hours played, and a short description.
 
-### omarchy.html | 015 | p
+### omarchy.html | 016 | p
 It searches games *and* the app's own actions in one list, so “quake” and “storage” are the same gesture. Games you own but haven't installed show up too, and Enter opens the page with the Install button on it.
 
-### omarchy.html | 016 | p
+### omarchy.html | 017 | p
 The overlay never launches anything itself, it asks the app. So a launch keeps the store picker, the “which engine?” questions and the install check, exactly as if you'd pressed Play.
 
-### omarchy.html | 017 | div
+### omarchy.html | 018 | div
 02_the_bar
 
-### omarchy.html | 018 | h2
+### omarchy.html | 019 | h2
 A widget that knows what you're playing
 
-### omarchy.html | 019 | p
+### omarchy.html | 020 | p
 Installed count when nothing's running, the game's name when something is. Click for a menu to the library, the big screen face, storage and the Control Panel.
 
-### omarchy.html | 020 | li
+### omarchy.html | 021 | li
 **Nothing to configure.** The app writes down where it lives, the widget reads it.
 
-### omarchy.html | 021 | li
+### omarchy.html | 022 | li
 If Clarity isn't installed yet, it asks you to do it, 1-click.
 
-### omarchy.html | 022 | div
+### omarchy.html | 023 | div
 03_the_theme_bridge
 
-### omarchy.html | 023 | h2
+### omarchy.html | 024 | h2
 It wears the theme you already chose
 
-### omarchy.html | 024 | p
+### omarchy.html | 025 | p
 Clarity uses **the theme Omarchy is using right now**. Apply a new one and the app wears it too. The same colours, not an approximation.
 
-### omarchy.html | 025 | figcaption
+### omarchy.html | 026 | figcaption
 Your Desktop sits at the top of the picker, above the app's own themes.
 
-### omarchy.html | 026 | p
+### omarchy.html | 027 | p
 The 93 themes that ship with the app are still there. Both faces draw from the same set, so a look follows you to the big screen.
 
-### omarchy.html | 027 | div
+### omarchy.html | 028 | div
 04_games_open_properly
 
-### omarchy.html | 028 | h2
+### omarchy.html | 029 | h2
 Fullscreen, on the right screen
 
-### omarchy.html | 029 | p
+### omarchy.html | 030 | p
 Under a tiler a game normally gets squeezed into a free slot and resized, a second before it goes fullscreen anyway. Here games open **fullscreen from the first frame**, on the monitor you picked, at the resolution you expect.
 
-### omarchy.html | 030 | li
+### omarchy.html | 031 | li
 **Floating and tiled are still there**, for a game whose launcher window needs to stay small.
 
-### omarchy.html | 031 | li
+### omarchy.html | 032 | li
 **Changes take effect when you ask**, not at your next login.
 
-### omarchy.html | 032 | li
+### omarchy.html | 033 | li
 **The screen you choose is remembered**, and games arrive there every time.
 
-### omarchy.html | 033 | div
+### omarchy.html | 034 | div
 05_the_plugin
 
-### omarchy.html | 034 | h2
+### omarchy.html | 035 | h2
 Getting it
 
-### omarchy.html | 035 | p
+### omarchy.html | 036 | p
 The bar widget and the launcher are a companion plugin, about seventy kilobytes, so it needs Clarity installed. Without it, it says so and offers to fetch it in a terminal you can watch.
 
-### omarchy.html | 036 | div
+### omarchy.html | 037 | div
 ⚠ Not published yet
 
-### omarchy.html | 037 | p
+### omarchy.html | 038 | p
 Built and in daily testing, not on Omarchy's plugin marketplace yet. It goes out with 2.0.
 
-### omarchy.html | 038 | a
+### omarchy.html | 039 | a
 &lt; back to clarity
 
-### omarchy.html | 039 | span
+### omarchy.html | 040 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### omarchy.html | 040 | a
+### omarchy.html | 041 | a
 Home
 
-### omarchy.html | 041 | a
+### omarchy.html | 042 | a
 Omarchy
 
-### omarchy.html | 042 | a
+### omarchy.html | 043 | a
 Couch Mode
 
-### omarchy.html | 043 | a
+### omarchy.html | 044 | a
 The library
 
-### omarchy.html | 044 | a
+### omarchy.html | 045 | a
 Support
 
-### omarchy.html | 045 | a
+### omarchy.html | 046 | a
 GitHub
 
 ==============================================================================
@@ -2257,387 +2420,390 @@ Fan games &amp; ports
 Game fixes
 
 ### ports.html | 007 | a
-Support
+News
 
-### ports.html | 008 | span
-fan games &amp; ports
+### ports.html | 008 | a
+Support
 
 ### ports.html | 009 | span
+fan games &amp; ports
+
+### ports.html | 010 | span
 you bring the download &middot; the data is already yours
 
-### ports.html | 010 | h1
+### ports.html | 011 | h1
 Source Ports <span class="em">&amp; Mods</span>
 
-### ports.html | 011 | p
+### ports.html | 012 | p
 Nobody sets out to install GZDoom. They set out to play **Brutal Doom**. So the mod is the library entry, the engine comes with it, and the data is linked out of the copy you own. **Twenty-five entries**, one click each.
 
-### ports.html | 012 | div
+### ports.html | 013 | div
 01_how_it_works
 
-### ports.html | 013 | h3
+### ports.html | 014 | h3
 the download is yours to fetch
 
-### ports.html | 014 | p
+### ports.html | 015 | p
 Every entry names the project, links its page and says **what the file is called**: <span class="file">ironwail-0.8.2-win64.zip</span>. Nothing is pulled automatically, so nothing breaks when a project renames an asset.
 
-### ports.html | 015 | h3
+### ports.html | 016 | h3
 the game data comes from your library
 
-### ports.html | 016 | p
+### ports.html | 017 | p
 Quake's paks, the Doom IWADs, the Build .grp files. Found by probing for the proving file, never by trusting a title, and **linked rather than copied**. The store install is never written into.
 
-### ports.html | 017 | h3
+### ports.html | 018 | h3
 the data is settled before anything is unpacked
 
-### ports.html | 018 | p
+### ports.html | 019 | p
 &ldquo;You own Quake but it isn't installed&rdquo; is a message you can act on. **A port that installs and then can't start is not.** So the data is resolved first, and the install refuses rather than leave something unplayable.
 
-### ports.html | 019 | h3
+### ports.html | 020 | h3
 a mod download is usually a pack
 
-### ports.html | 020 | p
+### ports.html | 021 | p
 One 310MB archive held the mod plus twenty-eight extras, and the first file alphabetically was a *voice pack*. Contents are now listed **without unpacking**, largest pre-ticked, and only what you tick is extracted, in load order.
 
-### ports.html | 021 | h3
+### ports.html | 022 | h3
 the engine comes with the mod
 
-### ports.html | 022 | p
+### ports.html | 023 | p
 No engine installed, one goes in on the same click. One already there is **shared rather than copied**, as the ZDoom family intends. Which Doom a mod runs on is asked **when Play is pressed**, because that's an evening's mood, not an install decision.
 
-### ports.html | 023 | h3
+### ports.html | 024 | h3
 it lands as an ordinary game
 
-### ports.html | 024 | p
+### ports.html | 025 | p
 Its own name, cover and playtime. Proton, the prefix and every per-game fix apply as they do to a store game, and it joins playlists and genres like anything else.
 
-### ports.html | 025 | div
+### ports.html | 026 | div
 02_quake
 
-### ports.html | 026 | h2
+### ports.html | 027 | h2
 ▸ Quake
 
-### ports.html | 027 | span
+### ports.html | 028 | span
 SOURCE PORT
 
-### ports.html | 028 | div
+### ports.html | 029 | div
 Ironwail
 
-### ports.html | 029 | p
+### ports.html | 030 | p
 Fast and modern. High frame rates, widescreen, and the original look kept intact.
 
-### ports.html | 030 | span
+### ports.html | 031 | span
 SOURCE PORT
 
-### ports.html | 031 | div
+### ports.html | 032 | div
 vkQuake
 
-### ports.html | 032 | p
+### ports.html | 033 | p
 Vulkan rendering, with the water warp and scaling fixes.
 
-### ports.html | 033 | span
+### ports.html | 034 | span
 SOURCE PORT
 
-### ports.html | 034 | div
+### ports.html | 035 | div
 Quake: Ray Traced
 
-### ports.html | 035 | p
+### ports.html | 036 | p
 Quake with full path tracing. Wants a ray-tracing capable GPU.
 
-### ports.html | 036 | span
+### ports.html | 037 | span
 MOD
 
-### ports.html | 037 | div
+### ports.html | 038 | div
 Any Quake mod or episode
 
-### ports.html | 038 | p
+### ports.html | 039 | p
 Dwell, Arcane Dimensions, Alkaline, Copper, anything that ships as a folder. Each gets its own entry, with Quake's data and **every installed Quake engine beside it**, so you pick at Play time.
 
-### ports.html | 039 | p
+### ports.html | 040 | p
 The **id1** paks are linked out of your own Quake install, lower-cased on the way in because GOG ships <span class="file">Id1/PAK0.PAK</span> and the engines ask for <span class="file">id1/pak0.pak</span>.<br> The 1996 soundtrack lived on the CD, which is why it is missing from every digital copy.
 
-### ports.html | 040 | div
+### ports.html | 041 | div
 03_doom
 
-### ports.html | 041 | h2
+### ports.html | 042 | h2
 ▸ Doom
 
-### ports.html | 042 | span
+### ports.html | 043 | span
 SOURCE PORT
 
-### ports.html | 043 | div
+### ports.html | 044 | div
 GZDoom
 
-### ports.html | 044 | p
+### ports.html | 045 | p
 The engine nearly every Doom mod expects. Mouselook, high resolutions, thirty years of community work.
 
-### ports.html | 045 | span
+### ports.html | 046 | span
 SOURCE PORT
 
-### ports.html | 046 | div
+### ports.html | 047 | div
 UZDoom
 
-### ports.html | 047 | p
+### ports.html | 048 | p
 A fork of GZDoom made in late 2025, continuing the same 4.x line. Same command line, same mods.
 
-### ports.html | 048 | span
+### ports.html | 049 | span
 MOD
 
-### ports.html | 049 | div
+### ports.html | 050 | div
 Brutal Doom
 
-### ports.html | 050 | p
+### ports.html | 051 | p
 The famous overhaul. Reworked weapons, gore and enemy behaviour, on top of the original maps.
 
-### ports.html | 051 | span
+### ports.html | 052 | span
 MOD
 
-### ports.html | 052 | div
+### ports.html | 053 | div
 Brutal Doom: Black Edition
 
-### ports.html | 053 | p
+### ports.html | 054 | p
 A darker, heavily reworked take, with its own lighting and effects.
 
-### ports.html | 054 | span
+### ports.html | 055 | span
 MOD
 
-### ports.html | 055 | div
+### ports.html | 056 | div
 Any Doom mod or texture pack
 
-### ports.html | 056 | p
+### ports.html | 057 | p
 HD texture packs, brightmaps, sprite fixes, map sets. Everything loadable in the archive is shown, tick as many as you like, they load in name order.
 
-### ports.html | 057 | p
+### ports.html | 058 | p
 Every IWAD you own is linked side by side, **doom.wad, doom2.wad, tnt.wad, plutonia.wad**, gathered from as many Doom products as the library holds. When a mod has more than one to choose from, you're asked.
 
-### ports.html | 058 | div
+### ports.html | 059 | div
 04_wolfenstein_3d
 
-### ports.html | 059 | h2
+### ports.html | 060 | h2
 ▸ Wolfenstein 3D
 
-### ports.html | 060 | span
+### ports.html | 061 | span
 SOURCE PORT
 
-### ports.html | 061 | div
+### ports.html | 062 | div
 ECWolf
 
-### ports.html | 062 | p
+### ports.html | 063 | p
 Wolfenstein 3D and Spear of Destiny with modern resolutions, mouselook and mod support, built on the ZDoom lineage.
 
-### ports.html | 063 | p
+### ports.html | 064 | p
 Whichever release you own is matched **by its file extension**, not a list of filenames. One extension covers the whole data set.
 
-### ports.html | 064 | div
+### ports.html | 065 | div
 05_build_engine
 
-### ports.html | 065 | h2
+### ports.html | 066 | h2
 ▸ Build engine
 
-### ports.html | 066 | span
+### ports.html | 067 | span
 SOURCE PORT
 
-### ports.html | 067 | div
+### ports.html | 068 | div
 Raze
 
-### ports.html | 068 | p
+### ports.html | 069 | p
 One engine for Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave, from the GZDoom team. Installed once; the games below are separate entries.
 
-### ports.html | 069 | span
+### ports.html | 070 | span
 SOURCE PORT
 
-### ports.html | 070 | div
+### ports.html | 071 | div
 BuildGDX
 
-### ports.html | 071 | p
+### ports.html | 072 | p
 The Java port covering what Raze doesn't: Witchaven I and II, TekWar, Legend of the Seven Paladins.
 
-### ports.html | 072 | span
+### ports.html | 073 | span
 GAME
 
-### ports.html | 073 | div
+### ports.html | 074 | div
 Blood
 
-### ports.html | 074 | p
+### ports.html | 075 | p
 Monolith's 1997 shooter. Cultists, a pitchfork, and the best voice acting of the era.
 
-### ports.html | 075 | span
+### ports.html | 076 | span
 GAME
 
-### ports.html | 076 | div
+### ports.html | 077 | div
 Duke Nukem 3D
 
-### ports.html | 077 | p
+### ports.html | 078 | p
 Hail to the king. The 1996 original, all four episodes.
 
-### ports.html | 078 | span
+### ports.html | 079 | span
 GAME
 
-### ports.html | 079 | div
+### ports.html | 080 | div
 Shadow Warrior
 
-### ports.html | 080 | p
+### ports.html | 081 | p
 Lo Wang, katanas and sticky bombs. The 1997 original, not the reboot.
 
-### ports.html | 081 | span
+### ports.html | 082 | span
 GAME
 
-### ports.html | 082 | div
+### ports.html | 083 | div
 PowerSlave / Exhumed
 
-### ports.html | 083 | p
+### ports.html | 084 | p
 The 1996 DOS original rather than the 2022 remaster. Egyptian tombs and a genuinely strange structure.
 
-### ports.html | 084 | span
+### ports.html | 085 | span
 GAME
 
-### ports.html | 085 | div
+### ports.html | 086 | div
 Redneck Rampage
 
-### ports.html | 086 | p
+### ports.html | 087 | p
 Cuss, Bubba and a hillbilly arsenal, from 1997.
 
-### ports.html | 087 | span
+### ports.html | 088 | span
 GAME
 
-### ports.html | 088 | div
+### ports.html | 089 | div
 Witchaven
 
-### ports.html | 089 | p
+### ports.html | 090 | p
 The 1995 sword-and-sorcery Build game. GOG never unpacks it, so the data gets lifted straight out of the disc image. Plays on BuildGDX.
 
-### ports.html | 090 | span
+### ports.html | 091 | span
 GAME
 
-### ports.html | 091 | div
+### ports.html | 092 | div
 Witchaven II: Blood Vengeance
 
-### ports.html | 092 | p
+### ports.html | 093 | p
 The 1996 sequel, bloodier and better lit. Data lifted out of the disc image; plays on BuildGDX.
 
-### ports.html | 093 | p
+### ports.html | 094 | p
 Nobody wants *Raze* in their library. They want **Blood** and **Duke Nukem 3D**. So each game is its own entry, its own cover, its own folder, which is also the only way two Build games coexist without fighting over one config.
 
-### ports.html | 094 | div
+### ports.html | 095 | div
 06_openbor
 
-### ports.html | 095 | h2
+### ports.html | 096 | h2
 ▸ OpenBOR
 
-### ports.html | 096 | span
+### ports.html | 097 | span
 OPENBOR
 
-### ports.html | 097 | div
+### ports.html | 098 | div
 Any OpenBOR game
 
-### ports.html | 098 | p
+### ports.html | 099 | p
 Streets of Rage X, Streets of Vendetta and hundreds more. Drop in the archive and **the name comes from the game itself**, not from whatever the file was called.
 
-### ports.html | 099 | p
+### ports.html | 100 | p
 One engine, one rigid layout, nothing to curate, so a single entry serves all of them. Since **1.7** they get their own library category instead of Others.
 
-### ports.html | 100 | div
+### ports.html | 101 | div
 07_fan_games
 
-### ports.html | 101 | h2
+### ports.html | 102 | h2
 ▸ Fan games &amp; custom engines <span class="qual">· nothing else needed</span>
 
-### ports.html | 102 | span
+### ports.html | 103 | span
 FAN GAME
 
-### ports.html | 103 | div
+### ports.html | 104 | div
 Mini Doom
 
-### ports.html | 104 | p
+### ports.html | 105 | p
 A standalone Doom-flavoured action platformer, complete in itself.
 
-### ports.html | 105 | span
+### ports.html | 106 | span
 FAN GAME
 
-### ports.html | 106 | div
+### ports.html | 107 | div
 Mini Doom 2
 
-### ports.html | 107 | p
+### ports.html | 108 | p
 The bigger, sharper sequel. Also standalone.
 
-### ports.html | 108 | span
+### ports.html | 109 | span
 FAN GAME
 
-### ports.html | 109 | div
+### ports.html | 110 | div
 SWOS 2020
 
-### ports.html | 110 | p
+### ports.html | 111 | p
 Sensible World of Soccer rebuilt by SWOS United. Widescreen, USB controllers, updated team data. The installer is unpacked rather than run, so there's no wizard.
 
-### ports.html | 111 | span
+### ports.html | 112 | span
 CUSTOM ENGINE
 
-### ports.html | 112 | div
+### ports.html | 113 | div
 CannonBall
 
-### ports.html | 113 | p
+### ports.html | 114 | p
 OutRun rewritten in C++. 60fps, true widescreen, time trial and continuous. Not an emulator. It needs the arcade ROM set, which no storefront sells, so **the manifest is checked before installing** and anything missing is named.
 
-### ports.html | 114 | span
+### ports.html | 115 | span
 FOLDER
 
-### ports.html | 115 | div
+### ports.html | 116 | div
 A game folder you already have
 
-### ports.html | 116 | p
+### ports.html | 117 | p
 Point at any folder holding a Windows game and it joins the library **staying where it is**. Scanned three levels deep, the likely entry point first, nothing copied or moved.
 
-### ports.html | 117 | div
+### ports.html | 118 | div
 08_why_a_catalogue
 
-### ports.html | 118 | h2
+### ports.html | 119 | h2
 why a catalogue, and not an importer
 
-### ports.html | 119 | p
+### ports.html | 120 | p
 A general importer has to guess: which file is the game, where the data lives, what the launch line says. Guessing is how a mod pack installs a voice pack, and how a port lands perfectly then opens and closes in the same second.
 
-### ports.html | 120 | p
+### ports.html | 121 | p
 A recipe doesn't guess. It knows what the download is called, which of the six executables is the real one, which file proves a folder is Quake, and what must be true before a byte is unpacked. Written down once per project, which is why these arrive playable.
 
-### ports.html | 121 | p
+### ports.html | 122 | p
 All of it lives under **Control Panel → Fan Games &amp; Source Ports**.
 
-### ports.html | 122 | a
+### ports.html | 123 | a
 ⤓ Download Clarity
 
-### ports.html | 123 | a
+### ports.html | 124 | a
 Suggest a port or mod
 
-### ports.html | 124 | p
+### ports.html | 125 | p
 Something missing? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. Say where the download comes from and it can be added.
 
-### ports.html | 125 | p
+### ports.html | 126 | p
 [clarity](index.html) &middot; [games fixed individually](fixes.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
-### ports.html | 126 | p
+### ports.html | 127 | p
 From Chaos Comes Clarity
 
-### ports.html | 127 | a
+### ports.html | 128 | a
 &lt; back to clarity
 
-### ports.html | 128 | span
+### ports.html | 129 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### ports.html | 129 | a
+### ports.html | 130 | a
 Home
 
-### ports.html | 130 | a
+### ports.html | 131 | a
 Omarchy
 
-### ports.html | 131 | a
+### ports.html | 132 | a
 Couch Mode
 
-### ports.html | 132 | a
+### ports.html | 133 | a
 The library
 
-### ports.html | 133 | a
+### ports.html | 134 | a
 Support
 
-### ports.html | 134 | a
+### ports.html | 135 | a
 GitHub
 
 ==============================================================================
@@ -2675,106 +2841,109 @@ Fan games &amp; ports
 Game fixes
 
 ### support.html | 007 | a
+News
+
+### support.html | 008 | a
 Support
 
-### support.html | 008 | span
+### support.html | 009 | span
 ways to support
 
-### support.html | 009 | h1
+### support.html | 010 | h1
 <svg class="heart" viewBox="0 0 7 6" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="0" width="2" height="1" fill="#ff4b3e"/><rect x="4" y="0" width="2" height="1" fill="#ff4b3e"/><rect x="0" y="1" width="7" height="1" fill="#ff4b3e"/><rect x="0" y="2" width="7" height="1" fill="#e5392f"/><rect x="1" y="3" width="5" height="1" fill="#e5392f"/><rect x="2" y="4" width="3" height="1" fill="#c62f27"/><rect x="3" y="5" width="1" height="1" fill="#c62f27"/></svg>Support
 
-### support.html | 010 | p
+### support.html | 011 | p
 it keeps the good vibes flowing
 
-### support.html | 011 | div
+### support.html | 012 | div
 01_chip_in
 
-### support.html | 012 | h2
+### support.html | 013 | h2
 chip in
 
-### support.html | 013 | p
+### support.html | 014 | p
 Clarity is free, built on my own time. If it sorted out your gaming life, a contribution keeps it going.
 
-### support.html | 014 | p
+### support.html | 015 | p
 **If you donate, [let me know](mailto:joserobertoazevedo@hey.com) so I can thank you personally! :)**
 
-### support.html | 015 | a
+### support.html | 016 | a
 💙 Ko-fi · International
 
-### support.html | 016 | button
+### support.html | 017 | button
 🇧🇷 PIX · Brazil (QR)
 
-### support.html | 017 | div
+### support.html | 018 | div
 02_free_ways
 
-### support.html | 018 | h2
+### support.html | 019 | h2
 can't donate? help out for free
 
-### support.html | 019 | p
+### support.html | 020 | p
 Every one of these means just as much.
 
-### support.html | 020 | span
+### support.html | 021 | span
 ★ Star it
 
-### support.html | 021 | span
+### support.html | 022 | span
 a star on the repo really does help
 
-### support.html | 022 | span
+### support.html | 023 | span
 🐛 Report
 
-### support.html | 023 | span
+### support.html | 024 | span
 file bugs &amp; suggest features
 
-### support.html | 024 | span
+### support.html | 025 | span
 📣 Spread it
 
-### support.html | 025 | span
+### support.html | 026 | span
 tell a fellow Linux gamer
 
-### support.html | 026 | span
+### support.html | 027 | span
 💌 Say hi
 
-### support.html | 027 | span
+### support.html | 028 | span
 feedback, or just to say what's up
 
-### support.html | 028 | p
+### support.html | 029 | p
 Built by J.R.A. · Contact: [joserobertoazevedo@hey.com](mailto:joserobertoazevedo@hey.com)
 
-### support.html | 029 | p
+### support.html | 030 | p
 “From Chaos Comes <u>Clarity</u>”
 
-### support.html | 030 | a
+### support.html | 031 | a
 &lt; back to clarity
 
-### support.html | 031 | h3
+### support.html | 032 | h3
 DONATE VIA PIX
 
-### support.html | 032 | div
+### support.html | 033 | div
 b734a9e2-e479-42f9-abd6-c88d1b8b880e
 
-### support.html | 033 | button
+### support.html | 034 | button
 COPY PIX KEY
 
-### support.html | 034 | div
+### support.html | 035 | div
 Copied to clipboard!
 
-### support.html | 035 | span
+### support.html | 036 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### support.html | 036 | a
+### support.html | 037 | a
 Home
 
-### support.html | 037 | a
+### support.html | 038 | a
 Omarchy
 
-### support.html | 038 | a
+### support.html | 039 | a
 Couch Mode
 
-### support.html | 039 | a
+### support.html | 040 | a
 The library
 
-### support.html | 040 | a
+### support.html | 041 | a
 Support
 
-### support.html | 041 | a
+### support.html | 042 | a
 GitHub
