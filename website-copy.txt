@@ -1683,7 +1683,7 @@ Fullscreen, right screen, right resolution. No fighting the tiler.
 ⚠ Experimental, and honest about it
 
 ### index.html | 088 | p
-Today's download is **1.14.0**. I use it daily, and it still has rough edges. **2.0 is coming soon**.
+The download is always **the current build**. I use it daily, and it still has rough edges. **2.0 is coming soon**.
 
 ### index.html | 089 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
@@ -1922,10 +1922,10 @@ same codebase · Apple Silicon
 Linux stays primary: tested first, ships fastest. The macOS build is in the same codebase, not a fork, and it's real: **Steam and GOG sign-in, the full library, installing and launching games.**
 
 ### macos.html | 014 | p
-current macOS build: **1.13.1**, attached to the 1.14.0 release. The Mac cannot be packaged from Linux, so it runs a version behind and has no Manage Storage buttons yet.
+The Mac build ships inside **the current release**, one version behind the Linux AppImage. The Mac cannot be packaged from Linux, and it has no Manage Storage buttons yet.
 
 ### macos.html | 015 | a
-⤓ Download for macOS &middot; 1.13.1
+⤓ Download for macOS
 
 ### macos.html | 016 | a
 Source on GitHub
@@ -2036,7 +2036,7 @@ install
 The build isn't signed, there's no Apple Developer account behind it yet, so the first launch needs one extra step. Standard for anything unnotarized, not a sign something is broken.
 
 ### macos.html | 052 | li
-Download `Clarity-1.13.1.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">latest release</a>. It sits beside the Linux AppImage, and its filename carries its own version.
+Download the `.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">latest release</a>. It sits beside the Linux AppImage, and its filename carries its own version.
 
 ### macos.html | 053 | li
 Open the `.dmg` and drag **Clarity** into **Applications** (or unzip and move the `.app` there directly).
@@ -2184,7 +2184,7 @@ The second one cost the evening. The setting that turns loose files on is writte
 Both steps now run when you press play, repairing the install you already have. No reinstall, nothing to configure, and it only touches files that are missing, so if you have set any of this up by hand it is left exactly as you left it.
 
 ### news.html | 019 | a
-Get 1.15.3
+Get Clarity
 
 ### news.html | 020 | a
 All game fixes
