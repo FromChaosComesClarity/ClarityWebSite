@@ -93,6 +93,7 @@ a.card:hover{border-color:var(--cyan-dim)}
       <a href="#omarchy">Omarchy</a>
       <a href="ports.html">Fan games &amp; ports</a>
       <a href="fixes.html">Game fixes</a>
+      <a href="news.html">News</a>
       <a href="support.html">Support</a>
     </nav>
   </div>
@@ -112,6 +113,41 @@ a.card:hover{border-color:var(--cyan-dim)}
       <a class="btn ghost" href="https://github.com/FromChaosComesClarity/Clarity">The code</a>
     </div>
   </div>
+
+  <!-- ── News ──────────────────────────────────────────────────────────────
+       One slide today. The rail is a carousel already: add another <article
+       class="slide"> and it scrolls, newest first, with the dots appearing on
+       their own. The backdrop is a real <img class="slide-shot">, not a CSS
+       background, so its path resolves from this page like every other image
+       here. -->
+  <div class="news" id="news">
+    <div class="news-head">
+      <h2>News</h2>
+      <a class="news-all" href="news.html">all stories &rarr;</a>
+    </div>
+
+    <div class="news-rail">
+      <div class="news-track">
+
+        <article class="slide">
+          <img class="slide-shot" src="assets/news/fallout-london-hero.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          <div class="slide-art">
+            <img src="assets/news/fallout-london-cover.webp" alt="Fallout: London cover art" width="330" height="440" loading="lazy" decoding="async">
+          </div>
+          <div class="slide-body">
+            <div class="slide-tag">New recipe</div>
+            <h3>GOG&rsquo;s Fallout: London 1-click install crash at launch has been fixed!</h3>
+            <p>It installed perfectly and then played its music over a black screen. GOG&rsquo;s installer has finishing steps, and nothing on Linux performed them. Now done at launch, repairing the install you already have.</p>
+            <a class="btn" href="news.html#fallout-london">Read more</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="news-dots"><span></span></div>
+  </div>
+
 
   <!-- ── Things ONLY Clarity does ─────────────────────────────────────────── -->
   <div class="only" id="only">
