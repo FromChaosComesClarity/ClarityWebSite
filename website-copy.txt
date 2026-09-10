@@ -865,72 +865,84 @@ Fallout: New California
 Every file downloaded perfectly, but GOG&rsquo;s installer performs three finishing steps afterwards and nothing on Linux did them. **Now applied at launch**, repairing the install you have. No reinstall.
 
 ### fixes.html | 027 | h3
-Realms of Arkania 1 &amp; 2 &middot; Albion
+Fallout: London One-click Edition
 
 ### fixes.html | 028 | div
-DOSBox opens for half a second, then vanishes.
+Music plays over a black screen, then a warning about loose files and a browser tab you did not ask for.
 
 ### fixes.html | 029 | p
+The same story as New California, one game later. GOG&rsquo;s installer has finishing steps and nothing on Linux performed them, so the plugin list never arrived and none of London ever loaded. **Now applied at launch**, repairing the install you have.
+
+### fixes.html | 030 | p
+The switch that turns loose files on had to go somewhere other than the file GOG writes it to, which is why it looked like it was already set. **Put where the engine actually reads it**, and it survives the game rewriting its own settings every time it starts.
+
+### fixes.html | 031 | h3
+Realms of Arkania 1 &amp; 2 &middot; Albion
+
+### fixes.html | 032 | div
+DOSBox opens for half a second, then vanishes.
+
+### fixes.html | 033 | p
 Two faults. The configuration files GOG&rsquo;s installer copies were never copied, and the game started from the wrong folder, so DOSBox looked one level too high and quit. **Both fixed.**
 
-### fixes.html | 030 | h3
+### fixes.html | 034 | h3
 Colony Ship
 
-### fixes.html | 031 | div
+### fixes.html | 035 | div
 Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.
 
-### fixes.html | 032 | p
+### fixes.html | 036 | p
 One file was damaged on a GOG server. Half arrived, the connection closed, every time, and the download kept asking that same server. **Now each piece is checked and a different server is used** when one keeps failing.
 
-### fixes.html | 033 | div
+### fixes.html | 037 | div
 02_why_a_list
 
-### fixes.html | 034 | h2
+### fixes.html | 038 | h2
 why keep a list like this at all
 
-### fixes.html | 035 | p
+### fixes.html | 039 | p
 Most of what goes wrong is solved by a general rule, and those are part of the app. What's left belongs to one game and nothing else. Each costs an evening. Writing them down is the least I can do.
 
-### fixes.html | 036 | p
+### fixes.html | 040 | p
 The list will grow. A game on it behaves on your machine the way it did on mine.
 
-### fixes.html | 037 | a
+### fixes.html | 041 | a
 ⤓ Download Clarity
 
-### fixes.html | 038 | a
+### fixes.html | 042 | a
 Report a game that misbehaves
 
-### fixes.html | 039 | p
+### fixes.html | 043 | p
 Found one that doesn't work? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. This list is how it gets fixed.
 
-### fixes.html | 040 | p
+### fixes.html | 044 | p
 [clarity](index.html) &middot; [source ports &amp; mods](ports.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
-### fixes.html | 041 | p
+### fixes.html | 045 | p
 From Chaos Comes Clarity
 
-### fixes.html | 042 | a
+### fixes.html | 046 | a
 &lt; back to clarity
 
-### fixes.html | 043 | span
+### fixes.html | 047 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### fixes.html | 044 | a
+### fixes.html | 048 | a
 Home
 
-### fixes.html | 045 | a
+### fixes.html | 049 | a
 Omarchy
 
-### fixes.html | 046 | a
+### fixes.html | 050 | a
 Couch Mode
 
-### fixes.html | 047 | a
+### fixes.html | 051 | a
 The library
 
-### fixes.html | 048 | a
+### fixes.html | 052 | a
 Support
 
-### fixes.html | 049 | a
+### fixes.html | 053 | a
 GitHub
 
 ==============================================================================
