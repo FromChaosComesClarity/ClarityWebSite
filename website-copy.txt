@@ -2189,37 +2189,31 @@ Get 1.15.3
 ### news.html | 020 | a
 All game fixes
 
-### news.html | 021 | div
-02_about_this_page
-
-### news.html | 022 | p
-Most of what goes wrong is solved by a general rule, and those just ship. What lands here is the rest: a named game, a named fault, and what it took. The [Game fixes](fixes.html) page is the running list; this is where the longer version goes when there is one worth telling.
-
-### news.html | 023 | p
+### news.html | 021 | p
 [clarity](index.html) &middot; [game fixes](fixes.html) &middot; [github](https://github.com/FromChaosComesClarity/Clarity)
 
-### news.html | 024 | a
+### news.html | 022 | a
 &lt; back to clarity
 
-### news.html | 025 | span
+### news.html | 023 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### news.html | 026 | a
+### news.html | 024 | a
 Home
 
-### news.html | 027 | a
+### news.html | 025 | a
 Omarchy
 
-### news.html | 028 | a
+### news.html | 026 | a
 Couch Mode
 
-### news.html | 029 | a
+### news.html | 027 | a
 News
 
-### news.html | 030 | a
+### news.html | 028 | a
 Support
 
-### news.html | 031 | a
+### news.html | 029 | a
 GitHub
 
 ==============================================================================
