@@ -80,9 +80,9 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
     <h1>macOS</h1>
     <p class="lead" style="margin-top:18px">same codebase · Apple Silicon</p>
     <p class="body" style="margin-top:18px">Linux stays primary: tested first, ships fastest. The macOS build is in the same codebase, not a fork, and it's real: <strong>Steam and GOG sign-in, the full library, installing and launching games.</strong></p>
-    <p class="body">current macOS build: <strong>1.13.1</strong>, attached to the 1.14.0 release. The Mac cannot be packaged from Linux, so it runs a version behind and has no Manage Storage buttons yet.</p>
+    <p class="body">The Mac build ships inside <strong>the current release</strong>, one version behind the Linux AppImage. The Mac cannot be packaged from Linux, and it has no Manage Storage buttons yet.</p>
     <div class="btns">
-      <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">⤓ Download for macOS &middot; 1.13.1</a>
+      <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">⤓ Download for macOS</a>
       <a class="btn ghost" href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">Source on GitHub</a>
     </div>
   </div>
@@ -143,7 +143,7 @@ table.paths td:first-child{color:var(--ink);padding-right:16px}
     <h2>install</h2>
     <p class="body">The build isn't signed, there's no Apple Developer account behind it yet, so the first launch needs one extra step. Standard for anything unnotarized, not a sign something is broken.</p>
     <ol class="steps">
-      <li>Download <code>Clarity-1.13.1.dmg</code> (or the <code>.zip</code>) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">latest release</a>. It sits beside the Linux AppImage, and its filename carries its own version.</li>
+      <li>Download the <code>.dmg</code> (or the <code>.zip</code>) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">latest release</a>. It sits beside the Linux AppImage, and its filename carries its own version.</li>
       <li>Open the <code>.dmg</code> and drag <strong>Clarity</strong> into <strong>Applications</strong> (or unzip and move the <code>.app</code> there directly).</li>
       <li><strong>Right-click (or Control-click) the app &rarr; Open &rarr; Open</strong> works on most macOS versions. If that option doesn't appear, double-click once to get blocked, then <strong>System Settings &rarr; Privacy &amp; Security</strong> and <strong>Open Anyway</strong>.</li>
       <li>If neither works, from Terminal: <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Clarity Game Manager.app"</span> This strips the quarantine flag. Once per install.</li>
