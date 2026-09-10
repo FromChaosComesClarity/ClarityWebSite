@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarity: news</title>
+<meta name="description" content="What changed in Clarity, and why. Fixes, releases and the occasional detour, written up as they happen.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clarity">
+<meta property="og:title" content="Clarity news">
+<meta property="og:description" content="What changed, and why. Fixes, releases and the occasional detour.">
+<meta property="og:image" content="https://fromchaoscomesclarity.github.io/ClarityWebSite/assets/images/clarity_banner.jpg">
+<meta property="og:url" content="https://fromchaoscomesclarity.github.io/ClarityWebSite/news.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{padding:clamp(40px,7vh,84px) 0 clamp(10px,2vh,24px)}
+/* Newest first. Each story is one panel, and the anchor on it is what the home
+   page banner links to, so a slide always lands on its own story. */
+.post:target{border-color:var(--cyan)}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 0}
+.seealso{font-size:.8rem}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap topin">
+    <a class="brand" href="index.html">clarity</a>
+    <nav class="links">
+      <a href="omarchy.html">Omarchy</a>
+      <a href="couch.html">Couch Mode</a>
+      <a href="library.html">The library</a>
+      <a href="ports.html">Fan games &amp; ports</a>
+      <a href="fixes.html">Game fixes</a>
+      <a href="news.html">News</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap narrow">
+
+  <div class="hero">
+    <div class="eyebrow"><span>news</span><span class="tag">newest first</span></div>
+    <h1>What <span class="em">changed</span></h1>
+    <p class="lead" style="margin-top:18px">Fixes, releases and the occasional detour. Short pieces, written when the thing actually works rather than when it was started.</p>
+  </div>
+
+  <section>
+    <div class="label">01_latest</div>
+
+    <article class="post" id="fallout-london">
+      <div class="post-date">10 September 2026 &middot; game fix &middot; Clarity 1.15.3</div>
+      <h2>Fallout: London installed perfectly, then refused to start</h2>
+      <div class="kicker">Music over a black screen, a warning about loose files, and a browser tab nobody asked for.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/fallout-london-hero.webp" alt="Fallout: London, a lone figure and a dog looking across the Thames at Tower Bridge" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">The GOG one-click edition downloads beautifully. Every file arrives, nothing errors, the library shows it as installed. Then you press play and the game opens for about a second, the music starts over a black screen, a little warning appears about loose files, and your browser opens a mod page you did not ask for.</p>
+
+      <p class="body">It is the second time this exact shape of fault has turned up, and it has the same cause as the first. A GOG installer does not stop when the files land. It performs finishing steps afterwards, copying configuration and a plugin list into places the game will look. On Windows those steps run. On Linux the download finishes and that is the end of it, so the game is complete and misconfigured at the same time, which is the most annoying way for something to be broken.</p>
+
+      <p class="body">Two things were missing. London&rsquo;s plugin list never reached the game, so none of London ever loaded, which is the black screen. And loose file loading stayed switched off, which is what the warning was about before the game gave up.</p>
+
+      <p class="body">The second one cost the evening. The setting that turns loose files on is written by GOG into one file, and Fallout 4 only honours it from a different one. So it was there, it looked right, and it did nothing. Putting the same lines where the engine actually reads them is what let the game start, and it survives Fallout 4 rewriting its own settings on every launch, which it does.</p>
+
+      <p class="body">Both steps now run when you press play, repairing the install you already have. No reinstall, nothing to configure, and it only touches files that are missing, so if you have set any of this up by hand it is left exactly as you left it.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/tag/v1.15.3">Get 1.15.3</a>
+        <a class="btn ghost" href="fixes.html">All game fixes</a>
+      </div>
+    </article>
+
+  </section>
+
+  <section>
+    <div class="label">02_about_this_page</div>
+    <p class="body">Most of what goes wrong is solved by a general rule, and those just ship. What lands here is the rest: a named game, a named fault, and what it took. The <a href="fixes.html">Game fixes</a> page is the running list; this is where the longer version goes when there is one worth telling.</p>
+    <p class="body seealso" style="margin-top:26px"><a href="index.html">clarity</a> &middot; <a href="fixes.html">game fixes</a> &middot; <a href="https://github.com/FromChaosComesClarity/Clarity">github</a></p>
+    <a class="back" href="index.html">&lt; back to clarity</a>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap fin">
+    <span>Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷</span>
+    <span>
+      <a href="index.html">Home</a> ·
+      <a href="omarchy.html">Omarchy</a> ·
+      <a href="couch.html">Couch Mode</a> ·
+      <a href="news.html">News</a> ·
+      <a href="support.html">Support</a> ·
+      <a href="https://github.com/FromChaosComesClarity/Clarity">GitHub</a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>
