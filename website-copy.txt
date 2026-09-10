@@ -2156,79 +2156,76 @@ Support
 ### news.html | 009 | span
 news
 
-### news.html | 010 | span
-newest first
-
-### news.html | 011 | h1
+### news.html | 010 | h1
 What <span class="em">changed</span>
 
-### news.html | 012 | p
+### news.html | 011 | p
 Fixes, releases and the occasional detour. Short pieces, written when the thing actually works rather than when it was started.
 
-### news.html | 013 | div
+### news.html | 012 | div
 01_latest
 
-### news.html | 014 | div
+### news.html | 013 | div
 10 September 2026 &middot; game fix &middot; Clarity 1.15.3
 
-### news.html | 015 | h2
+### news.html | 014 | h2
 Fallout: London installed perfectly, then refused to start
 
-### news.html | 016 | div
+### news.html | 015 | div
 Music over a black screen, a warning about loose files, and a browser tab nobody asked for.
 
-### news.html | 017 | p
+### news.html | 016 | p
 The GOG one-click edition downloads beautifully. Every file arrives, nothing errors, the library shows it as installed. Then you press play and the game opens for about a second, the music starts over a black screen, a little warning appears about loose files, and your browser opens a mod page you did not ask for.
 
-### news.html | 018 | p
+### news.html | 017 | p
 It is the second time this exact shape of fault has turned up, and it has the same cause as the first. A GOG installer does not stop when the files land. It performs finishing steps afterwards, copying configuration and a plugin list into places the game will look. On Windows those steps run. On Linux the download finishes and that is the end of it, so the game is complete and misconfigured at the same time, which is the most annoying way for something to be broken.
 
-### news.html | 019 | p
+### news.html | 018 | p
 Two things were missing. London&rsquo;s plugin list never reached the game, so none of London ever loaded, which is the black screen. And loose file loading stayed switched off, which is what the warning was about before the game gave up.
 
-### news.html | 020 | p
+### news.html | 019 | p
 The second one cost the evening. The setting that turns loose files on is written by GOG into one file, and Fallout 4 only honours it from a different one. So it was there, it looked right, and it did nothing. Putting the same lines where the engine actually reads them is what let the game start, and it survives Fallout 4 rewriting its own settings on every launch, which it does.
 
-### news.html | 021 | p
+### news.html | 020 | p
 Both steps now run when you press play, repairing the install you already have. No reinstall, nothing to configure, and it only touches files that are missing, so if you have set any of this up by hand it is left exactly as you left it.
 
-### news.html | 022 | a
+### news.html | 021 | a
 Get 1.15.3
 
-### news.html | 023 | a
+### news.html | 022 | a
 All game fixes
 
-### news.html | 024 | div
+### news.html | 023 | div
 02_about_this_page
 
-### news.html | 025 | p
+### news.html | 024 | p
 Most of what goes wrong is solved by a general rule, and those just ship. What lands here is the rest: a named game, a named fault, and what it took. The [Game fixes](fixes.html) page is the running list; this is where the longer version goes when there is one worth telling.
 
-### news.html | 026 | p
+### news.html | 025 | p
 [clarity](index.html) &middot; [game fixes](fixes.html) &middot; [github](https://github.com/FromChaosComesClarity/Clarity)
 
-### news.html | 027 | a
+### news.html | 026 | a
 &lt; back to clarity
 
-### news.html | 028 | span
+### news.html | 027 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### news.html | 029 | a
+### news.html | 028 | a
 Home
 
-### news.html | 030 | a
+### news.html | 029 | a
 Omarchy
 
-### news.html | 031 | a
+### news.html | 030 | a
 Couch Mode
 
-### news.html | 032 | a
+### news.html | 031 | a
 News
 
-### news.html | 033 | a
+### news.html | 032 | a
 Support
 
-### news.html | 034 | a
+### news.html | 033 | a
 GitHub
 
 ==============================================================================
