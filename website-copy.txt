@@ -1871,16 +1871,16 @@ PAGE: macos.html
 ==============================================================================
 
 ### macos.html | title
-Clarity on macOS (Experimental)
+Clarity for macOS (Experimental)
 
 ### macos.html | meta:description
-Clarity on Apple Silicon. Same codebase, second host, still Experimental. What works, what doesn't, and how to install an unsigned build.
+Clarity for macOS is its own edition, forked from the Linux app at 1.15.3. Apple Silicon, CrossOver for Windows games, and how to open a build macOS refuses the first time.
 
 ### macos.html | og:title
-Clarity on macOS (Experimental)
+Clarity for macOS (Experimental)
 
 ### macos.html | og:description
-A second host, same codebase. Steam and GOG, the full library, native GOG installs, and Windows games through CrossOver.
+Its own edition now, forked at 1.15.3. Native builds first, CrossOver for the rest.
 
 ### macos.html | 001 | a
 clarity
@@ -1907,7 +1907,7 @@ News
 Support
 
 ### macos.html | 009 | span
-a second host
+its own edition
 
 ### macos.html | 010 | span
 experimental
@@ -1916,13 +1916,13 @@ experimental
 macOS
 
 ### macos.html | 012 | p
-same codebase · Apple Silicon
+Apple Silicon · macOS 11 or later
 
 ### macos.html | 013 | p
-Linux stays primary: tested first, ships fastest. The macOS build is in the same codebase, not a fork, and it's real: **Steam and GOG sign-in, the full library, installing and launching games.**
+The Mac edition is its own thing now. It forked from the Linux app at **1.15.3**, it lives in its own repository, and from here the two are allowed to grow apart. That is exactly what I want: this one gets to be great on Omarchy, and the Mac one gets to be great on a Mac.
 
 ### macos.html | 014 | p
-The Mac build ships inside **the current release**, one version behind the Linux AppImage. The Mac cannot be packaged from Linux, and it has no Manage Storage buttons yet.
+It has its own releases, and their notes are the place to read what it does today.
 
 ### macos.html | 015 | a
 ⤓ Download for macOS
@@ -1931,186 +1931,120 @@ The Mac build ships inside **the current release**, one version behind the Linux
 Source on GitHub
 
 ### macos.html | 017 | div
-01_what_works_today
+01_how_it_differs
 
 ### macos.html | 018 | h2
-what works today
+how it differs
 
 ### macos.html | 019 | span
 &#10003;
 
 ### macos.html | 020 | h3
-The full library
+Windows games go through CrossOver
 
 ### macos.html | 021 | p
-Steam and GOG sign-in, sync and browsing, across both faces, with Installer underneath.
+Proton is a Linux thing. On the Mac, Windows games run through **CrossOver**, which is commercial software from <a href="https://www.codeweavers.com/crossover" target="_blank" rel="noopener">CodeWeavers</a> and not bundled, so you install it yourself.
 
 ### macos.html | 022 | span
 &#10003;
 
 ### macos.html | 023 | h3
-Native GOG installs
+Native first, wherever a native build exists
 
 ### macos.html | 024 | p
-Real downloads through `gogdl`, for games that ship an Apple Silicon build. Not a link out to a browser.
+Real macOS builds win when there are any: native GOG installs, source ports like GZDoom, vkQuake, ECWolf and EDuke32, and Fallout 1 and 2 Community Edition, all reading game data you already own.
 
 ### macos.html | 025 | span
 &#10003;
 
 ### macos.html | 026 | h3
-Windows games, through CrossOver <span class="new">NEW IN 1.9</span>
+Two Steam clients, and it asks
 
 ### macos.html | 027 | p
-Windows-only titles aren't off-limits. Clarity drives **CrossOver** directly, giving each game its own bottle, created on first launch and reused. Nothing to configure.
+With CrossOver in the picture a Mac has two Steams, the Mac app and the Windows one inside a bottle. When a game ships both builds, Clarity asks which one you want instead of guessing.
 
-### macos.html | 028 | p
-**Two caveats.** CrossOver is commercial software from <a href="https://www.codeweavers.com" target="_blank" rel="noopener">CodeWeavers</a>, not bundled, so you install it yourself. Without it this reports as unavailable. The plumbing is verified, but I have not run a big library through it.
+### macos.html | 028 | div
+02_install
 
-### macos.html | 029 | span
-&#10003;
-
-### macos.html | 030 | h3
-Knowing which games are actually native
-
-### macos.html | 031 | p
-A Mac-Native filter next to the store filters, with an apple badge on the cover. GOG is instant. Steam needs one manual scan, it's a live per-game lookup.
-
-### macos.html | 032 | span
-&#10003;
-
-### macos.html | 033 | h3
-Everything that is not platform-specific
-
-### macos.html | 034 | p
-Artwork, genres, playlists, save backups, themes. Almost all of it is the same code that runs on Linux.
-
-### macos.html | 035 | div
-02_not_yet
-
-### macos.html | 036 | h2
-what doesn't work yet
-
-### macos.html | 037 | span
-&#9656;
-
-### macos.html | 038 | h3
-Epic sign-in
-
-### macos.html | 039 | p
-The browser approval completes, but the credentials aren't written where `legendary` looks, so the sync comes back empty. Steam and GOG are unaffected. Treat macOS as Steam and GOG for now.
-
-### macos.html | 040 | span
-&#9656;
-
-### macos.html | 041 | h3
-Anti-cheat
-
-### macos.html | 042 | p
-BattlEye and EAC aren't wired up. CrossOver claims support for both, but nothing here has been tested against a game that uses them. Assume anti-cheat multiplayer won't run.
-
-### macos.html | 043 | span
-&#9656;
-
-### macos.html | 044 | h3
-A picker for which screen a game opens on
-
-### macos.html | 045 | p
-A KDE-only feature on Linux. There's no macOS equivalent yet.
-
-### macos.html | 046 | span
-&#9656;
-
-### macos.html | 047 | h3
-Custom installers, source ports and mods
-
-### macos.html | 048 | p
-The whole recipe catalogue, Ironwail, GZDoom, the Build-engine games, is Linux-only for now.
-
-### macos.html | 049 | div
-03_install
-
-### macos.html | 050 | h2
+### macos.html | 029 | h2
 install
 
-### macos.html | 051 | p
-The build isn't signed, there's no Apple Developer account behind it yet, so the first launch needs one extra step. Standard for anything unnotarized, not a sign something is broken.
+### macos.html | 030 | p
+These builds aren't notarised, so macOS refuses to open one the first time, and it does not offer a way around it.
 
-### macos.html | 052 | li
-Download the `.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/Clarity/releases/latest" target="_blank" rel="noopener">latest release</a>. It sits beside the Linux AppImage, and its filename carries its own version.
+### macos.html | 031 | li
+Download the `.dmg` (or the `.zip`) from the <a href="https://github.com/FromChaosComesClarity/Clarity-Mac/releases/latest" target="_blank" rel="noopener">latest release</a>.
 
-### macos.html | 053 | li
-Open the `.dmg` and drag **Clarity** into **Applications** (or unzip and move the `.app` there directly).
+### macos.html | 032 | li
+Open the `.dmg` and drag **Clarity** into **Applications**.
 
-### macos.html | 054 | li
-**Right-click (or Control-click) the app &rarr; Open &rarr; Open** works on most macOS versions. If that option doesn't appear, double-click once to get blocked, then **System Settings &rarr; Privacy &amp; Security** and **Open Anyway**.
+### macos.html | 033 | li
+Skip right-click &rarr; Open and System Settings. There is **no Open Anyway button** for these builds, and Apple removed the right-click bypass in macOS 15. From Terminal instead: <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Clarity Game Manager.app"</span> Once per install. Every release repeats this command in its notes, so there is nothing to remember.
 
-### macos.html | 055 | li
-If neither works, from Terminal: <span class="codeblock">xattr -dr com.apple.quarantine "/Applications/Clarity Game Manager.app"</span> This strips the quarantine flag. Once per install.
+### macos.html | 034 | div
+03_where_things_live
 
-### macos.html | 056 | div
-04_where_things_live
-
-### macos.html | 057 | h2
+### macos.html | 035 | h2
 where things live
 
-### macos.html | 058 | p
+### macos.html | 036 | p
 Everything is under `~/Library/Application Support/`. Replacing the app never touches the library.
 
-### macos.html | 059 | th
+### macos.html | 037 | th
 What
 
-### macos.html | 060 | th
+### macos.html | 038 | th
 Where
 
-### macos.html | 061 | td
+### macos.html | 039 | td
 Your library (games, artwork, playlists, settings)
 
-### macos.html | 062 | td
-`Clarity/GameManagerConfig/`
+### macos.html | 040 | td
+`clarity/GameManagerConfig/`
 
-### macos.html | 063 | td
-GOG/Epic install state, auth, launch logs
+### macos.html | 041 | td
+GOG install state, sign-in, launch logs
 
-### macos.html | 064 | td
-`Clarity/InstallerConfig/`
+### macos.html | 042 | td
+`clarity-installer/`
 
-### macos.html | 065 | td
+### macos.html | 043 | td
 Installed games (default location)
 
-### macos.html | 066 | td
+### macos.html | 044 | td
 `~/Games/Clarity/`
 
-### macos.html | 067 | p
-Something wrong or missing? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. macOS reports are genuinely useful right now.
+### macos.html | 045 | p
+Something wrong on the Mac? <a href="https://github.com/FromChaosComesClarity/Clarity-Mac/issues" target="_blank" rel="noopener">Open an issue on Clarity-Mac</a>, which is where the Mac edition gets fixed.
 
-### macos.html | 068 | p
-[clarity](index.html) &middot; [fixed individually](fixes.html) &middot; [source ports &amp; mods](ports.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
+### macos.html | 046 | p
+[clarity](index.html) &middot; [fixed individually](fixes.html) &middot; [source ports &amp; mods](ports.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity-Mac" target="_blank" rel="noopener">github</a>
 
-### macos.html | 069 | p
+### macos.html | 047 | p
 From Chaos Comes Clarity
 
-### macos.html | 070 | a
+### macos.html | 048 | a
 &lt; back to clarity
 
-### macos.html | 071 | span
+### macos.html | 049 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### macos.html | 072 | a
+### macos.html | 050 | a
 Home
 
-### macos.html | 073 | a
+### macos.html | 051 | a
 Omarchy
 
-### macos.html | 074 | a
+### macos.html | 052 | a
 Couch Mode
 
-### macos.html | 075 | a
+### macos.html | 053 | a
 The library
 
-### macos.html | 076 | a
+### macos.html | 054 | a
 Support
 
-### macos.html | 077 | a
+### macos.html | 055 | a
 GitHub
 
 ==============================================================================
