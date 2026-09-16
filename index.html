@@ -126,7 +126,7 @@ a.card:hover{border-color:var(--cyan-dim)}
       <a class="news-all" href="news.html">all stories &rarr;</a>
     </div>
 
-    <div class="news-rail">
+    <div class="news-rail" id="newsrail">
       <div class="news-track">
 
         <article class="slide">
@@ -158,7 +158,7 @@ a.card:hover{border-color:var(--cyan-dim)}
       </div>
     </div>
 
-    <div class="news-dots"><span></span><span></span></div>
+    <div class="news-dots" id="newsdots"></div>
   </div>
 
 
@@ -439,6 +439,64 @@ a.card:hover{border-color:var(--cyan-dim)}
       var nearest = 0, best = Infinity;
       cards.forEach(function (c, n) {
         var d = Math.abs(c.offsetLeft - track.offsetLeft - track.scrollLeft);
+        if (d < best) { best = d; nearest = n; }
+      });
+      i = nearest; paint();
+    }, 120);
+  }, { passive: true });
+
+  paint(); start();
+})();
+
+/* ── The news rail ───────────────────────────────────────────────
+   Same idea as the carousel above, on the stories. Slower, because these are
+   sentences rather than captions, and it stops for good once someone scrolls it
+   themselves. One story and nothing happens at all. */
+(function () {
+  var rail = document.getElementById('newsrail');
+  if (!rail) return;
+  var slides = Array.prototype.slice.call(rail.querySelectorAll('.slide'));
+  if (slides.length < 2) return;
+  var dots = document.getElementById('newsdots');
+  var timer = 0, i = 0, human = false;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function step(n) {
+    i = (n + slides.length) % slides.length;
+    rail.scrollTo({ left: slides[i].offsetLeft - rail.offsetLeft, behavior: 'smooth' });
+    paint();
+  }
+  function paint() {
+    Array.prototype.forEach.call(dots.children, function (d, n) {
+      d.setAttribute('aria-current', n === i ? 'true' : 'false');
+    });
+  }
+  function start() { if (!reduced && !human) { stop(); timer = setInterval(function () { step(i + 1); }, 7000); } }
+  function stop() { if (timer) { clearInterval(timer); timer = 0; } }
+  function surrender() { human = true; stop(); }
+
+  slides.forEach(function (_, n) {
+    var b = document.createElement('button');
+    b.className = 'news-dot'; b.type = 'button';
+    b.setAttribute('aria-label', 'Story ' + (n + 1));
+    b.addEventListener('click', function () { surrender(); step(n); });
+    dots.appendChild(b);
+  });
+
+  rail.addEventListener('pointerdown', surrender);
+  rail.addEventListener('wheel', surrender, { passive: true });
+  rail.addEventListener('mouseenter', stop);
+  rail.addEventListener('mouseleave', start);
+  /* Tabbing to a Read more button inside a story should not let the rail slide out from under it. */
+  rail.addEventListener('focusin', surrender);
+
+  var settle = 0;
+  rail.addEventListener('scroll', function () {
+    clearTimeout(settle);
+    settle = setTimeout(function () {
+      var nearest = 0, best = Infinity;
+      slides.forEach(function (sl, n) {
+        var d = Math.abs(sl.offsetLeft - rail.offsetLeft - rail.scrollLeft);
         if (d < best) { best = d; nearest = n; }
       });
       i = nearest; paint();
