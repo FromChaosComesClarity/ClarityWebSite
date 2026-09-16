@@ -57,6 +57,13 @@
     <div class="label">01_named_faults</div>
 
     <div class="panel fix">
+      <h3>Arcanum: Of Steamworks and Magick Obscura (GOG)<span class="badge-new">new</span></h3>
+      <div class="sym">Closes the instant it is launched. No window, no error.</div>
+      <p class="body">GOG ships a compatibility wrapper with this one, a graphics library that fixes the game on modern Windows by reaching into the system&rsquo;s own internals. Handing a game the library it shipped with is normally the right call, and it is what rescued Quake and Resident Evil 2. This wrapper cannot survive that reach under Wine, so the usual rule was the thing killing it.</p>
+      <p class="body"><strong>Arcanum now keeps Wine&rsquo;s own library</strong>, the first game that has to. Measured on one machine, same setup either way: with the shipped wrapper there was no window at all in 26 seconds, and with Wine&rsquo;s there was one for 22 of them. The wrapper&rsquo;s settings file is left on disk, untouched.</p>
+    </div>
+
+    <div class="panel fix">
       <h3>OutRun 2006: Coast 2 Coast</h3>
       <div class="sym">A white screen. It seems to hang on the SEGA logo, so it gets killed.</div>
       <p class="body">The intro is a run of video logos, and under a compatibility layer the first can sit there a minute or more. Not frozen, but nobody waits that long. <strong>The intro is now skipped.</strong></p>
@@ -83,7 +90,7 @@
     </div>
 
     <div class="panel fix">
-      <h3>Fallout: London One-click Edition<span class="badge-new">new</span></h3>
+      <h3>Fallout: London One-click Edition</h3>
       <div class="sym">Music plays over a black screen, then a warning about loose files and a browser tab you did not ask for.</div>
       <p class="body">The same story as New California, one game later. GOG&rsquo;s installer has finishing steps and nothing on Linux performed them, so the plugin list never arrived and none of London ever loaded. <strong>Now applied at launch</strong>, repairing the install you have.</p>
       <p class="body">The switch that turns loose files on had to go somewhere other than the file GOG writes it to, which is why it looked like it was already set. <strong>Put where the engine actually reads it</strong>, and it survives the game rewriting its own settings every time it starts.</p>

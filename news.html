@@ -52,6 +52,33 @@
   <section>
     <div class="label">01_latest</div>
 
+    <article class="post" id="arcanum">
+      <div class="post-date">16 September 2026 &middot; game fix &middot; Clarity 1.17.0</div>
+      <h2>Arcanum closed the instant I pressed play</h2>
+      <div class="kicker">No window, no error. The thing meant to fix the game was the thing killing it.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/arcanum-hero.webp" alt="Arcanum: Of Steamworks and Magick Obscura, standing stones against a sunset" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">I installed Arcanum, pressed play, and got nothing at all. No window, no error, no crash box. Just the library sitting there as if I had not clicked. I had fixed this game before, years ago, on a different distro, which made it feel personal.</p>
+
+      <p class="body">GOG ships this one with a compatibility wrapper, a graphics library that makes a 2001 game behave on modern Windows by reaching deep into the system&rsquo;s own internals. Clarity has a rule about those: if a game ships its own copy of a library, give the game its copy, because otherwise Wine quietly substitutes its own and the thing never runs. That rule is the reason Quake and Resident Evil 2 work here at all.</p>
+
+      <p class="body">This time the rule was the murderer. That reach into the internals is exactly what cannot survive under Wine, so by handing Arcanum the library it shipped with, Clarity was killing it before a window could appear. I measured it both ways, same prefix, same Proton build: with the shipped wrapper, no window at all in 26 seconds. With Wine&rsquo;s own, a window for 22 of them, and the game playing.</p>
+
+      <p class="body">So a fix can now name a library that has to stay the runtime&rsquo;s, and <strong>Arcanum is the first game that keeps Wine&rsquo;s</strong>. Nothing is deleted, nothing is configured, and the wrapper&rsquo;s own settings file is left exactly where GOG put it.</p>
+
+      <p class="body">Then the part I am less proud of. Chasing this, I found that the per-game fixes were never being loaded at all. The code that applies them referenced a list it never actually imported, and both places that call it sit inside a safety net that swallowed the error and logged a polite &ldquo;skipped&rdquo;. So every named fix on the fixes page had quietly been doing nothing in that path, OutRun 2006 and Resident Evil 2 included, and 1.16.0 shipped exactly like that. One missing line. It usually is.</p>
+
+      <p class="body">That line is back, which means the fixes on this site are running for the first time in a while, and Arcanum proves it: launched through the real thing, a window for 29 of 32 seconds, where before there was none.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.17.0</a>
+        <a class="btn ghost" href="fixes.html">All game fixes</a>
+      </div>
+    </article>
+
     <article class="post" id="fallout-london">
       <div class="post-date">10 September 2026 &middot; game fix &middot; Clarity 1.15.3</div>
       <h2>Fallout: London installed perfectly, then refused to start</h2>
