@@ -838,147 +838,150 @@ Not &ldquo;improved compatibility&rdquo;. Real games that did not work, the exac
 The Witcher: Enhanced Edition<span class="badge-new">new</span>
 
 ### fixes.html | 015 | div
-Play does nothing. No window, no error, nothing in any log.
+Play does nothing at all. Get past that, and the menus have no words in them.
 
 ### fixes.html | 016 | p
-The game and its launcher both look up where they were installed before they do anything else, and GOG&rsquo;s installer is what normally writes that down. Nothing on Linux wrote it, so both read an empty answer and quietly gave up. The launcher even exits cleanly, which is why not one thing reported a failure. **Now written at launch**, repairing the install you have. No reinstall.
+Two things GOG&rsquo;s installer writes down that nothing on Linux ever did. The first is where the game was installed: both the game and its launcher look that up before they do anything else, read an empty answer and quietly give up. The launcher even exits cleanly, which is why not one thing reported a failure. **Now written at launch**, repairing the install you have. No reinstall.
 
 ### fixes.html | 017 | p
-It is rewritten if you ever move the game to another drive, so it cannot go stale and fail the same silent way a second time.
+The second is which language the game is in. Every word it draws comes out of a language file, and with nothing telling it which one, it draws none of them: a main menu that is a beautiful painting with no New Game on it. **Now set from your own copy&rsquo;s language**, and checked against the files actually on your disk. Change it in the game afterwards and it stays changed.
 
-### fixes.html | 018 | h3
+### fixes.html | 018 | p
+It looks exactly like an ultrawide problem, and it is not one. Three resolutions were tried, including a correctly letterboxed 16:9 and a small 4:3, and every one of them drew the same wordless menu. **Your resolution is left alone.**
+
+### fixes.html | 019 | h3
 Arcanum: Of Steamworks and Magick Obscura (GOG)
 
-### fixes.html | 019 | div
+### fixes.html | 020 | div
 Closes the instant it is launched. No window, no error.
 
-### fixes.html | 020 | p
+### fixes.html | 021 | p
 GOG includes a small helper file that keeps this one running on modern Windows. Letting a game use the helper it came with is normally the right call, and it is what rescues Quake and Resident Evil 2. Here it is the opposite: the helper cannot work on Linux, and it takes the game down before anything reaches the screen.
 
-### fixes.html | 021 | p
+### fixes.html | 022 | p
 **It is now left out for this game**, the only one so far. Nothing is deleted, and the file stays where GOG put it.
 
-### fixes.html | 022 | h3
+### fixes.html | 023 | h3
 OutRun 2006: Coast 2 Coast
 
-### fixes.html | 023 | div
+### fixes.html | 024 | div
 A white screen. It seems to hang on the SEGA logo, so it gets killed.
 
-### fixes.html | 024 | p
+### fixes.html | 025 | p
 The intro is a run of video logos, and under a compatibility layer the first can sit there a minute or more. Not frozen, but nobody waits that long. **The intro is now skipped.**
 
-### fixes.html | 025 | p
+### fixes.html | 026 | p
 The community patch installs under a filename Wine replaces with its own, so it never loaded. **The game&rsquo;s own copy now wins**, as on Windows.
 
-### fixes.html | 026 | h3
+### fixes.html | 027 | h3
 Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)
 
-### fixes.html | 027 | div
+### fixes.html | 028 | div
 Comes up untranslated and stops dead at a Japanese error box.
 
-### fixes.html | 028 | p
+### fixes.html | 029 | p
 The patch is a graphics library beside the game, and Wine loaded its own instead, so it never ran. **The game&rsquo;s own copy is now loaded first**, with Wine&rsquo;s behind it as a fallback.
 
-### fixes.html | 029 | p
+### fixes.html | 030 | p
 The fallback is the trick: the patch passes what it doesn't implement through to the real library. With nothing behind it, the game crashes instantly.
 
-### fixes.html | 030 | h3
+### fixes.html | 031 | h3
 Quake (GOG), the Windows builds
 
-### fixes.html | 031 | div
+### fixes.html | 032 | div
 GLQuake and both mission packs close instantly. No window, no error.
 
-### fixes.html | 032 | p
+### fixes.html | 033 | p
 GOG ships a 3dfx driver from the nineties, and Wine substituted its own, so the game died before a window appeared. **The driver GOG shipped is now used.**
 
-### fixes.html | 033 | h3
+### fixes.html | 034 | h3
 Fallout: New California
 
-### fixes.html | 034 | div
+### fixes.html | 035 | div
 &ldquo;Fallout: New Vegas does not appear to be installed.&rdquo; Please insert the DVD.
 
-### fixes.html | 035 | p
+### fixes.html | 036 | p
 Every file downloaded perfectly, but GOG&rsquo;s installer performs three finishing steps afterwards and nothing on Linux did them. **Now applied at launch**, repairing the install you have. No reinstall.
 
-### fixes.html | 036 | h3
+### fixes.html | 037 | h3
 Fallout: London One-click Edition
 
-### fixes.html | 037 | div
+### fixes.html | 038 | div
 Music plays over a black screen, then a warning about loose files and a browser tab you did not ask for.
 
-### fixes.html | 038 | p
+### fixes.html | 039 | p
 The same story as New California, one game later. GOG&rsquo;s installer has finishing steps and nothing on Linux performed them, so the plugin list never arrived and none of London ever loaded. **Now applied at launch**, repairing the install you have.
 
-### fixes.html | 039 | p
+### fixes.html | 040 | p
 The switch that turns loose files on had to go somewhere other than the file GOG writes it to, which is why it looked like it was already set. **Put where the engine actually reads it**, and it survives the game rewriting its own settings every time it starts.
 
-### fixes.html | 040 | h3
+### fixes.html | 041 | h3
 Realms of Arkania 1 &amp; 2 &middot; Albion
 
-### fixes.html | 041 | div
+### fixes.html | 042 | div
 DOSBox opens for half a second, then vanishes.
 
-### fixes.html | 042 | p
+### fixes.html | 043 | p
 Two faults. The configuration files GOG&rsquo;s installer copies were never copied, and the game started from the wrong folder, so DOSBox looked one level too high and quit. **Both fixed.**
 
-### fixes.html | 043 | h3
+### fixes.html | 044 | h3
 Colony Ship
 
-### fixes.html | 044 | div
+### fixes.html | 045 | div
 Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.
 
-### fixes.html | 045 | p
+### fixes.html | 046 | p
 One file was damaged on a GOG server. Half arrived, the connection closed, every time, and the download kept asking that same server. **Now each piece is checked and a different server is used** when one keeps failing.
 
-### fixes.html | 046 | div
+### fixes.html | 047 | div
 02_why_a_list
 
-### fixes.html | 047 | h2
+### fixes.html | 048 | h2
 why keep a list like this at all
 
-### fixes.html | 048 | p
+### fixes.html | 049 | p
 Most of what goes wrong is solved by a general rule, and those are part of the app. What's left belongs to one game and nothing else. Each costs an evening. Writing them down is the least I can do.
 
-### fixes.html | 049 | p
+### fixes.html | 050 | p
 The list will grow. A game on it behaves on your machine the way it did on mine.
 
-### fixes.html | 050 | a
+### fixes.html | 051 | a
 ⤓ Download Clarity
 
-### fixes.html | 051 | a
+### fixes.html | 052 | a
 Report a game that misbehaves
 
-### fixes.html | 052 | p
+### fixes.html | 053 | p
 Found one that doesn't work? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. This list is how it gets fixed.
 
-### fixes.html | 053 | p
+### fixes.html | 054 | p
 [clarity](index.html) &middot; [source ports &amp; mods](ports.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
-### fixes.html | 054 | p
+### fixes.html | 055 | p
 From Chaos Comes Clarity
 
-### fixes.html | 055 | a
+### fixes.html | 056 | a
 &lt; back to clarity
 
-### fixes.html | 056 | span
+### fixes.html | 057 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### fixes.html | 057 | a
+### fixes.html | 058 | a
 Home
 
-### fixes.html | 058 | a
+### fixes.html | 059 | a
 Omarchy
 
-### fixes.html | 059 | a
+### fixes.html | 060 | a
 Couch Mode
 
-### fixes.html | 060 | a
+### fixes.html | 061 | a
 The library
 
-### fixes.html | 061 | a
+### fixes.html | 062 | a
 Support
 
-### fixes.html | 062 | a
+### fixes.html | 063 | a
 GitHub
 
 ==============================================================================
