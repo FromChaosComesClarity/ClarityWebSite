@@ -835,126 +835,150 @@ Not &ldquo;improved compatibility&rdquo;. Real games that did not work, the exac
 01_named_faults
 
 ### fixes.html | 014 | h3
-OutRun 2006: Coast 2 Coast
+The Witcher: Enhanced Edition<span class="badge-new">new</span>
 
 ### fixes.html | 015 | div
-A white screen. It seems to hang on the SEGA logo, so it gets killed.
+Play does nothing. No window, no error, nothing in any log.
 
 ### fixes.html | 016 | p
-The intro is a run of video logos, and under a compatibility layer the first can sit there a minute or more. Not frozen, but nobody waits that long. **The intro is now skipped.**
+The game and its launcher both look up where they were installed before they do anything else, and GOG&rsquo;s installer is what normally writes that down. Nothing on Linux wrote it, so both read an empty answer and quietly gave up. The launcher even exits cleanly, which is why not one thing reported a failure. **Now written at launch**, repairing the install you have. No reinstall.
 
 ### fixes.html | 017 | p
-The community patch installs under a filename Wine replaces with its own, so it never loaded. **The game&rsquo;s own copy now wins**, as on Windows.
+It is rewritten if you ever move the game to another drive, so it cannot go stale and fail the same silent way a second time.
 
 ### fixes.html | 018 | h3
-Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)
+Arcanum: Of Steamworks and Magick Obscura (GOG)
 
 ### fixes.html | 019 | div
-Comes up untranslated and stops dead at a Japanese error box.
+Closes the instant it is launched. No window, no error.
 
 ### fixes.html | 020 | p
-The patch is a graphics library beside the game, and Wine loaded its own instead, so it never ran. **The game&rsquo;s own copy is now loaded first**, with Wine&rsquo;s behind it as a fallback.
+GOG includes a small helper file that keeps this one running on modern Windows. Letting a game use the helper it came with is normally the right call, and it is what rescues Quake and Resident Evil 2. Here it is the opposite: the helper cannot work on Linux, and it takes the game down before anything reaches the screen.
 
 ### fixes.html | 021 | p
-The fallback is the trick: the patch passes what it doesn't implement through to the real library. With nothing behind it, the game crashes instantly.
+**It is now left out for this game**, the only one so far. Nothing is deleted, and the file stays where GOG put it.
 
 ### fixes.html | 022 | h3
-Quake (GOG), the Windows builds
+OutRun 2006: Coast 2 Coast
 
 ### fixes.html | 023 | div
-GLQuake and both mission packs close instantly. No window, no error.
+A white screen. It seems to hang on the SEGA logo, so it gets killed.
 
 ### fixes.html | 024 | p
+The intro is a run of video logos, and under a compatibility layer the first can sit there a minute or more. Not frozen, but nobody waits that long. **The intro is now skipped.**
+
+### fixes.html | 025 | p
+The community patch installs under a filename Wine replaces with its own, so it never loaded. **The game&rsquo;s own copy now wins**, as on Windows.
+
+### fixes.html | 026 | h3
+Resident Evil 2 &middot; Biohazard 2 (Classic REbirth)
+
+### fixes.html | 027 | div
+Comes up untranslated and stops dead at a Japanese error box.
+
+### fixes.html | 028 | p
+The patch is a graphics library beside the game, and Wine loaded its own instead, so it never ran. **The game&rsquo;s own copy is now loaded first**, with Wine&rsquo;s behind it as a fallback.
+
+### fixes.html | 029 | p
+The fallback is the trick: the patch passes what it doesn't implement through to the real library. With nothing behind it, the game crashes instantly.
+
+### fixes.html | 030 | h3
+Quake (GOG), the Windows builds
+
+### fixes.html | 031 | div
+GLQuake and both mission packs close instantly. No window, no error.
+
+### fixes.html | 032 | p
 GOG ships a 3dfx driver from the nineties, and Wine substituted its own, so the game died before a window appeared. **The driver GOG shipped is now used.**
 
-### fixes.html | 025 | h3
+### fixes.html | 033 | h3
 Fallout: New California
 
-### fixes.html | 026 | div
+### fixes.html | 034 | div
 &ldquo;Fallout: New Vegas does not appear to be installed.&rdquo; Please insert the DVD.
 
-### fixes.html | 027 | p
+### fixes.html | 035 | p
 Every file downloaded perfectly, but GOG&rsquo;s installer performs three finishing steps afterwards and nothing on Linux did them. **Now applied at launch**, repairing the install you have. No reinstall.
 
-### fixes.html | 028 | h3
-Fallout: London One-click Edition<span class="badge-new">new</span>
+### fixes.html | 036 | h3
+Fallout: London One-click Edition
 
-### fixes.html | 029 | div
+### fixes.html | 037 | div
 Music plays over a black screen, then a warning about loose files and a browser tab you did not ask for.
 
-### fixes.html | 030 | p
+### fixes.html | 038 | p
 The same story as New California, one game later. GOG&rsquo;s installer has finishing steps and nothing on Linux performed them, so the plugin list never arrived and none of London ever loaded. **Now applied at launch**, repairing the install you have.
 
-### fixes.html | 031 | p
+### fixes.html | 039 | p
 The switch that turns loose files on had to go somewhere other than the file GOG writes it to, which is why it looked like it was already set. **Put where the engine actually reads it**, and it survives the game rewriting its own settings every time it starts.
 
-### fixes.html | 032 | h3
+### fixes.html | 040 | h3
 Realms of Arkania 1 &amp; 2 &middot; Albion
 
-### fixes.html | 033 | div
+### fixes.html | 041 | div
 DOSBox opens for half a second, then vanishes.
 
-### fixes.html | 034 | p
+### fixes.html | 042 | p
 Two faults. The configuration files GOG&rsquo;s installer copies were never copied, and the game started from the wrong folder, so DOSBox looked one level too high and quit. **Both fixed.**
 
-### fixes.html | 035 | h3
+### fixes.html | 043 | h3
 Colony Ship
 
-### fixes.html | 036 | div
+### fixes.html | 044 | div
 Stuck at 50.5% for an hour. Downloading fast. Getting nowhere.
 
-### fixes.html | 037 | p
+### fixes.html | 045 | p
 One file was damaged on a GOG server. Half arrived, the connection closed, every time, and the download kept asking that same server. **Now each piece is checked and a different server is used** when one keeps failing.
 
-### fixes.html | 038 | div
+### fixes.html | 046 | div
 02_why_a_list
 
-### fixes.html | 039 | h2
+### fixes.html | 047 | h2
 why keep a list like this at all
 
-### fixes.html | 040 | p
+### fixes.html | 048 | p
 Most of what goes wrong is solved by a general rule, and those are part of the app. What's left belongs to one game and nothing else. Each costs an evening. Writing them down is the least I can do.
 
-### fixes.html | 041 | p
+### fixes.html | 049 | p
 The list will grow. A game on it behaves on your machine the way it did on mine.
 
-### fixes.html | 042 | a
+### fixes.html | 050 | a
 ⤓ Download Clarity
 
-### fixes.html | 043 | a
+### fixes.html | 051 | a
 Report a game that misbehaves
 
-### fixes.html | 044 | p
+### fixes.html | 052 | p
 Found one that doesn't work? <a href="https://github.com/FromChaosComesClarity/Clarity/issues" target="_blank" rel="noopener">Open an issue</a>. This list is how it gets fixed.
 
-### fixes.html | 045 | p
+### fixes.html | 053 | p
 [clarity](index.html) &middot; [source ports &amp; mods](ports.html) &middot; [macOS (Experimental)](macos.html) &middot; [support](support.html) &middot; <a href="https://github.com/FromChaosComesClarity/Clarity" target="_blank" rel="noopener">github</a>
 
-### fixes.html | 046 | p
+### fixes.html | 054 | p
 From Chaos Comes Clarity
 
-### fixes.html | 047 | a
+### fixes.html | 055 | a
 &lt; back to clarity
 
-### fixes.html | 048 | span
+### fixes.html | 056 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### fixes.html | 049 | a
+### fixes.html | 057 | a
 Home
 
-### fixes.html | 050 | a
+### fixes.html | 058 | a
 Omarchy
 
-### fixes.html | 051 | a
+### fixes.html | 059 | a
 Couch Mode
 
-### fixes.html | 052 | a
+### fixes.html | 060 | a
 The library
 
-### fixes.html | 053 | a
+### fixes.html | 061 | a
 Support
 
-### fixes.html | 054 | a
+### fixes.html | 062 | a
 GitHub
 
 ==============================================================================
@@ -1476,240 +1500,252 @@ all stories &rarr;
 New recipe
 
 ### index.html | 019 | h3
-GOG&rsquo;s Fallout: London 1-click install crash at launch has been fixed!
+Arcanum would not open at all, and the thing meant to fix it was why
 
 ### index.html | 020 | p
-It installed perfectly and then played its music over a black screen. GOG&rsquo;s installer has finishing steps, and nothing on Linux performed them. Now done at launch, repairing the install you already have.
+GOG includes a helper file that keeps the game running on Windows. On Linux it is what stopped Arcanum from opening at all. Clarity now leaves it out for this one game, and it starts.
 
 ### index.html | 021 | a
 Read more
 
-### index.html | 022 | h2
+### index.html | 022 | div
+New recipe
+
+### index.html | 023 | h3
+GOG&rsquo;s Fallout: London 1-click install crash at launch has been fixed!
+
+### index.html | 024 | p
+It installed perfectly and then played its music over a black screen. GOG&rsquo;s installer has finishing steps, and nothing on Linux performed them. Now done at launch, repairing the install you already have.
+
+### index.html | 025 | a
+Read more
+
+### index.html | 026 | h2
 Things <span class="hot">ONLY</span> Clarity does:
 
-### index.html | 023 | span
-drag it, or wait. it moves on its own
-
-### index.html | 024 | div
-no one else does this
-
-### index.html | 025 | h3
-Source ports and fan games that arrive playable
-
-### index.html | 026 | p
-Wires up the game data from a title you already own. Never lands unplayable. No hunting for the right file at 1:00AM.
-
 ### index.html | 027 | span
-See the catalogue →
+drag it, or wait. it moves on its own
 
 ### index.html | 028 | div
 no one else does this
 
 ### index.html | 029 | h3
-Fixes for games that didn't work on Linux
+Source ports and fan games that arrive playable
 
 ### index.html | 030 | p
-Not “improved compatibility”. Named games that would not run, what was wrong, and the fix applied at install time.
+Wires up the game data from a title you already own. Never lands unplayable. No hunting for the right file at 1:00AM.
 
 ### index.html | 031 | span
-Read the list →
+See the catalogue →
 
 ### index.html | 032 | div
-omarchy only
+no one else does this
 
 ### index.html | 033 | h3
-Your library, one shortcut away
+Fixes for games that didn't work on Linux
 
 ### index.html | 034 | p
-Meta+Ctrl+G, three letters, Enter, play.
+Not “improved compatibility”. Named games that would not run, what was wrong, and the fix applied at install time.
 
 ### index.html | 035 | span
-What it does on Omarchy →
+Read the list →
 
 ### index.html | 036 | div
 omarchy only
 
 ### index.html | 037 | h3
-It wears the theme you already chose
+Your library, one shortcut away
 
 ### index.html | 038 | p
-Apply an Omarchy theme and Clarity wears it too. The same colours, not a lookalike.
+Meta+Ctrl+G, three letters, Enter, play.
 
 ### index.html | 039 | span
-How the bridge works →
+What it does on Omarchy →
 
 ### index.html | 040 | div
-no one else does this
+omarchy only
 
 ### index.html | 041 | h3
-The same library, on the big screen
+It wears the theme you already chose
 
 ### index.html | 042 | p
-For a television and a controller: artwork, trailers, a jukebox with a real spectrum. No keyboard.
+Apply an Omarchy theme and Clarity wears it too. The same colours, not a lookalike.
 
 ### index.html | 043 | span
-Meet Couch Mode →
+How the bridge works →
 
 ### index.html | 044 | div
 no one else does this
 
 ### index.html | 045 | h3
-Manuals, achievements and saves, in the app
+The same library, on the big screen
 
 ### index.html | 046 | p
-GOG manuals in their own window. Achievements from two stores in one list. Saves backed up and restored on the page.
+For a television and a controller: artwork, trailers, a jukebox with a real spectrum. No keyboard.
 
 ### index.html | 047 | span
-What a game page holds →
+Meet Couch Mode →
 
 ### index.html | 048 | div
 no one else does this
 
 ### index.html | 049 | h3
-Six kinds of game, one shelf
+Manuals, achievements and saves, in the app
 
 ### index.html | 050 | p
-Steam, GOG, Epic, itch, Flatpak, PICO-8 carts and ROMs. Sorted, filtered and searched as one library, not six.
+GOG manuals in their own window. Achievements from two stores in one list. Saves backed up and restored on the page.
 
 ### index.html | 051 | span
-How importing works →
+What a game page holds →
 
 ### index.html | 052 | div
 no one else does this
 
 ### index.html | 053 | h3
-Your library is a folder you can carry
+Six kinds of game, one shelf
 
 ### index.html | 054 | p
-Everything lives beside the AppImage. Copy the folder and your covers, playlists, saves and settings come too. No account, no cloud, nobody's server.
+Steam, GOG, Epic, itch, Flatpak, PICO-8 carts and ROMs. Sorted, filtered and searched as one library, not six.
 
 ### index.html | 055 | span
-Where your data lives →
+How importing works →
 
 ### index.html | 056 | div
-02_what_it_is.md
+no one else does this
 
-### index.html | 057 | h2
-One app, two faces
+### index.html | 057 | h3
+Your library is a folder you can carry
 
 ### index.html | 058 | p
-**The Manager**: the desktop app. Import, organise, scrape, install, launch. **Couch Mode**: fullscreen and gamepad-first, for the television. **Installer**: pulls your GOG and Epic games down, no store client.
+Everything lives beside the AppImage. Copy the folder and your covers, playlists, saves and settings come too. No account, no cloud, nobody's server.
 
-### index.html | 059 | p
-One AppImage. Library, artwork and settings sit in a folder next to it. Backed up by copying, gone when you delete it.
+### index.html | 059 | span
+Where your data lives →
 
 ### index.html | 060 | div
-03_screens.webp
+02_what_it_is.md
 
 ### index.html | 061 | h2
-What it looks like
+One app, two faces
 
 ### index.html | 062 | p
+**The Manager**: the desktop app. Import, organise, scrape, install, launch. **Couch Mode**: fullscreen and gamepad-first, for the television. **Installer**: pulls your GOG and Epic games down, no store client.
+
+### index.html | 063 | p
+One AppImage. Library, artwork and settings sit in a folder next to it. Backed up by copying, gone when you delete it.
+
+### index.html | 064 | div
+03_screens.webp
+
+### index.html | 065 | h2
+What it looks like
+
+### index.html | 066 | p
 Shot on Omarchy. No mockups.
 
-### index.html | 063 | span
+### index.html | 067 | span
 **01** · the launcher, one shortcut from anywhere
 
-### index.html | 064 | span
+### index.html | 068 | span
 **02** · the library on the desktop
 
-### index.html | 065 | span
+### index.html | 069 | span
 **03** · a game page, everything in one place
 
-### index.html | 066 | span
+### index.html | 070 | span
 **04** · source ports and fan games, from your own file
 
-### index.html | 067 | span
+### index.html | 071 | span
 **05** · the theme picker, wearing your desktop’s colours
 
-### index.html | 068 | span
+### index.html | 072 | span
 **06** · achievements from two stores in one list
 
-### index.html | 069 | span
+### index.html | 073 | span
 **07** · your GOG game's manuals
 
-### index.html | 070 | span
+### index.html | 074 | span
 **08** · Couch Mode’s home screen
 
-### index.html | 071 | span
+### index.html | 075 | span
 **09** · a game page for a television
 
-### index.html | 072 | span
+### index.html | 076 | span
 **10** · browsing covers in Couch Mode
 
-### index.html | 073 | p
+### index.html | 077 | p
 [All 78 screenshots →](gallery.html)
 
-### index.html | 074 | div
+### index.html | 078 | div
 04_at_home_on_omarchy.md
 
-### index.html | 075 | h2
+### index.html | 079 | h2
 It found a home
 
-### index.html | 076 | p
+### index.html | 080 | p
 Runs on any Linux desktop. Built for and tested on **Omarchy**, and follows its no-nonsense, no BS, everyone is welcome philosophy.
 
-### index.html | 077 | h3
+### index.html | 081 | h3
 In the bar
 
-### index.html | 078 | p
+### index.html | 082 | p
 What's installed, what's playing, and a menu that takes you where you want to go.
 
-### index.html | 079 | h3
+### index.html | 083 | h3
 One keyboard shortcut away
 
-### index.html | 080 | p
+### index.html | 084 | p
 Type a few letters, Enter, play. Cover art, genre, a short description.
 
-### index.html | 081 | h3
+### index.html | 085 | h3
 Omarchy Themes
 
-### index.html | 082 | p
+### index.html | 086 | p
 Apply one with `omarchy theme set` and Clarity is wearing it too.
 
-### index.html | 083 | h3
+### index.html | 087 | h3
 Games open properly
 
-### index.html | 084 | p
+### index.html | 088 | p
 Fullscreen, right screen, right resolution. No fighting the tiler.
 
-### index.html | 085 | p
+### index.html | 089 | p
 [Everything it does on Omarchy →](omarchy.html)
 
-### index.html | 086 | div
+### index.html | 090 | div
 05_where_it_stands.txt
 
-### index.html | 087 | div
+### index.html | 091 | div
 ⚠ Experimental, and honest about it
 
-### index.html | 088 | p
+### index.html | 092 | p
 The download is always **the current build**. I use it daily, and it still has rough edges. **2.0 is coming soon**.
 
-### index.html | 089 | span
+### index.html | 093 | span
 Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
 
-### index.html | 090 | a
+### index.html | 094 | a
 Omarchy
 
-### index.html | 091 | a
+### index.html | 095 | a
 Couch Mode
 
-### index.html | 092 | a
+### index.html | 096 | a
 The library
 
-### index.html | 093 | a
+### index.html | 097 | a
 macOS
 
-### index.html | 094 | a
+### index.html | 098 | a
 Clock
 
-### index.html | 095 | a
+### index.html | 099 | a
 EmuLatte
 
-### index.html | 096 | a
+### index.html | 100 | a
 Support
 
-### index.html | 097 | a
+### index.html | 101 | a
 GitHub
 
 ==============================================================================
@@ -2094,60 +2130,87 @@ News
 01_latest
 
 ### news.html | 011 | div
-10 September 2026 &middot; game fix &middot; Clarity 1.15.3
+16 September 2026 &middot; game fix &middot; Clarity 1.17.0
 
 ### news.html | 012 | h2
-Fallout: London installed perfectly, then refused to start
+Arcanum closed the instant I pressed play
 
 ### news.html | 013 | div
-Music over a black screen, a warning about loose files, and a browser tab nobody asked for.
+No window, no error. The thing meant to fix the game was what broke it.
 
 ### news.html | 014 | p
-The GOG one-click edition downloads beautifully. Every file arrives, nothing errors, the library shows it as installed. Then you press play and the game opens for about a second, the music starts over a black screen, a little warning appears about loose files, and your browser opens a mod page you did not ask for.
+I installed Arcanum, pressed play, and nothing happened. No window, no error, just the library sitting there as if I had not clicked. I fixed this game years ago on another system, so it felt personal.
 
 ### news.html | 015 | p
-It is the second time this exact shape of fault has turned up, and it has the same cause as the first. A GOG installer does not stop when the files land. It performs finishing steps afterwards, copying configuration and a plugin list into places the game will look. On Windows those steps run. On Linux the download finishes and that is the end of it, so the game is complete and misconfigured at the same time, which is the most annoying way for something to be broken.
+GOG includes a small helper file with Arcanum that keeps it running on modern Windows. Clarity normally lets a game use the helper it came with, and that is exactly what rescues Quake and Resident Evil 2. Arcanum turns out to be the opposite case: on Linux that helper cannot work, and it takes the game down with it before anything appears on screen.
 
 ### news.html | 016 | p
-Two things were missing. London&rsquo;s plugin list never reached the game, so none of London ever loaded, which is the black screen. And loose file loading stayed switched off, which is what the warning was about before the game gave up.
+**Clarity now leaves it out for this one game**, and Arcanum starts. Nothing is deleted, nothing to set up, and the helper stays on disk for anyone who wants it back on Windows.
 
 ### news.html | 017 | p
-The second one cost the evening. The setting that turns loose files on is written by GOG into one file, and Fallout 4 only honours it from a different one. So it was there, it looked right, and it did nothing. Putting the same lines where the engine actually reads them is what let the game start, and it survives Fallout 4 rewriting its own settings on every launch, which it does.
+One more thing came out of it. While I was in there I found the per-game fixes had quietly stopped being applied at all, so the whole list on the fixes page was doing nothing. That is fixed too, which means the rest of them are working again.
 
-### news.html | 018 | p
-Both steps now run when you press play, repairing the install you already have. No reinstall, nothing to configure, and it only touches files that are missing, so if you have set any of this up by hand it is left exactly as you left it.
+### news.html | 018 | a
+Get Clarity 1.17.0
 
 ### news.html | 019 | a
-Get Clarity
-
-### news.html | 020 | a
 All game fixes
 
-### news.html | 021 | p
-[clarity](index.html) &middot; [game fixes](fixes.html) &middot; [github](https://github.com/FromChaosComesClarity/Clarity)
+### news.html | 020 | div
+10 September 2026 &middot; game fix &middot; Clarity 1.15.3
 
-### news.html | 022 | a
-&lt; back to clarity
+### news.html | 021 | h2
+Fallout: London installed perfectly, then refused to start
 
-### news.html | 023 | span
-Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
+### news.html | 022 | div
+Music over a black screen, a warning about loose files, and a browser tab nobody asked for.
 
-### news.html | 024 | a
-Home
+### news.html | 023 | p
+The GOG one-click edition downloads beautifully. Every file arrives, nothing errors, the library shows it as installed. Then you press play and the game opens for about a second, the music starts over a black screen, a little warning appears about loose files, and your browser opens a mod page you did not ask for.
 
-### news.html | 025 | a
-Omarchy
+### news.html | 024 | p
+It is the second time this exact shape of fault has turned up, and it has the same cause as the first. A GOG installer does not stop when the files land. It performs finishing steps afterwards, copying configuration and a plugin list into places the game will look. On Windows those steps run. On Linux the download finishes and that is the end of it, so the game is complete and misconfigured at the same time, which is the most annoying way for something to be broken.
 
-### news.html | 026 | a
-Couch Mode
+### news.html | 025 | p
+Two things were missing. London&rsquo;s plugin list never reached the game, so none of London ever loaded, which is the black screen. And loose file loading stayed switched off, which is what the warning was about before the game gave up.
 
-### news.html | 027 | a
-News
+### news.html | 026 | p
+The second one cost the evening. The setting that turns loose files on is written by GOG into one file, and Fallout 4 only honours it from a different one. So it was there, it looked right, and it did nothing. Putting the same lines where the engine actually reads them is what let the game start, and it survives Fallout 4 rewriting its own settings on every launch, which it does.
+
+### news.html | 027 | p
+Both steps now run when you press play, repairing the install you already have. No reinstall, nothing to configure, and it only touches files that are missing, so if you have set any of this up by hand it is left exactly as you left it.
 
 ### news.html | 028 | a
-Support
+Get Clarity
 
 ### news.html | 029 | a
+All game fixes
+
+### news.html | 030 | p
+[clarity](index.html) &middot; [game fixes](fixes.html) &middot; [github](https://github.com/FromChaosComesClarity/Clarity)
+
+### news.html | 031 | a
+&lt; back to clarity
+
+### news.html | 032 | span
+Clarity · GPL-3.0-or-later · built in Brazil 🇧🇷
+
+### news.html | 033 | a
+Home
+
+### news.html | 034 | a
+Omarchy
+
+### news.html | 035 | a
+Couch Mode
+
+### news.html | 036 | a
+News
+
+### news.html | 037 | a
+Support
+
+### news.html | 038 | a
 GitHub
 
 ==============================================================================
