@@ -57,7 +57,15 @@
     <div class="label">01_named_faults</div>
 
     <div class="panel fix">
-      <h3>Arcanum: Of Steamworks and Magick Obscura (GOG)<span class="badge-new">new</span></h3>
+      <h3>The Witcher: Enhanced Edition<span class="badge-new">new</span></h3>
+      <div class="sym">Play does nothing at all. Get past that, and the menus have no words in them.</div>
+      <p class="body">Two things GOG&rsquo;s installer writes down that nothing on Linux ever did. The first is where the game was installed: both the game and its launcher look that up before they do anything else, read an empty answer and quietly give up. The launcher even exits cleanly, which is why not one thing reported a failure. <strong>Now written at launch</strong>, repairing the install you have. No reinstall.</p>
+      <p class="body">The second is which language the game is in. Every word it draws comes out of a language file, and with nothing telling it which one, it draws none of them: a main menu that is a beautiful painting with no New Game on it. <strong>Now set from your own copy&rsquo;s language</strong>, and checked against the files actually on your disk. Change it in the game afterwards and it stays changed.</p>
+      <p class="body">It looks exactly like an ultrawide problem, and it is not one. Three resolutions were tried, including a correctly letterboxed 16:9 and a small 4:3, and every one of them drew the same wordless menu. <strong>Your resolution is left alone.</strong></p>
+    </div>
+
+    <div class="panel fix">
+      <h3>Arcanum: Of Steamworks and Magick Obscura (GOG)</h3>
       <div class="sym">Closes the instant it is launched. No window, no error.</div>
       <p class="body">GOG includes a small helper file that keeps this one running on modern Windows. Letting a game use the helper it came with is normally the right call, and it is what rescues Quake and Resident Evil 2. Here it is the opposite: the helper cannot work on Linux, and it takes the game down before anything reaches the screen.</p>
       <p class="body"><strong>It is now left out for this game</strong>, the only one so far. Nothing is deleted, and the file stays where GOG put it.</p>
