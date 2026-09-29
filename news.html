@@ -52,6 +52,79 @@
   <section>
     <div class="label">01_latest</div>
 
+    <article class="post" id="crt-face">
+      <div class="post-date">29 September 2026 &middot; new face &middot; Clarity 1.18.0</div>
+      <h2>Clarity now runs on a television older than most of my games</h2>
+      <div class="kicker">Couch Mode is built around cover art. A tube TV has nowhere to put any.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/crt-face-hero.webp" alt="The CRT face: a plain list of rows, Continue at the top, the library count beside it" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">I wanted my library on a CRT, so I plugged the machine into one and started Couch Mode. It was not broken. It was unusable, which is worse, because there is nothing to fix.</p>
+
+      <p class="body">Couch Mode is built around artwork, and artwork is the one thing a tube cannot give you. Over a composite cable a cover ends up about the width of your thumb and the colour smears into a haze. Thin lines flicker, because half the picture is drawn on one pass and half on the next, so a one pixel rule is only ever there for half the time. And every set crops the edges by a different amount, so anything near a corner is simply gone on somebody&rsquo;s television.</p>
+
+      <p class="body"><strong>So there is a third face now.</strong> Not Couch at a smaller size: a menu, where a row of text is the interface and art is only there to tell two similar rows apart. Up and down move, one button goes in, one goes back. That is the whole thing, because that is the vocabulary a D-pad has and the one a TV menu has always had. Arrow keys and Enter work too.</p>
+
+      <p class="body">Everything happens there. Install and uninstall your GOG and Epic games, fetch artwork and details, search, filter by store, make playlists, mark favourites, switch a game to the compatibility mode that fixes it, and play. You never get up and walk to the desk, which was the entire point of building it.</p>
+
+      <p class="body">It follows your Omarchy theme while it is open, so changing the theme restyles it where it stands.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.18.0</a>
+        <a class="btn ghost" href="couch.html">Couch Mode</a>
+      </div>
+    </article>
+
+    <article class="post" id="witcher1">
+      <div class="post-date">29 September 2026 &middot; game fix &middot; Clarity 1.18.0</div>
+      <h2>The Witcher did nothing at all when I pressed play</h2>
+      <div class="kicker">No window, no error, not even a log. The game had quietly decided it was not installed.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/witcher1-hero.webp" alt="The Witcher: Enhanced Edition" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">This is the most annoying way for a game to fail. A crash leaves you something to read. The Witcher left nothing: press play, and the library sits there as though you had not.</p>
+
+      <p class="body">When GOG&rsquo;s own installer runs on Windows it does not just copy files, it writes down where it put them. On Linux the download finishes and that is the end of it, so the note is never written.</p>
+
+      <p class="body">Both GOG&rsquo;s launcher and the game itself look for that note before they do anything else, and neither has a backup plan. They do not find it, they give up, and they exit reporting success. That last part is why nothing anywhere had a complaint to show you.</p>
+
+      <p class="body"><strong>Clarity writes the note itself now, when you press play</strong>, and rewrites it if you ever move the game. It sets the language at the same time, which sounds like a detail and is not: without it the game starts and every menu is blank.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.18.0</a>
+        <a class="btn ghost" href="fixes.html">All game fixes</a>
+      </div>
+    </article>
+
+    <article class="post" id="doom-soundtracks">
+      <div class="post-date">29 September 2026 &middot; feature &middot; Clarity 1.18.0</div>
+      <h2>Doom mods, with the soundtrack you already own</h2>
+      <div class="kicker">Brutal Doom on IDKFA, chosen at the moment you press play, built from a game already on your disk.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/doom-soundtracks-hero.webp" alt="DOOM + DOOM II, the re-release the soundtracks come from" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">Launch a Doom mod in Clarity and it already asks which Doom you want it to run on. Now it asks which music, too.</p>
+
+      <p class="body">Nothing is downloaded. If you own the <strong>DOOM + DOOM II</strong> re-release, the alternate soundtracks are already sitting inside it: Andrew Hulshult&rsquo;s IDKFA, and the original Bobby Prince score re-recorded. Clarity builds the music file from the copy you own, and the audio that comes out is byte for byte the audio that went in. If you do not own the re-release, the question is never asked, because there would be nothing to answer it with.</p>
+
+      <p class="body">I expected this to be an afternoon of renaming things. It was not, and the reason is properly stupid: the name of a music track does not tell you which song is in it, and which song it is changes from one game to the next.</p>
+
+      <p class="body">Doom reuses its own music, so one song can be asked for under two names. Replace only the name you recognise and half the game drops back to MIDI while the other half plays the new score. Worse, TNT uses the very same names for entirely different music, so going by name alone would confidently put the wrong song on nearly every map of it.</p>
+
+      <p class="body"><strong>So Clarity does not go by name.</strong> It fingerprints the music in your own copies and matches on what the songs actually are. Doom and Doom II come out right, and TNT is correctly offered nothing at all, which is the right answer and a much better one than something plausible and wrong.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.18.0</a>
+        <a class="btn ghost" href="ports.html">Fan games &amp; ports</a>
+      </div>
+    </article>
+
     <article class="post" id="arcanum">
       <div class="post-date">16 September 2026 &middot; game fix &middot; Clarity 1.17.0</div>
       <h2>Arcanum closed the instant I pressed play</h2>
