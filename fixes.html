@@ -57,7 +57,14 @@
     <div class="label">01_named_faults</div>
 
     <div class="panel fix">
-      <h3>Arcanum: Of Steamworks and Magick Obscura (GOG)<span class="badge-new">new</span></h3>
+      <h3>The Witcher: Enhanced Edition (GOG)<span class="badge-new">new</span></h3>
+      <div class="sym">Pressing play does nothing at all. No window, no error, not even a log.</div>
+      <p class="body">On Windows GOG&rsquo;s installer does more than copy files: it writes down where it put the game. On Linux the download finishes and that step never happens. Both GOG&rsquo;s launcher and the game itself look for that note before they do anything else, neither has a fallback, and both give up quietly reporting success, which is why nothing anywhere had a complaint to show you.</p>
+      <p class="body"><strong>The note is now written when you press play</strong>, and rewritten if you move the game. The language goes in at the same time, without which the game starts with every menu blank.</p>
+    </div>
+
+    <div class="panel fix">
+      <h3>Arcanum: Of Steamworks and Magick Obscura (GOG)</h3>
       <div class="sym">Closes the instant it is launched. No window, no error.</div>
       <p class="body">GOG includes a small helper file that keeps this one running on modern Windows. Letting a game use the helper it came with is normally the right call, and it is what rescues Quake and Resident Evil 2. Here it is the opposite: the helper cannot work on Linux, and it takes the game down before anything reaches the screen.</p>
       <p class="body"><strong>It is now left out for this game</strong>, the only one so far. Nothing is deleted, and the file stays where GOG put it.</p>

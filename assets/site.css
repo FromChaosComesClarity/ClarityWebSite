@@ -87,6 +87,7 @@ ul.list li strong{color:var(--ink)}
 .note{border:1px solid var(--magenta);background:linear-gradient(180deg,rgba(255,95,162,.07),rgba(255,95,162,.02));padding:20px 22px}
 .note .h{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--magenta);margin-bottom:8px}
 .note p{color:var(--ink);max-width:68ch;font-size:.92rem}
+.note p + p{margin-top:12px}
 
 footer{border-top:1px solid var(--line);padding:28px 0 60px;color:var(--dim);font-size:.76rem;letter-spacing:.06em}
 footer .fin{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
