@@ -57,7 +57,14 @@
     <div class="label">01_named_faults</div>
 
     <div class="panel fix">
-      <h3>The Witcher: Enhanced Edition (GOG)<span class="badge-new">new</span></h3>
+      <h3>Road Rash (1996, PC)<span class="badge-new">new</span></h3>
+      <div class="sym">Nothing happens at all. Then a Fatal Error box. Then it asks you to run Setup.</div>
+      <p class="body">Four faults in a row, each one hiding the next, and all of them come from installing off the disc rather than letting the disc&rsquo;s own installer do it. The game needs a file that sits in the setup folder rather than beside the game, and without it there is no window and no error. Then it asks the screen to become 640x480, which a modern display refuses and the game treats as fatal. Then it wants a CD-ROM drive, and the disc is a folder now. Then it wants the note the installer leaves saying where the game lives.</p>
+      <p class="body"><strong>All four are handled when you press play.</strong> The file is put in place, the game gets a 640x480 screen of its own scaled up to fill yours, a drive is pointed at the disc and told it is a CD, and the note is written. No wizard, nothing to copy by hand.</p>
+    </div>
+
+    <div class="panel fix">
+      <h3>The Witcher: Enhanced Edition (GOG)</h3>
       <div class="sym">Pressing play does nothing at all. No window, no error, not even a log.</div>
       <p class="body">On Windows GOG&rsquo;s installer does more than copy files: it writes down where it put the game. On Linux the download finishes and that step never happens. Both GOG&rsquo;s launcher and the game itself look for that note before they do anything else, neither has a fallback, and both give up quietly reporting success, which is why nothing anywhere had a complaint to show you.</p>
       <p class="body"><strong>The note is now written when you press play</strong>, and rewritten if you move the game. The language goes in at the same time, without which the game starts with every menu blank.</p>
