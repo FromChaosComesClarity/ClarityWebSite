@@ -52,6 +52,29 @@
   <section>
     <div class="label">01_latest</div>
 
+    <article class="post" id="missing-games">
+      <div class="post-date">5 October 2026 &middot; feature &middot; Clarity 1.23.0</div>
+      <h2>A restored library listed games that were not there. Now Clarity finds them</h2>
+      <div class="kicker">Back up on one machine, restore on another, and every path points at nothing.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/missing-games-hero.webp" alt="The Missing Games window, listing games grouped by the folder that has gone" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">Copy your library to a second computer and it arrives convinced that everything is still installed. It is not. The paths were right on the machine you left behind, and on this one they lead nowhere, so the gallery sits there offering to play games that are not on the disk. Games you added by hand get it worst, because a path is all they ever were.</p>
+
+      <p class="body"><strong>Settings, Library, Missing games.</strong> It goes through everything marked installed and checks whether the files are actually there: the install folder for GOG, Epic and recipe installs, the path inside the launch command for anything else, the cart file for PICO-8. Steam games are left out because they already work this out for themselves, and so is anything whose launch command names no path worth checking.</p>
+
+      <p class="body">The part I spent the longest on is what it does <em>not</em> do. Half my library lives on drives I unplug, and with one of those out every game on it looks deleted. So nothing is ticked when the list opens, everything is grouped by the folder that went missing, and a drive that is simply not mounted says so in its own line rather than appearing as two hundred missing games.</p>
+
+      <p class="body">Two ways out, because the right one is not the same for every row. <strong>Mark not installed</strong> keeps the game, which is what you want for anything you own and can install again. <strong>Remove from library</strong> takes the row out, which is usually right for something you added by hand and whose folder is gone for good.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.23.0</a>
+        <a class="btn ghost" href="library.html">The library</a>
+      </div>
+    </article>
+
     <article class="post" id="recipes-pane">
       <div class="post-date">5 October 2026 &middot; feature &middot; Clarity 1.21.0</div>
       <h2>Recipes were buried in the code. Now they have a page, and your covers say which games use one</h2>
