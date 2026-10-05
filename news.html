@@ -52,6 +52,69 @@
   <section>
     <div class="label">01_latest</div>
 
+    <article class="post" id="platform-badge">
+      <div class="post-date">4 October 2026 &middot; feature &middot; Clarity 1.20.0</div>
+      <h2>Every cover now says what you actually installed</h2>
+      <div class="kicker">Native Linux or Windows, read off the files rather than off the store page.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/platform-badge-hero.webp" alt="The Clarity gallery, covers carrying a small platform mark in the corner" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">I kept forgetting which of my games were native. The store page is no help here: plenty of things that <em>have</em> a Linux build are sitting on my disk as the Windows one, because that is the depot that came down. So the badge answers the only question worth asking, which is what is in the folder right now. A penguin is a native Linux build. The four panes are a Windows build going through Proton. They sit beside the store mark in the corner of the cover.</p>
+
+      <p class="body">Reading the files is easy. Trusting what you find is not. A Windows game can ship a Linux library. A Windows game can bundle a whole Linux toolchain stuffed with real Linux executables. An FNA game can have no executable at all and still be the Linux build. And I was certain Baldur&rsquo;s Gate 3 had no native version, right up until I found it sitting in its own folder. My library came out at 49 native and 147 Windows. Every one that caught me out is written down in the code so it does not catch me twice.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.20.0</a>
+        <a class="btn ghost" href="gallery.html">Gallery view</a>
+      </div>
+    </article>
+
+    <article class="post" id="doom64-ce">
+      <div class="post-date">4 October 2026 &middot; ports &amp; mods &middot; Clarity 1.20.0</div>
+      <h2>DOOM CE was broken because I had filed it wrong</h2>
+      <div class="kicker">It is not a mod. And Doom 64 CE is in, which I said it would not be.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/doom-ce-fixed-hero.webp" alt="PSX DOOM CE running, with coloured lighting and the console HUD" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">DOOM CE died before the title screen, and the reason was me. I had it in the catalogue as a mod. It is not one: it brings its own engine, and its <em>.ipk3</em> is an IWAD rather than something you stack on top. So the install screen offered you the engine&rsquo;s own files to tick, you quite reasonably ticked them all, and handing one of those to a running engine kills it on the spot.</p>
+
+      <p class="body">Underneath that sat a quieter one. The DOOM + DOOM II re-release ships each IWAD twice: the new build at the top of the folder, the original DOS one buried under <em>dosdoom/base</em>. Clarity took whichever was nearest the top, which was the wrong one. DOOM CE will not touch that copy and does not say so. It loads plain Doom II instead, so it looks like it worked and you are left wondering where PSX Doom went.</p>
+
+      <p class="body"><strong>Both are fixed, and it installs on its own now</strong>, as the standalone thing it always was.</p>
+
+      <p class="body"><strong>Doom 64 CE is in as well</strong>, after I said it would not be. Its IWAD cannot be linked, it has to be built out of the Doom 64 WAD, and the mod ships a Windows script to do it. What I had missed is that the same download also carries a Linux build of the patcher. So Clarity runs that during the install, with the mod&rsquo;s own tool and nothing going through Windows. Bring a copy of Doom 64 and the rest happens on its own.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.20.0</a>
+        <a class="btn ghost" href="ports.html">Ports and mods</a>
+      </div>
+    </article>
+
+    <article class="post" id="colour-bars">
+      <div class="post-date">4 October 2026 &middot; game fix &middot; Clarity 1.20.0</div>
+      <h2>The colour bars were my fault, not the games&rsquo;</h2>
+      <div class="kicker">Star Renegades, Weird West, and anything else with a cutscene in it.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/colourbars-hero.webp" alt="A television test card and a band of static, where a game intro should be" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">Press play and get a test card and a band of static where the intro should be. I had it down as a codec problem, which was half right and entirely unhelpful, because the codec was fine. What was wrong was which Proton the game got.</p>
+
+      <p class="body">Clarity ranks the Proton builds on your machine and hands the best one to the game. UMU-Proton sat in the same group as GE-Proton, and inside a group the later name wins, which meant <em>UMU</em> beat <em>GE</em> on the letter U. Nobody wrote that rule, it fell out of the sorting. And that particular build carries the plugin that decodes video without carrying any of the libraries the plugin needs, so nothing decoded at all. The game got no frames and drew whatever happened to be left in the buffer.</p>
+
+      <p class="body"><strong>GE-Proton is preferred again and the intros play.</strong> If you want a specific build for a specific game you can still choose one yourself, and your choice still wins.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.20.0</a>
+        <a class="btn ghost" href="fixes.html">All game fixes</a>
+      </div>
+    </article>
+
     <article class="post" id="roadrash">
       <div class="post-date">30 September 2026 &middot; game fix &middot; Clarity 1.19.0</div>
       <h2>Road Rash broke four times in a row, and each one hid the next</h2>
@@ -92,9 +155,9 @@
 
       <p class="body">The PlayStation version of Doom was its own thing. Coloured lighting the PC never had, a darker palette, and Aubrey Hodges&rsquo; soundtrack, which is less music than weather. DOOM CE rebuilds that and PSX Final Doom on modern GZDoom, and it is now in the catalogue.</p>
 
-      <p class="body">It wants <strong>doom2.wad</strong>, which Clarity already links from whichever Doom you own, and <strong>UZDoom 5.0.0 or newer</strong>. That last part matters: the 4.x line will not run it, and UZDoom renamed its download when it went to 5, so the catalogue now points at the right file.</p>
+      <p class="body">It wants <strong>doom2.wad</strong>, so you need a copy of Doom II. If the library has one, Clarity links the WAD in beside the game. The engine comes in the download, so there is nothing to install first: DOOM CE ships its own UZDoom and installs as a folder of its own. UZDoom also renamed its download when it went to 5, so the catalogue points at the right file now.</p>
 
-      <p class="body"><strong>Doom 64 CE is not included</strong>, and that is a decision rather than an oversight. It is published in the same place under nearly the same name, but it needs the Doom 64 WAD from Steam, which cannot be used as it is. The mod ships a script that patches it first. Clarity links game data you already own; it cannot link a file that has to be generated by running a Windows script, so a recipe for it would install perfectly and leave you with something that never starts.</p>
+      <p class="body"><strong>Doom 64 CE was not included</strong>, and at the time that was a decision rather than an oversight: its IWAD has to be built, not linked. That has since been sorted and it is in. <a href="#doom64-ce">The story is here.</a></p>
 
       <div class="btns">
         <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.19.0</a>
