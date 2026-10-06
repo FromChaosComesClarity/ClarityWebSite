@@ -52,6 +52,31 @@
   <section>
     <div class="label">01_latest</div>
 
+    <article class="post" id="video-capable-proton">
+      <div class="post-date">6 October 2026 &middot; game fix &middot; Clarity 1.24.0</div>
+      <h2>The colour bars came back on my other machines. Now the fix travels with them</h2>
+      <div class="kicker">The first attempt worked here and nowhere else, for a reason I had talked myself out of.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/colourbars-hero.webp" alt="A television test card and a band of static, where a game intro should be" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">I said this was fixed two weeks ago. On this computer it was. On the others it carried on showing a test card where the intro should be, which is a good reminder that a fix verified on one machine is a fix verified on one machine.</p>
+
+      <p class="body">What I did the first time was change the order Clarity considers the Proton builds you have installed, so that GE-Proton came before UMU-Proton. That works beautifully if you have a GE-Proton. My other machines do not, and nothing in the ordering can conjure one.</p>
+
+      <p class="body">I had even considered the right rule and argued myself out of it. I thought a check for &ldquo;can this build decode video&rdquo; would wrongly reject Valve&rsquo;s own Proton, which bundles no video libraries and expects the runtime to provide them. It turns out the runtime does not provide them. Running a game on Valve&rsquo;s Proton 10 fails in exactly the same way UMU-Proton does, with the same missing library named in the log. What misled me was a folder full of files beginning <em>libav</em>, which I read as FFmpeg; they are Avahi, which is for finding printers.</p>
+
+      <p class="body"><strong>So Clarity now chooses on capability.</strong> Whether a runtime can actually decode a video comes before who built it and how new it is, because one that cannot is no use to a game manager however current it is.</p>
+
+      <p class="body">That still cannot help a machine where nothing capable is installed, which is the state most of them are in: the runtime that gets downloaded automatically is one of the ones that cannot decode. So the compatibility window now tells you which of your runtimes cannot play video, and when none of them can, it says so and offers to fetch GE-Proton. One download, shared by every Windows game after it.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.24.0</a>
+        <a class="btn ghost" href="fixes.html">All game fixes</a>
+      </div>
+    </article>
+
     <article class="post" id="missing-games">
       <div class="post-date">5 October 2026 &middot; feature &middot; Clarity 1.23.0</div>
       <h2>A restored library listed games that were not there. Now Clarity finds them</h2>
@@ -172,9 +197,9 @@
 
       <p class="body">Press play and get a test card and a band of static where the intro should be. I had it down as a codec problem, which was half right and entirely unhelpful, because the codec was fine. What was wrong was which Proton the game got.</p>
 
-      <p class="body">Clarity ranks the Proton builds on your machine and hands the best one to the game. UMU-Proton sat in the same group as GE-Proton, and inside a group the later name wins, which meant <em>UMU</em> beat <em>GE</em> on the letter U. Nobody wrote that rule, it fell out of the sorting. And that particular build carries the plugin that decodes video without carrying any of the libraries the plugin needs, so nothing decoded at all. The game got no frames and drew whatever happened to be left in the buffer.</p>
+      <p class="body">Proton plays video through FFmpeg, and nearly every build of it ships the plugin that does the decoding without shipping the libraries that plugin needs. The runtime they expect to find those in does not carry them either. So nothing decodes, the game is handed no frames, and it draws whatever happened to be left in the buffer.</p>
 
-      <p class="body"><strong>GE-Proton is preferred again and the intros play.</strong> If you want a specific build for a specific game you can still choose one yourself, and your choice still wins.</p>
+      <p class="body"><strong>Clarity picks a runtime that can decode video</strong>, ahead of who built it or how new it is. If you want a specific build for a specific game you can still choose one yourself, and your choice still wins. <a href="#video-capable-proton">The rest of this one is here</a>: the first attempt only worked on machines that already had GE-Proton.</p>
 
       <div class="btns">
         <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.20.0</a>
