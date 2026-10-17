@@ -55,21 +55,17 @@
     <article class="post" id="rc-cars">
       <div class="post-date">17 October 2026 &middot; game fix &middot; Clarity 1.28.0</div>
       <h2>RC Cars drew a black square in the corner and hung. Now it plays</h2>
-      <div class="kicker">Two faults stacked on each other, which is why it looked so odd.</div>
+      <div class="kicker">A lot of old school fun and dirty cheap on GOG. It just would not start here.</div>
 
       <figure class="post-figure">
-        <img src="assets/news/rccars-hero.webp" alt="RC Cars at its main menu, filling the screen correctly" width="1600" height="517" loading="lazy" decoding="async">
+        <img src="assets/news/rccars-hero.webp" alt="RC Cars in a race, a buggy on a dirt track with the speed and boost gauges on screen" width="1600" height="517" loading="lazy" decoding="async">
       </figure>
 
-      <p class="body">The report was a small black square in the top-left corner of the screen, an intro that played, and then nothing you could do about it. That is two separate problems wearing one coat, and the first one was hiding how ordinary the second was.</p>
+      <p class="body">A lot of old school fun, this one, and dirty cheap on GOG. Cheaper than the new Offspring CD and a can of 7up, lol &#128578;</p>
 
-      <p class="body">GOG ships this 2002 game with three little helper files that only work as a set: one sizes the window to your screen, one scales the game up to fill it, one handles the controls. Clarity was handing the game two of the three. So the window opened the full width of the display while the game happily carried on drawing at its original size in the corner, with nothing told to stretch it. <strong>The third is now included</strong> and the picture fills the screen, letterboxed to its own 4:3 shape.</p>
+      <p class="body">It would not start here, though. A small black square in the top-left corner, the intro plays, and then nothing. Two faults wearing one coat. GOG ships three little helper files that only work as a set and Clarity was handing the game two of them, so the window opened full width while the game carried on drawing small in the corner. <strong>All three go in now.</strong> Underneath that, the intro never finishes: it goes black and sits there. <strong>It is skipped now</strong> and the menu comes straight up. One line in the game&rsquo;s own settings file, so put it back if you miss it.</p>
 
-      <p class="body">Underneath that was the actual hang. The intro sequence before the main menu does not finish here. The screen goes black and stays black, no crash, no error, nothing in the game&rsquo;s own log to tell you a thing is wrong. I left it running for five minutes and it never moved. <strong>The intro is now skipped</strong>, the menu comes up by itself, and it is one line in the game&rsquo;s own settings file with every other line untouched, so you can put the intro back whenever you fancy it.</p>
-
-      <p class="body">While I was in there I found that the thing which writes those settings was dropping the carriage return on the line it changed, leaving one stray line ending in an otherwise Windows file. Nothing had broken because of it yet, but it was only a matter of which old game noticed first. That is fixed for every game it touches.</p>
-
-      <p class="body">Worth saying: this game is a lot of old school fun and dirty cheap on GOG, cheaper than the new Offspring CD and a can of 7up. It still wants a bit of tinkering in the menu to get the controls how you like them, but if you are an old gamer you already know what to do.</p>
+      <p class="body">It still wants a bit of tinkering in the menu to get the controls how you like them, but if you are an old gamer you already know what to do.</p>
 
       <div class="btns">
         <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.28.0</a>
