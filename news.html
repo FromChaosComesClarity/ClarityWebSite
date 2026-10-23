@@ -52,6 +52,28 @@
   <section>
     <div class="label">01_latest</div>
 
+    <article class="post" id="pause-downloads">
+      <div class="post-date">22 October 2026 &middot; feature &middot; Clarity 1.29.0</div>
+      <h2>Downloads could only be cancelled. Now they pause and resume</h2>
+      <div class="kicker">About the most trivial thing a download manager can do, and somehow overlooked until now.</div>
+
+      <figure class="post-figure">
+        <img src="assets/news/pause-hero.webp" alt="The Download Manager with a Pause button on the active download and a paused game ready to resume" width="1600" height="517" loading="lazy" decoding="async">
+      </figure>
+
+      <p class="body">Pausing a download is a trivial thing. Every download manager since the dial-up days can do it, and Clarity couldn&rsquo;t: it could cancel, and that was it. Somehow nobody noticed until I needed the connection for a video call halfway through Mad Max.</p>
+
+      <p class="body"><strong>There&rsquo;s a Pause button now</strong>, right next to Cancel. A paused game goes to its own list with Resume and Remove, Clarity remembers it if you close the app, and nothing else in the queue jumps in to grab the connection you just freed. GOG and Epic both.</p>
+
+      <p class="body">It doesn&rsquo;t hurt the game either. Both stores&rsquo; downloaders keep track of every file they have finished and skip those on the way back. The one catch is that they work a file at a time, so whatever file was still coming in when you paused starts that file over. The Paused list tells you how much was actually kept, not what the bar last said.</p>
+
+      <p class="body">While I was in there I also fixed GOG signing you out for no reason. That one is gone too.</p>
+
+      <div class="btns">
+        <a class="btn" href="https://github.com/FromChaosComesClarity/Clarity/releases/latest">Get Clarity 1.29.0</a>
+      </div>
+    </article>
+
     <article class="post" id="rc-cars">
       <div class="post-date">17 October 2026 &middot; game fix &middot; Clarity 1.28.0</div>
       <h2>RC Cars drew a black square in the corner and hung. Now it plays</h2>
