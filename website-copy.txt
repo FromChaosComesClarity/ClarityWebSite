@@ -16,7 +16,7 @@ FORMATTING YOU CAN USE
   **bold**            *italic*            `code`            [link text](page.html)
 
 Anything else, a <br> or an emoji, just leave as you find it.
-    No em dashes, please: a comma, a colon or a full stop instead.
+    Join clauses with a comma, a colon or a full stop rather than a dash.
 
 WHAT THE LABELS MEAN
 --------------------
